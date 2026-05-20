@@ -1,0 +1,470 @@
+{
+  "generated_at": "2026-05-19T05:25:28.443895+00:00",
+  "outputs": {
+    "PROYECTO CONCURSO GBIF/data/geo/priority_cells_full.geojson": {
+      "type": "GeoJSON FeatureCollection",
+      "geometry": "Polygon",
+      "crs": "EPSG:4326",
+      "features": 48407,
+      "layer_role": "Full analytical priority-cell layer.",
+      "fields": {
+        "cell_id": {
+          "dtype": "object",
+          "missing": 0
+        },
+        "ultimo_registro": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "primer_registro": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "n_registros": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "riqueza_obs": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "perdida_ha": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "forest_cover_pct": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "deficit_riqueza": {
+          "dtype": "float64",
+          "missing": 22108
+        },
+        "antiguedad_norm": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "perdida_norm": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "deficit_norm": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "confianza": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "indice": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "categoria_final": {
+          "dtype": "object",
+          "missing": 0
+        },
+        "latitude": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "longitude": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "id": {
+          "dtype": "object",
+          "missing": 0
+        },
+        "cls": {
+          "dtype": "object",
+          "missing": 0
+        },
+        "last": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "loss": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "forest": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "gbif": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "ekdi": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "years": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "state": {
+          "dtype": "object",
+          "missing": 36599
+        },
+        "stateName": {
+          "dtype": "object",
+          "missing": 36599
+        },
+        "threat": {
+          "dtype": "object",
+          "missing": 36526
+        },
+        "endemic": {
+          "dtype": "object",
+          "missing": 36526
+        },
+        "nearest_city": {
+          "dtype": "object",
+          "missing": 48407
+        },
+        "recommended_action": {
+          "dtype": "object",
+          "missing": 0
+        },
+        "recommended_action_source": {
+          "dtype": "object",
+          "missing": 0
+        },
+        "critical_enrichment_source": {
+          "dtype": "object",
+          "missing": 48407
+        }
+      },
+      "required_field_missing_counts": {
+        "cell_id": 0,
+        "state": 36599,
+        "stateName": 36599,
+        "latitude": 0,
+        "longitude": 0,
+        "ultimo_registro": 21695,
+        "n_registros": 21695,
+        "riqueza_obs": 21695,
+        "deficit_riqueza": 22108,
+        "perdida_ha": 0,
+        "forest_cover_pct": 0,
+        "indice": 21695,
+        "categoria_final": 0,
+        "confianza": 0,
+        "nearest_city": 48407,
+        "recommended_action": 0
+      },
+      "field_mappings": {
+        "id": "cell_id",
+        "cls": "categoria_final mapped through CATEGORY_TO_CLASS",
+        "last": "ultimo_registro",
+        "loss": "perdida_ha",
+        "forest": "forest_cover_pct",
+        "gbif": "n_registros",
+        "ekdi": "indice",
+        "years": "2025 - ultimo_registro",
+        "recommended_action": "class-based fallback; not a measured scientific field"
+      },
+      "caveats": [
+        "State fields are null where the existing MapLibre priority layer had no matching cell_id.",
+        "nearest_city is null because no stable cell_id join exists in grid_endemicas.gpkg.",
+        "recommended_action is generated as a documented class-based fallback."
+      ]
+    },
+    "PROYECTO CONCURSO GBIF/data/geo/priority_cells_web.geojson": {
+      "type": "GeoJSON FeatureCollection",
+      "geometry": "Polygon",
+      "crs": "EPSG:4326",
+      "features": 27878,
+      "layer_role": "Recommended web layer for MapLibre dashboard visualization.",
+      "included_classes": [
+        "critical",
+        "deficient",
+        "lost",
+        "unsurveyed"
+      ],
+      "omitted_classes": [
+        "adequate"
+      ],
+      "fields": {
+        "cell_id": {
+          "dtype": "object",
+          "missing": 0
+        },
+        "ultimo_registro": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "primer_registro": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "n_registros": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "riqueza_obs": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "perdida_ha": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "forest_cover_pct": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "deficit_riqueza": {
+          "dtype": "float64",
+          "missing": 21756
+        },
+        "antiguedad_norm": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "perdida_norm": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "deficit_norm": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "confianza": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "indice": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "categoria_final": {
+          "dtype": "object",
+          "missing": 0
+        },
+        "latitude": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "longitude": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "id": {
+          "dtype": "object",
+          "missing": 0
+        },
+        "cls": {
+          "dtype": "object",
+          "missing": 0
+        },
+        "last": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "loss": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "forest": {
+          "dtype": "float64",
+          "missing": 0
+        },
+        "gbif": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "ekdi": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "years": {
+          "dtype": "float64",
+          "missing": 21695
+        },
+        "state": {
+          "dtype": "object",
+          "missing": 16070
+        },
+        "stateName": {
+          "dtype": "object",
+          "missing": 16070
+        },
+        "threat": {
+          "dtype": "object",
+          "missing": 15997
+        },
+        "endemic": {
+          "dtype": "object",
+          "missing": 15997
+        },
+        "nearest_city": {
+          "dtype": "object",
+          "missing": 27878
+        },
+        "recommended_action": {
+          "dtype": "object",
+          "missing": 0
+        },
+        "recommended_action_source": {
+          "dtype": "object",
+          "missing": 0
+        },
+        "critical_enrichment_source": {
+          "dtype": "object",
+          "missing": 27878
+        }
+      },
+      "caveats": [
+        "Adequate cells are omitted from the default web layer for performance.",
+        "State/stateName are missing where no state value was available in the existing priority source.",
+        "nearest_city is null because no stable cell_id join exists in grid_endemicas.gpkg.",
+        "recommended_action is generated as a documented class-based fallback."
+      ]
+    },
+    "PROYECTO CONCURSO GBIF/data/geo/priority_cells.geojson": {
+      "type": "GeoJSON FeatureCollection",
+      "geometry": "Polygon",
+      "crs": "EPSG:4326",
+      "features": 27878,
+      "layer_role": "Alias copy of priority_cells_web.geojson for dashboard fetch compatibility.",
+      "alias_of": "PROYECTO CONCURSO GBIF/data/geo/priority_cells_web.geojson",
+      "included_classes": [
+        "critical",
+        "deficient",
+        "lost",
+        "unsurveyed"
+      ],
+      "omitted_classes": [
+        "adequate"
+      ],
+      "caveats": [
+        "This file intentionally aliases the recommended web layer, not the full grid.",
+        "Use priority_cells_full.geojson for complete analytical coverage."
+      ]
+    },
+    "PROYECTO CONCURSO GBIF/data/geo/forest_mask.geojson": {
+      "type": "GeoJSON FeatureCollection",
+      "geometry": "MultiPolygon/Polygon",
+      "crs": "EPSG:4326",
+      "caveats": [
+        "Forest threshold documented as >= 30% from prior exporter logic."
+      ]
+    },
+    "PROYECTO CONCURSO GBIF/data/geo/biome_boundary.geojson": {
+      "type": "GeoJSON FeatureCollection",
+      "geometry": "Polygon/MultiPolygon",
+      "crs": "EPSG:4326",
+      "caveats": [
+        "Derived from dissolved grid_final.gpkg footprint because original biome boundary was not in the Phase 2 input list."
+      ]
+    },
+    "PROYECTO CONCURSO GBIF/data/points/gbif_memory.geojson": {
+      "type": "GeoJSON FeatureCollection",
+      "geometry": "Point",
+      "crs": "EPSG:4326",
+      "caveats": [
+        "Copied from existing sampled GBIF memory layer; species fields are not available in that source."
+      ]
+    },
+    "PROYECTO CONCURSO GBIF/data/tables/knowledge_ghosts.json": {
+      "type": "JSON table",
+      "rows": 4,
+      "missing_counts": {
+        "risk_criterio": 4
+      },
+      "caveats": [
+        "Knowledge Ghost records are candidate signals and do not imply presence, absence, or extinction."
+      ]
+    },
+    "PROYECTO CONCURSO GBIF/data/tables/rediscovery_candidates.json": {
+      "type": "JSON table",
+      "rows": 2124,
+      "rule": "last_year <= 2005, species-level only, location fields null",
+      "caveats": [
+        "Conservative species-level hypotheses only.",
+        "Location-specific fields are null because spatial evidence was insufficient in Phase 2 inputs."
+      ]
+    },
+    "PROYECTO CONCURSO GBIF/data/tables/state_summary.json": {
+      "type": "JSON summary",
+      "caveats": [
+        "State coverage is partial for all cells; class totals remain complete."
+      ]
+    },
+    "PROYECTO CONCURSO GBIF/data/tables/critical_gaps_top100.csv": {
+      "type": "CSV table",
+      "rows": 100,
+      "columns": [
+        "lat",
+        "lon",
+        "obsolescence_index",
+        "deforestation_ha",
+        "forest_cover_pct",
+        "last_gbif_record",
+        "latitude",
+        "longitude",
+        "indice",
+        "perdida_ha",
+        "ultimo_registro",
+        "cell_id",
+        "state",
+        "stateName",
+        "nearest_city",
+        "recommended_action",
+        "recommended_action_source"
+      ],
+      "caveats": [
+        "cell_id, state, stateName and nearest_city are null until a spatial join is performed."
+      ]
+    },
+    "PROYECTO CONCURSO GBIF/data/tables/cell_plant_candidates.json": {
+      "type": "JSON table",
+      "rows": 4,
+      "plant_records": 4,
+      "rule": "Only records with explicit cell_id are linked to cells.",
+      "fields": {
+        "cell_id": {
+          "required": true,
+          "description": "Priority-cell identifier."
+        },
+        "state": {
+          "required": false,
+          "description": "State code when available."
+        },
+        "stateName": {
+          "required": false,
+          "description": "State name when available."
+        },
+        "plants": {
+          "required": true,
+          "description": "Cell-linked plant candidate records."
+        }
+      },
+      "plant_fields": [
+        "species",
+        "candidate_type",
+        "last_record",
+        "risk_category",
+        "risk_criterion",
+        "endemic",
+        "recommended_action",
+        "evidence_source",
+        "notes"
+      ],
+      "caveats": [
+        "Rediscovery candidates remain species-level unless a real cell_id exists.",
+        "grid_endemicas.gpkg p_erisk display strings are not joined because no stable cell_id is present."
+      ]
+    }
+  },
+  "safe_language": [
+    "candidate",
+    "hypothesis",
+    "needs verification",
+    "voucher review recommended",
+    "field verification recommended"
+  ]
+}

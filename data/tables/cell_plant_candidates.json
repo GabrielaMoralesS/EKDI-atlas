@@ -1,0 +1,74 @@
+[
+  {
+    "cell_id": "5178790_6995887",
+    "state": "SC",
+    "stateName": "Santa Catarina",
+    "plants": [
+      {
+        "species": "Bothriochloa longipaniculata",
+        "candidate_type": "Knowledge Ghost",
+        "last_record": 1986,
+        "risk_category": "LC",
+        "risk_criterion": null,
+        "endemic": null,
+        "recommended_action": "Voucher review recommended; field verification recommended where access, permits, and habitat context support survey.",
+        "evidence_source": "PROYECTO CONCURSO GBIF/data/tables/knowledge_ghosts.json",
+        "notes": "Plant candidate signal only; this does not confirm current presence, absence, rediscovery or extinction."
+      }
+    ]
+  },
+  {
+    "cell_id": "5218790_6955887",
+    "state": "SC",
+    "stateName": "Santa Catarina",
+    "plants": [
+      {
+        "species": "Bromus commutatus",
+        "candidate_type": "Knowledge Ghost",
+        "last_record": 1986,
+        "risk_category": "LC",
+        "risk_criterion": null,
+        "endemic": null,
+        "recommended_action": "Voucher review recommended; field verification recommended where access, permits, and habitat context support survey.",
+        "evidence_source": "PROYECTO CONCURSO GBIF/data/tables/knowledge_ghosts.json",
+        "notes": "Plant candidate signal only; this does not confirm current presence, absence, rediscovery or extinction."
+      }
+    ]
+  },
+  {
+    "cell_id": "6198790_7760887",
+    "state": "MG",
+    "stateName": "Minas Gerais",
+    "plants": [
+      {
+        "species": "Adenocalymma fistulosum",
+        "candidate_type": "Knowledge Ghost",
+        "last_record": 2003,
+        "risk_category": "DD",
+        "risk_criterion": null,
+        "endemic": null,
+        "recommended_action": "Voucher review recommended; field verification recommended where access, permits, and habitat context support survey.",
+        "evidence_source": "PROYECTO CONCURSO GBIF/data/tables/knowledge_ghosts.json",
+        "notes": "Plant candidate signal only; this does not confirm current presence, absence, rediscovery or extinction."
+      }
+    ]
+  },
+  {
+    "cell_id": "6538790_8510887",
+    "state": "BA",
+    "stateName": "Bahia",
+    "plants": [
+      {
+        "species": "Varronia neowediana",
+        "candidate_type": "Knowledge Ghost",
+        "last_record": 2000,
+        "risk_category": "DD",
+        "risk_criterion": null,
+        "endemic": null,
+        "recommended_action": "Voucher review recommended; field verification recommended where access, permits, and habitat context support survey.",
+        "evidence_source": "PROYECTO CONCURSO GBIF/data/tables/knowledge_ghosts.json",
+        "notes": "Plant candidate signal only; this does not confirm current presence, absence, rediscovery or extinction."
+      }
+    ]
+  }
+]

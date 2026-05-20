@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-05-19T05:25:28.443895+00:00",
+  "inputs": {
+    "grid_final": {
+      "path": "data/grid_final.gpkg",
+      "role": "Primary EKDI analytical grid."
+    },
+    "grid_endemicas": {
+      "path": "data/grid_endemicas.gpkg",
+      "role": "Critical-gap enrichment source; no stable cell_id available."
+    },
+    "ghost_species": {
+      "path": "data/ghost_species.csv",
+      "role": "Knowledge Ghost source table."
+    },
+    "extinction_risk_analysis": {
+      "path": "data/extinction_risk_analysis.csv",
+      "role": "Species-level risk and rediscovery hypothesis source."
+    },
+    "critical_gaps_top100": {
+      "path": "data/critical_gaps_top100.csv",
+      "role": "Top 100 critical gap candidates."
+    },
+    "current_priority_cells": {
+      "path": "PROYECTO CONCURSO GBIF/data/priority_cells.geojson",
+      "role": "Existing MapLibre priority layer used for state/threat/endemic aliases."
+    },
+    "current_gbif_memory": {
+      "path": "PROYECTO CONCURSO GBIF/data/gbif_memory.geojson",
+      "role": "Existing sampled GBIF memory point layer."
+    },
+    "current_forest_mask": {
+      "path": "PROYECTO CONCURSO GBIF/data/forest_mask.geojson",
+      "role": "Existing dissolved forest mask layer."
+    }
+  },
+  "external_source_labels": {
+    "GBIF": "Occurrence evidence, already processed in project outputs.",
+    "MapBiomas": "Land-cover change metrics, already processed in project outputs.",
+    "WorldClim": "Richness-deficit covariate source, already processed in project outputs.",
+    "Flora e Funga do Brasil": "Endemism/risk context, already processed in project outputs where available."
+  }
+}
