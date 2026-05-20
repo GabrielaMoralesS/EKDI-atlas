@@ -1,0 +1,13 @@
+raw/
+temp/
+node_modules/
+.DS_Store
+__pycache__/
+*.zip
+old_mockups/
+codex_reports/
+*.pyc
+.env
+.venv/
+dist/
+build/

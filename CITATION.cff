@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use EKDI, please cite this prototype and the original data sources."
+title: "EKDI — Ecological Knowledge Discovery Interface"
+authors:
+  - name: "[Your Name]"
+version: "0.1.0"
+date-released: "2026-05-20"
+license: "MIT"
+repository-code: "https://github.com/your-username/ekdi"
+abstract: "A field-verification atlas for ecological memory under landscape change."
+keywords:
+  - biodiversity
+  - GBIF
+  - ecological memory
+  - field verification
+  - botanical atlas
+  - Atlantic Forest
