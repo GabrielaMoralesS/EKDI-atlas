@@ -20,7 +20,7 @@
 | `deficit_riqueza` | Richness deficit signal. |
 | `evidence_completeness` | Evidence availability/completeness for interpretation. |
 | `recommended_action` | Recommended review or field action. |
-| `action_source` | Whether the action came from source data or class-based fallback. |
+| `action_source` | Whether the action came from source data or EKDI evidence classification. |
 
 ## Priority Classes
 

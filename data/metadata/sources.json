@@ -22,15 +22,15 @@
       "role": "Top 100 critical gap candidates."
     },
     "current_priority_cells": {
-      "path": "PROYECTO CONCURSO GBIF/data/priority_cells.geojson",
+      "path": "data/priority_cells.geojson",
       "role": "Existing MapLibre priority layer used for state/threat/endemic aliases."
     },
     "current_gbif_memory": {
-      "path": "PROYECTO CONCURSO GBIF/data/gbif_memory.geojson",
+      "path": "data/gbif_memory.geojson",
       "role": "Existing sampled GBIF memory point layer."
     },
     "current_forest_mask": {
-      "path": "PROYECTO CONCURSO GBIF/data/forest_mask.geojson",
+      "path": "data/forest_mask.geojson",
       "role": "Existing dissolved forest mask layer."
     }
   },

@@ -1,0 +1,678 @@
+{
+  "generated_at": "2026-05-23T17:55:48.611919+00:00",
+  "model_summary": {
+    "grid_resolution": "5 km x 5 km",
+    "total_cells": 48407,
+    "dashboard_web_cells": 27878,
+    "cells_with_gbif_data": 26712,
+    "cells_with_gbif_pct": 55.18,
+    "reference_year": 2025,
+    "gbif_records_used": 3000,
+    "basis_of_record": null,
+    "temporal_range": {
+      "min_last_record": 1970,
+      "max_last_record": 2021
+    },
+    "median_record_year": 2005,
+    "weights": {
+      "sampling_antiquity": 0.45,
+      "post_record_forest_loss": 0.35,
+      "richness_deficit": 0.2
+    },
+    "ekdi_score_range": {
+      "min": 0.25,
+      "max": 0.8756,
+      "mean": 0.379976,
+      "median": 0.3437,
+      "n": 6183,
+      "sd": 0.112536
+    },
+    "critical_threshold": null,
+    "critical_threshold_percentile": null,
+    "class_counts": {
+      "adequate": 20529,
+      "lost": 15997,
+      "unsurveyed": 5698,
+      "deficient": 4093,
+      "critical": 2090
+    },
+    "web_layer_class_counts": {
+      "lost": 15997,
+      "deficient": 4093,
+      "critical": 2090,
+      "unsurveyed": 5698
+    }
+  },
+  "component_statistics": {
+    "sampling_antiquity": {
+      "min": 0,
+      "max": 1,
+      "mean": 0.089283,
+      "median": 0,
+      "n": 27878,
+      "sd": 0.191127
+    },
+    "post_record_forest_loss": {
+      "min": 0,
+      "max": 1,
+      "mean": 0.031509,
+      "median": 0,
+      "n": 27878,
+      "sd": 0.091521
+    },
+    "richness_deficit": {
+      "min": 0.0077,
+      "max": 1,
+      "mean": 0.943559,
+      "median": 1,
+      "n": 27878,
+      "sd": 0.140828
+    },
+    "correlations": {
+      "sampling_antiquity_vs_ekdi": 0.847669,
+      "post_record_forest_loss_vs_ekdi": 0.567305,
+      "richness_deficit_vs_ekdi": 0.205227
+    }
+  },
+  "spatial_distribution": [
+    {
+      "state": "Minas Gerais",
+      "n_cells": 3277,
+      "n_critical": 485,
+      "pct_critical": 14.8001,
+      "mean_ekdi": 0.390808
+    },
+    {
+      "state": "Bahia",
+      "n_cells": 1655,
+      "n_critical": 390,
+      "pct_critical": 23.565,
+      "mean_ekdi": 0.403648
+    },
+    {
+      "state": "Sao Paulo",
+      "n_cells": 1508,
+      "n_critical": 347,
+      "pct_critical": 23.0106,
+      "mean_ekdi": 0.372893
+    },
+    {
+      "state": "Parana",
+      "n_cells": 2062,
+      "n_critical": 344,
+      "pct_critical": 16.6828,
+      "mean_ekdi": 0.383739
+    },
+    {
+      "state": "Santa Catarina",
+      "n_cells": 1162,
+      "n_critical": 147,
+      "pct_critical": 12.6506,
+      "mean_ekdi": 0.3732
+    },
+    {
+      "state": "Rio Grande do Sul",
+      "n_cells": 992,
+      "n_critical": 128,
+      "pct_critical": 12.9032,
+      "mean_ekdi": 0.371323
+    },
+    {
+      "state": "Mato Grosso do Sul",
+      "n_cells": 323,
+      "n_critical": 72,
+      "pct_critical": 22.291,
+      "mean_ekdi": 0.364138
+    },
+    {
+      "state": "Espirito Santo",
+      "n_cells": 206,
+      "n_critical": 38,
+      "pct_critical": 18.4466,
+      "mean_ekdi": 0.340849
+    },
+    {
+      "state": "Rio de Janeiro",
+      "n_cells": 206,
+      "n_critical": 36,
+      "pct_critical": 17.4757,
+      "mean_ekdi": 0.3564
+    },
+    {
+      "state": "Pernambuco",
+      "n_cells": 145,
+      "n_critical": 35,
+      "pct_critical": 24.1379,
+      "mean_ekdi": 0.376962
+    },
+    {
+      "state": "Alagoas",
+      "n_cells": 126,
+      "n_critical": 27,
+      "pct_critical": 21.4286,
+      "mean_ekdi": 0.353786
+    },
+    {
+      "state": "Sergipe",
+      "n_cells": 71,
+      "n_critical": 17,
+      "pct_critical": 23.9437,
+      "mean_ekdi": 0.353385
+    },
+    {
+      "state": "Unknown",
+      "n_cells": 16070,
+      "n_critical": 10,
+      "pct_critical": 0.0622,
+      "mean_ekdi": 0.329579
+    },
+    {
+      "state": "Goias",
+      "n_cells": 36,
+      "n_critical": 7,
+      "pct_critical": 19.4444,
+      "mean_ekdi": 0.3593
+    },
+    {
+      "state": "Paraiba",
+      "n_cells": 33,
+      "n_critical": 6,
+      "pct_critical": 18.1818,
+      "mean_ekdi": 0.36061
+    },
+    {
+      "state": "Rio Grande do Norte",
+      "n_cells": 6,
+      "n_critical": 1,
+      "pct_critical": 16.6667,
+      "mean_ekdi": 0.30455
+    }
+  ],
+  "plant_analysis": {
+    "candidate_table_available": true,
+    "total_linked_plant_records": 1746,
+    "total_unique_species": 1208,
+    "cells_with_plant_candidates": 1743,
+    "records_per_cell_distribution": {
+      "min": 1,
+      "max": 2,
+      "mean": 1.001721,
+      "median": 1,
+      "n": 1743,
+      "sd": 0.041463
+    },
+    "risk_categories": {
+      "Not assessed": 1737,
+      "VU": 5,
+      "LC": 2,
+      "DD": 2
+    },
+    "candidate_types": {
+      "Recorded Plant": 1737,
+      "Threat Signal": 5,
+      "Knowledge Ghost": 4
+    },
+    "top_species_by_years_without_record": [
+      {
+        "species": "Passiflora longilobis",
+        "last_record": 1970,
+        "years_without_record": 55,
+        "cell_id": "4948790_7590887",
+        "candidate_type": "Recorded Plant",
+        "risk_category": "Not assessed"
+      },
+      {
+        "species": "Cinnagrostis viridiflavescens",
+        "last_record": 1970,
+        "years_without_record": 55,
+        "cell_id": "5063790_6745887",
+        "candidate_type": "Recorded Plant",
+        "risk_category": "Not assessed"
+      },
+      {
+        "species": "Tanaecium selloi",
+        "last_record": 1970,
+        "years_without_record": 55,
+        "cell_id": "5118790_7450887",
+        "candidate_type": "Recorded Plant",
+        "risk_category": "Not assessed"
+      },
+      {
+        "species": "Phalaris angusta",
+        "last_record": 1970,
+        "years_without_record": 55,
+        "cell_id": "5168790_6860887",
+        "candidate_type": "Recorded Plant",
+        "risk_category": "Not assessed"
+      },
+      {
+        "species": "Wissadula excelsior",
+        "last_record": 1970,
+        "years_without_record": 55,
+        "cell_id": "5188790_7190887",
+        "candidate_type": "Recorded Plant",
+        "risk_category": "Not assessed"
+      },
+      {
+        "species": "Prestonia coalita",
+        "last_record": 1970,
+        "years_without_record": 55,
+        "cell_id": "5268790_7475887",
+        "candidate_type": "Recorded Plant",
+        "risk_category": "Not assessed"
+      },
+      {
+        "species": "Paspalum rawitscheri",
+        "last_record": 1970,
+        "years_without_record": 55,
+        "cell_id": "5318790_7725887",
+        "candidate_type": "Recorded Plant",
+        "risk_category": "Not assessed"
+      },
+      {
+        "species": "Myrcia splendens",
+        "last_record": 1970,
+        "years_without_record": 55,
+        "cell_id": "5338790_7320887",
+        "candidate_type": "Recorded Plant",
+        "risk_category": "Not assessed"
+      },
+      {
+        "species": "Bauhinia longifolia",
+        "last_record": 1970,
+        "years_without_record": 55,
+        "cell_id": "5343790_7160887",
+        "candidate_type": "Recorded Plant",
+        "risk_category": "Not assessed"
+      },
+      {
+        "species": "Leptotes bicolor",
+        "last_record": 1970,
+        "years_without_record": 55,
+        "cell_id": "5438790_7345887",
+        "candidate_type": "Recorded Plant",
+        "risk_category": "Not assessed"
+      }
+    ],
+    "knowledge_ghosts": 4,
+    "rediscovery_candidates": 2124,
+    "critical_gaps_top100_rows": 100,
+    "full_inventory_available": false,
+    "caveat": "Current plant table represents candidate botanical signals, not a complete floristic inventory."
+  },
+  "deforestation_timeline": {
+    "post_record_loss_summary": {
+      "min": 0,
+      "max": 2000,
+      "mean": 63.017433,
+      "median": 0,
+      "n": 27878,
+      "sd": 183.042935
+    },
+    "forest_remaining_distribution": {
+      "min": 0,
+      "max": 100,
+      "mean": 22.87352,
+      "median": 12,
+      "n": 27878,
+      "sd": 26.418168
+    },
+    "decadal_timeline_available": false,
+    "note": "Decadal deforestation timeline not available in current dashboard export. Current build includes post-record forest loss summary only."
+  },
+  "reproducibility": {
+    "generated_from_files": [
+      "data/geo/priority_cells.geojson",
+      "data/tables/state_summary.json",
+      "data/tables/cell_plant_candidates.json",
+      "data/tables/knowledge_ghosts.json",
+      "data/tables/rediscovery_candidates.json",
+      "data/tables/critical_gaps_top100.csv",
+      "data/metadata/data_integrity.json",
+      "data/metadata/schema.json",
+      "data/metadata/sources.json"
+    ],
+    "sources": {
+      "generated_at": "2026-05-19T05:25:28.443895+00:00",
+      "inputs": {
+        "grid_final": {
+          "path": "data/grid_final.gpkg",
+          "role": "Primary EKDI analytical grid."
+        },
+        "grid_endemicas": {
+          "path": "data/grid_endemicas.gpkg",
+          "role": "Critical-gap enrichment source; no stable cell_id available."
+        },
+        "ghost_species": {
+          "path": "data/ghost_species.csv",
+          "role": "Knowledge Ghost source table."
+        },
+        "extinction_risk_analysis": {
+          "path": "data/extinction_risk_analysis.csv",
+          "role": "Species-level risk and rediscovery hypothesis source."
+        },
+        "critical_gaps_top100": {
+          "path": "data/critical_gaps_top100.csv",
+          "role": "Top 100 critical gap candidates."
+        },
+        "current_priority_cells": {
+          "path": "data/geo/priority_cells.geojson",
+          "role": "Existing MapLibre priority layer used for state/threat/endemic aliases."
+        },
+        "current_gbif_memory": {
+          "path": "data/points/gbif_memory.geojson",
+          "role": "Existing sampled GBIF memory point layer."
+        },
+        "current_forest_mask": {
+          "path": "data/geo/forest_mask.geojson",
+          "role": "Existing dissolved forest mask layer."
+        }
+      },
+      "external_source_labels": {
+        "GBIF": "Occurrence evidence, already processed in project outputs.",
+        "MapBiomas": "Land-cover change metrics, already processed in project outputs.",
+        "WorldClim": "Richness-deficit covariate source, already processed in project outputs.",
+        "Flora e Funga do Brasil": "Endemism/risk context, already processed in project outputs where available."
+      }
+    },
+    "schema_generated_at": "2026-05-19T05:25:28.443895+00:00",
+    "data_integrity_generated_at": "2026-05-19T05:25:28.504914+00:00",
+    "repository": "https://github.com/GabrielaMoralesS/EKDI-atlas",
+    "citation": "Morales Soto, G. (2026). EKDI Atlas — Ecological Knowledge Decay Index: A Field-Verification Atlas for Ecological Memory Under Landscape Change."
+  },
+  "limitations": [
+    "EKDI does not confirm species presence or absence.",
+    "EKDI does not declare extinction.",
+    "Plant Candidates are botanical evidence signals, not confirmed current occurrences.",
+    "Optional enrichment may be incomplete.",
+    "Current weights are an Atlantic Forest preset.",
+    "Other biomes require recalibration.",
+    "Current plant table represents candidate botanical signals, not a complete floristic inventory.",
+    "Weight sensitivity analysis was calculated from normalized component fields in the dashboard export.",
+    "Spatial Autocorrelation: the 5 km grid creates adjacent cells that may not be statistically independent; EKDI is currently a decision-support atlas, not a spatially explicit inferential model.",
+    "Taxonomic Sampling Bias: herbarium records may be unevenly distributed across plant families and collection traditions; EKDI summarizes occurrence evidence but does not fully correct for family-level collection bias.",
+    "Threat Status Categories: Data Deficient, Not Evaluated, Not Assessed, Not Linked and Not Provided must be interpreted as distinct categories.",
+    "Forest Fragmentation: forest cover percentage does not describe patch size, isolation or habitat connectivity; fragmentation metrics are recommended as future enrichment."
+  ],
+  "weight_sensitivity": {
+    "status": "calculated",
+    "source_file": "repo/app/data/geo/priority_cells.geojson",
+    "valid_cells": 27878,
+    "component_fields": {
+      "sampling_antiquity": "sampling_antiquity_norm",
+      "post_record_forest_loss": "post_record_loss_norm",
+      "richness_deficit": "richness_deficit_norm"
+    },
+    "baseline_weights": {
+      "sampling_antiquity": 0.45,
+      "post_record_forest_loss": 0.35,
+      "richness_deficit": 0.2
+    },
+    "critical_threshold": 0.4,
+    "baseline_critical_cells": 2090,
+    "combinations_tested": 22,
+    "critical_cells_range": {
+      "min": 1448,
+      "max": 26481
+    },
+    "percent_change_range": {
+      "min": -30.718,
+      "max": 1167.033
+    },
+    "spearman_range": {
+      "min": 0.604476,
+      "max": 1
+    },
+    "top_critical_overlap_pct_range": {
+      "min": 88.23,
+      "max": 100
+    },
+    "caveat": "Sensitivity analysis uses normalized component fields in the cleaned dashboard export and a fixed threshold of 0.40; it is a robustness screen, not a validation study.",
+    "combinations": [
+      {
+        "weights": {
+          "sampling_antiquity": 0.35,
+          "post_record_forest_loss": 0.25,
+          "richness_deficit": 0.4
+        },
+        "critical_cells_threshold_0_40": 26481,
+        "percent_change_from_baseline": 1167.033,
+        "spearman_rank_correlation": 0.604476,
+        "top_critical_overlap_pct": 88.23
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.35,
+          "post_record_forest_loss": 0.3,
+          "richness_deficit": 0.35
+        },
+        "critical_cells_threshold_0_40": 3740,
+        "percent_change_from_baseline": 78.947,
+        "spearman_rank_correlation": 0.724947,
+        "top_critical_overlap_pct": 90.478
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.35,
+          "post_record_forest_loss": 0.35,
+          "richness_deficit": 0.3
+        },
+        "critical_cells_threshold_0_40": 2775,
+        "percent_change_from_baseline": 32.775,
+        "spearman_rank_correlation": 0.860988,
+        "top_critical_overlap_pct": 93.493
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.35,
+          "post_record_forest_loss": 0.4,
+          "richness_deficit": 0.25
+        },
+        "critical_cells_threshold_0_40": 2148,
+        "percent_change_from_baseline": 2.775,
+        "spearman_rank_correlation": 0.972066,
+        "top_critical_overlap_pct": 94.163
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.35,
+          "post_record_forest_loss": 0.45,
+          "richness_deficit": 0.2
+        },
+        "critical_cells_threshold_0_40": 1720,
+        "percent_change_from_baseline": -17.703,
+        "spearman_rank_correlation": 0.999578,
+        "top_critical_overlap_pct": 93.732
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.4,
+          "post_record_forest_loss": 0.25,
+          "richness_deficit": 0.35
+        },
+        "critical_cells_threshold_0_40": 4038,
+        "percent_change_from_baseline": 93.206,
+        "spearman_rank_correlation": 0.778171,
+        "top_critical_overlap_pct": 90.909
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.4,
+          "post_record_forest_loss": 0.3,
+          "richness_deficit": 0.3
+        },
+        "critical_cells_threshold_0_40": 3012,
+        "percent_change_from_baseline": 44.115,
+        "spearman_rank_correlation": 0.907345,
+        "top_critical_overlap_pct": 93.684
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.4,
+          "post_record_forest_loss": 0.35,
+          "richness_deficit": 0.25
+        },
+        "critical_cells_threshold_0_40": 2357,
+        "percent_change_from_baseline": 12.775,
+        "spearman_rank_correlation": 0.991325,
+        "top_critical_overlap_pct": 96.842
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.4,
+          "post_record_forest_loss": 0.4,
+          "richness_deficit": 0.2
+        },
+        "critical_cells_threshold_0_40": 1891,
+        "percent_change_from_baseline": -9.522,
+        "spearman_rank_correlation": 0.999896,
+        "top_critical_overlap_pct": 96.986
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.4,
+          "post_record_forest_loss": 0.45,
+          "richness_deficit": 0.15
+        },
+        "critical_cells_threshold_0_40": 1556,
+        "percent_change_from_baseline": -25.55,
+        "spearman_rank_correlation": 0.999545,
+        "top_critical_overlap_pct": 94.402
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.45,
+          "post_record_forest_loss": 0.25,
+          "richness_deficit": 0.3
+        },
+        "critical_cells_threshold_0_40": 3328,
+        "percent_change_from_baseline": 59.234,
+        "spearman_rank_correlation": 0.938463,
+        "top_critical_overlap_pct": 93.254
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.45,
+          "post_record_forest_loss": 0.3,
+          "richness_deficit": 0.25
+        },
+        "critical_cells_threshold_0_40": 2562,
+        "percent_change_from_baseline": 22.584,
+        "spearman_rank_correlation": 0.998943,
+        "top_critical_overlap_pct": 96.411
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.45,
+          "post_record_forest_loss": 0.35,
+          "richness_deficit": 0.2
+        },
+        "critical_cells_threshold_0_40": 2090,
+        "percent_change_from_baseline": 0,
+        "spearman_rank_correlation": 1,
+        "top_critical_overlap_pct": 100
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.45,
+          "post_record_forest_loss": 0.4,
+          "richness_deficit": 0.15
+        },
+        "critical_cells_threshold_0_40": 1711,
+        "percent_change_from_baseline": -18.134,
+        "spearman_rank_correlation": 0.99969,
+        "top_critical_overlap_pct": 96.555
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.45,
+          "post_record_forest_loss": 0.45,
+          "richness_deficit": 0.1
+        },
+        "critical_cells_threshold_0_40": 1448,
+        "percent_change_from_baseline": -30.718,
+        "spearman_rank_correlation": 0.999009,
+        "top_critical_overlap_pct": 93.301
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.5,
+          "post_record_forest_loss": 0.25,
+          "richness_deficit": 0.25
+        },
+        "critical_cells_threshold_0_40": 2789,
+        "percent_change_from_baseline": 33.445,
+        "spearman_rank_correlation": 0.998824,
+        "top_critical_overlap_pct": 94.928
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.5,
+          "post_record_forest_loss": 0.3,
+          "richness_deficit": 0.2
+        },
+        "critical_cells_threshold_0_40": 2257,
+        "percent_change_from_baseline": 7.99,
+        "spearman_rank_correlation": 0.999908,
+        "top_critical_overlap_pct": 96.938
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.5,
+          "post_record_forest_loss": 0.35,
+          "richness_deficit": 0.15
+        },
+        "critical_cells_threshold_0_40": 1908,
+        "percent_change_from_baseline": -8.708,
+        "spearman_rank_correlation": 0.999669,
+        "top_critical_overlap_pct": 96.603
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.5,
+          "post_record_forest_loss": 0.4,
+          "richness_deficit": 0.1
+        },
+        "critical_cells_threshold_0_40": 1602,
+        "percent_change_from_baseline": -23.349,
+        "spearman_rank_correlation": 0.999066,
+        "top_critical_overlap_pct": 93.78
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.55,
+          "post_record_forest_loss": 0.25,
+          "richness_deficit": 0.2
+        },
+        "critical_cells_threshold_0_40": 2436,
+        "percent_change_from_baseline": 16.555,
+        "spearman_rank_correlation": 0.999667,
+        "top_critical_overlap_pct": 94.689
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.55,
+          "post_record_forest_loss": 0.3,
+          "richness_deficit": 0.15
+        },
+        "critical_cells_threshold_0_40": 2046,
+        "percent_change_from_baseline": -2.105,
+        "spearman_rank_correlation": 0.999512,
+        "top_critical_overlap_pct": 95.694
+      },
+      {
+        "weights": {
+          "sampling_antiquity": 0.55,
+          "post_record_forest_loss": 0.35,
+          "richness_deficit": 0.1
+        },
+        "critical_cells_threshold_0_40": 1742,
+        "percent_change_from_baseline": -16.651,
+        "spearman_rank_correlation": 0.999008,
+        "top_critical_overlap_pct": 94.067
+      }
+    ]
+  }
+}
+
+

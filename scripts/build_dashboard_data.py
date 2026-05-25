@@ -287,6 +287,12 @@ def build_priority_cells(gpd: Any, pd: Any) -> tuple[Any, Any, dict[str, Any], d
     grid_wgs["forest"] = grid_wgs["forest_cover_pct"]
     grid_wgs["gbif"] = grid_wgs["n_registros"]
     grid_wgs["ekdi"] = grid_wgs["indice"]
+    if "antiguedad_norm" in grid_wgs.columns:
+        grid_wgs["sampling_antiquity_norm"] = grid_wgs["antiguedad_norm"]
+    if "perdida_norm" in grid_wgs.columns:
+        grid_wgs["post_record_loss_norm"] = grid_wgs["perdida_norm"]
+    if "deficit_norm" in grid_wgs.columns:
+        grid_wgs["richness_deficit_norm"] = grid_wgs["deficit_norm"]
     grid_wgs["years"] = grid_wgs["ultimo_registro"].apply(
         lambda value: REFERENCE_YEAR - int(value) if nullable_int(value) is not None else None
     )

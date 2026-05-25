@@ -42,6 +42,18 @@ The weights are a case-study preset. They are not universal and should be recali
 
 Evidence Completeness describes how much information is available to interpret a cell. It is not biological certainty and does not confirm presence or absence.
 
+In the dashboard, the main panel shows Evidence Support as a class label only: Limited Evidence, Partial Evidence, Moderate Evidence or Strong Evidence. Numeric completeness values, when present in the data, are treated as technical metadata rather than biological confidence.
+
+The Evidence Readiness summary uses transparent availability classes for GBIF records, plant candidate linkage, land-cover data and species-level threat-status linkage. It is a data-readiness cue for interpretation, not a claim about species presence, absence or extinction.
+
+## Experimental Knowledge Verification Window
+
+The Knowledge Verification Window is an experimental decision-support estimate. It would project recent habitat-loss trends to a selected low-forest threshold when annual forest-cover history or a reliable recent loss rate exists.
+
+The current dashboard export does not include annual forest-cover history per cell, so this window is not calculated in the public app. If added in a future data release, the threshold should be treated as a configurable planning parameter, not a universal ecological threshold.
+
+It does not predict extinction, species absence, species presence, rediscovery failure or field success.
+
 ## Knowledge Ghosts
 
 Knowledge Ghosts are species-level evidence signals where historical records and current landscape context suggest that botanical review may be useful.
@@ -59,3 +71,9 @@ Plant Candidates are species signals linked to priority cells when available dat
 ## Expedition Planner
 
 The Expedition Planner converts selected cells and species signals into a field-verification checklist. It supports CSV and JSON export for planning, but does not replace permits, land access planning or expert review.
+
+## Scientific Report
+
+The Scientific Report is generated from the cleaned dashboard files by `scripts/build_scientific_report.py`.
+
+It summarizes the EKDI model, available component statistics, spatial distribution, plant candidate signals, deforestation context, reproducibility metadata and limitations. Missing DOI, version, access-date or timeline values are reported as unavailable rather than inferred.

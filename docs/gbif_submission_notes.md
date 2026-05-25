@@ -2,7 +2,7 @@
 
 ## Project Title
 
-EKDI — Ecological Knowledge Discovery Interface
+EKDI Atlas — Ecological Knowledge Decay Index
 
 ## Short Description
 

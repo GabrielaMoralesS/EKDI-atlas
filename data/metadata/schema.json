@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-05-19T05:25:28.443895+00:00",
   "outputs": {
-    "PROYECTO CONCURSO GBIF/data/geo/priority_cells_full.geojson": {
+    "data/geo/priority_cells_full.geojson": {
       "type": "GeoJSON FeatureCollection",
       "geometry": "Polygon",
       "crs": "EPSG:4326",
@@ -164,15 +164,15 @@
         "gbif": "n_registros",
         "ekdi": "indice",
         "years": "2025 - ultimo_registro",
-        "recommended_action": "class-based fallback; not a measured scientific field"
+        "recommended_action": "evidence-classification recommendation; not a measured scientific field"
       },
       "caveats": [
         "State fields are null where the existing MapLibre priority layer had no matching cell_id.",
         "nearest_city is null because no stable cell_id join exists in grid_endemicas.gpkg.",
-        "recommended_action is generated as a documented class-based fallback."
+        "recommended_action is generated from EKDI evidence classes."
       ]
     },
-    "PROYECTO CONCURSO GBIF/data/geo/priority_cells_web.geojson": {
+    "data/geo/priority_cells_web.geojson": {
       "type": "GeoJSON FeatureCollection",
       "geometry": "Polygon",
       "crs": "EPSG:4326",
@@ -321,16 +321,16 @@
         "Adequate cells are omitted from the default web layer for performance.",
         "State/stateName are missing where no state value was available in the existing priority source.",
         "nearest_city is null because no stable cell_id join exists in grid_endemicas.gpkg.",
-        "recommended_action is generated as a documented class-based fallback."
+        "recommended_action is generated from EKDI evidence classes."
       ]
     },
-    "PROYECTO CONCURSO GBIF/data/geo/priority_cells.geojson": {
+    "data/geo/priority_cells.geojson": {
       "type": "GeoJSON FeatureCollection",
       "geometry": "Polygon",
       "crs": "EPSG:4326",
       "features": 27878,
       "layer_role": "Alias copy of priority_cells_web.geojson for dashboard fetch compatibility.",
-      "alias_of": "PROYECTO CONCURSO GBIF/data/geo/priority_cells_web.geojson",
+      "alias_of": "data/geo/priority_cells_web.geojson",
       "included_classes": [
         "critical",
         "deficient",
@@ -345,7 +345,7 @@
         "Use priority_cells_full.geojson for complete analytical coverage."
       ]
     },
-    "PROYECTO CONCURSO GBIF/data/geo/forest_mask.geojson": {
+    "data/geo/forest_mask.geojson": {
       "type": "GeoJSON FeatureCollection",
       "geometry": "MultiPolygon/Polygon",
       "crs": "EPSG:4326",
@@ -353,7 +353,7 @@
         "Forest threshold documented as >= 30% from prior exporter logic."
       ]
     },
-    "PROYECTO CONCURSO GBIF/data/geo/biome_boundary.geojson": {
+    "data/geo/biome_boundary.geojson": {
       "type": "GeoJSON FeatureCollection",
       "geometry": "Polygon/MultiPolygon",
       "crs": "EPSG:4326",
@@ -361,7 +361,7 @@
         "Derived from dissolved grid_final.gpkg footprint because original biome boundary was not in the Phase 2 input list."
       ]
     },
-    "PROYECTO CONCURSO GBIF/data/points/gbif_memory.geojson": {
+    "data/points/gbif_memory.geojson": {
       "type": "GeoJSON FeatureCollection",
       "geometry": "Point",
       "crs": "EPSG:4326",
@@ -369,7 +369,7 @@
         "Copied from existing sampled GBIF memory layer; species fields are not available in that source."
       ]
     },
-    "PROYECTO CONCURSO GBIF/data/tables/knowledge_ghosts.json": {
+    "data/tables/knowledge_ghosts.json": {
       "type": "JSON table",
       "rows": 4,
       "missing_counts": {
@@ -379,7 +379,7 @@
         "Knowledge Ghost records are candidate signals and do not imply presence, absence, or extinction."
       ]
     },
-    "PROYECTO CONCURSO GBIF/data/tables/rediscovery_candidates.json": {
+    "data/tables/rediscovery_candidates.json": {
       "type": "JSON table",
       "rows": 2124,
       "rule": "last_year <= 2005, species-level only, location fields null",
@@ -388,13 +388,13 @@
         "Location-specific fields are null because spatial evidence was insufficient in Phase 2 inputs."
       ]
     },
-    "PROYECTO CONCURSO GBIF/data/tables/state_summary.json": {
+    "data/tables/state_summary.json": {
       "type": "JSON summary",
       "caveats": [
         "State coverage is partial for all cells; class totals remain complete."
       ]
     },
-    "PROYECTO CONCURSO GBIF/data/tables/critical_gaps_top100.csv": {
+    "data/tables/critical_gaps_top100.csv": {
       "type": "CSV table",
       "rows": 100,
       "columns": [
@@ -420,7 +420,7 @@
         "cell_id, state, stateName and nearest_city are null until a spatial join is performed."
       ]
     },
-    "PROYECTO CONCURSO GBIF/data/tables/cell_plant_candidates.json": {
+    "data/tables/cell_plant_candidates.json": {
       "type": "JSON table",
       "rows": 4,
       "plant_records": 4,
@@ -468,3 +468,4 @@
     "field verification recommended"
   ]
 }
+

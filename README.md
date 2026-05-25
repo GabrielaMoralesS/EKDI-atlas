@@ -1,4 +1,4 @@
-# EKDI — Ecological Knowledge Discovery Interface
+# EKDI Atlas — Ecological Knowledge Decay Index
 
 **A field-verification atlas for ecological memory under landscape change.**
 
@@ -131,6 +131,38 @@ repo/
 - The priority GeoJSON is large for public web hosting.
 - Some fields, such as nearest city, are not calculated yet.
 - Plant Candidates and Rediscovery Candidates require validation.
+
+## Data Verifiability
+
+EKDI includes an internal audit workflow:
+
+```bash
+python scripts/run_internal_audit.py
+```
+
+Audit outputs are written to `audit/`.
+
+EKDI source data are publicly verifiable, but exact reproducibility depends on metadata such as the GBIF download DOI, MapBiomas collection version and Flora e Funga source date.
+
+Manual action needed before research or policy use: add the GBIF download DOI from the gbif.org user downloads page, the MapBiomas collection/version, and the flora checklist source date or version to `app/data/metadata/sources.json`.
+
+## Next Steps
+
+Near-term:
+
+- validate plant candidate linkage;
+- improve species record comparison;
+- connect herbarium or speciesLink data where possible;
+- add Flora e Funga validation;
+- refine the field checklist;
+- collect expert feedback.
+
+Medium-term:
+
+- run sensitivity analysis of EKDI weights;
+- validate with known survey sites;
+- test GitHub Pages deployment publicly;
+- prepare GBIF submission materials.
 
 ## Citation
 
