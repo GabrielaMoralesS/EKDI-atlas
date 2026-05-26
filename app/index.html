@@ -45,12 +45,14 @@ button,input,select{font-family:inherit} button{cursor:pointer}
 #app{height:100%;display:grid;grid-template-rows:62px 1fr 78px;background:radial-gradient(circle at 55% 35%,rgba(31,143,95,.08),transparent 34%),linear-gradient(180deg,#071015,#050a0d)}
 .topbar{display:flex;align-items:center;justify-content:space-between;padding:0 22px;border-bottom:1px solid var(--line);background:rgba(7,16,21,.86);backdrop-filter:blur(16px);z-index:5}.brand{display:flex;align-items:center;gap:14px}.mark{width:34px;height:34px;border:1px solid rgba(125,211,252,.32);border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(125,211,252,.16),rgba(74,222,128,.08));font-weight:900}.brand strong{display:block;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase}.brand span{display:block;margin-top:3px;color:var(--muted);font-size:.72rem}.top-center{display:flex;align-items:center;gap:10px}.status-pill{border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:999px;padding:8px 11px;color:var(--muted);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase}.status-pill b{color:var(--text);font-family:var(--mono)}.top-actions{display:flex;align-items:center;gap:8px}.ghost-btn,.solid-btn{border:1px solid var(--line-strong);background:rgba(255,255,255,.035);color:var(--text);border-radius:10px;padding:9px 11px;font-size:.68rem;letter-spacing:.10em;text-transform:uppercase;font-weight:800}.solid-btn{background:var(--text);color:#071015;border-color:var(--text)}
 .main{min-height:0;display:grid;grid-template-columns:320px 1fr 380px;transition:grid-template-columns .35s ease}.main.right-collapsed{grid-template-columns:320px 1fr 46px}.left,.right{min-height:0;overflow:auto;background:rgba(13,23,28,.82);border-right:1px solid var(--line);padding:16px}.right{border-right:0;border-left:1px solid var(--line);position:relative;transition:padding .3s ease}.main.right-collapsed .right{padding:10px 6px;overflow:hidden}.main.right-collapsed #right-panel{display:none}.collapse-panel-btn{position:sticky;top:0;float:right;z-index:7;width:30px;height:30px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);border-radius:10px;font-weight:900}.main.right-collapsed .collapse-panel-btn{float:none;width:34px;height:34px;writing-mode:vertical-rl;margin:4px auto}.main.right-collapsed .collapse-panel-btn::after{content:' panel'}.section{margin-bottom:16px}.section-head{display:flex;align-items:center;justify-content:space-between;margin:0 0 10px}.section-title{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:900}.mini-link{font-size:.64rem;color:var(--cyan);letter-spacing:.08em;text-transform:uppercase}.dataset-card,.diag{border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.018));border-radius:16px;padding:12px}.dataset-card h3{margin:0;font-size:.92rem}.dataset-card p{margin:7px 0 0;color:var(--muted);font-size:.78rem;line-height:1.45}.source-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.source,.field,.layer,.tool-card,.download,.ghost-card,.use-card,.export-card,.tray-chip,.summary-card,.report-metric{border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:13px}.source{padding:9px}.source b{display:block;font-size:.7rem}.source span{display:block;margin-top:3px;color:var(--subtle);font-size:.67rem}.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.tab{border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:11px;padding:9px 6px;color:var(--muted);font-size:.58rem;letter-spacing:.07em;text-transform:uppercase;font-weight:900;text-align:center}.tab.active{color:#071015;background:var(--cyan);border-color:var(--cyan)}.filter-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.field{padding:9px}.field label{display:block;color:var(--subtle);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}.field select,.field input{width:100%;background:transparent;border:0;color:var(--text);outline:none;font-size:.8rem}.field input[type="range"]{accent-color:var(--cyan);padding:0}.field select option{background:#0d171c;color:var(--text)}.layer-list,.tool-stack,.download-list,.ghost-list{display:grid;gap:7px}.layer{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px}.layer-left{display:flex;gap:9px;align-items:flex-start}.layer input{accent-color:var(--cyan);margin-top:3px}.dot{width:10px;height:10px;border-radius:50%;margin-top:4px;box-shadow:0 0 14px currentColor}.critical{color:var(--red);background:var(--red)}.unsurveyed{color:var(--green);background:var(--green)}.deficient{color:var(--amber);background:var(--amber)}.adequate{color:var(--cyan);background:var(--cyan)}.lost{color:var(--gray);background:var(--gray)}.hotspot{color:var(--purple);background:var(--purple)}.layer b{font-size:.78rem}.layer span,.tool-card span,.download span{display:block;color:var(--muted);font-size:.67rem;margin-top:2px}.count{font-family:var(--mono);font-size:.75rem;color:var(--text)}.weight{margin-bottom:11px}.weight-row{display:flex;justify-content:space-between;font-size:.74rem;margin-bottom:6px}.weight-row span{color:var(--muted)}.weight-track{height:5px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--green),var(--cyan));border-radius:999px}.tool-card,.download{padding:10px}.tool-card:hover{border-color:rgba(125,211,252,.35);background:rgba(125,211,252,.045)}.download{display:flex;justify-content:space-between;align-items:center}.download b,.tool-card b{font-size:.76rem}.download span{color:var(--cyan);text-transform:uppercase;letter-spacing:.1em}.ghost-mode-banner{border:1px solid rgba(167,139,250,.28);background:linear-gradient(135deg,rgba(167,139,250,.12),rgba(125,211,252,.045));border-radius:16px;padding:12px;margin-bottom:10px}.ghost-mode-banner b{display:block;font-size:.82rem}.ghost-mode-banner span{display:block;margin-top:5px;color:var(--muted);font-size:.7rem;line-height:1.4}.evidence-principle{border:1px solid rgba(125,211,252,.22);background:linear-gradient(135deg,rgba(125,211,252,.08),rgba(74,222,128,.035));border-radius:16px;padding:12px}.evidence-principle b{display:block;font-size:.78rem}.evidence-principle span{display:block;margin-top:5px;color:var(--muted);font-size:.68rem;line-height:1.45}.quick-result{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.quick-card{border:1px solid var(--line);background:rgba(255,255,255,.032);border-radius:14px;padding:10px}.quick-card b{display:block;font-family:var(--mono);font-size:1.05rem}.quick-card span{display:block;margin-top:3px;color:var(--muted);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase}.confidence-badge{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(74,222,128,.24);background:rgba(74,222,128,.10);color:#b9f7c8;border-radius:999px;padding:6px 8px;font-size:.60rem;letter-spacing:.10em;text-transform:uppercase;font-weight:900}.confidence-badge.medium{border-color:rgba(246,200,95,.30);background:rgba(246,200,95,.10);color:#ffe3a1}.why-list{display:grid;gap:7px;margin-top:10px}.why-item{display:flex;gap:8px;align-items:flex-start;color:var(--muted);font-size:.76rem;line-height:1.38}.why-item:before{content:'✓';color:var(--green);font-weight:900}.advanced-box{margin-top:10px;border:1px solid var(--line);background:rgba(255,255,255,.02);border-radius:14px;padding:10px}.advanced-box summary{cursor:pointer;color:var(--cyan);font-size:.68rem;letter-spacing:.10em;text-transform:uppercase;font-weight:900}.advanced-box .row{font-size:.74rem}.dynamic-note{border-left:2px solid var(--purple);padding-left:10px;color:var(--muted);font-size:.74rem;line-height:1.48;margin-top:10px}.species-profile{border:1px solid rgba(167,139,250,.26);background:linear-gradient(135deg,rgba(167,139,250,.10),rgba(125,211,252,.035));border-radius:18px;padding:14px}.species-name{font-family:var(--story);font-size:1.35rem;font-style:italic;line-height:1.05}.species-sub{margin-top:6px;color:var(--muted);font-size:.74rem}.memory-score{display:grid;grid-template-columns:70px 1fr;gap:12px;align-items:center;margin-top:13px}.memory-ring{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--purple) 0 82%,rgba(255,255,255,.08) 82% 100%);font-family:var(--mono);font-weight:900;color:#efeaff;box-shadow:0 0 34px rgba(167,139,250,.20)}.micro-map{height:128px;border:1px solid var(--line);border-radius:16px;margin-top:10px;background:radial-gradient(circle at 58% 42%,rgba(74,222,128,.25),transparent 20%),radial-gradient(circle at 42% 55%,rgba(239,111,94,.24),transparent 18%),linear-gradient(135deg,#0a151a,#102129);position:relative;overflow:hidden}.micro-map:before{content:"";position:absolute;inset:20px 42px;border:1px dashed rgba(74,222,128,.38);border-radius:50%;transform:rotate(-18deg)}.micro-map:after{content:"Record memory";position:absolute;right:10px;bottom:9px;color:var(--muted);font-family:var(--mono);font-size:.65rem}.compare-table{width:100%;border-collapse:collapse;font-size:.75rem}.compare-table th{text-align:left;color:var(--muted);font-size:.62rem;letter-spacing:.10em;text-transform:uppercase;border-bottom:1px solid var(--line);padding:8px 6px}.compare-table td{border-bottom:1px solid rgba(255,255,255,.06);padding:8px 6px}.checklist{display:grid;gap:8px;margin-top:10px}.check-item{display:flex;gap:9px;align-items:flex-start;border:1px solid var(--line);background:rgba(255,255,255,.026);border-radius:12px;padding:9px;font-size:.78rem;color:var(--muted)}.check-item input{accent-color:var(--green);margin-top:2px}
-.map-wrap{position:relative;min-width:0;overflow:hidden;background:#0a1317}.map{position:absolute;inset:0}.maplibregl-ctrl-logo,.maplibregl-ctrl-attrib{opacity:.55}.maplibregl-popup-content{background:#0d171c;color:var(--text);border:1px solid var(--line-strong);border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.35);font-family:var(--sans);font-size:.78rem}.maplibregl-popup-tip{border-top-color:#0d171c!important}.map-header{position:absolute;top:16px;left:16px;right:16px;display:flex;justify-content:space-between;align-items:flex-start;z-index:3;pointer-events:none}.map-title{border:1px solid var(--line);background:rgba(7,16,21,.78);backdrop-filter:blur(16px);border-radius:16px;padding:12px 14px;pointer-events:auto}.map-title strong{display:block;font-size:.96rem}.map-title span{display:block;color:var(--muted);font-size:.72rem;margin-top:4px}.map-controls{display:flex;gap:8px;pointer-events:auto}.map-chip{border:1px solid var(--line);background:rgba(7,16,21,.78);backdrop-filter:blur(16px);border-radius:999px;padding:9px 11px;font-size:.65rem;letter-spacing:.10em;text-transform:uppercase;font-weight:800;color:var(--muted)}.basemap-select{border:1px solid var(--line);background:rgba(7,16,21,.78);color:var(--text);backdrop-filter:blur(16px);border-radius:999px;padding:8px 11px;font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;outline:none;pointer-events:auto}.basemap-select option{background:#0d171c;color:var(--text)}.map-scale{position:absolute;left:18px;bottom:18px;z-index:3;border:1px solid var(--line);background:rgba(7,16,21,.78);backdrop-filter:blur(16px);border-radius:14px;padding:10px 12px;font-family:var(--mono);font-size:.68rem;color:var(--muted);pointer-events:none}.map-scale:after{content:"";display:block;width:90px;height:3px;background:var(--text);margin-top:8px}.summary-cards{position:absolute;right:18px;bottom:18px;z-index:3;display:grid;grid-template-columns:repeat(2,130px);gap:8px;pointer-events:none}.summary-card{background:rgba(7,16,21,.78);backdrop-filter:blur(16px);padding:10px}.summary-card b,.report-metric b{display:block;font-family:var(--mono);font-size:1rem}.summary-card span,.report-metric span{display:block;color:var(--muted);font-size:.66rem;margin-top:3px}.report-strip{position:absolute;left:18px;right:18px;top:84px;z-index:4;grid-template-columns:repeat(4,1fr);gap:8px;pointer-events:none;display:none}.map-wrap.report-mode .report-strip{display:grid}.report-metric{background:rgba(7,16,21,.76);backdrop-filter:blur(16px);padding:10px}.report-metric span{text-transform:uppercase;letter-spacing:.09em}
+.map-wrap{position:relative;min-width:0;overflow:hidden;background:#0a1317}.map{position:absolute;inset:0}.maplibregl-ctrl-logo,.maplibregl-ctrl-attrib{opacity:.55}.maplibregl-popup-content{background:#0d171c;color:var(--text);border:1px solid var(--line-strong);border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.35);font-family:var(--sans);font-size:.78rem}.maplibregl-popup-tip{border-top-color:#0d171c!important}.map-header{position:absolute;top:16px;left:16px;right:16px;display:flex;justify-content:space-between;align-items:flex-start;z-index:3;pointer-events:none}.map-title{border:1px solid var(--line);background:rgba(7,16,21,.78);backdrop-filter:blur(16px);border-radius:16px;padding:12px 14px;pointer-events:auto}.map-title strong{display:block;font-size:.96rem}.map-title span{display:block;color:var(--muted);font-size:.72rem;margin-top:4px}.map-controls{display:flex;gap:8px;pointer-events:auto}.map-chip{border:1px solid var(--line);background:rgba(7,16,21,.78);backdrop-filter:blur(16px);border-radius:999px;padding:9px 11px;font-size:.65rem;letter-spacing:.10em;text-transform:uppercase;font-weight:800;color:var(--muted)}.basemap-select{border:1px solid var(--line);background:rgba(7,16,21,.78);color:var(--text);backdrop-filter:blur(16px);border-radius:999px;padding:8px 11px;font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;outline:none;pointer-events:auto}.basemap-select option{background:#0d171c;color:var(--text)}.map-scale{position:absolute;left:18px;bottom:18px;z-index:3;border:1px solid var(--line);background:rgba(7,16,21,.78);backdrop-filter:blur(16px);border-radius:14px;padding:10px 12px;font-family:var(--mono);font-size:.68rem;color:var(--muted);pointer-events:none}.map-scale:after{content:"";display:block;width:90px;height:3px;background:var(--text);margin-top:8px}.summary-cards{position:absolute;left:18px;bottom:18px;z-index:3;display:grid;grid-template-columns:repeat(2,150px);gap:8px;pointer-events:none;max-width:330px}.summary-card{background:rgba(7,16,21,.78);backdrop-filter:blur(16px);padding:10px}.summary-card b,.report-metric b{display:block;font-family:var(--mono);font-size:1rem}.summary-card span,.report-metric span{display:block;color:var(--muted);font-size:.66rem;margin-top:3px}.report-strip{position:absolute;left:18px;right:18px;top:84px;z-index:4;grid-template-columns:repeat(4,1fr);gap:8px;pointer-events:none;display:none}.map-wrap.report-mode .report-strip{display:grid}.report-metric{background:rgba(7,16,21,.76);backdrop-filter:blur(16px);padding:10px}.report-metric span{text-transform:uppercase;letter-spacing:.09em}
 .right h2{margin:0;font-size:1.22rem}.subline{color:var(--muted);font-size:.78rem;margin-top:4px}.badge{display:inline-flex;margin-top:12px;border:1px solid rgba(239,111,94,.28);background:rgba(239,111,94,.10);color:#ffb1a6;border-radius:999px;padding:7px 9px;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;font-weight:900}.diag{margin-top:12px}.diag h3{margin:0 0 9px;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.row{display:flex;justify-content:space-between;gap:14px;border-top:1px solid rgba(255,255,255,.07);padding:9px 0;font-size:.8rem}.row:first-of-type{border-top:0}.row span{color:var(--muted)}.row b{text-align:right}.recommendation{line-height:1.55;color:rgba(234,242,241,.76);font-size:.84rem}.action{width:100%;margin-top:10px;border:0;background:var(--green);color:#04100b;border-radius:12px;padding:12px 14px;font-weight:900;letter-spacing:.10em;text-transform:uppercase}.action.secondary{background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--text)}.ghost-header{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:10px}.ghost-header-text b{display:block;font-size:.9rem}.ghost-header-text span{display:block;color:var(--muted);font-size:.7rem;margin-top:3px;line-height:1.35}.ghost-score-ring{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--purple) 0 78%,rgba(255,255,255,.08) 78% 100%);font-family:var(--mono);font-weight:800;color:#efeaff;box-shadow:0 0 30px rgba(167,139,250,.20)}.ghost-card{padding:10px;cursor:pointer;transition:.18s ease}.ghost-card:hover{border-color:rgba(167,139,250,.35);background:rgba(167,139,250,.055);transform:translateY(-1px)}.ghost-card b{display:block;font-style:italic;font-size:.84rem}.ghost-card span{display:block;margin-top:4px;color:var(--muted);font-size:.68rem;line-height:1.35}.ghost-status{display:inline-flex;margin-top:7px;border:1px solid rgba(167,139,250,.25);background:rgba(167,139,250,.10);color:#d6c7ff;border-radius:999px;padding:5px 7px;font-size:.58rem;letter-spacing:.10em;text-transform:uppercase;font-weight:900}.ghost-mini-actions{display:flex;gap:6px;margin-top:8px}.ghost-mini-actions button{flex:1;border:1px solid var(--line);background:rgba(255,255,255,.035);color:var(--text);border-radius:10px;padding:7px;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;font-weight:900}.state-table{width:100%;border-collapse:collapse;font-size:.78rem}.state-table th{text-align:left;color:var(--muted);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--line);padding:8px 0}.state-table td{border-bottom:1px solid rgba(255,255,255,.06);padding:8px 0;font-family:var(--mono)}
 .tray{display:grid;grid-template-columns:320px 1fr 380px;border-top:1px solid var(--line);background:rgba(13,23,28,.92)}.tray-title{padding:14px 18px;border-right:1px solid var(--line)}.tray-title strong{display:block;font-size:.84rem}.tray-title span{display:block;margin-top:4px;color:var(--muted);font-size:.72rem}.tray-list{display:flex;align-items:center;gap:10px;padding:12px 16px;overflow:auto}.tray-chip{min-width:155px;padding:9px 11px}.tray-chip b{display:block;font-size:.78rem}.tray-chip span{display:block;color:var(--muted);font-size:.66rem;margin-top:3px}.tray-actions{display:flex;gap:8px;align-items:center;padding:12px 16px;border-left:1px solid var(--line)}.tray-actions button{flex:1;border:1px solid var(--line);background:var(--text);color:#071015;border-radius:12px;padding:11px;font-size:.66rem;font-weight:900;letter-spacing:.10em;text-transform:uppercase}.tray-actions button.secondary{background:rgba(255,255,255,.04);color:var(--text)}
 .modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.58);backdrop-filter:blur(8px);z-index:80;display:none;align-items:center;justify-content:center;padding:22px}.modal-backdrop.visible{display:flex}.modal{width:min(840px,94vw);max-height:86vh;overflow:auto;border:1px solid var(--line-strong);background:linear-gradient(180deg,#101d23,#071015);border-radius:22px;box-shadow:0 30px 90px rgba(0,0,0,.5)}.modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;padding:18px 20px;border-bottom:1px solid var(--line)}.modal-head h2{margin:0;font-size:1.2rem}.modal-head p{margin:5px 0 0;color:var(--muted);font-size:.8rem}.close{border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);border-radius:10px;padding:8px 10px}.modal-body{padding:18px 20px}.upload-zone{border:1px dashed rgba(125,211,252,.35);background:rgba(125,211,252,.045);border-radius:18px;padding:24px;text-align:center}.upload-zone span,.step span,.export-card span,.use-card span{display:block;margin-top:7px;color:var(--muted);font-size:.78rem;line-height:1.4}.step-list{display:grid;gap:10px;margin-top:16px}.step{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:flex-start}.step-no{width:28px;height:28px;border-radius:50%;background:var(--cyan);color:#071015;display:grid;place-items:center;font-weight:900;font-size:.76rem}.export-grid,.use-case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.export-card,.use-card{padding:13px}.evidence-timeline{display:grid;gap:8px;margin-top:12px}.evidence-step{display:grid;grid-template-columns:80px 1fr;gap:10px;align-items:start}.evidence-year{font-family:var(--mono);color:var(--cyan);font-size:.75rem}.evidence-box{border-left:1px solid var(--line-strong);padding-left:10px;color:var(--muted);font-size:.76rem;line-height:1.4}.progress-line{height:5px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;margin-top:12px}.progress-line div{height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--green));transition:width 1.2s ease}.progress-line.active div{width:78%}.toast{position:fixed;right:22px;bottom:96px;z-index:90;border:1px solid var(--line-strong);background:#101d23;color:var(--text);box-shadow:0 20px 60px rgba(0,0,0,.35);border-radius:14px;padding:12px 14px;font-size:.78rem;opacity:0;transform:translateY(10px);transition:.25s ease}.toast.visible{opacity:1;transform:translateY(0)}
 .mode-switch{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:0 0 12px}.mode-toggle{border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--muted);border-radius:11px;padding:9px 8px;font-size:.64rem;letter-spacing:.09em;text-transform:uppercase;font-weight:900}.mode-toggle.active{background:var(--cyan);border-color:var(--cyan);color:#071015}.compact-line{color:var(--muted);font-size:.76rem;line-height:1.42;margin-top:8px}.sidebar-details{padding:10px 12px}.sidebar-details summary{list-style:none}.sidebar-details summary::-webkit-details-marker{display:none}.sidebar-details .section-title{margin-bottom:0}.sidebar-details[open] .section-title{margin-bottom:10px}.plant-mini-list{display:grid;gap:7px;margin-top:10px}.plant-mini-card{border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:13px;padding:9px}.plant-mini-card b{display:block;font-size:.78rem}.plant-mini-card span{display:block;margin-top:3px;color:var(--muted);font-size:.68rem;line-height:1.35}.plant-mini-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}.plant-mini-actions .action{margin-top:0;padding:8px 6px;font-size:.58rem}.tutorial-scrim{position:fixed;inset:0;z-index:88;display:none;pointer-events:none;background:rgba(0,0,0,.36)}.tutorial-scrim.visible{display:block}.tutorial-highlight{position:fixed;z-index:89;display:none;border:2px solid rgba(125,211,252,.92);border-radius:16px;box-shadow:0 0 0 9999px rgba(0,0,0,.48),0 0 24px rgba(125,211,252,.35);pointer-events:none;transition:all .18s ease}.tutorial-highlight.visible{display:block}.tour-box{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:90;display:none;width:min(440px,calc(100vw - 34px));border:1px solid rgba(125,211,252,.32);background:rgba(7,16,21,.94);backdrop-filter:blur(16px);border-radius:16px;padding:13px;box-shadow:0 18px 60px rgba(0,0,0,.35)}.tour-box.visible{display:block}.tour-box b{display:block;font-size:.82rem}.tour-box span{display:block;margin-top:5px;color:var(--muted);font-size:.76rem;line-height:1.42}.tour-progress{margin-top:7px;color:var(--subtle);font-size:.62rem;letter-spacing:.10em;text-transform:uppercase}.tour-actions{display:flex;gap:8px;margin-top:11px}.tour-actions button{flex:1;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);border-radius:10px;padding:8px;font-size:.62rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.tour-actions button.primary{background:var(--text);color:#071015}.tour-actions button:disabled{opacity:.42;cursor:not-allowed}@media(max-width:760px){.tour-box{left:14px;right:14px;bottom:14px;transform:none;width:auto}.tutorial-highlight{display:none!important}.tutorial-scrim.visible{background:rgba(0,0,0,.42)}}.decomp-row{display:grid;grid-template-columns:118px 1fr 108px;gap:8px;align-items:center;margin-top:9px}.decomp-label{font-size:.68rem;color:var(--muted);line-height:1.22}.decomp-track{height:8px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden}.decomp-fill{height:100%;background:linear-gradient(90deg,var(--green),var(--cyan));border-radius:999px}.decomp-value{font-family:var(--mono);font-size:.66rem;text-align:right;color:var(--text)}.field-checklist{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:8px}.field-checklist span{margin:0!important;border:1px solid var(--line);border-radius:9px;padding:6px;color:var(--muted);font-size:.64rem}.pipeline-flow{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}.pipeline-flow span{border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:12px;padding:9px 6px;text-align:center;font-size:.62rem;color:var(--muted);font-weight:800}.formula-card{font-family:var(--mono);font-size:.8rem;line-height:1.7;color:var(--text);border:1px solid var(--line);border-radius:14px;padding:12px;background:rgba(255,255,255,.03)}
+.tour-box{width:min(420px,calc(100vw - 34px));max-height:70vh;overflow-y:auto}.tutorial-welcome-actions{display:flex;gap:10px;margin-top:16px}.tutorial-welcome-actions button{flex:1;border:1px solid var(--line);background:var(--text);color:#071015;border-radius:11px;padding:11px 12px;font-size:.68rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase}.tutorial-welcome-actions button.secondary{background:rgba(255,255,255,.04);color:var(--text)}.map-loading-overlay{position:absolute;left:50%;top:72px;transform:translateX(-50%);z-index:8;display:none;min-width:240px;max-width:min(430px,calc(100% - 36px));border:1px solid rgba(125,211,252,.34);background:rgba(7,16,21,.88);backdrop-filter:blur(14px);color:var(--text);border-radius:14px;padding:12px 14px;text-align:center;box-shadow:0 16px 42px rgba(0,0,0,.28)}.map-loading-overlay.visible{display:block}.map-loading-overlay b{display:block;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase}.map-loading-overlay span{display:block;margin-top:4px;color:var(--muted);font-size:.72rem}.map-loading-overlay button{display:none;margin:10px auto 0;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--text);border-radius:10px;padding:8px 10px;font-size:.62rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.map-loading-overlay.can-restore button{display:block}@media(max-width:760px){.tutorial-welcome-actions{flex-direction:column}}
 @media(max-width:1050px){.story{left:20px;right:20px;width:auto;top:18%;transform:none}.main{grid-template-columns:1fr}.left,.right{display:none}.tray{grid-template-columns:1fr}.tray-actions{border-left:0}.top-center{display:none}.report-strip{grid-template-columns:1fr 1fr}.export-grid,.use-case-grid{grid-template-columns:1fr}#case-card{left:20px;right:20px;width:auto}.partner{display:none}}
+@media(max-width:760px){.summary-cards{left:12px;right:12px;bottom:12px;grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}.summary-card{padding:8px}.summary-card b{font-size:.86rem}.summary-card span{font-size:.58rem}}
 </style>
 <style>
 .why-item.open-item:before{content:'○';color:var(--muted)}
@@ -97,6 +99,7 @@ button,input,select{font-family:inherit} button{cursor:pointer}
 .panel-tabs{margin:36px 0 12px;grid-template-columns:repeat(5,minmax(0,1fr))}
 .panel-tabs .tab{display:flex;align-items:center;justify-content:center;gap:5px;min-width:0;padding:8px 5px}
 .panel-tabs .tab span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.panel-context-title{margin:36px 0 12px;border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:13px;padding:11px 12px}.panel-context-title b{display:block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}.panel-context-title span{display:block;margin-top:4px;color:var(--muted);font-size:.7rem;line-height:1.35}
 .tab-mark{width:7px;height:7px;border-radius:50%;display:inline-block;box-shadow:0 0 10px currentColor;flex:0 0 auto}
 .tab-mark.atlas{color:var(--cyan);background:var(--cyan)}
 .tab-mark.botanical{color:var(--green);background:var(--green)}
@@ -104,6 +107,17 @@ button,input,select{font-family:inherit} button{cursor:pointer}
 .tab-mark.rediscovery{color:var(--amber);background:var(--amber)}
 .tab-mark.biome{color:var(--red);background:var(--red)}
 @media(max-width:760px){.tools-menu-panel{right:auto;left:0;width:min(232px,calc(100vw - 34px))}}
+</style>
+<style>
+.readiness-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.readiness-card{border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:14px;padding:12px}
+.readiness-card b{display:block;font-size:.82rem}.readiness-card span{display:block;margin-top:5px;color:var(--muted);font-size:.72rem;line-height:1.42}
+.status-tag{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:5px 7px;margin:3px 4px 0 0;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;font-weight:900;color:var(--muted)}
+.status-tag.required{border-color:rgba(239,111,94,.34);background:rgba(239,111,94,.08);color:#ffb1a6}.status-tag.provided{border-color:rgba(74,222,128,.30);background:rgba(74,222,128,.08);color:#b9f7c8}.status-tag.optional{border-color:rgba(125,211,252,.28);background:rgba(125,211,252,.07);color:#d9f4ff}.status-tag.planned{border-color:rgba(246,200,95,.32);background:rgba(246,200,95,.08);color:#ffe3a1}
+.biome-upload-input{width:100%;margin-top:12px;border:1px solid var(--line);border-radius:12px;padding:10px;background:rgba(255,255,255,.025);color:var(--text)}
+.validation-results{display:grid;gap:10px;margin-top:12px}.validation-results .quick-result{margin-top:0}
+.validation-missing{border:1px solid rgba(239,111,94,.28);background:rgba(239,111,94,.06);border-radius:14px;padding:10px;margin-top:10px}.validation-missing b{display:block;color:#ffb1a6;font-size:.74rem}.validation-missing span{display:block;margin-top:5px;color:var(--muted);font-size:.72rem;line-height:1.42}
+@media(max-width:900px){.readiness-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -132,26 +146,26 @@ button,input,select{font-family:inherit} button{cursor:pointer}
   <header class="topbar">
     <div class="brand"><div class="mark">E</div><div><strong>EKDI Atlas</strong><span>Ecological Knowledge Decay Index · Atlantic Forest</span></div></div>
     <div class="top-center"><div class="status-pill" id="data-status-pill"><b>Loading</b> EKDI Data</div></div>
-    <div class="top-actions"><details class="tools-menu"><summary class="ghost-btn" data-tour="tools-menu">Tools</summary><div class="tools-menu-panel"><button id="start-demo">Guided Tutorial</button><button id="open-scientific-report" data-tour="scientific-report">Scientific Report</button><button id="open-integrity-top" data-tour="data-integrity">Data Integrity</button><button id="about-ekdi">About EKDI</button><button id="fit-biome">Fit Biome</button></div></details><button class="ghost-btn planner-btn" id="open-planner" data-tour="expedition-planner">Expedition Planner - 0 Targets</button><button class="solid-btn" id="open-export-top">Export</button></div>
+    <div class="top-actions"><details class="tools-menu"><summary class="ghost-btn" data-tour="tools-menu">Tools</summary><div class="tools-menu-panel"><button id="start-demo">Guided Tutorial</button><button id="open-how-use">How to Use EKDI</button><button id="open-scientific-report" data-tour="scientific-report">Scientific Report</button><button id="open-integrity-top" data-tour="data-integrity">Data Integrity</button><button id="about-ekdi">About EKDI</button><button id="fit-biome">Fit Biome</button></div></details><button class="ghost-btn planner-btn" id="open-planner" data-tour="expedition-planner" title="Save selected cells or species and export a field-verification checklist.">Expedition Planner - 0 Targets</button><button class="solid-btn" id="open-export-top" data-tour="evidence-export">Export</button></div>
   </header>
   <main class="main">
     <aside class="left">
-      <section class="section" data-tour="layers"><div class="section-head"><div class="section-title">Map Layers</div></div><div class="layer-list">
-        <label class="layer" data-tour="critical-gaps-toggle"><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="critical" checked><i class="dot critical"></i><div><b>Critical Gaps</b><span>Old Records + Deforestation</span></div></div><div class="count">2,090</div></label>
-        <label class="layer"><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="unsurveyed"><i class="dot unsurveyed"></i><div><b>Unsurveyed Forest</b><span>Forest, Zero GBIF Records</span></div></div><div class="count">5,698</div></label>
-        <label class="layer"><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="deficient"><i class="dot deficient"></i><div><b>Deficient Coverage</b><span>Outdated Sampling</span></div></div><div class="count">4,093</div></label>
+      <section class="section" data-tour="map-layers"><div class="section-head"><div class="section-title">Map Layers</div></div><div class="layer-list">
+        <label class="layer" data-tour="critical-gaps-layer" title="Cells where old records, knowledge deficit and habitat-change context suggest field verification may be needed."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="critical" checked><i class="dot critical"></i><div><b>Critical Gaps</b><span>Old Records + Deforestation</span></div></div><div class="count">2,090</div></label>
+        <label class="layer" title="Forest cells with no open GBIF records in this grid; useful for first-pass botanical survey planning."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="unsurveyed"><i class="dot unsurveyed"></i><div><b>Unsurveyed Forest</b><span>Forest, Zero GBIF Records</span></div></div><div class="count">5,698</div></label>
+        <label class="layer" title="Cells with biodiversity evidence that may be sparse, outdated or insufficient for confident interpretation."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="deficient"><i class="dot deficient"></i><div><b>Deficient Coverage</b><span>Outdated Sampling</span></div></div><div class="count">4,093</div></label>
         <label class="layer"><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="lost"><i class="dot lost"></i><div><b>Lost / Historical Review</b><span>Historic Context Needs Review</span></div></div><div class="count">15,997</div></label>
-        <label class="layer"><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="gbif"><i class="dot hotspot"></i><div><b>GBIF Memory</b><span>Occurrence Evidence</span></div></div><div class="count">3,000</div></label>
-        <label class="layer"><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="forest"><i class="dot unsurveyed"></i><div><b>Forest Mask</b><span>Remaining Forest Context</span></div></div><div class="count">Loaded</div></label>
-        <label class="layer"><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="ghosts"><i class="dot hotspot"></i><div><b>Ghost Rediscovery</b><span>Candidate Species Signals</span></div></div><div class="count">4</div></label>
+        <label class="layer" title="Occurrence evidence points used to show where biodiversity records exist in the case study."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="gbif"><i class="dot hotspot"></i><div><b>GBIF Memory</b><span>Occurrence Evidence</span></div></div><div class="count">3,000</div></label>
+        <label class="layer" title="Remaining forest context used to interpret field-verification priority."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="forest"><i class="dot unsurveyed"></i><div><b>Forest Mask</b><span>Remaining Forest Context</span></div></div><div class="count">Loaded</div></label>
+        <label class="layer" title="Species-level hypotheses that require expert verification; not confirmation of current presence."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="ghosts"><i class="dot hotspot"></i><div><b>Ghost / Rediscovery Signals</b><span>Candidate Species Signals</span></div></div><div class="count">4</div></label>
       </div><div class="compact-note" title="Adequate Coverage cells are available in exports but omitted from the interactive map for performance.">Adequate Coverage: <span id="adequate-summary-count">20,529 Full Grid</span></div></section>
       <section class="section" data-tour="filters"><div class="section-title">Filters</div><div class="filter-grid"><div class="field"><label>Filter By State</label><select id="state-filter"><option value="all">All States</option><option>MG</option><option>BA</option><option>SP</option><option>PR</option><option>SC</option></select></div></div></section>
       <section class="section" data-tour="search"><div class="section-title">Search</div><div class="field"><label>Cell, State Or Species</label><input id="search-input" type="text" placeholder="e.g. MG, BA, Varronia"></div></section>
       <section class="section"><div class="dataset-card compact-context"><h3>Atlantic Forest Case Study</h3><p>Real EKDI data · field-verification atlas</p></div></section>
-      <details class="section advanced-box sidebar-details"><summary><span class="section-title">Advanced</span></summary><div class="tool-stack"><div class="tool-card" id="open-upload" data-tour="generate-atlas"><b>Generate EKDI Atlas</b><span>Run EKDI for another biome.</span></div><div class="tool-card" id="open-repo" data-tour="replicate-repository"><b>Replicate EKDI Repository</b><span>Workflow, files and commands.</span></div><div class="tool-card" id="open-export"><b>Evidence Export Package</b><span>Download review outputs.</span></div><div class="tool-card" id="open-ghost"><b>Open Ghost Rediscovery Lab</b><span>Inspect candidates and actions.</span></div><div class="tool-card" id="toggle-ghost-layer" title="Highlights species-level hypotheses that require expert verification."><b>Show Knowledge Ghosts</b><span>Highlight verification hypotheses.</span></div></div><details class="advanced-box"><summary>Temporal Analysis</summary><div class="dynamic-note">Temporal analysis requires year-specific land-cover exports and is not an active map control in this public build.</div></details><details class="advanced-box"><summary>Experimental Filters</summary><div class="dynamic-note">Threat, last-record and layer-year filters require linked tables or year-specific exports before they can drive the map.</div></details><details class="advanced-box"><summary>EKDI Weights</summary><div class="mini-link">Atlantic Preset</div><div class="weight"><div class="weight-row"><span>Sampling Antiquity</span><b>45%</b></div><div class="weight-track"><div class="fill" style="width:45%"></div></div></div><div class="weight"><div class="weight-row"><span>Post-Record Forest Loss</span><b>35%</b></div><div class="weight-track"><div class="fill" style="width:35%"></div></div></div><div class="weight"><div class="weight-row"><span>Richness Deficit</span><b>20%</b></div><div class="weight-track"><div class="fill" style="width:20%"></div></div></div></details><details class="advanced-box"><summary>Interpretation Guide</summary><div class="evidence-principle"><b>Field-Verification Rules</b><span>EKDI assigns cells using record age, habitat-change evidence, sampling deficit and data completeness. These rules guide verification and do not confirm species presence or absence.</span></div></details></details>
+      <details class="section advanced-box sidebar-details"><summary><span class="section-title">Advanced</span></summary><div class="tool-stack"><div class="tool-card" id="open-upload" data-tour="generate-ekdi-atlas"><b>Prepare Your Biome for EKDI</b><span>Guided data preparation · full recalculation requires the EKDI pipeline.</span></div><div class="tool-card" id="open-repo" data-tour="replicate-repository"><b>Replicate EKDI Repository</b><span>Workflow, files and commands.</span></div><div class="tool-card" id="open-export"><b>Evidence Export Package</b><span>Download review outputs.</span></div><div class="tool-card" id="open-ghost-guide" data-tour="ghost-rediscovery-guide"><b>Ghost & Rediscovery Guide</b><span>Interpret species-level hypotheses carefully.</span></div></div></details>
     </aside>
-    <section class="map-wrap" data-tour="map"><div id="map" class="map"></div><div class="map-header"><div class="map-title"><strong id="map-title">Atlantic Forest Priority Atlas</strong><span id="map-subtitle">Click a cell to inspect evidence.</span></div><div class="map-controls"><select id="basemap-select" class="basemap-select"><option value="voyager">Voyager</option><option value="satellite">Satellite</option><option value="terrain">Terrain</option><option value="dark">Dark Science</option></select><div class="map-chip">5 km Grid</div></div></div><div class="map-scale">5 km Priority Grid</div><div class="report-strip"><div class="report-metric"><b>2,090</b><span>Critical Gaps</span></div><div class="report-metric"><b>5,698</b><span>Unsurveyed Forest</span></div><div class="report-metric"><b>25,276</b><span>Endemic Cells</span></div><div class="report-metric"><b>2.22M ha</b><span>Post-Record Loss</span></div></div><div class="summary-cards"><div class="summary-card"><b>44.8%</b><span>Never Sampled</span></div><div class="summary-card"><b>2.22M ha</b><span>Post-Record Loss</span></div><div class="summary-card"><b>MG 481</b><span>Top Critical State</span></div><div class="summary-card"><b>Linked</b><span>Threat Signal</span></div></div></section>
-    <aside class="right"><button class="collapse-panel-btn" id="collapse-right" title="Collapse / expand information panel">‹</button><div class="tabs panel-tabs" aria-label="Right panel sections"><button class="tab active" data-flow="atlas"><i class="tab-mark atlas"></i><span>Atlas</span></button><button class="tab" data-flow="botanical" data-tour="botanical-memory"><i class="tab-mark botanical"></i><span>Plants</span></button><button class="tab" data-flow="ghosts"><i class="tab-mark ghosts"></i><span>Ghosts</span></button><button class="tab" data-flow="rediscovery"><i class="tab-mark rediscovery"></i><span>Rediscovery</span></button><button class="tab" data-flow="biome"><i class="tab-mark biome"></i><span>Biome</span></button></div><div id="right-panel" data-tour="selected-cell-panel"></div></aside>
+    <section class="map-wrap" data-tour="map"><div id="map" class="map"></div><div class="map-loading-overlay visible" id="map-loading-overlay"><b id="map-loading-title">Loading EKDI real data...</b><span id="map-loading-text">Loading priority grid...</span><button id="restore-map-layers">Restore Map Layers</button></div><div class="map-header"><div class="map-title"><strong id="map-title">Atlantic Forest Priority Atlas · 5 km Grid</strong><span id="map-subtitle">Click a cell to inspect evidence.</span></div><div class="map-controls"><select id="basemap-select" class="basemap-select"><option value="voyager">Voyager</option><option value="satellite">Satellite</option><option value="terrain">Terrain</option><option value="dark">Dark Science</option></select></div></div><div class="report-strip"><div class="report-metric"><b>2,090</b><span>Critical Gaps</span></div><div class="report-metric"><b>5,698</b><span>Unsurveyed Forest</span></div><div class="report-metric"><b>25,276</b><span>Endemic Cells</span></div><div class="report-metric"><b>2.22M ha</b><span>Post-Record Loss</span></div></div><div class="summary-cards" data-tour="atlas-summary"><div class="summary-card"><b>44.8%</b><span>Never Sampled Share</span></div><div class="summary-card"><b>2.22M ha</b><span>Post-Record Forest Loss</span></div><div class="summary-card"><b>MG 481</b><span>Top State · Critical Gaps</span></div><div class="summary-card"><b>27,878</b><span>Interactive Cells Loaded</span></div></div></section>
+    <aside class="right"><button class="collapse-panel-btn" id="collapse-right" title="Collapse / expand information panel">‹</button><div class="panel-context-title"><b>Selected Cell Evidence</b><span>Plant and ghost details appear only when linked to the selected cell.</span></div><div id="right-panel" data-tour="selected-cell-panel"></div></aside>
   </main>
   <div class="planner-backdrop" id="planner-backdrop"><aside class="planner-drawer" role="dialog" aria-modal="true" aria-labelledby="planner-title"><div class="planner-head"><div><h2 id="planner-title">Field Expedition Planner</h2><p id="tray-count">0 selected cells, 0 selected species, 0 total targets</p></div><button class="close" id="close-planner">Close</button></div><div class="planner-body"><section class="planner-section"><h3>Selected Cells</h3><div class="planner-list" id="planner-cells"></div></section><section class="planner-section"><h3>Selected Species</h3><div class="planner-list" id="planner-species"></div></section><section class="planner-section"><h3>Export Outputs</h3><div class="planner-actions"><button id="download-route">Download CSV</button><button class="secondary" id="download-evidence-json">Download Evidence JSON</button><button class="secondary" id="copy-map-links">Copy Google Maps Links</button><button class="secondary" id="clear-expedition">Clear Planner</button></div><div class="dynamic-note">Expedition outputs are planning aids. Field validation, permits, land access and taxonomic review remain the responsibility of the research team.</div></section></div></aside></div>
   <div class="tutorial-scrim" id="tutorial-scrim"></div><div class="tutorial-highlight" id="tutorial-highlight"></div>
@@ -160,19 +174,21 @@ button,input,select{font-family:inherit} button{cursor:pointer}
 </div>
 </section>
 
-<div class="modal-backdrop" id="tutorial-welcome-modal"><div class="modal"><div class="modal-head"><div><h2>Welcome to EKDI</h2><p>This guided tutorial explains how to explore priority cells, botanical evidence, plant candidates, community verification and expedition planning.</p></div><button class="close" id="tutorial-welcome-skip">Skip Tutorial</button></div><div class="modal-body"><div class="use-case-grid"><div class="use-card"><b>Atlas Map</b><span>Learn how to read priority cells.</span></div><div class="use-card"><b>Evidence Panel</b><span>Inspect why a cell was flagged.</span></div><div class="use-card"><b>Botanical Memory</b><span>Review species-focused evidence.</span></div><div class="use-card"><b>Expedition Planner</b><span>Build a field-verification checklist.</span></div></div><div class="planner-actions" style="margin-top:16px"><button id="tutorial-welcome-start">Start Tutorial</button></div></div></div></div>
+<div class="modal-backdrop" id="tutorial-welcome-modal"><div class="modal"><div class="modal-head"><div><h2>Welcome to EKDI</h2><p>This guided tutorial explains what EKDI is, what each layer means, how to inspect evidence and how to turn results into field-verification actions.</p></div></div><div class="modal-body"><div class="use-case-grid"><div class="use-card"><b>Atlas Map</b><span>Learn how to read priority cells.</span></div><div class="use-card"><b>Evidence Panel</b><span>Inspect why a cell was flagged.</span></div><div class="use-card"><b>Botanical Memory</b><span>Review species-focused evidence.</span></div><div class="use-card"><b>Expedition Planner</b><span>Build a field-verification checklist.</span></div></div><div class="tutorial-welcome-actions"><button id="tutorial-welcome-start">Start Tutorial</button><button class="secondary" id="tutorial-welcome-skip">Skip Tutorial</button></div></div></div></div>
+<div class="modal-backdrop" id="how-use-modal"><div class="modal"><div class="modal-head"><div><h2>How to Use EKDI</h2><p>A quick task workflow for exploring the Atlantic Forest Priority Atlas.</p></div><button class="close" data-close="how-use-modal">Close</button></div><div class="modal-body"><div class="why-list"><div class="why-item">Turn on Critical Gaps.</div><div class="why-item">Click a priority cell.</div><div class="why-item">Read EKDI Score and Record Memory.</div><div class="why-item">Check Plant Candidate.</div><div class="why-item">Open Botanical Memory.</div><div class="why-item">Use Community Verification.</div><div class="why-item">Add to Expedition Planner.</div><div class="why-item">Export checklist.</div><div class="why-item">Read Scientific Report for limitations.</div></div><div class="dynamic-note">EKDI supports field-verification decisions. It does not confirm species presence, absence, rediscovery or extinction.</div></div></div></div>
 <div class="modal-backdrop" id="about-modal"><div class="modal"><div class="modal-head"><div><h2>About EKDI</h2><p>Transparent field-verification atlas for biodiversity knowledge under landscape change.</p></div><button class="close" data-close="about-modal">Close</button></div><div class="modal-body" id="about-ekdi-body"></div></div></div>
 <div class="modal-backdrop" id="scientific-report-modal"><div class="modal"><div class="modal-head"><div><h2>Scientific Report</h2><p>Model, spatial patterns, plant signals, reproducibility and limitations from the current dashboard export.</p></div><button class="close" data-close="scientific-report-modal">Close</button></div><div class="modal-body" id="scientific-report-body"><div class="dynamic-note">Scientific report data will load with the dashboard.</div></div></div></div>
 <div class="modal-backdrop" id="repo-modal"><div class="modal"><div class="modal-head"><div><h2>Replicate EKDI Repository</h2><p>Reproducible structure for reviewers, collaborators and users who want to run EKDI with their own biome.</p></div><button class="close" data-close="repo-modal">Close</button></div><div class="modal-body"><div class="use-case-grid"><div class="use-card"><b>1. Clone Repository</b><span><code>git clone https://github.com/GabrielaMoralesS/EKDI-atlas.git</code></span></div><div class="use-card"><b>2. Prepare Inputs</b><span>GBIF occurrence CSV, biome boundary, land-cover time series and optional threat/endemism table.</span></div><div class="use-card"><b>3. Run Pipeline</b><span><code>python run_ekdi.py --config configs/atlantic_forest.yml</code></span></div><div class="use-card"><b>4. Publish Atlas</b><span>Outputs are static files that can be hosted on GitHub Pages.</span></div></div><section class="diag"><h3>Repository Layout</h3><div class="row"><span>data/</span><b>input + processed layers</b></div><div class="row"><span>scripts/</span><b>EKDI pipeline</b></div><div class="row"><span>notebooks/</span><b>method validation</b></div><div class="row"><span>app/</span><b>static atlas app</b></div><div class="row"><span>outputs/</span><b>GeoJSON, CSV, report</b></div></section><div class="repo-pill">Open science · reproducible workflow · static deployment</div></div></div></div>
-<div class="modal-backdrop" id="upload-modal"><div class="modal"><div class="modal-head"><div><h2>Generate EKDI Atlas</h2><p>Create an EKDI-style field-verification atlas for another endangered biome.</p></div><button class="close" data-close="upload-modal">Close</button></div><div class="modal-body"><div class="upload-zone"><b>Drop files here</b><span>Prototype inputs: biome boundary GeoJSON, occurrence CSV, land-cover raster/tiles, optional threatened species and endemism tables.</span></div><div class="step-list"><div class="step"><div class="step-no">1</div><div><b>Validate spatial boundary</b><span>Check coordinate system, biome extent, grid size and spatial coverage.</span></div></div><div class="step"><div class="step-no">2</div><div><b>Ingest biodiversity records</b><span>Match occurrence year, coordinates, taxonomic name, basis of record and evidence support flags.</span></div></div><div class="step"><div class="step-no">3</div><div><b>Compare with land-cover change</b><span>Detect post-record habitat loss, unsurveyed forest and deficient coverage.</span></div></div><div class="step"><div class="step-no">4</div><div><b>Calibrate EKDI weights</b><span>Choose a biome preset, run sensitivity analysis and record expert adjustments.</span></div></div><div class="step"><div class="step-no">5</div><div><b>Generate priorities</b><span>Export priority cells, botanical memory profiles, ghost signals if detected and field expedition outputs.</span></div></div></div><section class="diag"><h3>Validation before publishing</h3><div class="row"><span>Weights sum to 1.0</span><b>Required</b></div><div class="row"><span>Sensitivity ranking stable</span><b>Check top cells</b></div><div class="row"><span>Expert review sample</span><b>Botanist / ecologist</b></div><div class="row"><span>Known survey sites</span><b>Compare results</b></div></section><div class="progress-line" id="upload-progress"><div></div></div></div></div></div>
+<div class="modal-backdrop" id="upload-modal"><div class="modal"><div class="modal-head"><div><h2>Prepare Your Biome for EKDI</h2><p>Guided data preparation · full recalculation requires the EKDI pipeline.</p></div><button class="close" data-close="upload-modal">Close</button></div><div class="modal-body"><div class="dynamic-note">Open this workflow to validate occurrence tables locally in your browser and understand which files are required for a new EKDI atlas. It does not generate a new atlas in-browser.</div></div></div></div>
 <div class="modal-backdrop" id="integrity-modal"><div class="modal"><div class="modal-head"><div><h2>Data Integrity & Validation</h2><p>EKDI results are only useful if data quality, uncertainty and biome-specific calibration are visible.</p></div><button class="close" data-close="integrity-modal">Close</button></div><div class="modal-body"><div class="export-grid"><div class="export-card"><b>Occurrence Integrity</b><span>Valid coordinates, event dates, basis of record, duplicate checks and coordinate uncertainty.</span></div><div class="export-card"><b>Taxonomic Integrity</b><span>Accepted names, synonym resolution, taxon match evidence support and voucher review flags.</span></div><div class="export-card"><b>Landscape Integrity</b><span>Land-cover completeness, temporal coverage, cloud/no-data flags and spatial alignment.</span></div><div class="export-card"><b>Model Integrity</b><span>Weight sensitivity, evidence completeness classes, expert calibration and validation against known sites.</span></div></div><section class="diag"><h3>Weight Transfer Rule</h3><div class="recommendation">The Atlantic Forest preset should not be copied blindly to another biome. EKDI treats weights as calibration parameters: run sensitivity analysis, compare rankings against known survey sites, and document expert adjustments before publishing a new atlas.</div></section><section class="diag"><h3>Suggested Validation Checks</h3><div class="why-list"><div class="why-item">Compare top-ranked cells with known recent botanical surveys.</div><div class="why-item">Hold out a subset of verified sites and test whether EKDI ranks them as lower uncertainty.</div><div class="why-item">Test whether top priority cells remain stable under ±10–20% weight changes.</div><div class="why-item">Ask local taxonomic or herbarium experts to review a sample of ghost and rediscovery candidates.</div></div></section></div></div></div>
-<div class="modal-backdrop" id="ghost-modal"><div class="modal"><div class="modal-head"><div><h2 id="modal-ghost-title">Ghost Rediscovery Lab</h2><p>Experimental module for turning historic-only species signals into verification actions.</p></div><button class="close" data-close="ghost-modal">Close</button></div><div class="modal-body"><div class="use-case-grid"><div class="use-card"><b>For botanists</b><span>Find cells where old occurrence evidence overlaps with current habitat uncertainty.</span></div><div class="use-card"><b>For herbaria</b><span>Prioritize voucher review before sending teams into the field.</span></div><div class="use-card"><b>For students</b><span>Build field checklists and learn why records become outdated.</span></div><div class="use-card"><b>For conservation teams</b><span>Connect verification candidates with restoration or protection priorities.</span></div></div><div class="diag" style="margin-top:16px"><h3>Selected Candidate</h3><div class="row"><span>Species signal</span><b id="modal-ghost-species-signal">Select a Knowledge Ghost</b></div><div class="row"><span>Evidence source</span><b>Loaded EKDI data</b></div><div class="row"><span>Suggested next step</span><b>Voucher review and field verification where appropriate</b></div></div><div class="dynamic-note">Candidate signal only. This modal does not confirm species presence, absence, rediscovery or extinction.</div><button class="action" style="margin-top:16px" id="ghost-to-expedition">Add ghost target to expedition</button></div></div></div>
+<div class="modal-backdrop" id="ghost-modal"><div class="modal"><div class="modal-head"><div><h2 id="modal-ghost-title">Ghost & Rediscovery Guide</h2><p>Species-level candidate signals for expert review and field-verification planning.</p></div><button class="close" data-close="ghost-modal">Close</button></div><div class="modal-body"><div class="use-case-grid"><div class="use-card"><b>For botanists</b><span>Find cells where old occurrence evidence overlaps with current habitat uncertainty.</span></div><div class="use-card"><b>For herbaria</b><span>Prioritize voucher review before sending teams into the field.</span></div><div class="use-card"><b>For students</b><span>Build field checklists and learn why records become outdated.</span></div><div class="use-card"><b>For conservation teams</b><span>Connect verification candidates with restoration or protection priorities.</span></div></div><div class="diag" style="margin-top:16px"><h3>Selected Candidate</h3><div class="row"><span>Species signal</span><b id="modal-ghost-species-signal">Select a Knowledge Ghost</b></div><div class="row"><span>Evidence source</span><b>Loaded EKDI data</b></div><div class="row"><span>Suggested next step</span><b>Voucher review and field verification where appropriate</b></div></div><div class="dynamic-note">Candidate signal only. This modal does not confirm species presence, absence, rediscovery or extinction.</div><button class="action" style="margin-top:16px" id="ghost-to-expedition">Add ghost target to expedition</button></div></div></div>
 <div class="modal-backdrop" id="compare-modal"><div class="modal"><div class="modal-head"><div><h2>Compare Species Records</h2><p>Available evidence for the selected plant candidate.</p></div><button class="close" data-close="compare-modal">Close</button></div><div class="modal-body" id="compare-modal-body"><div class="dynamic-note">Select a plant candidate to compare available records.</div></div></div></div>
-<div class="modal-backdrop" id="export-modal"><div class="modal"><div class="modal-head"><div><h2>Evidence Export Package</h2><p>Prototype of outputs a botanist or conservation team could download.</p></div><button class="close" data-close="export-modal">Close</button></div><div class="modal-body"><div class="export-grid"><div class="export-card"><b>Priority Cells GeoJSON</b><span>Spatial grid with EKDI class, score and evidence fields.</span></div><div class="export-card"><b>Top 100 CSV By State</b><span>Ranked list for MG, BA, SP, PR and SC.</span></div><div class="export-card"><b>Field Expedition Route</b><span>Selected cells with coordinates for navigation.</span></div><div class="export-card"><b>Scientific Summary PDF</b><span>Methods, source layers, metrics and caveats.</span></div></div></div></div></div>
+<div class="modal-backdrop" id="export-modal"><div class="modal"><div class="modal-head"><div><h2>Evidence Export Package</h2><p>Download available review outputs from the current EKDI dashboard build.</p></div><button class="close" data-close="export-modal">Close</button></div><div class="modal-body" id="export-modal-body"><div class="dynamic-note">Open this package after dashboard data load to see available exports.</div></div></div></div>
 <div class="toast" id="toast">Action completed.</div>
 
 <script>
 'use strict';
+const EKDI_DEBUG=false;
 
 /* ================= INTRO ENGINE ================= */
 let audioCtx=null, ambienceNodes=[];
@@ -242,10 +258,10 @@ addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight; camera.upda
 const colors={critical:'#ef6f5e',unsurveyed:'#4ade80',deficient:'#f6c85f',adequate:'#7dd3fc',lost:'#748084'}; let selectedFeature=null, map=null, mapReady=false; const expeditionFeatures=[];
 const panelTemplates={
   atlas:`<section class="section"><h2>Select a Priority Cell</h2><div class="subline">Click any visible cell on the map to inspect EKDI evidence, plant candidates and field actions.</div><div class="badge">Awaiting Cell Selection</div></section><section class="diag"><h3>How To Start</h3><div class="why-list"><div class="why-item">Start with Critical Gaps to inspect the highest field-verification priorities.</div><div class="why-item">Use layers to compare priority classes.</div><div class="why-item">Add cells or species to the Expedition Planner.</div></div></section><section class="diag"><h3>Field Workflow</h3><div class="recommendation">Result first. Evidence second. Expert details on demand.</div></section>`,
-  ghosts:`<section class="section"><h2>Knowledge Ghosts</h2><div class="subline">Historic records where botanical knowledge may be ecologically outdated.</div><div class="badge">Dynamic result</div><div class="dynamic-note">Ghosts are loaded from the EKDI data table when available. They are candidate signals for review, not confirmations.</div></section><section class="diag"><h3>Candidate Ghosts</h3><div class="dynamic-note">Open the Knowledge Ghosts panel after data load to inspect real species-level candidates.</div></section><button class="action" id="open-ghost-panel">Open Ghost Rediscovery Lab</button>`,
+  ghosts:`<section class="section"><h2>Ghost & Rediscovery Signals</h2><div class="subline">Historic records where botanical knowledge may be ecologically outdated.</div><div class="badge">Candidate Evidence</div><div class="dynamic-note">Ghosts are loaded from EKDI data when available. They are candidate signals for expert review, not confirmations.</div></section><section class="diag"><h3>Candidate Signals</h3><div class="dynamic-note">Open linked ghost evidence from a selected cell or use the Ghost & Rediscovery Guide.</div></section><button class="action" id="open-ghost-panel">Open Ghost Evidence</button>`,
   rediscovery:`<section class="section"><h2>Rediscovery Workflow</h2><div class="subline">From historic record to verification hypothesis.</div><div class="badge">Hypothesis, not confirmation</div><div class="dynamic-note">A rediscovery candidate is not a claim that the species is present. It is a field-verification hypothesis supported by evidence.</div></section><section class="diag"><h3>Why this candidate?</h3><div class="why-list"><div class="why-item">Last confirmed record is old enough to require review.</div><div class="why-item">Post-record habitat change increases uncertainty.</div><div class="why-item">Remnant forest persists near the historical location.</div><div class="why-item">Species-level evidence has conservation or endemic value.</div></div></section><section class="diag"><h3>Evidence chain</h3><div class="evidence-timeline"><div class="evidence-step"><div class="evidence-year">Record Evidence</div><div class="evidence-box">Historic occurrence or specimen record enters biodiversity memory.</div></div><div class="evidence-step"><div class="evidence-year">Post-Record Habitat Context</div><div class="evidence-box">Land-cover change detected near the record footprint.</div></div><div class="evidence-step"><div class="evidence-year">Current Review</div><div class="evidence-box">EKDI flags candidate for herbarium review and targeted verification.</div></div></div></section><section class="diag"><h3>Output</h3><div class="row"><span>Survey checklist</span><b>Generated</b></div><div class="row"><span>Expedition route</span><b>Ready</b></div><div class="row"><span>Evidence package</span><b>Exportable</b></div></section><button class="action" id="ghost-to-expedition-inline">Add rediscovery target</button><button class="action secondary" id="open-botanical-inline">Open Botanical Memory Profile</button>`,
   botanical:`<section class="section"><h2>Botanical Memory Profile</h2><div class="subline">Select a real plant candidate to open a species-level evidence profile.</div><div class="badge">Plant evidence</div></section><section class="diag"><h3>No Species Selected</h3><div class="dynamic-note">Plant candidates appear only when a selected cell has a real species link in the dashboard data.</div></section>`,
-  biome:`<section class="section"><h2>Generate EKDI Atlas</h2><div class="subline">Atlantic Forest is the case study. The workflow can be reused for threatened biomes worldwide.</div><div class="badge">Reusable workflow</div><div class="dynamic-note">If the uploaded data contain no ghost or rediscovery signals, EKDI reports that result transparently instead of forcing a category.</div></section><section class="diag"><h3>Required inputs</h3><div class="row"><span>Biome boundary</span><b>GeoJSON / GPKG</b></div><div class="row"><span>Biodiversity records</span><b>GBIF CSV</b></div><div class="row"><span>Land-cover change</span><b>Raster / tiles</b></div><div class="row"><span>Endemism / threat list</span><b>Optional CSV</b></div></section><section class="diag"><h3>Dynamic outputs</h3><div class="row"><span>Priority cells</span><b>Always generated</b></div><div class="row"><span>Knowledge ghosts</span><b>If detected</b></div><div class="row"><span>Rediscovery candidates</span><b>If evidence supports</b></div><div class="row"><span>Field checklist</span><b>From selected targets</b></div></section><section class="diag"><h3>Biome-specific calibration</h3><div class="why-list"><div class="why-item">Start from a documented preset, not a universal formula.</div><div class="why-item">Adjust weights with local experts and known survey examples.</div><div class="why-item">Run sensitivity analysis before publishing outputs.</div><div class="why-item">Report evidence completeness and uncertainty with every result.</div></div></section><button class="action" id="open-upload-inline">Open Generate EKDI Atlas</button><button class="action secondary" id="open-integrity-inline">Open validation checks</button>`
+  biome:`<section class="section"><h2>Prepare Your Biome for EKDI</h2><div class="subline">Guided data preparation · full recalculation requires the EKDI pipeline.</div><div class="badge">Preparation Workflow</div><div class="dynamic-note">The Atlantic Forest atlas is the fully functional case study. This workflow helps validate occurrence tables and explain required inputs for a new pipeline run.</div></section><section class="diag"><h3>Required inputs</h3><div class="row"><span>Occurrence records</span><b>Required</b></div><div class="row"><span>Biome boundary</span><b>Required</b></div><div class="row"><span>Grid resolution</span><b>Required</b></div><div class="row"><span>Land-cover / forest-change data</span><b>Required</b></div></section><section class="diag"><h3>Browser workflow</h3><div class="why-list"><div class="why-item">Validate occurrence columns and dates.</div><div class="why-item">Download a data-readiness report.</div><div class="why-item">Share missing inputs with a collaborator.</div><div class="why-item">Run full recalculation externally through the EKDI pipeline.</div></div></section><button class="action" id="open-upload-inline">Open Preparation Workflow</button><button class="action secondary" id="open-integrity-inline">Open validation checks</button>`
 };
 function setRightPanel(mode='atlas'){
   document.getElementById('right-panel').innerHTML=panelTemplates[mode];
@@ -255,7 +271,7 @@ function setRightPanel(mode='atlas'){
   document.getElementById('map-subtitle').textContent=mode==='biome'?'Reusable workflow inputs and outputs for other threatened biomes.':mode==='botanical'?'Compare plant evidence, habitat change and rediscovery priority.':'Click a cell to inspect evidence.';
   bindDynamicPanelButtons();
 }
-function bindDynamicPanelButtons(){const fly=document.getElementById('fly-cell'); if(fly)fly.onclick=()=>{if(selectedFeature)map.flyTo({center:centerOfFeature(selectedFeature),zoom:7.2,pitch:48,bearing:-18,duration:1200});}; const add=document.getElementById('add'); if(add)add.onclick=addSelectedToExpedition; const openGhost=document.getElementById('open-ghost-panel'); if(openGhost)openGhost.onclick=()=>openGhostModal(); const ghostInline=document.getElementById('ghost-to-expedition-inline'); if(ghostInline)ghostInline.onclick=()=>addGhostTarget(P42_SELECTED_PLANT||p3SelectedSpecies()); const uploadInline=document.getElementById('open-upload-inline'); if(uploadInline)uploadInline.onclick=()=>document.getElementById('upload-modal').classList.add('visible');
+function bindDynamicPanelButtons(){const fly=document.getElementById('fly-cell'); if(fly)fly.onclick=()=>{if(selectedFeature)map.flyTo({center:centerOfFeature(selectedFeature),zoom:7.2,pitch:48,bearing:-18,duration:1200});}; const add=document.getElementById('add'); if(add)add.onclick=addSelectedToExpedition; const openGhost=document.getElementById('open-ghost-panel'); if(openGhost)openGhost.onclick=()=>openGhostModal(); const ghostInline=document.getElementById('ghost-to-expedition-inline'); if(ghostInline)ghostInline.onclick=()=>addGhostTarget(P42_SELECTED_PLANT||p3SelectedSpecies()); const uploadInline=document.getElementById('open-upload-inline'); if(uploadInline)uploadInline.onclick=()=>{p3RenderUploadModal();document.getElementById('upload-modal').classList.add('visible');};
 const integrityInline=document.getElementById('open-integrity-inline'); if(integrityInline)integrityInline.onclick=()=>document.getElementById('integrity-modal').classList.add('visible');
 const botanicalInline=document.getElementById('open-botanical-inline'); if(botanicalInline)botanicalInline.onclick=()=>setRightPanel('botanical');
 const addBotanical=document.getElementById('add-botanical-target'); if(addBotanical)addBotanical.onclick=()=>addGhostTarget(P42_SELECTED_PLANT||p3SelectedSpecies());
@@ -298,8 +314,8 @@ const p617BindClick=(id,handler)=>{const el=document.getElementById(id);if(el)el
 p617BindClick('open-upload',()=>document.getElementById('upload-modal').classList.add('visible'));
 p617BindClick('open-repo',()=>document.getElementById('repo-modal').classList.add('visible'));
 p617BindClick('open-integrity-top',()=>document.getElementById('integrity-modal').classList.add('visible'));
-p617BindClick('open-export',()=>document.getElementById('export-modal').classList.add('visible'));
-p617BindClick('open-export-top',()=>document.getElementById('export-modal').classList.add('visible'));
+p617BindClick('open-export',()=>typeof p627RenderExportModal==='function'?p627RenderExportModal():document.getElementById('export-modal').classList.add('visible'));
+p617BindClick('open-export-top',()=>typeof p627RenderExportModal==='function'?p627RenderExportModal():document.getElementById('export-modal').classList.add('visible'));
 p617BindClick('open-ghost',()=>openGhostModal());
 p617BindClick('toggle-ghost-layer',()=>{if(!map)return;const current=map.getLayoutProperty('ghost-signals','visibility')||'visible',next=current==='none'?'visible':'none';map.setLayoutProperty('ghost-signals','visibility',next);if(map.getLayer('ghost-labels'))map.setLayoutProperty('ghost-labels','visibility',next);showToast(next==='none'?'Knowledge Ghosts hidden.':'Knowledge Ghosts visible.');});
 p617BindClick('download-route',()=>showToast('Route download prepared.'));
@@ -359,6 +375,7 @@ let P3_FALLBACK_CELLS=null;
 let P3_FALLBACK_POINTS=null;
 let P3_FALLBACK_GHOSTS=null;
 let P3_CURRENT_PANEL='atlas';
+let currentSelectedCellId=null;
 let P42_SELECTED_PLANT=null;
 let P3_DID_INITIAL_FIT=false;
 let P3_DEBUG_MAP_LOGGED=false;
@@ -603,6 +620,43 @@ const p613HideDataError=()=>{
   document.getElementById('data-error-banner')?.classList.remove('visible');
   document.getElementById('fallback-banner')?.classList.remove('visible');
 };
+let P624_DATA_TIMER_ACTIVE=false,P624_LAYER_TIMER_ACTIVE=false;
+const p624StartTimer=label=>{
+  if(label==='EKDI data load'&&!P624_DATA_TIMER_ACTIVE){console.time(label);P624_DATA_TIMER_ACTIVE=true;}
+  if(label==='EKDI layer render'&&!P624_LAYER_TIMER_ACTIVE){console.time(label);P624_LAYER_TIMER_ACTIVE=true;}
+};
+const p624EndTimer=label=>{
+  if(label==='EKDI data load'&&P624_DATA_TIMER_ACTIVE){console.timeEnd(label);P624_DATA_TIMER_ACTIVE=false;}
+  if(label==='EKDI layer render'&&P624_LAYER_TIMER_ACTIVE){console.timeEnd(label);P624_LAYER_TIMER_ACTIVE=false;}
+};
+const p624SetMapLoading=(title,text='',options={})=>{
+  const overlay=document.getElementById('map-loading-overlay');
+  const titleEl=document.getElementById('map-loading-title');
+  const textEl=document.getElementById('map-loading-text');
+  if(!overlay)return;
+  if(titleEl)titleEl.textContent=title||'Loading EKDI real data...';
+  if(textEl)textEl.textContent=text||'';
+  overlay.classList.add('visible');
+  overlay.classList.toggle('can-restore',!!options.canRestore);
+};
+const p624HideMapLoading=()=>{
+  const overlay=document.getElementById('map-loading-overlay');
+  if(overlay)overlay.classList.remove('visible','can-restore');
+};
+const p624ExpectedPriorityLayerReady=()=>!!(map&&map.getSource('priority-preview')&&(map.getLayer('critical-fill')||map.getLayer('critical-circles')));
+const p624AnyPriorityLayerVisible=()=>{
+  if(!map)return false;
+  const layerIds=['critical-fill','critical-circles','unsurveyed-fill','unsurveyed-circles','deficient-fill','deficient-circles','lost-fill','lost-circles'];
+  return layerIds.some(id=>map.getLayer(id)&&(map.getLayoutProperty(id,'visibility')||'visible')!=='none');
+};
+const p624MaybeFinishLayerRender=()=>{
+  if(p624ExpectedPriorityLayerReady()&&p624AnyPriorityLayerVisible()){
+    p624HideMapLoading();
+    p624EndTimer('EKDI layer render');
+  }else if(window.EKDI_DATA?.coreDataLoaded){
+    p624SetMapLoading('Rendering EKDI layers...','Priority grid loaded; map layers are being restored.',{canRestore:true});
+  }
+};
 function showDataModeBanner(mode){
   const error=document.getElementById('data-error-banner');
   const fallback=document.getElementById('fallback-banner');
@@ -612,6 +666,7 @@ function showDataModeBanner(mode){
   if(mode==='error'){
     if(error)error.innerHTML=`<b>Real EKDI data could not be loaded.</b><span>${p3Escape(p613RealDataErrorMessage)}</span>`;
     if(pill)pill.innerHTML='<b>Data Load Error</b>';
+    p624SetMapLoading('Data Load Error','Real EKDI data could not be loaded. Check the /data folder.');
   }else if(mode==='fallback'){
     if(fallback)fallback.textContent='DEVELOPMENT FALLBACK DATA - NOT SCIENTIFIC';
     if(pill)pill.innerHTML='<b>Development Fallback Data</b> Not Scientific';
@@ -715,6 +770,8 @@ const p3ParseCsv=text=>{
 window.loadDashboardData=async function(){
   if(P3_LOAD_PROMISE)return P3_LOAD_PROMISE;
   P3_LOAD_PROMISE=(async()=>{
+    p624StartTimer('EKDI data load');
+    p624SetMapLoading('Loading EKDI real data...','Loading priority grid...');
     const entries=Object.entries(P3_DATA_PATHS);
     const loaders=entries.map(async([key,path])=>{
       const value=key==='criticalTop100'?p3ParseCsv(await p3FetchText(path)):await p3FetchJson(path);
@@ -747,6 +804,8 @@ window.loadDashboardData=async function(){
       window.EKDI_DATA.layerCounts=p3BuildLayerCountCache();
       p3RenderDashboardData();
       p613ShowDataError(p613RealDataErrorMessage);
+      showDataModeBanner('error');
+      p624EndTimer('EKDI data load');
       return window.EKDI_DATA;
     }
     if(!window.EKDI_DATA.priorityCells&&EKDI_ALLOW_FALLBACK_DATA)window.EKDI_DATA.priorityCells=p3NormalizePriorityCollection(p3FallbackCells());
@@ -769,6 +828,8 @@ window.loadDashboardData=async function(){
       plantCandidates:(window.EKDI_DATA.cellPlantCandidates||[]).reduce((sum,row)=>sum+(Array.isArray(row.plants)?row.plants.length:0),0),
       gbifMemoryPoints:p3FeatureCount(window.EKDI_DATA.gbifMemory)
     });
+    p624EndTimer('EKDI data load');
+    p624SetMapLoading('Rendering EKDI layers...','Rendering map layers...');
     p3RenderDashboardData();
     p613HideDataError();
     p3SetDataStatus();
@@ -874,7 +935,7 @@ const p3RenderDashboardData=()=>{
   const report=document.querySelector('.report-strip');
   if(report)report.innerHTML=`<div class="report-metric"><b>${formatCount(critical)}</b><span>Critical Gaps</span></div><div class="report-metric"><b>${formatCount(unsurveyed)}</b><span>Unsurveyed Forest</span></div><div class="report-metric"><b>${formatCount(lost)}</b><span>Lost / No-Data Cells</span></div><div class="report-metric"><b>${p3FmtHa(overall.post_record_loss_ha_sum)}</b><span>Post-Record Loss</span></div>`;
   const cards=document.querySelector('.summary-cards');
-  if(cards)cards.innerHTML=`<div class="summary-card"><b>${p3Pct(overall.never_sampled_pct)}</b><span>Never Sampled</span></div><div class="summary-card"><b>${p3FmtHa(overall.post_record_loss_ha_sum)}</b><span>Post-Record Loss</span></div><div class="summary-card"><b>${top?p3Escape(top.state)+' '+formatCount(top.critical_gaps):'Not Available'}</b><span>Top Critical State</span></div><div class="summary-card"><b>${formatCount(p3Num(overall.web_layer_cells)??p3FeatureCount(window.EKDI_DATA.priorityCellsDetail))}</b><span>Web Layer Cells</span></div>`;
+  if(cards)cards.innerHTML=`<div class="summary-card"><b>${p3Pct(overall.never_sampled_pct)}</b><span>Never Sampled Share</span></div><div class="summary-card"><b>${p3FmtHa(overall.post_record_loss_ha_sum)}</b><span>Post-Record Forest Loss</span></div><div class="summary-card"><b>${top?p3Escape(top.state)+' '+formatCount(top.critical_gaps):'Not Available'}</b><span>Top State · Critical Gaps</span></div><div class="summary-card"><b>${formatCount(p3Num(overall.web_layer_cells)??p3FeatureCount(window.EKDI_DATA.priorityCellsDetail))}</b><span>Interactive Cells Loaded</span></div>`;
   p3PopulateStateFilter();
   p3RenderIntegrityModal();
   if(P3_CURRENT_PANEL)setRightPanel(P3_CURRENT_PANEL);
@@ -919,7 +980,7 @@ const p3UnsurveyedForestNote='Forest Remaining is derived from the forest-cover 
 let P44_PANEL_MODE='expert';
 const p44ModeSwitch=()=>`<div class="mode-switch" role="group" aria-label="Interpretation Mode"><button class="mode-toggle ${P44_PANEL_MODE==='expert'?'active':''}" data-panel-mode="expert">Expert Mode</button><button class="mode-toggle ${P44_PANEL_MODE==='discovery'?'active':''}" data-panel-mode="discovery">Discovery Mode</button></div>`;
 const p3PanelHeaderV36=(p,cls)=>`${p44ModeSwitch()}<section class="section"><h2 id="cell-title">${p3Escape(formatCellTitle(p))}</h2><div class="subline" id="cell-location">${p3Escape(p3StateDisplay(p))} &middot; Atlantic Forest Priority Grid</div><div class="badge" id="cell-status">${p3Escape(p3ClassLabel[cls]||'Atlantic Forest Grid Cell')}</div></section>`;
-const p3ScoreCard=(value,label='EKDI Score')=>`<div class="quick-card"><b id="ekdi-score">${formatScore(value)}</b><span>${label}</span></div>`;
+const p3ScoreCard=(value,label='EKDI Score')=>`<div class="quick-card" data-tour="ekdi-score"><b id="ekdi-score">${formatScore(value)}</b><span>${label}</span></div>`;
 const p3EvidenceCompletenessBlockV37=p=>`<div style="margin-top:10px"><span class="confidence-badge medium" id="cell-confidence">Evidence Completeness: ${p3Escape(p3EvidenceCompletenessLabel(p))}</span></div><div class="dynamic-note">${p3Escape(p3ConfidenceNote(p))}</div>`;
 const p3StrengthenEvidenceBlockV37=()=>`<section class="diag"><h3>How to strengthen evidence</h3><div class="why-list"><div class="why-item">Voucher review.</div><div class="why-item">Coordinate uncertainty check.</div><div class="why-item">Recent GBIF records.</div><div class="why-item">speciesLink / herbarium records.</div><div class="why-item">Flora e Funga taxonomic validation.</div><div class="why-item">IUCN or national threat assessment.</div><div class="why-item">Field verification.</div></div></section>`;
 const p3ConfidenceBlockV36=p=>p3EvidenceCompletenessBlockV37(p);
@@ -931,7 +992,7 @@ const p3ExpertCaveatsV36=(p,missingState)=>{
   return`<details class="advanced-box"><summary>Technical Details</summary><div class="row"><span>Cell ID</span><b>${p3Escape(p3CellId(p))}</b></div><div class="row"><span>Recommendation Basis</span><b>${p3Escape(p615ReadableRecommendationBasis(actionSource))}</b></div><div class="row"><span>State Values</span><b>${missingState?'State Not Assigned':'Known for this cell'}</b></div>${nearest?`<div class="row"><span>Nearest City</span><b>${p3Escape(nearest)}</b></div>`:''}<div class="dynamic-note">Current dataset includes candidate plant signals, not a complete floristic inventory.</div>${caveats.length?`<div class="dynamic-note">${p3Escape(caveats.join(' '))}</div>`:''}</details>`;
 };
 const p3PanelButtonsV36=(p={})=>{
-  return`<section class="diag"><h3>Actions</h3><button class="action" id="fly-cell">Fly to Selected Cell</button><button class="action secondary" id="add">Add to Expedition Planner</button></section>`;
+  return`<section class="diag"><h3>Actions</h3><button class="action" id="fly-cell">Fly to Selected Cell</button><button class="action secondary" id="add" data-tour="add-to-expedition">Add to Expedition Planner</button></section>`;
 };
 const p67SelectedCellCoordinates=()=>{
   if(selectedFeature){
@@ -957,7 +1018,7 @@ const p67CommunityVerificationPackBlock=props=>{
   if(!coords)return'';
   const plant=p42PlantRowsForCell(props)[0]||null;
   const mapLink=p4GoogleMapsLink(coords.latitude,coords.longitude);
-  return`<details class="advanced-box" data-tour="community-verification"><summary>Community Verification</summary><div class="planner-actions" style="margin-top:10px"><a class="planner-link" href="${p3Escape(mapLink)}" target="_blank" rel="noopener">Open Cell in Google Maps</a><a class="planner-link" href="https://www.inaturalist.org/observations/upload" target="_blank" rel="noopener">Open iNaturalist</a><button class="secondary" id="copy-community-note">Copy Verification Note</button></div><div class="dynamic-note">Community verification outputs are prompts for observation and expert review. They do not replace permits, taxonomic validation, herbarium vouchers or field protocols.</div></details>`;
+  return`<details class="advanced-box" data-tour="community-verification" title="Open map context, search observations and copy a verification note for expert review."><summary>Community Verification</summary><div class="planner-actions" style="margin-top:10px"><a class="planner-link" href="${p3Escape(mapLink)}" target="_blank" rel="noopener">Open Cell in Google Maps</a><a class="planner-link" href="https://www.inaturalist.org/observations/upload" target="_blank" rel="noopener">Open iNaturalist</a><button class="secondary" id="copy-community-note">Copy Verification Note</button></div><div class="dynamic-note">Community verification outputs are prompts for observation and expert review. They do not replace permits, taxonomic validation, herbarium vouchers or field protocols.</div></details>`;
 };
 const p3TopStatesBlockV36=()=>`<section class="diag"><h3>Top states</h3><table class="compare-table"><thead><tr><th>State</th><th>Critical</th><th>Unsurveyed</th><th>Loss</th></tr></thead><tbody>${p3StateRows(6)}</tbody></table></section>`;
 const p3CriticalPanelV36=(p,missingState)=>`${p3PanelHeaderV36(p,'critical')}<section class="diag"><h3>Critical Gap Evidence</h3><div class="quick-result">${p3ScoreCard(getEkdi(p),'EKDI Score')}<div class="quick-card"><b id="last-record">${formatYear(getLastRecord(p))}</b><span>last record</span></div><div class="quick-card"><b id="loss">${formatHectares(getForestLoss(p))}</b><span>post-record forest loss</span></div><div class="quick-card"><b id="forest">${formatPercent(getForestCover(p))}</b><span>forest remaining</span></div></div>${p3EvidenceCompletenessBlockV37(p)}<div class="dynamic-note">${p3Escape(p3ForestSourceNote)}</div></section><section class="diag"><h3>Why this cell?</h3><div class="why-list"><div class="why-item">GBIF records: <b id="gbif">${formatCount(getGbifCount(p))}</b>.</div><div class="why-item">Richness deficit: <b id="richness-deficit">${formatScore(getRichnessDeficit(p),3)}</b>.</div><div class="why-item">Years since verification: <b id="years">${formatCount(p3Years(p))}</b>.</div><div class="why-item">Critical gaps combine record age, post-record forest loss and richness deficit under the Atlantic Forest EKDI preset.</div></div></section>${p42PlantCandidatesBlock(p)}${p3CellEnrichmentBlock(p)}${p3RecommendationBlockV36(p)}${p3StrengthenEvidenceBlockV37()}${p3TopStatesBlockV36()}${p3ExpertCaveatsV36(p,missingState)}${p3PanelButtonsV36()}`;
@@ -977,13 +1038,43 @@ const p3RenderAtlasPanelV36=()=>{
   return p3CriticalPanelV36(p,missingState);
 };
 const p3RenderGhostsPanel=()=>{
-  const ghosts=window.EKDI_DATA.knowledgeGhosts||[];
-  return`<section class="section"><h2>Knowledge Ghosts</h2><div class="subline">Historic-only candidate signals that need verification, not claims of presence or absence.</div><div class="quick-result"><div class="quick-card"><b>${p3Fmt(ghosts.length)}</b><span>candidate signals</span></div><div class="quick-card"><b>Review</b><span>voucher first</span></div></div></section><section class="diag"><h3>Candidate species</h3><div class="ghost-list">${ghosts.length?p3GhostCards():'<div class="dynamic-note">No real Knowledge Ghost table loaded in the current dashboard export.</div>'}</div><div class="dynamic-note">Candidate, historic-only, needs verification. Voucher review recommended before any field interpretation.</div></section><button class="action" id="open-ghost-panel">Open Ghost Rediscovery Lab</button>`;
+  const ghosts=p625SelectedCellGhosts();
+  if(!selectedFeature)return p625ContextEmpty('Ghost Signals','Select a priority cell first. Ghost evidence is shown only when a Knowledge Ghost signal is linked to that selected cell.');
+  if(!ghosts.length)return p625ContextEmpty('Ghost Signals','No Knowledge Ghost signal is linked to the selected cell.');
+  const cards=ghosts.map(g=>`<div class="ghost-card ghost-candidate" data-species="${p3Escape(g.species)}"><b>${p3Escape(g.species)}</b><span>historic-only candidate · voucher review recommended</span></div>`).join('');
+  return`<section class="section"><h2>Ghost Signals</h2><div class="subline">Signals linked to ${p3Escape(formatCellTitle(selectedFeature.properties||{}))}</div><div class="badge">Candidate Evidence</div></section><section class="diag"><h3>Linked Candidate Signals</h3><div class="ghost-list">${cards}</div><div class="dynamic-note">Candidate, historic-only, needs verification. This is not a claim of presence, absence, rediscovery or extinction.</div></section><button class="action" id="open-ghost-panel">Open Ghost Evidence</button>`;
 };
 const p3RediscoveryRows=()=>window.EKDI_DATA.rediscoveryCandidates.slice(0,8).map(r=>`<tr><td><i>${p3Escape(r.species)}</i></td><td>${formatYear(r.last_year)}</td><td>${formatCount(r.n_records)}</td><td>${p3Escape(p3EvidenceSupportFromText(r.confidence))}</td></tr>`).join('');
 const p3RenderRediscoveryPanel=()=>{
-  const list=window.EKDI_DATA.rediscoveryCandidates||[];
-  return`<section class="section"><h2>Rediscovery Workflow</h2><div class="subline">Species-level verification hypotheses from historic evidence.</div><div class="badge">Hypothesis, not confirmation</div><div class="quick-result"><div class="quick-card"><b>${formatCount(list.length)}</b><span>species-level hypotheses</span></div><div class="quick-card"><b>${formatCount(window.EKDI_DATA.criticalTop100.length)}</b><span>top critical rows</span></div></div><div class="dynamic-note">Rediscovery candidates are species-level hypotheses. Location-specific fields remain null unless coordinates exist.</div></section><section class="diag"><h3>Candidate hypotheses</h3><table class="compare-table"><thead><tr><th>Species</th><th>Last</th><th>Records</th><th>Evidence Support</th></tr></thead><tbody>${p3RediscoveryRows()}</tbody></table></section><button class="action" id="ghost-to-expedition-inline">Add rediscovery target</button><button class="action secondary" id="open-botanical-inline">Open Botanical Memory Profile</button>`;
+  const list=p625SelectedCellRediscovery();
+  if(!selectedFeature)return p625ContextEmpty('Rediscovery Hypotheses','Select a priority cell first. Rediscovery hypotheses are shown only when linked to the selected cell.');
+  if(!list.length)return p625ContextEmpty('Rediscovery Hypotheses','No rediscovery hypothesis is linked to the selected cell.');
+  const rows=list.map(r=>`<tr><td><i>${p3Escape(r.species)}</i></td><td>${formatYear(p3Get(r,'last_year','last_record','ultimo_registro'))}</td><td>${formatCount(p3Get(r,'n_records','n_registros','gbif_records'))}</td><td>${p3Escape(p3EvidenceSupportFromText(r.confidence))}</td></tr>`).join('');
+  return`<section class="section"><h2>Rediscovery Hypotheses</h2><div class="subline">Hypotheses linked to ${p3Escape(formatCellTitle(selectedFeature.properties||{}))}</div><div class="badge">Hypothesis, Not Confirmation</div></section><section class="diag"><h3>Linked Hypotheses</h3><table class="compare-table"><thead><tr><th>Species</th><th>Last</th><th>Records</th><th>Evidence Support</th></tr></thead><tbody>${rows}</tbody></table><div class="dynamic-note">Rediscovery candidates are species-level hypotheses requiring expert review.</div></section><button class="action" id="ghost-to-expedition-inline">Add rediscovery target</button>`;
+};
+const p626RenderGhostGuideModal=()=>{
+  const modal=document.getElementById('ghost-modal');
+  const title=document.getElementById('modal-ghost-title');
+  const body=modal&&modal.querySelector('.modal-body');
+  if(!modal||!body)return;
+  const ghostRows=Array.isArray(window.EKDI_DATA.knowledgeGhosts)?window.EKDI_DATA.knowledgeGhosts:[];
+  const rediscoveryRows=Array.isArray(window.EKDI_DATA.rediscoveryCandidates)?window.EKDI_DATA.rediscoveryCandidates:[];
+  const ghosts=ghostRows.length;
+  const rediscovery=rediscoveryRows.length;
+  const ghostCards=ghostRows.length?ghostRows.slice(0,4).map(row=>{
+    const species=p3Get(row,'species','scientificName','taxon')||'Knowledge Ghost candidate';
+    const state=p3Get(row,'stateName','state','stateProvince')||'State not linked';
+    const last=formatYear(p3Get(row,'ultimo_registro','last_record','last_year','year'));
+    const loss=formatHectares(p3Get(row,'perdida_ha','post_record_loss','loss'));
+    const forest=formatPercent(p3Get(row,'forest_cover_pct','forest_remaining','forest'));
+    const action=p3Recommendation(row)||'Voucher review and field verification recommended where appropriate.';
+    const why=p3Get(row,'scientific_language_note','candidate_basis')||'Old or sparse occurrence evidence overlaps with priority context and needs expert review.';
+    return`<div class="plant-mini-card"><b><i>${p3Escape(species)}</i></b><span>${p3Escape(state)} · Last evidence: ${p3Escape(last)}</span><span>Forest remaining: ${p3Escape(forest)} · Post-record loss: ${p3Escape(loss)}</span><span><b>Why considered a ghost:</b> ${p3Escape(why)}</span><span><b>Recommended action:</b> ${p3Escape(action)}</span></div>`;
+  }).join(''):'<div class="dynamic-note">Knowledge Ghost table not available in current build.</div>';
+  const rediscoveryExamples=rediscoveryRows.slice(0,5).map(row=>`<tr><td><i>${p3Escape(p3Get(row,'species')||'Candidate species')}</i></td><td>${p3Escape(formatYear(p3Get(row,'last_year','last_record','ultimo_registro','year')))}</td><td>${p3Escape(formatCount(p3Get(row,'n_records','n_registros','gbif_records')))}</td><td>${p3Escape(p3Get(row,'confidence','confianza')||'Not provided')}</td></tr>`).join('');
+  if(title)title.textContent='Ghost & Rediscovery Guide';
+  body.innerHTML=`<section class="diag"><h3>What Is A Knowledge Ghost?</h3><div class="dynamic-note">A Knowledge Ghost is a species-level evidence signal where old or sparse occurrence evidence overlaps with priority context. It is not a confirmed extinction or rediscovery.</div></section><section class="diag"><h3>Knowledge Ghost Species</h3><div class="row"><span>Records Available</span><b>${formatCount(ghosts)}</b></div><div class="plant-mini-list">${ghostCards}</div></section><section class="diag"><h3>Rediscovery Hypotheses</h3><div class="quick-result"><div class="quick-card"><b>${formatCount(rediscovery)}</b><span>Candidate Hypotheses</span></div><div class="quick-card"><b>Expert Review</b><span>Required</span></div></div><div class="dynamic-note">Rediscovery hypotheses are species-level verification questions. They require expert review and field verification.</div>${rediscoveryExamples?`<table class="compare-table"><thead><tr><th>Species</th><th>Last</th><th>Records</th><th>Evidence</th></tr></thead><tbody>${rediscoveryExamples}</tbody></table>`:'<div class="dynamic-note">Rediscovery candidate table not available in current build.</div>'}</section><section class="diag"><h3>How To Use Them</h3><div class="why-list"><div class="why-item">Open ghost or rediscovery evidence when it is linked to a selected cell, or use this guide as global context.</div><div class="why-item">Review vouchers, taxonomy, coordinates and recent records before field action.</div><div class="why-item">Treat these as expert-review signals, not confirmed rediscoveries.</div></div></section><div class="dynamic-note">Scientific caveat: EKDI does not confirm extinction, rediscovery, presence or absence.</div>`;
+  modal.classList.add('visible');
 };
 const p3HasValue=value=>value!==undefined&&value!==null&&value!==''&&!(typeof value==='number'&&Number.isNaN(value));
 const p3FieldValue=(obj,fields)=>safeGet(obj,fields,null);
@@ -998,6 +1089,31 @@ const p3RelatedRediscoveryRecords=props=>{
   return(window.EKDI_DATA.rediscoveryCandidates||[]).filter(r=>String(p3Get(r,'cell_id')||'')===cell);
 };
 const p3RelatedSpeciesRecords=props=>[...p3RelatedGhostRecords(props),...p3RelatedRediscoveryRecords(props)];
+const p626GhostSignalBlock=props=>{
+  const ghosts=p3RelatedGhostRecords(props);
+  const rediscovery=p3RelatedRediscoveryRecords(props);
+  const items=[...ghosts.map(g=>({type:'Knowledge Ghost',record:g})),...rediscovery.map(r=>({type:'Rediscovery Hypothesis',record:r}))];
+  if(!items.length)return'';
+  const rows=items.slice(0,3).map((item,index)=>{
+    const species=p3Get(item.record,'species','scientificName','taxon')||'Species signal';
+    const last=formatYear(p3Get(item.record,'last_record','ultimo_registro','last_year','year'));
+    return`<div class="plant-mini-card"><b><i>${p3Escape(species)}</i></b><span>${p3Escape(item.type)} · Last evidence: ${p3Escape(last)}</span><span><b>Interpretation:</b> Expert-review signal, not confirmed rediscovery.</span><div class="plant-mini-actions"><button class="action secondary ghost-cell-evidence" data-ghost-index="${index}">Open Ghost Evidence</button><button class="action secondary ghost-expedition" data-ghost-index="${index}">Add to Expedition Planner</button></div></div>`;
+  }).join('');
+  window.P626_SELECTED_CELL_GHOST_ITEMS=items;
+  return`<section class="diag" data-tour="ghost-signals"><h3>Ghost & Rediscovery Signal</h3><div class="row"><span>Linked Signals</span><b>${formatCount(items.length)}</b></div><div class="plant-mini-list">${rows}</div><div class="dynamic-note">Knowledge Ghosts and Rediscovery Hypotheses are expert-review signals. They do not confirm current presence, absence, rediscovery or extinction.</div></section>`;
+};
+const p625SelectedCellProps=()=>selectedFeature&&selectedFeature.properties||null;
+const p625SelectedCellId=()=>currentSelectedCellId||p3CellId(p625SelectedCellProps()||{});
+const p625RecordCellId=record=>p62NormalizeCellId(p3Get(record,'cell_id','id'));
+const p625RecordBelongsToSelectedCell=record=>{
+  const selected=p62NormalizeCellId(p625SelectedCellId());
+  const recordCell=p625RecordCellId(record);
+  return !!(selected&&recordCell&&selected===recordCell);
+};
+const p625SelectedCellPlants=()=>p625SelectedCellProps()?p42PlantRowsForCell(p625SelectedCellProps()):[];
+const p625SelectedCellGhosts=()=>p625SelectedCellProps()?p3RelatedGhostRecords(p625SelectedCellProps()):[];
+const p625SelectedCellRediscovery=()=>p625SelectedCellProps()?p3RelatedRediscoveryRecords(p625SelectedCellProps()):[];
+const p625ContextEmpty=(title,copy)=>`<section class="section"><h2>${p3Escape(title)}</h2><div class="subline">Selected Cell Evidence</div><div class="badge">Not Linked To This Cell</div></section><section class="diag"><h3>Context</h3><div class="dynamic-note">${p3Escape(copy)}</div></section><button class="action secondary" id="back-to-cell-evidence">Back To Cell Evidence</button>`;
 const p3DatasetHasAnyValue=(rows,fields)=>Array.isArray(rows)&&rows.some(row=>p3HasValue(p3FieldValue(row,fields)));
 const p3AnyEvidenceValue=(props,records,fields)=>p3HasValue(p3FieldValue(props,fields))||records.some(row=>p3HasValue(p3FieldValue(row,fields)));
 const p3FirstEvidenceValue=(props,records,fields)=>{
@@ -1208,7 +1324,7 @@ const p65PlantRiskLabel=plant=>{
   return`Selected Plant Risk: ${text}`;
 };
 const p65PlantHasProvidedRisk=plant=>!['Selected Plant Risk: Not Provided','Selected Plant Risk: Not Assessed'].includes(p65PlantRiskLabel(plant));
-const p42PlantButton=(plant,index,kind,total=1)=>`<button class="action secondary plant-${kind}" data-plant-index="${index}" ${kind==='memory'?'data-tour="botanical-memory"':''}>${kind==='memory'?'Open Botanical Memory':kind==='compare'?(total>1?'Compare Candidates':'View Record Evidence'):'Add Species to Expedition Planner'}</button>`;
+const p42PlantButton=(plant,index,kind,total=1)=>`<button class="action secondary plant-${kind}" data-plant-index="${index}" ${kind==='memory'?'data-tour="botanical-memory-button"':''}>${kind==='memory'?'Open Botanical Memory':kind==='compare'?(total>1?'Compare Candidates':'View Record Evidence'):'Add Species to Expedition Planner'}</button>`;
 const p617PlantDerivedLabel=plant=>{
   const source=formatReadableSource(plant.evidence_source);
   if(source==='Endemic Plant Grid')return'Endemic / Risk Grid';
@@ -1237,7 +1353,7 @@ const p42PlantCandidatesBlock=props=>{
   const allRows=plants.map(card).join('');
   const title=plants.length===1?'Representative Plant Candidate':'Priority Plant Candidates';
   const countLabel=plants.length===1?'1 Candidate Signal Linked to This Cell':`${formatCount(plants.length)} Candidate Signals Linked to This Cell`;
-  return`<section class="diag" data-tour="plant-candidates"><h3>${title}</h3><div class="row"><span>${countLabel}</span><b>${formatCount(plants.length)}</b></div><div class="plant-mini-list">${rows}</div>${plants.length>3?`<details class="advanced-box"><summary>View All Plants / Candidates</summary><div class="plant-mini-list">${allRows}</div></details>`:''}</section>`;
+  return`<section class="diag" data-tour="plant-candidate" title="A species-level evidence signal linked to this cell. Not confirmed current presence."><h3>${title}</h3><div class="row"><span>${countLabel}</span><b>${formatCount(plants.length)}</b></div><div class="plant-mini-list">${rows}</div>${plants.length>3?`<details class="advanced-box"><summary>View All Plants / Candidates</summary><div class="plant-mini-list">${allRows}</div></details>`:''}</section>`;
 };
 const p42SelectedCellPlant=index=>{
   const props=selectedFeature&&selectedFeature.properties||p3PanelFeature().properties||{};
@@ -1334,9 +1450,9 @@ const p613EvidenceReadiness=props=>{
 };
 const p613EvidenceReadinessBlock=props=>{
   const readiness=p613EvidenceReadiness(props);
-  return`<section class="diag"><h3>Evidence Readiness</h3><div class="source-grid"><div class="source"><b>GBIF Records</b><span>${p3Escape(readiness.gbifLabel)}</span></div><div class="source"><b>Plant Candidate Link</b><span>${p3Escape(readiness.plantLabel)}</span></div><div class="source"><b>Land-Cover Data</b><span>${p3Escape(readiness.landLabel)}</span></div><div class="source"><b>Threat Status Link</b><span>${p3Escape(readiness.threatLabel)}</span></div></div><div style="margin-top:8px"><span class="confidence-badge medium">Overall: ${p3Escape(readiness.overall)}</span></div><div class="dynamic-note">Evidence Readiness summarizes available data for interpretation. It does not confirm species presence, absence or extinction.</div></section>`;
+  return`<section class="diag" data-tour="evidence-readiness" title="Evidence Readiness summarizes available data for interpretation, not biological certainty."><h3>Evidence Readiness</h3><div class="source-grid"><div class="source"><b>GBIF Records</b><span>${p3Escape(readiness.gbifLabel)}</span></div><div class="source"><b>Plant Candidate Link</b><span>${p3Escape(readiness.plantLabel)}</span></div><div class="source"><b>Land-Cover Data</b><span>${p3Escape(readiness.landLabel)}</span></div><div class="source"><b>Threat Status Link</b><span>${p3Escape(readiness.threatLabel)}</span></div></div><div style="margin-top:8px"><span class="confidence-badge medium">Overall: ${p3Escape(readiness.overall)}</span></div><div class="dynamic-note">Evidence Readiness summarizes available data for interpretation. It does not confirm species presence, absence or extinction.</div></section>`;
 };
-const p44PriorityBlock=(p,cls)=>`<section class="diag"><h3>EKDI Score</h3><div class="quick-result">${cls==='unsurveyed'?'<div class="quick-card"><b>Not Applicable</b><span>EKDI Score</span></div>':p3ScoreCard(getEkdi(p),'EKDI Score')}<div class="quick-card"><b title="Evidence Support reflects data completeness, not biological certainty.">${cls==='unsurveyed'?'Landscape Evidence Only':p3Escape(p3EvidenceCompletenessClass(p3EvidenceCompletenessValue(p)))}</b><span>Evidence Support</span></div></div><div class="dynamic-note">Evidence Support reflects data completeness, not biological certainty.</div></section>`;
+const p44PriorityBlock=(p,cls)=>`<section class="diag"><h3>EKDI Score</h3><div class="quick-result">${cls==='unsurveyed'?'<div class="quick-card" data-tour="ekdi-score"><b>Not Applicable</b><span>EKDI Score</span></div>':p3ScoreCard(getEkdi(p),'EKDI Score')}<div class="quick-card"><b title="Evidence Support reflects data completeness, not biological certainty.">${cls==='unsurveyed'?'Landscape Evidence Only':p3Escape(p3EvidenceCompletenessClass(p3EvidenceCompletenessValue(p)))}</b><span>Evidence Support</span></div></div><div class="dynamic-note">Evidence Support reflects data completeness, not biological certainty.</div></section>`;
 const p612Row=(label,value)=>p612HasMeaningfulValue(value)?`<div class="row"><span>${p3Escape(label)}</span><b>${p3Escape(value)}</b></div>`:'';
 const p612RecordMemoryBlock=(p,cls)=>{
   if(cls==='unsurveyed')return`<section class="diag"><h3>Record Memory</h3><div class="row"><span>GBIF Records</span><b>0</b></div><div class="dynamic-note">No GBIF records were found in this cell in the current dashboard export.</div></section>`;
@@ -1381,7 +1497,7 @@ const p44WhyCellBlock=(p,cls)=>{
 const p44ExpertPanel=(p,missingState)=>{
   const cls=p3ClassOf(p);
   const actionProps=cls==='critical'?p:{...p,recommended_action:recommendationFor(cls),recommended_action_source:p3Get(p,'recommended_action_source')||'evidence_classification'};
-  return`${p3PanelHeaderV36(p,cls)}${p44PriorityBlock(p,cls)}${p613EvidenceReadinessBlock(p)}${p612RecordMemoryBlock(p,cls)}${p612HabitatContextBlock(p,cls)}${p44WhyCellBlock(p,cls)}${p42PlantCandidatesBlock(p)}${p3RecommendationBlockV36(actionProps)}${p3PanelButtonsV36(p)}${p67CommunityVerificationPackBlock(p)}${p3ExpertCaveatsV36(p,missingState)}`;
+  return`${p3PanelHeaderV36(p,cls)}${p44PriorityBlock(p,cls)}${p613EvidenceReadinessBlock(p)}${p612RecordMemoryBlock(p,cls)}${p612HabitatContextBlock(p,cls)}${p44WhyCellBlock(p,cls)}${p42PlantCandidatesBlock(p)}${p626GhostSignalBlock(p)}${p3RecommendationBlockV36(actionProps)}${p3PanelButtonsV36(p)}${p67CommunityVerificationPackBlock(p)}${p3ExpertCaveatsV36(p,missingState)}`;
 };
 const p44EmptyAtlasPanel=()=>`${p44ModeSwitch()}<section class="section"><h2>Select a Priority Cell</h2><div class="subline">Click any visible cell on the map to inspect EKDI evidence, plant candidates and field actions.</div><div class="badge">Awaiting Cell Selection</div></section><section class="diag"><h3>How To Start</h3><div class="why-list"><div class="why-item">Start with Critical Gaps to inspect the highest field-verification priorities.</div><div class="why-item">Use layers to compare priority classes.</div><div class="why-item">Add cells or species to the Expedition Planner.</div></div></section><section class="diag"><h3>Field Workflow</h3><div class="recommendation">Result first. Evidence second. Expert details on demand.</div></section>`;
 const p44RenderAtlasPanel=()=>{
@@ -1397,12 +1513,98 @@ const p44RenderAtlasPanel=()=>{
 const p3SourceBadge=(name,status)=>`<div class="row"><span>${p3Escape(name)}</span><b>${p3Escape(status)}</b></div>`;
 const p3Status=(condition,missing='Not Provided')=>condition?'Available':missing;
 const p3BotanicalEnrichmentBlock=s=>{const summary=getBotanicalEvidenceSummary(s,[s],[]);return`<details class="advanced-box"><summary>Technical Details</summary><div class="row"><span>Evidence Level</span><b>${p3Escape(summary.level)}</b></div>${summary.conservationSignals.length?`<h3 style="margin-top:12px">Conservation Context</h3>${p3EvidenceList(summary.conservationSignals)}`:''}<h3 style="margin-top:12px">Voucher / Taxonomic Checks</h3>${summary.taxonomicSignals.length?p3EvidenceList(summary.taxonomicSignals):p45VoucherReviewBlock()}<div class="dynamic-note">Optional botanical enrichment is shown only when matching fields are present in the current dataset.</div></details>`;};
-const p3RenderBiomePanel=()=>`<section class="section"><h2>Generate EKDI Atlas</h2><div class="subline">Atlantic Forest is the case study. The workflow can be reused for threatened biomes worldwide.</div><div class="badge">Reusable workflow</div><div class="dynamic-note">EKDI Core can run with GBIF records, a biome boundary and land-cover change. Optional enrichment improves botanical interpretation but is not required.</div></section><section class="diag"><h3>Required Core Inputs</h3>${p3SourceBadge('GBIF occurrence records','Required')}${p3SourceBadge('Biome boundary','Required')}${p3SourceBadge('Land-cover / habitat-change layer','Required')}${p3SourceBadge('Grid resolution','Required')}</section><section class="diag"><h3>Optional Enrichment Inputs</h3>${p3SourceBadge('GBIF issue flags','Recommended')}${p3SourceBadge('speciesLink or local herbarium records','Optional')}${p3SourceBadge('Flora e Funga / national flora checklist','Optional')}${p3SourceBadge('IUCN or national red list','Optional')}${p3SourceBadge('Protected areas','Optional')}${p3SourceBadge('Accessibility / roads','Optional')}<div class="dynamic-note">speciesLink and Flora e Funga are Brazil-specific examples. For other biomes, users can provide equivalent local herbarium networks, national flora checklists or red lists.</div></section><section class="diag"><h3>Core outputs</h3><div class="why-list"><div class="why-item">Priority Cells</div><div class="why-item">Critical Gaps</div><div class="why-item">Unsurveyed Forest</div><div class="why-item">Deficient Coverage</div><div class="why-item">Field Verification Priorities</div></div></section><section class="diag"><h3>Enriched outputs</h3><div class="why-list"><div class="why-item">Botanical Memory Profiles</div><div class="why-item">Knowledge Ghosts</div><div class="why-item">Rediscovery Hypotheses</div><div class="why-item">Voucher Review Priority</div><div class="why-item">Taxonomic Validation</div><div class="why-item">Threat / Endemism Signal</div><div class="why-item">Evidence Completeness Classes</div></div></section><section class="diag"><h3>Biome-specific calibration</h3><div class="why-list"><div class="why-item">Start from a documented preset, not a universal formula.</div><div class="why-item">Adjust weights with local experts and known survey examples.</div><div class="why-item">Run sensitivity analysis before publishing outputs.</div><div class="why-item">Report evidence completeness and uncertainty with every result.</div></div></section><button class="action" id="open-upload-inline">Open Generate EKDI Atlas</button><button class="action secondary" id="open-integrity-inline">Open validation checks</button>`;
+let EKDI_BIOME_READINESS_REPORT=null;
+const EKDI_OCCURRENCE_REQUIRED=['scientificName','decimalLatitude','decimalLongitude'];
+function parseCsvRows(text){
+  const rows=[];let row=[],cell='',quoted=false;
+  for(let i=0;i<text.length;i++){
+    const char=text[i],next=text[i+1];
+    if(char==='"'&&quoted&&next==='"'){cell+='"';i++;continue;}
+    if(char==='"'){quoted=!quoted;continue;}
+    if(char===','&&!quoted){row.push(cell);cell='';continue;}
+    if((char==='\n'||char==='\r')&&!quoted){if(char==='\r'&&next==='\n')i++;row.push(cell);if(row.some(value=>String(value).trim()!==''))rows.push(row);row=[];cell='';continue;}
+    cell+=char;
+  }
+  row.push(cell);if(row.some(value=>String(value).trim()!==''))rows.push(row);
+  return rows;
+}
+const p629ColumnIndex=(columns,name)=>columns.findIndex(column=>String(column).trim().toLowerCase()===String(name).toLowerCase());
+const p629HasColumn=(columns,name)=>p629ColumnIndex(columns,name)>=0;
+const p629Value=(record,columns,names)=>{for(const name of names){const idx=p629ColumnIndex(columns,name);if(idx>=0&&record[idx]!==undefined&&String(record[idx]).trim()!=='')return String(record[idx]).trim();}return '';};
+function buildOccurrenceValidationReport(fileName,text,fileSize){
+  const rows=parseCsvRows(text);
+  if(rows.length<2)throw new Error('No data rows detected.');
+  const columns=rows[0].map(value=>String(value||'').trim());
+  const records=rows.slice(1);
+  const hasYear=p629HasColumn(columns,'year')||p629HasColumn(columns,'eventDate');
+  const missingRequired=[...EKDI_OCCURRENCE_REQUIRED.filter(field=>!p629HasColumn(columns,field)),...(hasYear?[]:['year or eventDate'])];
+  const recommendedStatus={
+    basisOfRecord:p629HasColumn(columns,'basisOfRecord'),
+    'gbifID or occurrenceID':p629HasColumn(columns,'gbifID')||p629HasColumn(columns,'occurrenceID'),
+    institutionCode:p629HasColumn(columns,'institutionCode'),
+    catalogNumber:p629HasColumn(columns,'catalogNumber'),
+    country:p629HasColumn(columns,'country'),
+    stateProvince:p629HasColumn(columns,'stateProvince'),
+    'taxonKey or speciesKey':p629HasColumn(columns,'taxonKey')||p629HasColumn(columns,'speciesKey')
+  };
+  const species=new Set(),years=[];let completeCoordinates=0;
+  records.forEach(record=>{
+    const name=p629Value(record,columns,['scientificName']);if(name)species.add(name);
+    const lat=p629Value(record,columns,['decimalLatitude']),lon=p629Value(record,columns,['decimalLongitude']);
+    if(lat!==''&&lon!==''&&!Number.isNaN(Number(lat))&&!Number.isNaN(Number(lon)))completeCoordinates++;
+    const yearRaw=p629Value(record,columns,['year'])||String(p629Value(record,columns,['eventDate']).match(/\d{4}/)?.[0]||'');
+    const year=Number(yearRaw);if(Number.isFinite(year)&&year>1500&&year<=2200)years.push(year);
+  });
+  const missingRecommended=Object.entries(recommendedStatus).filter(([,ok])=>!ok).map(([field])=>field);
+  return{
+    file_name:fileName,
+    file_size_bytes:fileSize,
+    record_count:records.length,
+    detected_columns:columns,
+    required_fields:{scientificName:p629HasColumn(columns,'scientificName'),decimalLatitude:p629HasColumn(columns,'decimalLatitude'),decimalLongitude:p629HasColumn(columns,'decimalLongitude'),year_or_eventDate:hasYear},
+    recommended_fields:recommendedStatus,
+    missing_required_fields:missingRequired,
+    missing_recommended_fields:missingRecommended,
+    unique_scientific_names:species.size,
+    coordinate_completeness_pct:records.length?Math.round((completeCoordinates/records.length)*1000)/10:0,
+    temporal_range:years.length?`${Math.min(...years)}-${Math.max(...years)}`:'Not detected',
+    ekdi_ready_for_pipeline:missingRequired.length===0,
+    next_steps:missingRequired.length?['Add missing required fields before running the EKDI pipeline.','Confirm coordinates are decimal degrees and event dates or years are parseable.','Prepare biome boundary and land-cover change data.']:['Prepare biome boundary and land-cover change data.','Add source metadata, citations and GBIF download DOI when available.','Run the EKDI pipeline with biome-specific weight sensitivity review.'],
+    notes:['This report validates input readiness. It is not an EKDI result.','Full EKDI atlas recalculation is not performed inside the browser in this version.','Files are processed locally in the browser and are not uploaded to a server.','Full recalculation requires occurrence data, biome boundary, grid setup, land-cover change data, source metadata and the EKDI pipeline.']
+  };
+}
+function renderOccurrenceValidationReport(report){
+  const result=document.getElementById('biome-validation-results'),download=document.getElementById('download-biome-readiness');
+  if(!result)return;
+  if(!report){result.innerHTML='<div class="dynamic-note">No occurrence CSV selected yet. This report validates input readiness. It is not an EKDI result.</div>';if(download)download.disabled=true;return;}
+  const requiredRows=Object.entries(report.required_fields).map(([field,ok])=>`<div class="row"><span>${p3Escape(field)}</span><b>${ok?'Provided':'Missing'}</b></div>`).join('');
+  const recommendedRows=Object.entries(report.recommended_fields).map(([field,ok])=>`<div class="row"><span>${p3Escape(field)}</span><b>${ok?'Provided':'Missing'}</b></div>`).join('');
+  result.innerHTML=`<div class="quick-result">${p69Metric('Records Detected',report.record_count)}${p69Metric('Unique Scientific Names',report.unique_scientific_names)}${p69Metric('Coordinate Completeness',`${report.coordinate_completeness_pct}%`)}${p69Metric('Temporal Range',report.temporal_range)}</div><div class="row"><span>Required Fields</span><b>${report.missing_required_fields.length?'Incomplete':'Complete'}</b></div>${report.missing_required_fields.length?`<div class="validation-missing"><b>Missing required fields</b><span>${report.missing_required_fields.map(p3Escape).join(', ')}</span></div>`:''}<details class="advanced-box" open><summary>Required Field Status</summary>${requiredRows}</details><details class="advanced-box"><summary>Recommended Field Status</summary>${recommendedRows}</details><div class="dynamic-note">Uploaded files are validated and summarized. Full EKDI atlas recalculation is not performed inside the browser in this version.</div>`;
+  if(download)download.disabled=false;
+}
+function bindBiomePreparationWorkflow(){
+  const input=document.getElementById('biome-occurrence-csv'),download=document.getElementById('download-biome-readiness');
+  EKDI_BIOME_READINESS_REPORT=null;renderOccurrenceValidationReport(null);
+  if(download)download.onclick=()=>{if(!EKDI_BIOME_READINESS_REPORT){showToast('Upload an occurrence CSV before downloading a readiness report.');return;}downloadJson('ekdi_data_readiness_report.json',EKDI_BIOME_READINESS_REPORT);showToast('Data Readiness Report download ready.');};
+  if(!input)return;
+  input.onchange=()=>{
+    const file=input.files&&input.files[0];if(!file)return;
+    if(file.size>8*1024*1024){EKDI_BIOME_READINESS_REPORT=null;renderOccurrenceValidationReport(null);const result=document.getElementById('biome-validation-results');if(result)result.innerHTML='<div class="validation-missing"><b>File too large for browser preview</b><span>This file may be too large for browser preview. Use the EKDI pipeline for full processing.</span></div>';showToast('File may be too large for browser preview.');return;}
+    const reader=new FileReader();
+    reader.onerror=()=>showToast('Could not parse file. Please check delimiter and encoding.');
+    reader.onload=()=>{try{EKDI_BIOME_READINESS_REPORT=buildOccurrenceValidationReport(file.name,String(reader.result||''),file.size);renderOccurrenceValidationReport(EKDI_BIOME_READINESS_REPORT);showToast('Occurrence table validation complete.');}catch(err){EKDI_BIOME_READINESS_REPORT=null;renderOccurrenceValidationReport(null);const result=document.getElementById('biome-validation-results');if(result)result.innerHTML='<div class="validation-missing"><b>Could not parse file</b><span>Please check delimiter and encoding. Current browser validation expects a comma-separated CSV with a header row.</span></div>';showToast('Could not parse file. Please check delimiter and encoding.');}};
+    reader.readAsText(file);
+  };
+}
+const p3RenderBiomePanel=()=>`<section class="section"><h2>Prepare Your Biome for EKDI</h2><div class="subline">Guided data preparation · full recalculation requires the EKDI pipeline.</div><div class="badge">Preparation Workflow</div><div class="dynamic-note">The Atlantic Forest atlas is the fully functional case study. This panel helps botanists and ecologists check whether occurrence data and supporting files are ready for a reproducible EKDI pipeline run.</div></section><section class="diag"><h3>For Botanists and Ecologists Without Python</h3><div class="recommendation">You do not need to know Python to understand whether your data are ready for EKDI. Validate occurrence tables, identify missing fields and export a readiness report, then share the inputs with a technical collaborator or run the full EKDI pipeline later.</div><div class="dynamic-note">Google Colab workflow planned. Uploaded files are processed locally in your browser and are not uploaded to a server.</div></section><section class="diag"><h3>User Paths</h3><div class="readiness-grid"><div class="readiness-card"><b>Path 1 — Non-programmer</b><span>Inspect an occurrence table, check required columns, export a validation report and share files with a collaborator.</span></div><div class="readiness-card"><b>Path 2 — Assisted workflow</b><span>Prepare occurrence data, a biome boundary and land-cover data, then run EKDI with support.</span></div><div class="readiness-card"><b>Path 3 — Technical / reproducible</b><span>Clone the repository, run scripts, generate dashboard files and publish or load the atlas.</span></div></div></section><section class="diag"><h3>Required to Build a New EKDI Atlas</h3>${p3SourceBadge('Occurrence records with scientific name, coordinates and year/eventDate','Required')}${p3SourceBadge('Biome boundary as GeoJSON, GPKG or shapefile converted to GeoJSON','Required')}${p3SourceBadge('Grid resolution, for example 5 km x 5 km','Required')}${p3SourceBadge('Land-cover / forest-change data','Required')}${p3SourceBadge('Reference year','Required')}${p3SourceBadge('Threat-status table','Optional')}${p3SourceBadge('Endemic species checklist','Optional')}${p3SourceBadge('GBIF download DOI and source citations','Recommended')}</section><section class="diag"><h3>What Changes After Running the Full Pipeline?</h3><div class="why-list"><div class="why-item">Priority cells and Critical Gaps are regenerated.</div><div class="why-item">Unsurveyed Forest and Deficient Coverage are recalculated.</div><div class="why-item">Botanical Memory and plant candidates are rebuilt if source tables exist.</div><div class="why-item">Scientific Report, Data Integrity and exports are regenerated.</div></div></section><section class="diag"><h3>EKDI Weights for Other Biomes</h3><div class="formula-card">Atlantic Forest preset:<br>0.45 Sampling Antiquity<br>0.35 Post-Record Forest Loss<br>0.20 Richness Deficit</div><div class="dynamic-note">These weights prioritize record age first because EKDI measures potential knowledge obsolescence, habitat change second because landscape change affects interpretation, and richness deficit third because it indicates possible undersampling. Do not apply them blindly to another biome; test sensitivity and seek expert review.</div></section><button class="action" id="open-upload-inline">Validate Occurrence Table</button><button class="action secondary" id="open-integrity-inline">Open validation checks</button>`;
 const p3RenderUploadModal=()=>{
   const modal=document.getElementById('upload-modal');
   const body=modal&&modal.querySelector('.modal-body');
   if(!body)return;
-  body.innerHTML=`<div class="upload-zone"><b>Generate EKDI Atlas Wizard</b><span>Explanatory prototype for reproducibility. Real upload processing is not implemented in this public build.</span></div><div class="step-list"><div class="step"><div class="step-no">1</div><div><b>Upload GBIF Occurrence Records</b><span>CSV with coordinates, dates and taxonomy.</span></div></div><div class="step"><div class="step-no">2</div><div><b>Upload Biome Boundary</b><span>GeoJSON or GPKG boundary.</span></div></div><div class="step"><div class="step-no">3</div><div><b>Upload Land-Cover / Habitat Change Layer</b><span>Temporal habitat context.</span></div></div><div class="step"><div class="step-no">4</div><div><b>Choose Grid Size</b><span>Example: 5 km grid.</span></div></div><div class="step"><div class="step-no">5</div><div><b>Set EKDI Weights</b><span>Recalibrate for each biome.</span></div></div><div class="step"><div class="step-no">6</div><div><b>Generate Atlas Outputs</b><span>Export dashboard-ready layers and tables.</span></div></div></div><section class="diag"><h3>Core Outputs</h3><div class="why-list"><div class="why-item">Priority Cells</div><div class="why-item">Critical Gaps</div><div class="why-item">Unsurveyed Forest</div><div class="why-item">Deficient Coverage</div><div class="why-item">Expedition Targets</div></div></section><section class="diag"><h3>Optional Enrichment Outputs</h3><div class="why-list"><div class="why-item">Botanical Memory Profiles</div><div class="why-item">Knowledge Ghosts</div><div class="why-item">Rediscovery Hypotheses</div><div class="why-item">Plant Candidates</div><div class="why-item">Voucher Review Priorities</div></div><div class="dynamic-note">EKDI Core can run with GBIF records, a biome boundary and land-cover change. Optional enrichment improves botanical interpretation but is not required.</div></section>`;
+  const head=modal.querySelector('.modal-head div');
+  if(head)head.innerHTML='<h2>Prepare Your Biome for EKDI</h2><p>Guided data preparation · full recalculation requires the EKDI pipeline.</p>';
+  body.innerHTML=`<div class="upload-zone"><b>Occurrence Table Validation</b><span>Choose a CSV to check whether occurrence records have the fields EKDI needs. Files are processed locally in your browser and are not uploaded to a server.</span><input class="biome-upload-input" id="biome-occurrence-csv" type="file" accept=".csv,text/csv"></div><section class="diag"><h3>For Botanists and Ecologists Without Python</h3><div class="recommendation">You do not need to know Python to understand whether your data are ready for EKDI. This workflow validates occurrence tables, identifies missing fields and explains the files required to build a new atlas. Full atlas generation can then be run through the EKDI pipeline, a prepared notebook, Docker or a technical collaborator.</div><div class="dynamic-note">Uploaded files are validated and summarized. Full EKDI atlas recalculation is not performed inside the browser in this version. Google Colab workflow planned.</div></section><section class="diag"><h3>Three User Paths</h3><div class="readiness-grid"><div class="readiness-card"><b>Path 1 — Non-programmer</b><span>Upload or inspect an occurrence table, check columns, export a validation report and share files with a collaborator.</span></div><div class="readiness-card"><b>Path 2 — Assisted workflow</b><span>Prepare occurrence data, biome boundary and land-cover data, then run EKDI with support.</span></div><div class="readiness-card"><b>Path 3 — Technical / reproducible</b><span>Clone the repository, run scripts, generate dashboard files and publish or load the atlas.</span></div></div></section><section class="diag"><h3>Occurrence Table Validation</h3><div id="biome-validation-results" class="validation-results"><div class="dynamic-note">No occurrence CSV selected yet. This report validates input readiness. It is not an EKDI result.</div></div><button class="action secondary" id="download-biome-readiness" disabled>Download Data Readiness Report</button></section><section class="diag"><h3>Required to Build a New EKDI Atlas</h3><div class="why-list"><div class="why-item"><b>Occurrence records</b> — scientific name, coordinates and year/eventDate.</div><div class="why-item"><b>Biome boundary</b> — GeoJSON, GPKG or shapefile converted to GeoJSON.</div><div class="why-item"><b>Grid resolution</b> — example: 5 km × 5 km.</div><div class="why-item"><b>Land-cover / forest-change data</b> — forest remaining and post-record habitat change.</div><div class="why-item"><b>Reference year</b> — used to calculate years since last record.</div></div><div style="margin-top:8px"><span class="status-tag required">Required</span><span class="status-tag optional">Optional</span><span class="status-tag planned">Planned</span><span class="status-tag provided">Provided</span></div></section><section class="diag"><h3>Optional but Recommended</h3>${p3SourceBadge('Threat-status table','Optional')}${p3SourceBadge('Endemic species checklist','Optional')}${p3SourceBadge('Taxonomic backbone validation','Optional')}${p3SourceBadge('GBIF download DOI','Recommended')}${p3SourceBadge('Herbarium / speciesLink cross-check','Recommended')}${p3SourceBadge('Source metadata and citations','Recommended')}</section><section class="diag"><h3>What Changes After Running the Full Pipeline?</h3><div class="why-list"><div class="why-item">Dashboard data are regenerated from the new biome data.</div><div class="why-item">Map layers, EKDI scores, Critical Gaps, Unsurveyed Forest and Deficient Coverage are recomputed.</div><div class="why-item">Botanical Memory, plant candidates, Scientific Report, Data Integrity and exports are rebuilt.</div></div><div class="dynamic-note">Atlantic Forest weights should not be applied blindly to another biome. They should be tested with sensitivity analysis and reviewed by domain experts.</div></section><section class="diag"><h3>Why These EKDI Weights?</h3><div class="formula-card">Atlantic Forest preset:<br>0.45 Sampling Antiquity<br>0.35 Post-Record Forest Loss<br>0.20 Richness Deficit</div><div class="dynamic-note">EKDI makes assumptions explicit, not hidden. For another biome, weights should be recalibrated and tested before publishing results.</div></section>`;
+  bindBiomePreparationWorkflow();
 };
 const p46AboutModal=()=>{
   const body=document.getElementById('about-ekdi-body');
@@ -1478,7 +1680,10 @@ const p69RenderScientificReportModal=()=>{
   document.getElementById('copy-scientific-citation').onclick=p69CopyCitation;
   modal.classList.add('visible');
 };
-const p3SelectedSpecies=()=>window.EKDI_DATA.knowledgeGhosts[0]||window.EKDI_DATA.rediscoveryCandidates[0]||{};
+const p3SelectedSpecies=()=>{
+  if(P42_SELECTED_PLANT&&p625RecordBelongsToSelectedCell(P42_SELECTED_PLANT))return P42_SELECTED_PLANT;
+  return p625SelectedCellGhosts()[0]||p625SelectedCellRediscovery()[0]||{};
+};
 let p3RenderBotanicalPanel=()=>{
   const s=p3SelectedSpecies();
   const score=p3Num(p3Get(s,'ekdi','indice'));
@@ -1593,16 +1798,16 @@ const p64RecommendedAction=s=>{
 };
 const p67SuggestedBotanicalEnrichmentBlock=()=>`<details class="advanced-box"><summary>Suggested Botanical Enrichment</summary><div class="why-list"><div class="why-item">Flora e Funga validation.</div><div class="why-item">speciesLink / herbarium cross-check.</div><div class="why-item">Voucher review.</div><div class="why-item">GBIF issue flags.</div><div class="why-item">National red list / IUCN review.</div></div></details>`;
 p3RenderBotanicalPanel=()=>{
-  const s=P42_SELECTED_PLANT||p3SelectedSpecies();
-  if(!s||!p64Field(s,'species','scientificName','taxon'))return`<section class="section"><h2>Botanical Memory Profile</h2><div class="subline">Select a linked plant candidate to open a species-focused profile.</div><div class="badge">Candidate Evidence</div></section>`;
+  const s=P42_SELECTED_PLANT&&p625RecordBelongsToSelectedCell(P42_SELECTED_PLANT)?P42_SELECTED_PLANT:null;
+  if(!s||!p64Field(s,'species','scientificName','taxon'))return p625ContextEmpty('Species Memory','No plant candidate is linked to the selected cell. Open Botanical Memory from a plant candidate card when one is available.');
   const species=p64Field(s,'species','scientificName','taxon')||'Candidate species';
   const candidateType=p64Field(s,'candidate_type')||'Plant Candidate';
   const status=p64Field(s,'verification_status')||'Needs Verification';
   return`<section class="section"><h2>${p3Escape(species)}</h2><div class="subline">Botanical Memory Profile · Candidate Evidence · Needs Verification</div><div class="badge">${p3Escape(candidateType)}</div><div style="margin-top:8px"><span class="confidence-badge medium">${p3Escape(status)}</span></div></section>${p64TaxonomicIdentityBlock(s)}${p64OccurrenceMemoryBlock(s)}${p64ConservationBlock(s)}${p64CellContextBlock(s)}${p64WhyVerifyBlock(s)}<section class="diag"><h3>Recommended Action</h3><div class="recommendation">${p3Escape(p64RecommendedAction(s))}</div></section><section class="diag"><h3>Scientific Caveat</h3><div class="dynamic-note">This is a candidate/hypothesis. EKDI does not confirm current presence, absence, rediscovery or extinction.</div></section>${p67SuggestedBotanicalEnrichmentBlock()}<details class="advanced-box"><summary>Technical Details</summary><div class="row"><span>Evidence source</span><b>${p3Escape(p64Field(s,'evidence_source')||'Not Available')}</b></div><div class="row"><span>Linkage method</span><b>${p3Escape(p64Field(s,'linkage_method')||'Not Available')}</b></div><div class="row"><span>Cell ID</span><b>${p3Escape(p64Field(s,'cell_id')||'Not Available')}</b></div><div class="row"><span>Raw candidate type</span><b>${p3Escape(candidateType)}</b></div><div class="row"><span>Coordinate uncertainty</span><b>${p3Escape(p64Field(s,'coordinate_uncertainty','coordinateUncertaintyInMeters')||'Not Provided')}</b></div><div class="dynamic-note">Taxonomic, voucher, herbarium, speciesLink and Flora e Funga enrichment are shown only when present in the current dataset.</div></details><button class="action" id="add-botanical-target">Add Species to Expedition Planner</button><button class="action secondary" id="open-compare-modal">Compare Records</button>`;
 };
 p3RenderBotanicalPanel=()=>{
-  const s=P42_SELECTED_PLANT||p3SelectedSpecies();
-  if(!s||!p64Field(s,'species','scientificName','taxon'))return`<section class="section"><h2>Botanical Memory Profile</h2><div class="subline">Select a linked plant candidate to open a species-focused profile.</div><div class="badge">Candidate Evidence</div></section>`;
+  const s=P42_SELECTED_PLANT&&p625RecordBelongsToSelectedCell(P42_SELECTED_PLANT)?P42_SELECTED_PLANT:null;
+  if(!s||!p64Field(s,'species','scientificName','taxon'))return p625ContextEmpty('Species Memory','No plant candidate is linked to the selected cell. Open Botanical Memory from a plant candidate card when one is available.');
   const species=p64Field(s,'species','scientificName','taxon')||'Candidate species';
   const candidateType=p64Field(s,'candidate_type')||'Plant Candidate';
   const status=p64Field(s,'verification_status')||'Needs Verification';
@@ -1615,7 +1820,7 @@ p3RenderBotanicalPanel=()=>{
     ['Coordinate Uncertainty',p64Field(s,'coordinate_uncertainty','coordinateUncertaintyInMeters')]
   ]);
   const technical=technicalRows?`<details class="advanced-box"><summary>Technical Details</summary>${technicalRows}<div class="dynamic-note">Cell coordinates may support navigation; specimen coordinates are shown only when original occurrence coordinates exist.</div></details>`:'';
-  return`<section class="section"><h2>${p3Escape(species)}</h2><div class="subline">Botanical Memory Profile &middot; Candidate Evidence &middot; Needs Verification</div><div class="badge">${p3Escape(candidateType)}</div><div style="margin-top:8px"><span class="confidence-badge medium">${p3Escape(status)}</span> ${caution}</div></section>${p64TaxonomicIdentityBlock(s)}${p64OccurrenceMemoryBlock(s)}${p64ConservationBlock(s)}${p64CellContextBlock(s)}${p64WhyVerifyBlock(s)}<section class="diag"><h3>Recommended Action</h3><div class="recommendation">${p3Escape(p64RecommendedAction(s))}</div></section><section class="diag"><h3>Scientific Caveat</h3><div class="dynamic-note">Candidate/hypothesis only. EKDI does not confirm current presence, absence, rediscovery or extinction.</div></section>${technical}<div class="plant-mini-actions"><button class="action" id="add-botanical-target">Add Species to Expedition Planner</button><button class="action secondary" id="open-compare-modal">Compare Records</button></div>`;
+  return`<section class="section" data-tour="botanical-memory-modal"><h2>${p3Escape(species)}</h2><div class="subline">Botanical Memory Profile &middot; Candidate Evidence &middot; Needs Verification</div><div class="badge">${p3Escape(candidateType)}</div><div style="margin-top:8px"><span class="confidence-badge medium">${p3Escape(status)}</span> ${caution}</div></section>${p64TaxonomicIdentityBlock(s)}${p64OccurrenceMemoryBlock(s)}${p64ConservationBlock(s)}${p64CellContextBlock(s)}${p64WhyVerifyBlock(s)}<section class="diag"><h3>Recommended Action</h3><div class="recommendation">${p3Escape(p64RecommendedAction(s))}</div></section><section class="diag"><h3>Scientific Caveat</h3><div class="dynamic-note">Candidate/hypothesis only. EKDI does not confirm current presence, absence, rediscovery or extinction.</div></section>${technical}<div class="plant-mini-actions"><button class="action" id="add-botanical-target">Add Species to Expedition Planner</button><button class="action secondary" id="open-compare-modal">Compare Records</button></div>`;
 };
 const p3RenderPanel=mode=>{
   if(mode==='atlas')return p44RenderAtlasPanel();
@@ -1629,8 +1834,8 @@ setRightPanel=function(mode='atlas'){
   const panel=document.getElementById('right-panel');
   if(panel)panel.innerHTML=p3RenderPanel(mode);
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.flow===mode));
-  const titles={atlas:'Atlantic Forest Priority Atlas',ghosts:'Knowledge Ghosts · historic biodiversity memory',rediscovery:'Rediscovery candidates · verification hypotheses',botanical:'Botanical Memory Profile · species evidence',biome:'Use EKDI with your biome'};
-  const subtitles={biome:'Reusable workflow inputs and outputs for other threatened biomes.',botanical:'Compare plant evidence, habitat change and rediscovery priority.',rediscovery:'Species-level hypotheses loaded from clean real data; no location-specific map points without coordinates.',ghosts:'Historic-only candidate signals connected to voucher review and verification language.',atlas:'Click a cell to inspect evidence.'};
+  const titles={atlas:'Selected Cell Evidence',ghosts:'Ghost Signals · selected-cell context',rediscovery:'Rediscovery Hypotheses · selected-cell context',botanical:'Species Memory · selected-cell context',biome:'Prepare Your Biome for EKDI'};
+  const subtitles={biome:'Validate and prepare inputs for the EKDI pipeline. Full recalculation is not performed in-browser.',botanical:'Species evidence appears only when a plant candidate is linked to the selected cell.',rediscovery:'Hypotheses appear only when linked to the selected cell.',ghosts:'Ghost signals appear only when linked to the selected cell.',atlas:'Click a cell to inspect evidence.'};
   const title=document.getElementById('map-title'),subtitle=document.getElementById('map-subtitle');
   if(title)title.textContent=titles[mode]||titles.atlas;
   if(subtitle)subtitle.textContent=subtitles[mode]||subtitles.atlas;
@@ -1639,6 +1844,7 @@ setRightPanel=function(mode='atlas'){
 bindDynamicPanelButtons=function(){
   const fly=document.getElementById('fly-cell'); if(fly)fly.onclick=()=>{if(selectedFeature&&map)map.flyTo({center:centerOfFeature(selectedFeature),zoom:7.2,pitch:48,bearing:-18,duration:1200});};
   const add=document.getElementById('add'); if(add)add.onclick=addSelectedToExpedition;
+  const backToCell=document.getElementById('back-to-cell-evidence'); if(backToCell)backToCell.onclick=()=>setRightPanel('atlas');
   const openGhost=document.getElementById('open-ghost-panel'); if(openGhost)openGhost.onclick=()=>openGhostModal();
   const firstGhost=p3SelectedSpecies().species||'species-level rediscovery hypothesis';
   const ghostInline=document.getElementById('ghost-to-expedition-inline'); if(ghostInline)ghostInline.onclick=()=>addGhostTarget(firstGhost);
@@ -1648,6 +1854,8 @@ bindDynamicPanelButtons=function(){
   const addBotanical=document.getElementById('add-botanical-target'); if(addBotanical)addBotanical.onclick=()=>addGhostTarget(firstGhost);
   const compareModal=document.getElementById('open-compare-modal'); if(compareModal)compareModal.onclick=()=>p61RenderSpeciesCompareModal(P42_SELECTED_PLANT||p3SelectedSpecies());
   document.querySelectorAll('.ghost-candidate').forEach(card=>card.onclick=()=>openGhostModal(card.dataset.species));
+  document.querySelectorAll('.ghost-cell-evidence').forEach(button=>button.onclick=()=>{const item=window.P626_SELECTED_CELL_GHOST_ITEMS?.[Number(button.dataset.ghostIndex)]; if(item)openGhostModal(item.record.species||item.record);});
+  document.querySelectorAll('.ghost-expedition').forEach(button=>button.onclick=()=>{const item=window.P626_SELECTED_CELL_GHOST_ITEMS?.[Number(button.dataset.ghostIndex)]; if(item)addGhostTarget(item.record.species||item.record);});
 };
 const p3GhostSignalsFromData=()=>{
   const features=(window.EKDI_DATA.knowledgeGhosts||[]).map(g=>{
@@ -1722,6 +1930,7 @@ function debugPriorityLayerVisibility(){
     deficient:countFeaturesByClass(data,'deficient'),
     lost:countFeaturesByClass(data,'lost')
   };
+  if(!EKDI_DEBUG)return;
   console.group('EKDI Priority Layer Debug');
   console.log('priorityCells loaded:',window.EKDI_DATA.priorityCells?.features?.length);
   console.log('sample classes:',sample);
@@ -1806,7 +2015,7 @@ function addEkdiMapLayersOnly(){
 }
 function logEkdiRestoreStatus(){
   if(!map)return;
-  console.log('EKDI restore status',{
+  if(EKDI_DEBUG)console.log('EKDI restore status',{
     sources:{
       priority:!!map.getSource('priority-preview'),
       priorityCentroids:!!map.getSource('priority-centroids'),
@@ -1829,19 +2038,22 @@ function logEkdiRestoreStatus(){
 addMapLayers=function(){
   if(!map)return;
   if(window.EKDI_DATA.dataLoadBlocked||!p613ValidFeatureCollection(window.EKDI_DATA.priorityCellsDetail||window.EKDI_DATA.priorityCells)){p613ShowDataError(p613RealDataErrorMessage);return;}
+  p624StartTimer('EKDI layer render');
+  p624SetMapLoading('Rendering EKDI layers...','Rendering map layers...');
   addEkdiMapSources();
   addEkdiMapLayersOnly();
   applyAllLayerVisibilityStates();
   p3ApplyStateFilter();
   p3FitMapBounds();
   debugPriorityLayerVisibility();
-  console.log('Priority visual layers created',{
+  if(EKDI_DEBUG)console.log('Priority visual layers created',{
     criticalFill:!!map.getLayer('critical-fill'),
     criticalCircles:!!map.getLayer('critical-circles'),
     unsurveyedFill:!!map.getLayer('unsurveyed-fill'),
     deficientFill:!!map.getLayer('deficient-fill'),
     lostFill:!!map.getLayer('lost-fill')
   });
+  p624MaybeFinishLayerRender();
 };
 const p3RestoreSelectedCellHighlight=()=>{
   if(!map||!selectedFeature)return;
@@ -1853,6 +2065,8 @@ const p3RestoreSelectedCellHighlight=()=>{
 };
 function restoreEkdiLayersAfterBasemapChange(previousLayerState,{rebindEvents=false}={}){
   if(!map)return;
+  p624StartTimer('EKDI layer render');
+  p624SetMapLoading('Restoring EKDI layers...','Rebuilding priority grid after basemap change...');
   restoreLayerToggleState(previousLayerState);
   if(rebindEvents)P3_EVENTS_BOUND=false;
   addEkdiMapSources();
@@ -1864,10 +2078,11 @@ function restoreEkdiLayersAfterBasemapChange(previousLayerState,{rebindEvents=fa
   updateExpeditionRoute();
   map.resize();
   logEkdiRestoreStatus();
-  console.info('EKDI layers restored after basemap change');
+  p624MaybeFinishLayerRender();
+  if(EKDI_DEBUG)console.info('EKDI layers restored after basemap change');
 }
 function restoreEkdiMapLayersAfterStyleChange(previousLayerState){
-  restoreEkdiLayersAfterBasemapChange(previousLayerState,{rebindEvents:true});
+  restoreEkdiLayersAfterBasemapChange(previousLayerState,{rebindEvents:false});
 }
 bindMapEvents=function(){
   if(!map||P3_EVENTS_BOUND)return;
@@ -1935,6 +2150,8 @@ selectFeature=function(f){
     ['priority-cells','priority-centroids','priority-preview'].forEach(source=>{if(map.getSource(source))map.setFeatureState({source,id:previousId},{selected:false});});
   }
   selectedFeature=f;
+  currentSelectedCellId=f?p3CellId(f.properties||{}):null;
+  if(P42_SELECTED_PLANT&&!p625RecordBelongsToSelectedCell(P42_SELECTED_PLANT))P42_SELECTED_PLANT=null;
   if(map&&f){
     const selectedId=f.id||p3CellId(f.properties||{});
     ['priority-cells','priority-centroids','priority-preview'].forEach(source=>{if(map.getSource(source))map.setFeatureState({source,id:selectedId},{selected:true});});
@@ -1951,7 +2168,7 @@ openGhostModal=function(species){
   modal.classList.add('visible');
   const speciesName=g.species||incomingName||'';
   const title=document.getElementById('modal-ghost-title');
-  if(title)title.textContent=speciesName||'Ghost Rediscovery Lab';
+  if(title)title.textContent=speciesName||'Ghost Evidence';
   const body=modal.querySelector('.modal-body');
   if(!body){console.warn('Ghost modal body not found.');return;}
   if(!speciesName){
@@ -2150,6 +2367,64 @@ const p4DownloadText=(filename,mime,text)=>{
   link.remove();
   URL.revokeObjectURL(url);
 };
+const downloadText=(filename,text)=>p4DownloadText(filename,'text/plain;charset=utf-8',text);
+const downloadJson=(filename,data)=>p4DownloadText(filename,'application/json;charset=utf-8',JSON.stringify(data,null,2));
+const downloadCsv=(filename,text)=>p4DownloadText(filename,'text/csv;charset=utf-8',text);
+const p627RowsToCsv=rows=>{
+  if(!Array.isArray(rows)||!rows.length)return'';
+  const fields=[...new Set(rows.flatMap(row=>Object.keys(row||{})))];
+  return[fields.join(','),...rows.map(row=>fields.map(field=>p4CsvEscape(row&&row[field])).join(','))].join('\n');
+};
+const p628CellFirstRecord=props=>p3Get(props,'first_record','primeiro_registro','min_year','first_year');
+const p628CellLatitude=(feature,props)=>p3Num(p3Get(props,'latitude','centroid_lat','lat'))??centerOfFeature(feature)[1];
+const p628CellLongitude=(feature,props)=>p3Num(p3Get(props,'longitude','centroid_lon','lon','lng'))??centerOfFeature(feature)[0];
+const p628Top100Fields=['rank','cell_id','state','stateName','priority_class','ekdi_score','evidence_readiness','first_record','last_record','years_since_last_record','forest_remaining_pct','post_record_forest_loss_ha','richness_deficit','plant_candidate_species','plant_candidate_count','threat_status','latitude','longitude','recommended_action','caveat'];
+const buildTop100CriticalGapsRows=()=>{
+  const features=(window.EKDI_DATA.priorityCellsDetail?.features||window.EKDI_DATA.priorityCells?.features||[]).filter(feature=>p3ClassOf(feature.properties||{})==='critical');
+  const rows=features.sort((a,b)=>{
+    const aScore=getEkdi(a.properties||{})??-Infinity;
+    const bScore=getEkdi(b.properties||{})??-Infinity;
+    if(bScore!==aScore)return bScore-aScore;
+    return p3CellId(a.properties||{}).localeCompare(p3CellId(b.properties||{}));
+  }).slice(0,100).map((feature,index)=>{
+    const props=feature.properties||{};
+    const plants=p42PlantRowsForCell(props);
+    const species=plants.map(plant=>p3Get(plant,'species','scientificName','taxon')).filter(Boolean);
+    const firstPlant=plants[0]||{};
+    const threat=p65PlantHasProvidedRisk(firstPlant)?p65PlantRiskLabel(firstPlant).replace('Selected Plant Risk: ',''):(p3Get(props,'threat','threat_signal','cell_threat_signal')||'');
+    const row={
+      rank:index+1,
+      cell_id:p3CellId(props),
+      state:p3State(props)||'',
+      stateName:p3StateName(props)||'',
+      priority_class:p3ClassLabel[p3ClassOf(props)]||p3ClassOf(props),
+      ekdi_score:getEkdi(props)===null?'':formatScore(getEkdi(props),4),
+      evidence_readiness:p3EvidenceCompletenessClass(p3EvidenceCompletenessValue(props)),
+      first_record:p628CellFirstRecord(props)===null?'':formatYear(p628CellFirstRecord(props)),
+      last_record:getLastRecord(props)===null?'':formatYear(getLastRecord(props)),
+      years_since_last_record:p3Years(props)===null?'':formatCount(p3Years(props)),
+      forest_remaining_pct:getForestCover(props)===null?'':formatPercent(getForestCover(props)),
+      post_record_forest_loss_ha:getForestLoss(props)===null?'':formatHectares(getForestLoss(props)),
+      richness_deficit:getRichnessDeficit(props)===null?'':formatScore(getRichnessDeficit(props),4),
+      plant_candidate_species:species.join('; '),
+      plant_candidate_count:plants.length,
+      threat_status:threat,
+      latitude:p628CellLatitude(feature,props),
+      longitude:p628CellLongitude(feature,props),
+      recommended_action:p3Recommendation(props)||recommendationFor('critical'),
+      caveat:'Candidate field-verification priority only; EKDI does not confirm species presence, absence, rediscovery or extinction.'
+    };
+    const ordered={};
+    p628Top100Fields.forEach(field=>ordered[field]=row[field]??'');
+    return ordered;
+  });
+  return rows;
+};
+const buildTop100CriticalGapsCsv=()=>p627RowsToCsv(buildTop100CriticalGapsRows());
+const p627DownloadIf=(buttonId,handler)=>{
+  const button=document.getElementById(buttonId);
+  if(button)button.onclick=handler;
+};
 const p4DownloadCsv=()=>{
   const rows=p4RowsForExport();
   if(!rows.length){showToast('No expedition targets selected.');return;}
@@ -2169,6 +2444,31 @@ const p4DownloadJson=()=>{
   if(!p4AllTargets().length){showToast('No expedition targets selected.');return;}
   p4DownloadText('ekdi_evidence_summary.json','application/json;charset=utf-8',JSON.stringify(p4EvidenceSummary(),null,2));
   showToast('Evidence Summary JSON prepared.');
+};
+const p627ExportButton=(id,label,available,description)=>`<div class="export-card"><b>${p3Escape(label)}</b><span>${p3Escape(available?description:'Not available in current build')}</span><button class="secondary" id="${p3Escape(id)}" ${available?'':'disabled'}>${available?'Download':'Not Available'}</button></div>`;
+const p627RenderExportModal=()=>{
+  const modal=document.getElementById('export-modal');
+  const body=document.getElementById('export-modal-body');
+  if(!modal||!body)return;
+  const top100Rows=buildTop100CriticalGapsRows();
+  const hasTop100=top100Rows.length>0;
+  const hasState=!!window.EKDI_DATA.stateSummary;
+  const hasPlanner=p4AllTargets().length>0;
+  const hasPlants=Array.isArray(window.EKDI_DATA.cellPlantCandidates)&&window.EKDI_DATA.cellPlantCandidates.length>0;
+  const hasReport=!!window.EKDI_DATA.scientificReport;
+  const hasIntegrity=!!window.EKDI_DATA.dataIntegrity;
+  const hasSources=!!window.EKDI_DATA.sources;
+  body.innerHTML=`<section class="diag"><h3>Available Downloads</h3><div class="export-grid">${p627ExportButton('export-top100','Top 100 Critical Gaps CSV',hasTop100,'Ranked critical-gap rows from the current dashboard export.')}${p627ExportButton('export-state-summary','State Summary JSON',hasState,'State-level EKDI summaries.')}${p627ExportButton('export-planner-csv','Selected Expedition Planner CSV',hasPlanner,'Selected cells and species as a field checklist.')}${p627ExportButton('export-planner-json','Selected Expedition Planner JSON',hasPlanner,'Selected targets with evidence notes.')}${p627ExportButton('export-plant-candidates','Plant Candidates JSON',hasPlants,'Cell-linked botanical candidate records.')}${p627ExportButton('export-scientific-json','Scientific Report JSON',hasReport,'Calculated model, spatial and limitation summaries.')}${p627ExportButton('export-scientific-md','Scientific Report Markdown',hasReport,'Citation-ready report text.')}${p627ExportButton('export-data-integrity','Data Integrity JSON',hasIntegrity,'Dashboard data integrity metadata.')}${p627ExportButton('export-sources','Sources Metadata JSON',hasSources,'Available source metadata and citation fields.')}</div><div class="dynamic-note">Unavailable downloads are disabled instead of shown as broken actions.</div></section>`;
+  p627DownloadIf('export-top100',()=>{const csv=buildTop100CriticalGapsCsv();if(!csv){showToast('Export failed: missing source data.');return;}downloadCsv('ekdi_top_100_critical_gaps.csv',csv);showToast('Top 100 Critical Gaps CSV download ready.');});
+  p627DownloadIf('export-state-summary',()=>{downloadJson('ekdi_state_summary.json',window.EKDI_DATA.stateSummary);showToast('State Summary JSON prepared.');});
+  p627DownloadIf('export-planner-csv',p4DownloadCsv);
+  p627DownloadIf('export-planner-json',p4DownloadJson);
+  p627DownloadIf('export-plant-candidates',()=>{downloadJson('ekdi_cell_plant_candidates.json',window.EKDI_DATA.cellPlantCandidates);showToast('Plant Candidates JSON prepared.');});
+  p627DownloadIf('export-scientific-json',p69DownloadJson);
+  p627DownloadIf('export-scientific-md',p69DownloadMarkdown);
+  p627DownloadIf('export-data-integrity',()=>{downloadJson('ekdi_data_integrity.json',window.EKDI_DATA.dataIntegrity);showToast('Data Integrity JSON prepared.');});
+  p627DownloadIf('export-sources',()=>{downloadJson('ekdi_sources_metadata.json',window.EKDI_DATA.sources);showToast('Sources Metadata JSON prepared.');});
+  modal.classList.add('visible');
 };
 const p4CopyMapLinks=async()=>{
   const links=EKDI_EXPEDITION.cells.map(cell=>cell.google_maps_link).filter(link=>link&&link!=='Coordinates Not Available');
@@ -2213,34 +2513,86 @@ function renderExpeditionPlanner(){
   bindExpeditionButtons();
 }
 let P614_TUTORIAL_INDEX=0,P614_TUTORIAL_ACTIVE=false,P614_WELCOME_SHOWN=false,P614_SAVED_LAYERS=null;
+const EKDI_TUTORIAL={exampleCell:null,examplePlant:null};
 const p614FindText=(selector,text)=>[...document.querySelectorAll(selector)].find(el=>el.textContent&&el.textContent.toLowerCase().includes(text.toLowerCase()));
-const p614SelectRepresentativeCritical=()=>{
-  const f=(window.EKDI_DATA.priorityCellsDetail?.features||window.EKDI_DATA.priorityCells?.features||[]).find(item=>p3ClassOf(item.properties||{})==='critical');
-  if(f){
-    selectFeature(f);
-    if(map)map.flyTo({center:centerOfFeature(f),zoom:8.2,pitch:45,bearing:-16,duration:900});
+const p628FeatureHasUsableGeometry=feature=>{
+  if(!feature||!feature.geometry)return false;
+  if(feature.geometry.type==='Point')return Array.isArray(feature.geometry.coordinates)&&feature.geometry.coordinates.length>=2;
+  return Array.isArray(feature.geometry.coordinates)&&feature.geometry.coordinates.length>0;
+};
+const p628PlantHasName=plant=>!!p3Get(plant,'species','scientificName','taxon');
+function findTutorialExampleCell(){
+  if(EKDI_TUTORIAL.exampleCell&&EKDI_TUTORIAL.examplePlant)return EKDI_TUTORIAL;
+  if(!window.EKDI_DATA?.coreDataLoaded||window.EKDI_DATA?.dataLoadBlocked)return EKDI_TUTORIAL;
+  const features=[...((window.EKDI_DATA.priorityCellsDetail&&window.EKDI_DATA.priorityCellsDetail.features)||[]),...((window.EKDI_DATA.priorityCells&&window.EKDI_DATA.priorityCells.features)||[])];
+  const seen=new Set();
+  const candidates=features.filter(feature=>{
+    const props=feature.properties||{};
+    const cell=p3CellId(props);
+    if(!cell||cell==='unknown cell'||seen.has(cell))return false;
+    seen.add(cell);
+    if(!p628FeatureHasUsableGeometry(feature))return false;
+    return p42PlantRowsForCell(props).some(p628PlantHasName);
+  }).map(feature=>{
+    const props=feature.properties||{};
+    const plants=p42PlantRowsForCell(props).filter(p628PlantHasName);
+    return{feature,plant:plants[0],isCritical:p3ClassOf(props)==='critical',ekdi:getEkdi(props),cellId:p3CellId(props)};
+  });
+  candidates.sort((a,b)=>{
+    if(a.isCritical!==b.isCritical)return a.isCritical?-1:1;
+    const aScore=a.ekdi===null?-Infinity:a.ekdi;
+    const bScore=b.ekdi===null?-Infinity:b.ekdi;
+    if(bScore!==aScore)return bScore-aScore;
+    return String(a.cellId).localeCompare(String(b.cellId));
+  });
+  const selected=candidates[0];
+  if(selected){
+    EKDI_TUTORIAL.exampleCell=selected.feature;
+    EKDI_TUTORIAL.examplePlant=p42PlantPayload(selected.plant,selected.feature.properties||{});
   }
-  return f;
+  return EKDI_TUTORIAL;
+}
+const p628SelectedCellHasPlantCandidate=()=>!!(selectedFeature&&p42PlantRowsForCell(selectedFeature.properties||{}).some(p628PlantHasName));
+const p628SelectTutorialExampleCell=({zoom=false,force=false}={})=>{
+  const example=findTutorialExampleCell();
+  if(example.exampleCell&&(force||!p628SelectedCellHasPlantCandidate())){
+    selectFeature(example.exampleCell);
+    if(zoom&&map)map.easeTo({center:centerOfFeature(example.exampleCell),zoom:8.1,pitch:45,bearing:-16,duration:650});
+  }
+  return example.exampleCell||null;
 };
 const p614TutorialSteps=[
-  {id:'map',title:'Atlas Map',target:'map',text:'This is the Atlantic Forest Priority Atlas. Each cell represents a 5 km grid area classified by botanical evidence and habitat-change context.',run:()=>{p3FitMapBounds(true);}},
-  {id:'layers',title:'Map Layers',target:'layers',text:'Use layers to compare Critical Gaps, Unsurveyed Forest, Deficient Coverage, GBIF Memory, Forest Mask and Ghost Rediscovery.'},
-  {id:'filters',title:'Filters',target:'filters',text:'Use the state filter to focus the map on one Atlantic Forest state.'},
-  {id:'search',title:'Search',target:'search',text:'Search by cell, state or species when you need a faster route into the evidence.'},
-  {id:'select-cell',title:'Select A Cell',target:'critical-gaps-toggle',text:'Start with Critical Gaps, then click a visible cell to inspect why EKDI flagged it.',run:()=>p3SetLayerVisibility('critical',true)},
-  {id:'selected-cell-panel',title:'Selected Cell Panel',target:'selected-cell-panel',text:'The right panel explains record memory, forest context, richness deficit and recommended action.',run:()=>{P44_PANEL_MODE='expert';p614SelectRepresentativeCritical();setRightPanel('atlas');}},
-  {id:'why-this-cell',title:'Why This Cell?',target:'why-this-cell',text:'This section makes the EKDI reasoning visible for the selected cell.',run:()=>{P44_PANEL_MODE='expert';setRightPanel('atlas');}},
-  {id:'plant-candidates',title:'Plant Candidates',target:'plant-candidates',text:'Plant candidates are evidence signals, not confirmed current occurrences.',optionalText:'Plant candidates appear when species-level evidence is linked to a cell.'},
-  {id:'botanical-memory',title:'Botanical Memory',target:'botanical-memory',text:'Botanical Memory focuses on species record memory and verification needs.'},
-  {id:'community-verification',title:'Community Verification',target:'community-verification',text:'Community Verification provides map, iNaturalist and copy-note prompts for expert review.'},
-  {id:'expedition-planner',title:'Expedition Planner',target:'expedition-planner',text:'Add cells or species to build and export a field-verification checklist.'},
-  {id:'scientific-report',title:'Scientific Report',target:'scientific-report',text:'The Scientific Report summarizes model patterns, limitations and reproducibility.',run:()=>document.querySelector('.tools-menu')?.setAttribute('open','')},
-  {id:'data-integrity',title:'Data Integrity / Reproducibility',target:'data-integrity',text:'Data Integrity and repository tools document quality checks, source metadata and reproducibility.',run:()=>{document.querySelector('.tools-menu')?.setAttribute('open','');document.querySelector('[data-tour="generate-atlas"]')?.closest('details')?.setAttribute('open','');}},
-  {id:'finish',title:'Start Exploring',target:null,text:'You are ready to explore EKDI.'}
+  {id:'welcome-ekdi',title:'What is EKDI?',target:null,text:'EKDI is a field-verification atlas. It helps identify where botanical knowledge may be old, incomplete or affected by habitat change. It does not confirm species presence, absence, rediscovery or extinction.'},
+  {id:'map',title:'What is a grid cell?',target:'map',text:'Each square is a 5 km cell in the Atlantic Forest case study. Its color indicates the type of evidence gap or verification priority. Next: compare the layers.'},
+  {id:'atlas-summary',title:'Atlas Summary',target:'atlas-summary',text:'These summary cards describe the current Atlantic Forest case study: interactive cells loaded, post-record forest loss and states with many critical gaps. They are dataset-level context, not evidence for a single selected cell.'},
+  {id:'priority-layers',title:'Priority Layers',target:'map-layers',text:'Critical Gaps show where botanical knowledge may be most urgent to verify. Unsurveyed Forest marks forested cells with no GBIF records in this grid. Deficient Coverage marks limited or outdated sampling. Lost / Historical Review marks historical records needing landscape-context review.'},
+  {id:'evidence-layers',title:'Evidence Layers',target:'map-layers',text:'GBIF Memory shows occurrence evidence used as biodiversity memory. Forest Mask shows remaining forest or habitat context. Ghost / Rediscovery Signals are species-level hypotheses for expert review, not confirmed rediscoveries. Start with Critical Gaps, then turn on other layers to compare evidence.'},
+  {id:'critical-gaps',title:'What should I click first?',target:'critical-gaps-layer',text:'Start with Critical Gaps. These cells combine old records, knowledge deficit and habitat-change context, so they are good candidates for field-verification planning.',run:()=>p3SetLayerVisibility('critical',true)},
+  {id:'select-cell',title:'Click a cell to inspect evidence',target:'map',text:'Click any visible priority cell. The right panel explains why EKDI flagged it and what action is recommended. For this tutorial, EKDI selects one real Critical Gap with a linked plant candidate so you can see the full workflow.',run:()=>{p3SetLayerVisibility('critical',true);p628SelectTutorialExampleCell({zoom:true,force:true});}},
+  {id:'selected-cell-panel',title:'How to read the cell panel',target:'selected-cell-panel',text:'Read this panel from top to bottom: EKDI Score, Record Memory, Habitat Context, Plant Candidate and Recommended Action. This tells you why the cell matters.',run:()=>{P44_PANEL_MODE='expert';setRightPanel('atlas');}},
+  {id:'why-this-cell',title:'What does the EKDI score mean?',target:'ekdi-score',text:'EKDI is a priority score for field verification. It combines record age, post-record forest loss and richness deficit. It is not biological certainty.',optionalTarget:true},
+  {id:'evidence-readiness',title:'How complete is the evidence?',target:'evidence-readiness',text:'Evidence Readiness summarizes available data. It helps you know whether the cell has strong, moderate or limited evidence, but it does not confirm species presence or absence.',optionalTarget:true},
+  {id:'plant-candidates',title:'What is a Plant Candidate?',target:'plant-candidate',text:'A Plant Candidate is a botanical evidence signal linked to the cell. It is not confirmed current presence. Check it through voucher review, taxonomy and field verification.',optionalTarget:true,run:()=>{p628SelectTutorialExampleCell();setRightPanel('atlas');}},
+  {id:'botanical-memory',title:'What is Botanical Memory?',target:'botanical-memory-button',text:'Botanical Memory appears when a selected cell has a linked plant candidate. It opens from the plant candidate button and focuses on one species: record count, last evidence year, threat status if linked and why verification is recommended.',optionalTarget:true,run:()=>{p628SelectTutorialExampleCell();setRightPanel('atlas');}},
+  {id:'community-verification',title:'How can others help verify?',target:'community-verification',text:'Community Verification opens the cell in Google Maps, links to iNaturalist and copies a verification note. It supports field review but does not replace permits, vouchers or taxonomic validation. Selected-cell evidence appears in the right panel after you click a cell.',optionalTarget:true,run:()=>{p628SelectTutorialExampleCell();setRightPanel('atlas');document.querySelector('[data-tour="community-verification"]')?.setAttribute('open','');}},
+  {id:'expedition-planner',title:'How do I turn evidence into action?',target:()=>getTutorialTarget('add-to-expedition')||getTutorialTarget('expedition-planner'),text:'Add cells or species to the Expedition Planner to build a field-verification checklist. You can export selected targets as CSV or JSON.',run:()=>{p628SelectTutorialExampleCell();setRightPanel('atlas');}},
+  {id:'exports-basic',title:'What can I download?',target:'evidence-export',text:'Use Export for available downloads: CSV, JSON, Scientific Report outputs and metadata/source files when present. Missing data are disabled instead of shown as broken downloads.'},
+  {id:'basic-complete',title:'You completed the basic EKDI workflow',target:null,text:'You know the core workflow: start with Critical Gaps, click a cell, read the evidence, inspect plant candidates, use Community Verification and add targets to the Expedition Planner.'},
+  {id:'scientific-report',title:'Scientific Report',target:()=>getTutorialTarget('scientific-report')||getTutorialTarget('tools-menu'),text:'The Scientific Report summarizes model statistics, spatial patterns, plant analysis, limitations and reproducibility. Use it to see what was calculated and what is still missing.',run:()=>document.querySelector('.tools-menu')?.setAttribute('open','')},
+  {id:'data-integrity',title:'Data Integrity',target:()=>getTutorialTarget('data-integrity')||getTutorialTarget('tools-menu'),text:'Data Integrity checks whether real dashboard files loaded and whether source metadata such as GBIF DOI or source versions are available.',run:()=>document.querySelector('.tools-menu')?.setAttribute('open','')},
+  {id:'prepare-biome',title:'Prepare Your Biome for EKDI',target:()=>getTutorialTarget('generate-ekdi-atlas')||getTutorialTarget('tools-menu'),text:'This workflow helps non-programmers check whether occurrence data are ready for EKDI. The browser validates required fields and explains missing inputs; full recalculation of a new biome atlas requires the EKDI pipeline.',run:()=>{document.querySelector('.tools-menu')?.setAttribute('open','');document.querySelector('[data-tour="generate-ekdi-atlas"]')?.closest('details')?.setAttribute('open','');}},
+  {id:'biome-required-data',title:'What data are required?',target:()=>getTutorialTarget('generate-ekdi-atlas')||getTutorialTarget('tools-menu'),text:'To build a new EKDI atlas, users need occurrence records, a biome boundary, grid resolution, land-cover change data and source metadata. Threat lists and endemic checklists are optional enrichments. Do not apply Atlantic Forest weights to another biome without sensitivity analysis and expert review.',run:()=>document.querySelector('[data-tour="generate-ekdi-atlas"]')?.closest('details')?.setAttribute('open','')},
+  {id:'replicate-repository',title:'Replicate Repository',target:()=>getTutorialTarget('replicate-repository')||getTutorialTarget('tools-menu'),text:'Replicate Repository documents code, files and commands so reviewers can audit or reproduce the workflow.',run:()=>document.querySelector('[data-tour="replicate-repository"]')?.closest('details')?.setAttribute('open','')},
+  {id:'exports',title:'Exports',target:'evidence-export',text:'EKDI exports include expedition CSV/JSON, evidence packages and Scientific Report downloads when available. Use exports to move from interpretation to reviewable field planning.'},
+  {id:'ghost-guide',title:'Ghost & Rediscovery Guide',target:()=>getTutorialTarget('ghost-rediscovery-guide')||getTutorialTarget('tools-menu'),text:'Knowledge Ghosts and Rediscovery Hypotheses are expert-review signals. They are not confirmed rediscoveries and should be interpreted with voucher, taxonomy and habitat context.',run:()=>document.querySelector('[data-tour="ghost-rediscovery-guide"]')?.closest('details')?.setAttribute('open','')},
+  {id:'why-weights',title:'Why these EKDI weights?',target:null,text:'EKDI uses an Atlantic Forest preset: 0.45 Sampling Antiquity, 0.35 Post-Record Forest Loss and 0.20 Richness Deficit. These weights are transparent and recalibrable; before applying EKDI to another biome, test sensitivity and seek expert review.'},
+  {id:'finish',title:'You are ready to use EKDI and audit its outputs',target:null,text:'Use EKDI to ask better field-verification questions: where to look, what to review, what to export and what evidence still needs expert validation.'}
 ];
+let P627_TOUR_TARGET_CACHE=null,P627_TOUR_POSITION_FRAME=0;
 function getTutorialTarget(selectorOrTourId){
   if(!selectorOrTourId)return null;
   if(typeof selectorOrTourId==='function')return selectorOrTourId();
+  if(P627_TOUR_TARGET_CACHE&&P627_TOUR_TARGET_CACHE.has(selectorOrTourId))return P627_TOUR_TARGET_CACHE.get(selectorOrTourId);
   return document.querySelector(`[data-tour="${selectorOrTourId}"]`)||document.querySelector(selectorOrTourId);
 }
 const p614StepTarget=step=>getTutorialTarget(step&&step.target);
@@ -2252,8 +2604,9 @@ const p614PlaceTutorial=(target)=>{
   const box=document.getElementById('tutorial-box');
   if(!highlight||!box)return;
   if(!target||window.innerWidth<760){p614ClearHighlight();box.style.left='50%';box.style.right='auto';box.style.top='auto';box.style.bottom='22px';box.style.transform='translateX(-50%)';return;}
-  target.scrollIntoView({block:'center',inline:'center',behavior:'smooth'});
-  setTimeout(()=>{
+  target.scrollIntoView({block:'center',inline:'center',behavior:'auto'});
+  if(P627_TOUR_POSITION_FRAME)cancelAnimationFrame(P627_TOUR_POSITION_FRAME);
+  P627_TOUR_POSITION_FRAME=requestAnimationFrame(()=>{
     const rect=target.getBoundingClientRect();
     const pad=8;
     const margin=16;
@@ -2262,8 +2615,8 @@ const p614PlaceTutorial=(target)=>{
     highlight.style.width=`${Math.min(window.innerWidth-16,rect.width+pad*2)}px`;
     highlight.style.height=`${Math.min(window.innerHeight-16,rect.height+pad*2)}px`;
     highlight.classList.add('visible');
-    const boxWidth=Math.min(440,window.innerWidth-34);
-    const boxHeight=Math.min(box.offsetHeight||190,window.innerHeight-margin*2);
+    const boxWidth=Math.min(420,window.innerWidth-34);
+    const boxHeight=Math.min(box.offsetHeight||190,window.innerHeight*.70,window.innerHeight-margin*2);
     const spaceBelow=window.innerHeight-rect.bottom-margin;
     const spaceAbove=rect.top-margin;
     let left=rect.left+rect.width/2-boxWidth/2;
@@ -2278,7 +2631,27 @@ const p614PlaceTutorial=(target)=>{
     box.style.bottom='auto';
     box.style.right='auto';
     box.style.transform='none';
-  },220);
+  });
+};
+function validateTutorialSteps(){
+  const seen=new Map(),missing=[],targetless=[];
+  p614TutorialSteps.forEach(step=>{
+    const target=p614StepTarget(step);
+    if(!step.target)targetless.push(step.id);
+    else if(!target)missing.push(step.id);
+    else{
+      const key=typeof step.target==='string'?step.target:target.getAttribute('data-tour')||target.id||step.id;
+      seen.set(key,[...(seen.get(key)||[]),step.id]);
+    }
+  });
+  const duplicateTargets=[...seen.entries()].filter(([,steps])=>steps.length>1).map(([target,steps])=>({target,steps}));
+  const result={totalSteps:p614TutorialSteps.length,missingTargets:missing,targetlessSteps:targetless,duplicateTargets};
+  console.info('EKDI tutorial target audit',result);
+  return result;
+}
+const p628TutorialStepText=step=>{
+  if(['plant-candidates','botanical-memory'].includes(step.id)&&!findTutorialExampleCell().examplePlant)return'Plant candidate examples are not available in the current build. This step explains the workflow, but no plant-specific highlight is available.';
+  return step.text;
 };
 function getValidTutorialStep(startIndex,direction=1){
   const last=p614TutorialSteps.length-1;
@@ -2288,7 +2661,8 @@ function getValidTutorialStep(startIndex,direction=1){
     if(step.skipIf?.()){index+=direction;continue;}
     step.run?.();
     const target=p614StepTarget(step);
-    if(step.target&&!target){console.warn('Tutorial target missing:',step.id||step.target);index+=direction;continue;}
+    if(step.target&&!target&&!step.optionalTarget){console.warn('Tutorial target missing:',step.id||step.target);index+=direction;continue;}
+    if(step.target&&!target&&step.optionalTarget)console.warn('Tutorial target missing:',step.id||step.target);
     return{index,step,target};
   }
   return{index:last,step:p614TutorialSteps[last],target:null};
@@ -2303,14 +2677,21 @@ const p614ShowTutorialStep=()=>{
   document.getElementById('tutorial-scrim')?.classList.add('visible');
   box.classList.add('visible');
   document.getElementById('tutorial-title').textContent=step.title;
-  document.getElementById('tutorial-text').textContent=step.text;
+  document.getElementById('tutorial-text').textContent=p628TutorialStepText(step);
   document.getElementById('tutorial-progress').textContent=`Step ${P614_TUTORIAL_INDEX+1} of ${p614TutorialSteps.length}`;
   const back=document.getElementById('tutorial-back');
   const next=document.getElementById('tutorial-next');
   const skip=document.getElementById('tutorial-skip');
   if(back)back.disabled=P614_TUTORIAL_INDEX===0;
-  if(next)next.textContent=P614_TUTORIAL_INDEX===p614TutorialSteps.length-1?'Start Exploring':'Next';
-  if(skip)skip.textContent='Skip Tutorial';
+  if(step.id==='basic-complete'){
+    if(back){back.disabled=false;back.textContent='Start Exploring';}
+    if(next)next.textContent='Continue to Advanced Mode';
+    if(skip)skip.textContent='Skip Advanced Mode';
+  }else{
+    if(back)back.textContent='Back';
+    if(next)next.textContent=P614_TUTORIAL_INDEX===p614TutorialSteps.length-1?'Start Exploring':'Next';
+    if(skip)skip.textContent=P614_TUTORIAL_INDEX===p614TutorialSteps.length-1?'Restart Tutorial':'Skip Tutorial';
+  }
   p614PlaceTutorial(target);
 };
 const p614RestoreLayers=()=>{
@@ -2331,6 +2712,8 @@ const p614CloseTutorial=({skip=false,restore=true}={})=>{
 const p614StartTutorial=()=>{
   sessionStorage.removeItem('ekdi_tutorial_skipped');
   P614_SAVED_LAYERS={...P3_LAYER_VISIBILITY};
+  P627_TOUR_TARGET_CACHE=new Map([...document.querySelectorAll('[data-tour]')].map(el=>[el.getAttribute('data-tour'),el]));
+  validateTutorialSteps();
   P614_TUTORIAL_ACTIVE=true;
   P614_TUTORIAL_INDEX=0;
   document.getElementById('tutorial-welcome-modal')?.classList.remove('visible');
@@ -2344,11 +2727,16 @@ const p614NextTutorial=()=>{
 };
 const p614BackTutorial=()=>{
   if(!P614_TUTORIAL_ACTIVE||P614_TUTORIAL_INDEX===0)return;
+  if(p614TutorialSteps[P614_TUTORIAL_INDEX]?.id==='basic-complete'){p614CloseTutorial({restore:false});return;}
   const resolved=getValidTutorialStep(P614_TUTORIAL_INDEX-1,-1);
   P614_TUTORIAL_INDEX=resolved.index;
   p614ShowTutorialStep();
 };
-const p614SkipOrRestart=()=>p614CloseTutorial({skip:true});
+const p614SkipOrRestart=()=>{
+  if(P614_TUTORIAL_ACTIVE&&p614TutorialSteps[P614_TUTORIAL_INDEX]?.id==='basic-complete'){p614CloseTutorial({skip:true,restore:false});return;}
+  if(P614_TUTORIAL_ACTIVE&&P614_TUTORIAL_INDEX===p614TutorialSteps.length-1){p614StartTutorial();return;}
+  p614CloseTutorial({skip:true});
+};
 const p614MaybeShowWelcome=()=>{
   if(window.EKDI_DATA?.dataLoadBlocked)return;
   if(P614_WELCOME_SHOWN||sessionStorage.getItem('ekdi_tutorial_skipped')==='true')return;
@@ -2378,9 +2766,9 @@ updateExpeditionRoute=function(){
   const count=document.getElementById('tray-count'); if(count)count.textContent=p4TargetCountText();
 };
 const p4PanelSpeciesRecord=()=>{
-  if(P3_CURRENT_PANEL==='botanical'&&P42_SELECTED_PLANT)return P42_SELECTED_PLANT;
-  if(P3_CURRENT_PANEL==='rediscovery')return(window.EKDI_DATA.rediscoveryCandidates||[])[0]||p3SelectedSpecies();
-  if(P3_CURRENT_PANEL==='ghosts')return(window.EKDI_DATA.knowledgeGhosts||[])[0]||p3SelectedSpecies();
+  if(P3_CURRENT_PANEL==='botanical'&&P42_SELECTED_PLANT&&p625RecordBelongsToSelectedCell(P42_SELECTED_PLANT))return P42_SELECTED_PLANT;
+  if(P3_CURRENT_PANEL==='rediscovery')return p625SelectedCellRediscovery()[0]||{};
+  if(P3_CURRENT_PANEL==='ghosts')return p625SelectedCellGhosts()[0]||{};
   return p3SelectedSpecies();
 };
 bindDynamicPanelButtons=function(){
@@ -2396,6 +2784,8 @@ bindDynamicPanelButtons=function(){
   const compareModal=document.getElementById('open-compare-modal'); if(compareModal)compareModal.onclick=()=>p61RenderSpeciesCompareModal(P42_SELECTED_PLANT||p3SelectedSpecies());
   const cellMap=document.getElementById('open-cell-map'); if(cellMap)cellMap.onclick=()=>{const coords=p67SelectedCellCoordinates();if(coords)window.open(p4GoogleMapsLink(coords.latitude,coords.longitude),'_blank','noopener');};
   document.querySelectorAll('.ghost-candidate').forEach(card=>card.onclick=()=>openGhostModal(card.dataset.species));
+  document.querySelectorAll('.ghost-cell-evidence').forEach(button=>button.onclick=()=>{const item=window.P626_SELECTED_CELL_GHOST_ITEMS?.[Number(button.dataset.ghostIndex)]; if(item)openGhostModal(item.record.species||item.record);});
+  document.querySelectorAll('.ghost-expedition').forEach(button=>button.onclick=()=>{const item=window.P626_SELECTED_CELL_GHOST_ITEMS?.[Number(button.dataset.ghostIndex)]; if(item)addGhostTarget(item.record.species||item.record);});
   document.querySelectorAll('.plant-memory').forEach(button=>button.onclick=()=>p42OpenPlantMemory(button.dataset.plantIndex));
   document.querySelectorAll('.plant-compare').forEach(button=>button.onclick=()=>p42ComparePlantRecords(button.dataset.plantIndex));
   document.querySelectorAll('.plant-expedition').forEach(button=>button.onclick=()=>p42AddPlantToExpedition(button.dataset.plantIndex));
@@ -2489,16 +2879,22 @@ updateYear=function(value){
   if(map.getLayer('forest-mask'))map.setPaintProperty('forest-mask','fill-opacity',.16-t*.05);
 };
 document.querySelectorAll('.tab').forEach(tab=>tab.onclick=()=>setRightPanel(tab.dataset.flow));
+const p624ManualRestoreMapLayers=()=>{
+  if(!map||!window.EKDI_DATA?.coreDataLoaded){p624SetMapLoading('Loading EKDI real data...','Priority grid is not ready yet.');return;}
+  restoreEkdiLayersAfterBasemapChange(getCurrentLayerToggleState(),{rebindEvents:false});
+  p624MaybeFinishLayerRender();
+};
 document.getElementById('basemap-select').onchange=e=>{
   if(!map)return;
   const center=map.getCenter(),zoom=map.getZoom(),pitch=map.getPitch(),bearing=map.getBearing();
   const previousLayerState=getCurrentLayerToggleState();
   const label=e.target.options[e.target.selectedIndex].text;
+  p624SetMapLoading('Switching basemap...','Restoring EKDI layers after style change...');
   let didPrimaryRestore=false;
   let eventsRebound=false;
   const runRestorePass=showChangeToast=>{
     requestAnimationFrame(()=>{
-      restoreEkdiLayersAfterBasemapChange(previousLayerState,{rebindEvents:!eventsRebound});
+      restoreEkdiLayersAfterBasemapChange(previousLayerState,{rebindEvents:false});
       eventsRebound=true;
       map.jumpTo({center,zoom,pitch,bearing});
       if(showChangeToast&&!didPrimaryRestore)showToast(`Basemap changed to ${label}.`);
@@ -2523,6 +2919,9 @@ document.getElementById('fit-biome').onclick=()=>p3FitMapBounds(true);
 document.getElementById('open-upload').onclick=()=>{p3RenderUploadModal();document.getElementById('upload-modal').classList.add('visible');};
 document.getElementById('about-ekdi').onclick=()=>{p46AboutModal();document.getElementById('about-modal').classList.add('visible');};
 document.getElementById('start-demo').onclick=p46StartDemo;
+document.getElementById('open-how-use').onclick=()=>document.getElementById('how-use-modal')?.classList.add('visible');
+document.getElementById('restore-map-layers').onclick=p624ManualRestoreMapLayers;
+setInterval(()=>{if(window.EKDI_DATA?.coreDataLoaded&&map&&!p624ExpectedPriorityLayerReady())p624SetMapLoading('Rendering EKDI layers...','Priority data are loaded but map layers need restoration.',{canRestore:true});},5000);
 document.getElementById('tutorial-next').onclick=p614NextTutorial;
 document.getElementById('tutorial-back').onclick=p614BackTutorial;
 document.getElementById('tutorial-skip').onclick=p614SkipOrRestart;
@@ -2543,7 +2942,8 @@ document.addEventListener('click',event=>{
   if(event.target?.closest?.('#restart-tutorial-about')){document.getElementById('about-modal')?.classList.remove('visible');p614StartTutorial();}
   if(event.target?.closest?.('#restart-tutorial-sidebar'))p614StartTutorial();
 });
-document.getElementById('toggle-ghost-layer').onclick=()=>{
+const p626GhostLayerButton=document.getElementById('toggle-ghost-layer');
+if(p626GhostLayerButton)p626GhostLayerButton.onclick=()=>{
   if(!map||!map.getLayer('ghost-signals'))return;
   const current=map.getLayoutProperty('ghost-signals','visibility')||'visible';
   const next=current==='none'?'visible':'none';
@@ -2552,6 +2952,7 @@ document.getElementById('toggle-ghost-layer').onclick=()=>{
   if(ghostToggle)ghostToggle.checked=next==='visible';
   showToast(next==='none'?'Knowledge Ghosts hidden.':'Knowledge Ghosts visible.');
 };
+p617BindClick('open-ghost-guide',p626RenderGhostGuideModal);
 p617BindClick('export-top',()=>showToast(`${formatCount(window.EKDI_DATA.criticalTop100.length)} critical-gap rows available from clean CSV.`));
 p617BindClick('toggle-report',p69RenderScientificReportModal);
 p617BindClick('open-scientific-report',p69RenderScientificReportModal);
