@@ -11,3 +11,10 @@ codex_reports/
 .venv/
 dist/
 build/
+
+# Large local reproducibility artifacts; the contest UI loads the lightweight table.
+app/data/tables/cell_species_records.json
+app/data/tables/cell_species_top10_by_cell.json
+
+# Internal phase reports
+PHASE_6_28*.md

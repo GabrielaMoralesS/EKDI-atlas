@@ -1,0 +1,10 @@
+{
+  "source": "C:/Users/Gab/OneDrive/Documentos/MATAATLANTICA_MESTRADOUNICAMP/data/gbif_grid_joined.parquet",
+  "created": "2026-06-03T13:43:13.627623+00:00",
+  "status": "not_built",
+  "error": "Expecting ',' delimiter: line 62 column 4 (char 1685)",
+  "install_instructions": [
+    "pip install pandas pyarrow",
+    "python repo/scripts/build_cell_species_records.py"
+  ]
+}

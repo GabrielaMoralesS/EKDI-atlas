@@ -1,5 +1,26 @@
 {
   "generated_at": "2026-05-23T17:55:48.611919+00:00",
+  "source_gbif_download": {
+    "doi": "https://doi.org/10.15468/dl.evgrnx",
+    "creation_date": "2026-05-07 00:18:22",
+    "records_included": 4455560,
+    "published_datasets": 872,
+    "compressed_data_size": "637.3 MB",
+    "download_format": "simple tab-separated values TSV",
+    "filters": {
+      "Country": "Brazil",
+      "HasCoordinate": true,
+      "HasGeospatialIssue": false,
+      "TaxonKey": "Tracheophyta",
+      "Year": "1970-2026"
+    },
+    "note": "This DOI refers to the source GBIF download. EKDI filters and joins these records to the Atlantic Forest 5 km grid for dashboard outputs."
+  },
+  "source_metadata_gaps": {
+    "mapbiomas_version": "Pending exact source metadata.",
+    "florabr_reference_date": "Pending exact source metadata.",
+    "caveat": "MapBiomas version and FloraBR reference date should be completed before final archival release if exact source metadata are available."
+  },
   "model_summary": {
     "grid_resolution": "5 km x 5 km",
     "total_cells": 48407,
@@ -378,7 +399,7 @@
     "schema_generated_at": "2026-05-19T05:25:28.443895+00:00",
     "data_integrity_generated_at": "2026-05-19T05:25:28.504914+00:00",
     "repository": "https://github.com/GabrielaMoralesS/EKDI-atlas",
-    "citation": "Morales Soto, G. (2026). EKDI Atlas — Ecological Knowledge Decay Index: A Field-Verification Atlas for Ecological Memory Under Landscape Change."
+    "citation": "Morales Soto, G. (2026). EKDI Atlas — Ecological Knowledge Decay Index. GBIF Ebbe Nielsen Challenge 2026. Instituto de Computação, Universidade Estadual de Campinas (UNICAMP)."
   },
   "limitations": [
     "EKDI does not confirm species presence or absence.",

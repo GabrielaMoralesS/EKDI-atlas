@@ -1,0 +1,19 @@
+scientificName	decimalLatitude	decimalLongitude	eventDate	year	basisOfRecord	kingdom	phylum	taxonKey	occurrenceID	countryCode	hasCoordinate
+Testus alba	-22.9000	-43.2000	1978-05-12	1978	PRESERVED_SPECIMEN	Plantae	Tracheophyta	100001	qa-tsv-001	BR	true
+Testus alba	-22.9100	-43.2100	1985-07-03	1985	PRESERVED_SPECIMEN	Plantae	Tracheophyta	100001	qa-tsv-002	BR	true
+Examplea rubra	-20.3000	-44.1000	1992-09-21	1992	HUMAN_OBSERVATION	Plantae	Tracheophyta	100002	qa-tsv-003	BR	true
+Examplea rubra			-	1998	HUMAN_OBSERVATION	Plantae	Tracheophyta	100002	qa-tsv-004	BR	false
+Samplea viridis	-18.7000	-39.9000	2004-01-16	2004	PRESERVED_SPECIMEN	Plantae	Tracheophyta	100003	qa-tsv-005	BR	true
+Samplea viridis	-18.7100	-39.9100	2012-11-02	2012	PRESERVED_SPECIMEN	Plantae	Tracheophyta	100003	qa-tsv-006	BR	true
+Mockia minor	-23.5500	-46.6300	2018-04-07	2018	MATERIAL_SAMPLE	Plantae	Tracheophyta	100004	qa-tsv-007	BR	true
+Mockia minor	-23.5600	-46.6400	2024-02-18	2024	HUMAN_OBSERVATION	Plantae	Tracheophyta	100004	qa-tsv-008	BR	true
+Oldera campestris	-19.9200	-43.9400	1965-06-10	1965	PRESERVED_SPECIMEN	Plantae	Tracheophyta	100005	qa-tsv-009	BR	true
+Oldera campestris	-19.9300	-43.9500	1989-08-14	1989	PRESERVED_SPECIMEN	Plantae	Tracheophyta	100005	qa-tsv-010	BR	true
+Recentia testii	-25.4300	-49.2700	2021-12-01	2021	HUMAN_OBSERVATION	Plantae	Tracheophyta	100006	qa-tsv-011	BR	true
+Recentia testii	-25.4400	-49.2800	2023-03-13	2023	HUMAN_OBSERVATION	Plantae	Tracheophyta	100006	qa-tsv-012	BR	true
+	-21.7800	-41.3200	2001-01-01	2001	PRESERVED_SPECIMEN	Plantae	Tracheophyta		qa-tsv-013	BR	true
+Coordinates missing			-	1974	PRESERVED_SPECIMEN	Plantae	Tracheophyta	100007	qa-tsv-014	BR	false
+Date missing	-22.1200	-42.9000			PRESERVED_SPECIMEN	Plantae	Tracheophyta	100008	qa-tsv-015	BR	true
+Repeated species	-16.6800	-49.2500	1988-10-05	1988	PRESERVED_SPECIMEN	Plantae	Tracheophyta	100009	qa-tsv-016	BR	true
+Repeated species	-16.6900	-49.2600	2008-10-05	2008	PRESERVED_SPECIMEN	Plantae	Tracheophyta	100009	qa-tsv-017	BR	true
+Quoted species	-15.7900	-47.8800	1999-05-05	1999	HUMAN_OBSERVATION	Plantae	Tracheophyta	100010	qa-tsv-018	BR	true

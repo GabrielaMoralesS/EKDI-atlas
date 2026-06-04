@@ -1,30 +1,26 @@
-# EKDI Atlas — Ecological Knowledge Decay Index
+# EKDI Atlas - Ecological Knowledge Decay Index
 
-**A field-verification atlas for ecological memory under landscape change.**
+**Old GBIF-mediated records -> 5 km field-verification priorities.**
 
-EKDI is a scientific decision-support interface that connects biodiversity occurrence records with landscape change to identify where ecological knowledge may need field verification.
+GBIF-mediated occurrence records preserve where biodiversity was documented, but many old records are reused without checking whether the landscape has changed since collection. EKDI turns old occurrence evidence into 5 km field-verification priorities for threatened biomes.
 
-## What EKDI Is
+EKDI does not confirm current presence, absence, rediscovery or extinction. It identifies candidate evidence for expert review.
 
-EKDI helps researchers ask where biodiversity knowledge may have become ecologically outdated after habitat change.
+Repository: https://github.com/GabrielaMoralesS/EKDI-atlas
 
-It is not just a gap map. It combines historical sampling, post-record habitat change and richness deficit into an interpretable priority atlas.
+## What EKDI Adds To GBIF
 
-## Why It Matters
+GBIF tells us where biodiversity was recorded. EKDI asks where that knowledge may no longer be ecologically current after time, sampling gaps and habitat change.
 
-Biodiversity records preserve evidence from a place and time. Landscapes can change after those records were collected. EKDI helps turn open biodiversity data into field-verification questions for botanists, ecologists and conservation teams.
+This repository contains the Atlantic Forest case study dashboard, real-data metadata, export helpers and scripts used to prepare dashboard-ready outputs.
 
-## Case Study: Mata Atlântica
+## Impact In 60 Seconds
 
-This repository contains an advanced prototype for the Brazilian Mata Atlântica. The dashboard uses cleaned data layers prepared for public review and demonstration.
-
-## What The Demo Shows
-
-- Critical Gaps for botanical verification.
-- Unsurveyed Forest cells with forest cover and no open GBIF records.
-- Deficient Coverage cells where evidence may be incomplete or outdated.
-- Historical Review cells requiring cautious interpretation.
-- Botanical Evidence Summary, Plant Candidates and Expedition Planner outputs.
+- Critical Gaps: 5 km cells where old records, knowledge deficit and habitat-change context suggest field verification may be needed.
+- Unsurveyed Forest: forested cells with no open GBIF-mediated records in this grid.
+- Deficient Coverage: cells with limited or outdated evidence.
+- Knowledge Ghosts: expert-review species signals, not extinction claims.
+- Prepare GBIF Records: a browser-local readiness check for GBIF or Darwin Core-like occurrence tables.
 
 ## Core Workflow
 
@@ -35,11 +31,36 @@ This repository contains an advanced prototype for the Brazilian Mata Atlântica
 5. Generate EKDI priority classes.
 6. Export dashboard-ready layers and field-planning outputs.
 
+## EKDI Formula
+
+For this Atlantic Forest pilot parametrization:
+
+```text
+EKDI = 0.45 x Sampling Antiquity
+     + 0.35 x Post-Record Forest Loss
+     + 0.20 x Richness Deficit
+```
+
+These weights are not universal. EKDI is a transferable prioritization framework, but weights, thresholds, habitat-change layers and validation assumptions must be recalibrated for each biome.
+
+## What EKDI Does Not Claim
+
+EKDI does not:
+
+- declare species extinct;
+- confirm species presence or absence;
+- confirm rediscovery;
+- replace expert taxonomic review;
+- judge GBIF data as wrong;
+- replace field verification, permits or vouchers.
+
+Outputs are planning aids and candidate evidence for review.
+
 ## Data Sources
 
 Core inputs:
 
-- GBIF occurrence records.
+- GBIF-mediated occurrence records.
 - Biome boundary.
 - Land-cover or habitat-change layer.
 - Spatial grid resolution.
@@ -52,29 +73,19 @@ Optional enrichment:
 - GBIF issue flags.
 - Protected areas and accessibility layers.
 
-## EKDI Formula
+GBIF Download DOI: https://doi.org/10.15468/dl.evgrnx
 
-For this Mata Atlântica case-study preset:
+This DOI refers to the source GBIF download. EKDI filters and joins these records to the Atlantic Forest 5 km grid for dashboard outputs; the full source download is not displayed directly as dashboard cells.
 
-```text
-EKDI = 0.45 × Sampling Antiquity
-     + 0.35 × Post-Record Forest Loss
-     + 0.20 × Richness Deficit
-```
+GBIF source download metadata:
 
-These weights are not universal. Other biomes require recalibration and validation.
+- Creation date: 2026-05-07 00:18:22.
+- Records included: 4,455,560 records from 872 published datasets.
+- Compressed data size: 637.3 MB.
+- Download format: simple tab-separated values TSV.
+- Filters: Country = Brazil; HasCoordinate = true; HasGeospatialIssue = false; TaxonKey = Tracheophyta; Year = 1970-2026.
 
-## What EKDI Does Not Claim
-
-EKDI does not:
-
-- declare species extinct;
-- confirm species presence;
-- replace expert taxonomic review;
-- judge GBIF data as wrong;
-- replace field verification.
-
-Outputs are planning aids and hypotheses for review.
+Additional source metadata are documented in the repository when available.
 
 ## How To Run Locally
 
@@ -91,24 +102,29 @@ Then open:
 http://localhost:8000/
 ```
 
-If `python` is unavailable on Windows, try:
+The current contest review work is staged in `app/index_v2.html`. It has not been promoted to `app/index.html`.
 
-```bash
-py -m http.server 8000
-```
+## Prepare GBIF Records
 
-## How To Adapt To Another Biome
+The browser workflow can validate a GBIF occurrence download or Darwin Core-like table for:
 
-Use the same workflow with local inputs:
+- total rows;
+- records with coordinates;
+- records with dates;
+- oldest and newest year;
+- records older than 20 and 30 years;
+- unique species;
+- oldest-evidence species;
+- missing fields;
+- readiness: ready / partial / not ready.
 
-- occurrence data;
-- biome or study boundary;
-- land-cover or habitat-change layer;
-- grid resolution;
-- recalibrated weights;
-- local expert validation.
+The browser readiness check does not draw uploaded records as Critical Gaps, calculate EKDI scores or update the Atlantic Forest dashboard. Full EKDI recalculation for another biome requires the reproducible pipeline, a target grid, habitat-change layers and recalibrated weights/thresholds.
 
-Optional enrichment can be replaced with equivalent local herbarium, checklist or red-list sources.
+## Other Biomes
+
+Candidate next pilots include the Cerrado and Sundaland, pending comparable occurrence density, land-cover layers and validation partners.
+
+EKDI is a transferable prioritization framework through the reproducible pipeline. A compact example workflow is planned for the repository.
 
 ## Repository Structure
 
@@ -116,6 +132,7 @@ Optional enrichment can be replaced with equivalent local herbarium, checklist o
 repo/
   app/
     index.html
+    index_v2.html
     data/
   docs/
   scripts/
@@ -124,45 +141,6 @@ repo/
   CITATION.cff
   CHANGELOG.md
 ```
-
-## Current Limitations
-
-- This is an advanced prototype, not a final scientific publication.
-- The priority GeoJSON is large for public web hosting.
-- Some fields, such as nearest city, are not calculated yet.
-- Plant Candidates and Rediscovery Candidates require validation.
-
-## Data Verifiability
-
-EKDI includes an internal audit workflow:
-
-```bash
-python scripts/run_internal_audit.py
-```
-
-Audit outputs are written to `audit/`.
-
-EKDI source data are publicly verifiable, but exact reproducibility depends on metadata such as the GBIF download DOI, MapBiomas collection version and Flora e Funga source date.
-
-Manual action needed before research or policy use: add the GBIF download DOI from the gbif.org user downloads page, the MapBiomas collection/version, and the flora checklist source date or version to `app/data/metadata/sources.json`.
-
-## Next Steps
-
-Near-term:
-
-- validate plant candidate linkage;
-- improve species record comparison;
-- connect herbarium or speciesLink data where possible;
-- add Flora e Funga validation;
-- refine the field checklist;
-- collect expert feedback.
-
-Medium-term:
-
-- run sensitivity analysis of EKDI weights;
-- validate with known survey sites;
-- test GitHub Pages deployment publicly;
-- prepare GBIF submission materials.
 
 ## Citation
 
