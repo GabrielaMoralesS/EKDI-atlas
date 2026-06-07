@@ -163,21 +163,22 @@ button,input,select{font-family:inherit} button{cursor:pointer}
     <aside class="left">
       <section class="section" data-tour="map-layers"><div class="section-head"><div class="section-title">Layers</div></div><div class="layer-list">
         <label class="layer" data-tour="critical-gaps-layer" title="5 km priority cells for field review."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="critical" checked><i class="dot critical"></i><div><b>Critical Gaps</b><span>5 km priority cells for field review.</span></div></div><div class="count">Loading...</div></label>
-        <label class="layer" title="Forest cells with no linked open occurrence evidence."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="unsurveyed"><i class="dot unsurveyed"></i><div><b>Unsurveyed Forest</b><span>Forest cells with no linked open occurrence evidence.</span></div></div><div class="count">Loading...</div></label>
-        <label class="layer" title="Cells with sparse or incomplete biodiversity evidence."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="deficient"><i class="dot deficient"></i><div><b>Deficient Coverage</b><span>Cells with sparse or incomplete biodiversity evidence.</span></div></div><div class="count">Loading...</div></label>
-      </div><details class="advanced-box sidebar-details" data-tour="context-layers"><summary>Context layers</summary><div class="layer-list" style="margin-top:8px">
-        <label class="layer" title="Map points are visual context. EKDI priorities are computed from the processed GBIF source download documented in Sources/Citation."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="gbif"><i class="dot hotspot"></i><div><b>GBIF Occurrence Memory</b><span>Occurrence evidence context.</span></div></div><div class="count">Context</div></label>
-        <label class="layer" title="Remaining forest context used to interpret field-verification priority."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="forest"><i class="dot unsurveyed"></i><div><b>Forest Context</b><span>Habitat context layer.</span></div></div><div class="count">Loaded</div></label>
         <label class="layer" data-tour="knowledge-ghosts-layer" title="Species-level fragile-memory signals requiring expert verification."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="ghosts"><i class="dot hotspot"></i><div><b>Knowledge Ghosts</b><span>Species-level fragile-memory signals.</span></div></div><div class="count">4</div></label>
+      </div><details class="advanced-box sidebar-details" data-tour="context-layers"><summary>Context layers</summary><div class="layer-list" style="margin-top:8px">
+        <label class="layer" title="Visual occurrence context. EKDI priorities are computed from the processed GBIF source download documented in Sources/Citation."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="gbif"><i class="dot hotspot"></i><div><b>GBIF Memory</b><span>Occurrence evidence context.</span></div></div><div class="count">Context</div></label>
+        <label class="layer" title="Remaining forest context used to interpret field-verification priority."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="forest"><i class="dot unsurveyed"></i><div><b>Forest Context</b><span>Habitat context layer.</span></div></div><div class="count">Loaded</div></label>
+      </div></details><details class="advanced-box sidebar-details"><summary>Additional scientific categories</summary><div class="layer-list" style="margin-top:8px">
+        <label class="layer" title="Forest cells with no linked open occurrence evidence."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="unsurveyed"><i class="dot unsurveyed"></i><div><b>Unsurveyed Forest</b><span>Scientific category available in reports.</span></div></div><div class="count">Loading...</div></label>
+        <label class="layer" title="Cells with sparse or incomplete biodiversity evidence."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="deficient"><i class="dot deficient"></i><div><b>Deficient Coverage</b><span>Scientific category available in reports.</span></div></div><div class="count">Loading...</div></label>
       </div></details></section>
-      <section class="section" data-tour="filters"><div class="section-title">Filter / Search</div><div class="filter-grid"><div class="field"><label>Filter By State</label><select id="state-filter"><option value="all">All States</option><option>MG</option><option>BA</option><option>SP</option><option>PR</option><option>SC</option></select></div></div><div class="field" data-tour="search" style="margin-top:8px"><label>Cell, State Or Species</label><input id="search-input" type="text" placeholder="e.g. MG, BA, Varronia"></div></section>
+      <section class="section" data-tour="filters"><div class="section-title">Filter / Search</div><div class="filter-grid"><div class="field"><label>Filter By State</label><select id="state-filter"><option value="all">All States</option><option value="MG">Minas Gerais</option><option value="SP">São Paulo</option><option value="RJ">Rio de Janeiro</option><option value="BA">Bahia</option><option value="PR">Paraná</option><option value="SC">Santa Catarina</option><option value="ES">Espírito Santo</option></select></div></div><div class="field" data-tour="search" style="margin-top:8px"><label>Find in Atlas</label><div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center"><input id="search-input" type="text" placeholder="State, species or cell ID"><button class="secondary" id="atlas-search-button" type="button">Search</button></div><div class="compact-note">Search is limited to loaded atlas data. Press Enter or use Search.</div><div id="atlas-search-results" style="margin-top:8px"></div></div></section>
     </aside>
       <section class="map-wrap" data-tour="map"><div id="map" class="map"></div><div class="map-loading-overlay visible" id="map-loading-overlay"><b id="map-loading-title">Loading EKDI real data...</b><span id="map-loading-text">Loading priority grid...</span><button id="restore-map-layers">Restore Map Layers</button></div><div class="map-header"><div class="map-hero"><strong class="map-question" id="map-title">Where is botanical knowledge becoming outdated?</strong><span class="map-flow-copy" id="map-subtitle">Old GBIF-mediated records → 5 km field-verification priorities.</span></div><div class="map-controls"><select id="basemap-select" class="basemap-select"><option value="voyager">Voyager</option><option value="satellite">Satellite</option><option value="terrain">Terrain</option><option value="dark">Dark Science</option></select></div></div><div class="report-strip"><div class="report-metric"><b>Loading...</b><span>Critical Gaps</span></div><div class="report-metric"><b>Loading...</b><span>Unsurveyed Forest</span></div><div class="report-metric"><b>Loading...</b><span>Deficient Coverage</span></div><div class="report-metric"><b>Loading...</b><span>Post-Record Loss</span></div></div><div class="summary-cards" data-tour="atlas-summary"><div class="summary-card"><b>Loading...</b><span>Never sampled share, full grid</span></div><div class="summary-card"><b>Loading...</b><span>Post-record forest loss</span></div><div class="summary-card"><b>Loading...</b><span>Top state · Critical Gaps</span></div><div class="summary-card"><b>Loading...</b><span>Priority cells indexed</span></div></div></section>
     <aside class="right"><button class="collapse-panel-btn" id="collapse-right" title="Collapse / expand information panel">‹</button><div id="right-panel" data-tour="selected-cell-panel"></div></aside>
   </main>
   <div class="planner-backdrop" id="planner-backdrop"><aside class="planner-drawer" role="dialog" aria-modal="true" aria-labelledby="planner-title"><div class="planner-head"><div><h2 id="planner-title">Field Verification Planner</h2><p id="tray-count">0 selected cells, 0 selected species, 0 total targets</p></div><button class="close" id="close-planner">Close</button></div><div class="planner-body"><section class="planner-section"><h3>Selected Cells</h3><div class="planner-list" id="planner-cells"></div></section><section class="planner-section"><h3>Selected Species</h3><div class="planner-list" id="planner-species"></div></section><section class="planner-section"><h3>Export Outputs</h3><div class="planner-actions"><button id="download-route">Download CSV</button><button class="secondary" id="download-evidence-json">Download Evidence JSON</button><button class="secondary" id="copy-map-links">Copy Google Maps Links</button><button class="secondary" id="clear-expedition">Clear Planner</button></div><div class="dynamic-note">Planner outputs are field-verification aids. Google Maps links use selected cell centroids as access previews.</div></section></div></aside></div>
   <div class="tutorial-scrim" id="tutorial-scrim"></div><div class="tutorial-highlight" id="tutorial-highlight"></div>
-  <div class="tour-box" id="tutorial-box"><b id="tutorial-title">EKDI Guide</b><span id="tutorial-text">EKDI guide ready.</span><div class="tour-progress" id="tutorial-progress">Step 1 of 8</div><div class="tour-actions"><button id="tutorial-back">Back</button><button class="primary" id="tutorial-next">Next</button><button id="tutorial-skip">Skip</button></div></div>
+  <div class="tour-box" id="tutorial-box"><b id="tutorial-title">EKDI Guide</b><span id="tutorial-text">EKDI guide ready.</span><div class="tour-progress" id="tutorial-progress">Step 1 of 7</div><div class="tour-actions"><button id="tutorial-back">Back</button><button class="primary" id="tutorial-next">Next</button><button id="tutorial-skip">Skip</button></div></div>
   <footer class="tray" aria-hidden="true"></footer>
 </div>
 </section>
@@ -672,6 +673,30 @@ const p3Gbif=p=>getGbifCount(p);
 const p3Ekdi=p=>getEkdi(p);
 const p3State=p=>p3Get(p,'state')||null;
 const p3StateName=p=>p3Get(p,'stateName','stateProvince')||p3State(p)||null;
+const P628_STATE_NAMES={MG:'Minas Gerais',SP:'São Paulo',RJ:'Rio de Janeiro',BA:'Bahia',PR:'Paraná',SC:'Santa Catarina',ES:'Espírito Santo'};
+const p628NormalizeAtlasText=value=>String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim();
+const P628_STATE_SEARCH_ENTRIES=Object.entries(P628_STATE_NAMES).map(([code,name])=>({code,name,normalizedCode:p628NormalizeAtlasText(code),normalizedName:p628NormalizeAtlasText(name)}));
+const p628DisplayStateName=value=>{
+  if(!p612HasMeaningfulValue(value))return'State Not Assigned';
+  const text=String(value).trim();
+  const direct=P628_STATE_NAMES[text.toUpperCase()];
+  if(direct)return direct;
+  const normalized=p628NormalizeAtlasText(text);
+  return P628_STATE_SEARCH_ENTRIES.find(entry=>entry.normalizedName===normalized||entry.normalizedCode===normalized)?.name||text;
+};
+const p628StateCode=value=>{
+  if(!p612HasMeaningfulValue(value))return'';
+  const text=String(value).trim();
+  const direct=text.toUpperCase();
+  if(P628_STATE_NAMES[direct])return direct;
+  const normalized=p628NormalizeAtlasText(text);
+  return P628_STATE_SEARCH_ENTRIES.find(entry=>entry.normalizedName===normalized)?.code||text;
+};
+const p628FindStateSearchMatch=query=>{
+  const normalized=p628NormalizeAtlasText(query);
+  if(!normalized)return null;
+  return P628_STATE_SEARCH_ENTRIES.find(entry=>entry.normalizedCode===normalized||entry.normalizedName===normalized)||null;
+};
 const p3Confidence=p=>{const n=getConfidence(p); if(n===null)return'Not Available'; return n<=1?p3Pct(n*100):p3Pct(n);};
 const p3EvidenceCompletenessValue=p=>{const n=getConfidence(p); if(n===null)return null; return n<=1?n:n/100;};
 const p3EvidenceCompletenessClass=value=>{
@@ -1031,7 +1056,7 @@ const p3PopulateStateFilter=()=>{
   const select=document.getElementById('state-filter');
   if(!select)return;
   const states=(window.EKDI_DATA.stateSummary&&window.EKDI_DATA.stateSummary.states)||[];
-  select.innerHTML='<option value="all">All states</option>'+states.map(s=>`<option value="${p3Escape(s.state)}">${p3Escape(s.state)}</option>`).join('')+'<option value="Unknown">Unknown state</option>';
+  select.innerHTML='<option value="all">All states</option>'+states.map(s=>`<option value="${p3Escape(s.state)}">${p3Escape(p628DisplayStateName(s.stateName||s.state))}</option>`).join('')+'<option value="Unknown">Unknown state</option>';
 };
 const p3RenderDashboardData=()=>{
   const summary=window.EKDI_DATA.stateSummary||{};
@@ -1061,12 +1086,13 @@ const p3RenderDashboardData=()=>{
   p3SetLayerCount('gbif','Display subset');
   p3SetLayerCount('forest',forestFeatures===null?'Not Available':(forestFeatures>0?'Loaded':formatCount(forestFeatures)));
   p3SetLayerCount('ghosts',formatCount(ghostRows));
+  if(typeof p628RefreshAtlasSearchVisibility==='function')p628RefreshAtlasSearchVisibility();
   p628tFullRenderFeaturedGhosts();
   const report=document.querySelector('.report-strip');
   if(report)report.innerHTML=`<div class="report-metric"><b>${formatCount(critical)}</b><span>Critical Gaps</span></div><div class="report-metric"><b>${formatCount(unsurveyed)}</b><span>Unsurveyed Forest</span></div><div class="report-metric"><b>${formatCount(deficient)}</b><span>Deficient Coverage</span></div><div class="report-metric"><b>${p3FmtHa(overall.post_record_loss_ha_sum)}</b><span>Post-Record Loss</span></div>`;
   const cards=document.querySelector('.summary-cards');
   const speciesMetric=p3Num(p628t2CellSpeciesTop10Metadata()?.unique_species_represented);
-  if(cards)cards.innerHTML=`<div class="summary-card"><b>${p3Pct(overall.never_sampled_pct)}</b><span>Never sampled share, full grid</span></div><div class="summary-card"><b>${p3FmtHa(overall.post_record_loss_ha_sum)}</b><span>Post-record forest loss</span></div><div class="summary-card"><b>${top?p3Escape(top.state)+' '+formatCount(top.critical_gaps):'Not Available'}</b><span>Top state · Critical Gaps</span></div><div class="summary-card"><b>${speciesMetric?formatCount(speciesMetric):formatCount(p3Num(overall.web_layer_cells)??p3FeatureCount(window.EKDI_DATA.priorityCellsDetail))}</b><span>${speciesMetric?'Plant species':'Priority cells indexed'}</span></div>`;
+  if(cards)cards.innerHTML=`<div class="summary-card"><b>${p3Pct(overall.never_sampled_pct)}</b><span>Never sampled share, full grid</span></div><div class="summary-card"><b>${p3FmtHa(overall.post_record_loss_ha_sum)}</b><span>Post-record forest loss</span></div><div class="summary-card"><b>${top?p3Escape(p628DisplayStateName(top.stateName||top.state)):'Not Available'}</b><span>${top?`${formatCount(top.critical_gaps)} Critical Gaps`:'Top state by Critical Gaps'}</span></div><div class="summary-card"><b>${speciesMetric?formatCount(speciesMetric):formatCount(p3Num(overall.web_layer_cells)??p3FeatureCount(window.EKDI_DATA.priorityCellsDetail))}</b><span>${speciesMetric?'Plant species':'Priority cells indexed'}</span></div>`;
   const caseMetrics=document.querySelector('#case-card .metrics');
   if(caseMetrics)caseMetrics.innerHTML=`<div class="metric"><b>${p3Pct(overall.forest_cover_pct_mean??overall.forest_remaining_pct_mean??overall.forest_cover_remaining_pct)}</b><span>Forest Cover Remaining</span></div><div class="metric"><b>${p3FmtHa(overall.post_record_loss_ha_sum)}</b><span>Post-Record Deforestation</span></div><div class="metric"><b>${formatCount(overall.never_sampled_cells??overall.unsampled_cells_full_grid??overall.never_sampled_full_grid)}</b><span>Never sampled cells, full grid</span></div><div class="metric"><b>${formatCount(unsurveyed)}</b><span>Unsurveyed forest cells</span></div>`;
   p3PopulateStateFilter();
@@ -2222,6 +2248,7 @@ let EKDI_UPLOADED_RECORDS=[];
 let EKDI_UPLOAD_OVERLAP=null;
 let EKDI_UPLOAD_PRIORITY_INDEX=null;
 let EKDI_UPLOAD_RECORD_COLLECTION=p3FeatureCollection([]);
+let EKDI_USER_UPLOADED_GBIF_DOI='';
 const EKDI_OCCURRENCE_REQUIRED=['scientificName','decimalLatitude','decimalLongitude'];
 function detectDelimitedTextDelimiter(text){
   const firstLine=String(text||'').split(/\r?\n/).find(line=>line.trim())||'';
@@ -2257,9 +2284,10 @@ const p628t0ReadinessStatus=report=>{
   if(report.coordinate_completeness_pct<90||report.records_with_dates<report.record_count*.9)return'partial';
   return'ready';
 };
-function buildOccurrenceValidationReport(fileName,text,fileSize){
+function buildOccurrenceValidationReport(fileName,text,fileSize,options={}){
   const rows=parseCsvRows(text);
   if(rows.length<2)throw new Error('No data rows detected.');
+  const userUploadedGbifDoi=p612HasMeaningfulValue(options.userUploadedGbifDoi)?String(options.userUploadedGbifDoi).trim():'not provided by user';
   const columns=rows[0].map(value=>String(value||'').trim());
   const records=rows.slice(1);
   const hasYear=p629HasColumn(columns,'year')||p629HasColumn(columns,'eventDate');
@@ -2297,6 +2325,7 @@ function buildOccurrenceValidationReport(fileName,text,fileSize){
   const report={
     file_name:fileName,
     file_size_bytes:fileSize,
+    total_rows:records.length,
     detected_delimiter:detectDelimitedTextDelimiter(text)==='\t'?'tab':detectDelimitedTextDelimiter(text),
     record_count:records.length,
     detected_columns:columns,
@@ -2305,12 +2334,17 @@ function buildOccurrenceValidationReport(fileName,text,fileSize){
     missing_required_fields:missingRequired,
     missing_recommended_fields:missingRecommended,
     unique_scientific_names:species.size,
+    unique_species:species.size,
     records_with_coordinates:completeCoordinates,
+    rows_with_coordinates:completeCoordinates,
     records_with_dates:recordsWithDates,
+    rows_with_year_or_date:recordsWithDates,
     coordinate_completeness_pct:records.length?Math.round((completeCoordinates/records.length)*1000)/10:0,
     temporal_range:years.length?`${oldestYear}-${newestYear}`:'Not detected',
     oldest_record_year:oldestYear,
     newest_record_year:newestYear,
+    oldest_year:oldestYear,
+    newest_year:newestYear,
     records_older_than_20_years:years.filter(year=>referenceYear-year>=20).length,
     records_older_than_30_years:years.filter(year=>referenceYear-year>=30).length,
     species_with_oldest_evidence:oldestSpecies?{scientificName:oldestSpecies[0],oldest_year:oldestSpecies[1]}:null,
@@ -2319,10 +2353,16 @@ function buildOccurrenceValidationReport(fileName,text,fileSize){
     preserved_specimen_proportion_pct:basisRecords?Math.round((preservedSpecimens/basisRecords)*1000)/10:null,
     ekdi_ready_for_pipeline:missingRequired.length===0,
     ready_for_old_record_screening:'pending',
+    readiness_status:'pending',
+    user_uploaded_gbif_doi:userUploadedGbifDoi,
+    ekdi_source_gbif_doi:P628_GBIF_DOWNLOAD_DOI,
+    generated_at:new Date().toISOString(),
+    caveat:'This browser check validates data readiness only. It does not update the Atlantic Forest map and does not compute EKDI scores.',
     next_steps:missingRequired.length?['Add missing required fields before running the EKDI pipeline.','Confirm coordinates are decimal degrees and event dates or years are parseable.','Prepare biome boundary and land-cover change data.']:['Prepare biome boundary and land-cover change data.','Add source metadata, citations and GBIF download DOI when available.','Run the EKDI pipeline with biome-specific weight sensitivity review.'],
     notes:['This report validates input readiness. It is not an EKDI result.','Full EKDI atlas recalculation is not performed inside the browser in this version.','Files are processed locally in the browser and are not uploaded to a server.','Full recalculation requires occurrence data, biome boundary, target grid, habitat-change layers, source metadata, recalibrated weights/thresholds and the EKDI pipeline.']
   };
   report.ready_for_old_record_screening=p628t0ReadinessStatus(report);
+  report.readiness_status=report.ready_for_old_record_screening;
   return report;
 }
 const p628qa8UploadedPointFeature=record=>({type:'Feature',properties:{scientificName:record.scientificName,year:record.year||'',source_row:record.source_row},geometry:{type:'Point',coordinates:[record.longitude,record.latitude]}});
@@ -2454,7 +2494,7 @@ function renderOccurrenceValidationReport(report){
   const recommendedRows=Object.entries(report.recommended_fields).map(([field,ok])=>`<div class="row"><span>${p3Escape(field)}</span><b>${ok?'Provided':'Missing'}</b></div>`).join('');
   const oldestSpecies=report.species_with_oldest_evidence?`${report.species_with_oldest_evidence.scientificName} (${report.species_with_oldest_evidence.oldest_year})`:'Not detected';
   const oldestList=(report.top_10_species_with_oldest_evidence||[]).map(item=>`<div class="why-item"><i>${p3Escape(item.scientificName)}</i> — ${p3Escape(item.oldest_year)} (${formatCount(item.years_silent)} years silent)</div>`).join('');
-  result.innerHTML=`<div class="quick-result">${p69Metric('Total Rows',report.record_count)}${p69Metric('Records With Coordinates',report.records_with_coordinates)}${p69Metric('Records With Dates',report.records_with_dates)}${p69Metric('Oldest Record Year',report.oldest_record_year||'Not detected')}${p69Metric('Newest Record Year',report.newest_record_year||'Not detected')}${p69Metric('Records Older Than 20 Years',report.records_older_than_20_years)}${p69Metric('Records Older Than 30 Years',report.records_older_than_30_years)}${p69Metric('Unique Species',report.unique_scientific_names)}</div><div class="row"><span>Ready for old-record screening</span><b>${p3Escape(report.ready_for_old_record_screening)}</b></div><div class="row"><span>Species With Oldest Evidence</span><b>${p3Escape(oldestSpecies)}</b></div>${report.preserved_specimen_proportion_pct!==null?`<div class="row"><span>PRESERVED_SPECIMEN proportion</span><b>${p3Escape(report.preserved_specimen_proportion_pct)}%</b></div>`:''}<div class="row"><span>Required Fields</span><b>${report.missing_required_fields.length?'Incomplete':'Complete'}</b></div>${report.missing_required_fields.length?`<div class="validation-missing"><b>Missing required fields</b><span>${report.missing_required_fields.map(p3Escape).join(', ')}</span></div>`:''}${oldestList?`<details class="advanced-box" open><summary>Top 10 species with oldest evidence</summary><div class="why-list">${oldestList}</div></details>`:''}<details class="advanced-box" open><summary>Required Field Status</summary>${requiredRows}</details><details class="advanced-box"><summary>Recommended Field Status</summary>${recommendedRows}</details><details class="advanced-box"><summary>Next steps for full EKDI</summary><div class="why-list"><div class="why-item">GBIF occurrence download.</div><div class="why-item">Biome boundary.</div><div class="why-item">Target grid, for example 5 km.</div><div class="why-item">Habitat-change / land-cover layer.</div><div class="why-item">Recalibrated weights and thresholds.</div><div class="why-item">Optional FloraBR / Red List enrichment.</div><div class="why-item">Reproducible EKDI pipeline.</div></div></details><div class="dynamic-note">Uploaded files are validated and summarized for data readiness only. Full EKDI recalculation requires the reproducible pipeline, target grid, habitat-change layers and recalibrated weights/thresholds.</div>`;
+  result.innerHTML=`<div class="quick-result">${p69Metric('Total Rows',report.record_count)}${p69Metric('Records With Coordinates',report.records_with_coordinates)}${p69Metric('Records With Dates',report.records_with_dates)}${p69Metric('Oldest Record Year',report.oldest_record_year||'Not detected')}${p69Metric('Newest Record Year',report.newest_record_year||'Not detected')}${p69Metric('Records Older Than 20 Years',report.records_older_than_20_years)}${p69Metric('Records Older Than 30 Years',report.records_older_than_30_years)}${p69Metric('Unique Species',report.unique_scientific_names)}</div><div class="row"><span>Readiness status</span><b>${p3Escape(report.readiness_status)}</b></div><div class="row"><span>User GBIF DOI</span><b>${p3Escape(report.user_uploaded_gbif_doi)}</b></div><div class="row"><span>Species With Oldest Evidence</span><b>${p3Escape(oldestSpecies)}</b></div>${report.preserved_specimen_proportion_pct!==null?`<div class="row"><span>PRESERVED_SPECIMEN proportion</span><b>${p3Escape(report.preserved_specimen_proportion_pct)}%</b></div>`:''}<div class="row"><span>Required Fields</span><b>${report.missing_required_fields.length?'Incomplete':'Complete'}</b></div>${report.missing_required_fields.length?`<div class="validation-missing"><b>Missing required fields</b><span>${report.missing_required_fields.map(p3Escape).join(', ')}</span></div>`:''}${oldestList?`<details class="advanced-box" open><summary>Top 10 species with oldest evidence</summary><div class="why-list">${oldestList}</div></details>`:''}<details class="advanced-box" open><summary>Required Field Status</summary>${requiredRows}</details><details class="advanced-box"><summary>Recommended Field Status</summary>${recommendedRows}</details><details class="advanced-box"><summary>Next steps for full EKDI</summary><div class="why-list"><div class="why-item">GBIF occurrence download.</div><div class="why-item">Biome boundary.</div><div class="why-item">Target grid, for example 5 km.</div><div class="why-item">Habitat-change / land-cover layer.</div><div class="why-item">Recalibrated weights and thresholds.</div><div class="why-item">Optional FloraBR / Red List enrichment.</div><div class="why-item">Reproducible EKDI pipeline.</div></div></details><div class="dynamic-note">Uploaded files are validated and summarized for data readiness only. Full EKDI recalculation requires the reproducible pipeline, target grid, habitat-change layers and recalibrated weights/thresholds.</div>`;
   const addMatches=document.getElementById('add-upload-matches-planner');
   if(addMatches)addMatches.onclick=p628qa8AddMatchedCellsToPlanner;
   const downloadOverlap=document.getElementById('download-upload-overlap');
@@ -2462,8 +2502,15 @@ function renderOccurrenceValidationReport(report){
   if(download)download.disabled=false;
 }
 function bindBiomePreparationWorkflow(){
-  const input=document.getElementById('biome-occurrence-csv'),download=document.getElementById('download-biome-readiness');
+  const input=document.getElementById('biome-occurrence-csv'),download=document.getElementById('download-biome-readiness'),doiInput=document.getElementById('biome-gbif-doi');
   EKDI_BIOME_READINESS_REPORT=null;EKDI_UPLOADED_RECORDS=[];EKDI_UPLOAD_OVERLAP=null;EKDI_UPLOAD_RECORD_COLLECTION=p3FeatureCollection([]);renderOccurrenceValidationReport(null);
+  if(doiInput)doiInput.oninput=()=>{
+    EKDI_USER_UPLOADED_GBIF_DOI=String(doiInput.value||'').trim();
+    if(EKDI_BIOME_READINESS_REPORT){
+      EKDI_BIOME_READINESS_REPORT.user_uploaded_gbif_doi=EKDI_USER_UPLOADED_GBIF_DOI||'not provided by user';
+      renderOccurrenceValidationReport(EKDI_BIOME_READINESS_REPORT);
+    }
+  };
   if(download)download.onclick=()=>{if(!EKDI_BIOME_READINESS_REPORT){showToast('Upload an occurrence CSV before downloading a readiness report.');return;}downloadJson('ekdi_data_readiness_report.json',EKDI_BIOME_READINESS_REPORT);showToast('Data Readiness Report download ready.');};
   if(!input)return;
   input.onchange=()=>{
@@ -2473,7 +2520,7 @@ function bindBiomePreparationWorkflow(){
     reader.onerror=()=>showToast('Could not parse file. Please check delimiter and encoding.');
     reader.onload=()=>{try{
       const text=String(reader.result||'');
-      EKDI_BIOME_READINESS_REPORT=buildOccurrenceValidationReport(file.name,text,file.size);
+      EKDI_BIOME_READINESS_REPORT=buildOccurrenceValidationReport(file.name,text,file.size,{userUploadedGbifDoi:EKDI_USER_UPLOADED_GBIF_DOI});
       EKDI_UPLOADED_RECORDS=[];
       EKDI_UPLOAD_OVERLAP=null;
       renderOccurrenceValidationReport(EKDI_BIOME_READINESS_REPORT);
@@ -2489,7 +2536,7 @@ const p3RenderUploadModal=()=>{
   if(!body)return;
   const head=modal.querySelector('.modal-head div');
   if(head)head.innerHTML='<h2>Data Readiness Check</h2><p>Occurrence-readiness check · full recalculation requires the EKDI pipeline.</p>';
-  body.innerHTML=`<div class="upload-zone"><b>Validate GBIF / Darwin Core table</b><span>Upload a GBIF occurrence download or Darwin Core-like CSV/TSV to check whether it is ready for EKDI-style old-record verification analysis. Files are processed locally in your browser and are not uploaded to a server.</span><input class="biome-upload-input" id="biome-occurrence-csv" type="file" accept=".csv,.tsv,text/csv,text/tab-separated-values"></div><div class="dynamic-note">This browser check validates data readiness only. It does not update the Atlantic Forest map and does not compute EKDI scores. Full recalculation requires the reproducible pipeline, a target grid, habitat-change layers and recalibrated weights.</div><section class="diag"><h3>Validation Results</h3><div id="biome-validation-results" class="validation-results"><div class="dynamic-note">No occurrence CSV/TSV selected yet. This report validates input readiness. It is not an EKDI result.</div></div><button class="action secondary" id="download-biome-readiness" disabled>Download Data Readiness Report</button></section><details class="advanced-box"><summary>Guidance</summary><div class="dynamic-note">This check helps identify whether a GBIF/Darwin Core table has the fields needed for old-record screening.</div><div class="dynamic-note">For full EKDI recalculation, use the reproducible pipeline with a target grid and habitat-change layers.</div></details><section class="diag"><h3>Required to Build a New EKDI Atlas</h3><div class="why-list"><div class="why-item"><b>Occurrence records</b> — scientific name, coordinates and year/eventDate.</div><div class="why-item"><b>Biome boundary</b> — GeoJSON, GPKG or shapefile converted to GeoJSON.</div><div class="why-item"><b>Grid resolution</b> — example: 5 km × 5 km.</div><div class="why-item"><b>Land-cover / forest-change data</b> — forest remaining and post-record habitat change.</div><div class="why-item"><b>Reference year</b> — used to calculate years since last record.</div></div></section>`;
+  body.innerHTML=`<div class="upload-zone"><b>Validate GBIF / Darwin Core table</b><span>Upload a GBIF occurrence download or Darwin Core-like CSV/TSV to check whether it is ready for EKDI-style old-record verification analysis. Files are processed locally in your browser and are not uploaded to a server.</span><input class="biome-upload-input" id="biome-occurrence-csv" type="file" accept=".csv,.tsv,text/csv,text/tab-separated-values"><label style="margin-top:12px">GBIF download DOI (optional)</label><input class="biome-upload-input" id="biome-gbif-doi" type="text" placeholder="https://doi.org/10.15468/dl.xxxxxx" value="${p3Escape(EKDI_USER_UPLOADED_GBIF_DOI)}"><div class="compact-note">If this CSV/TSV comes from a GBIF download, paste its DOI so readiness exports carry the correct source citation.</div></div><div class="dynamic-note">This browser check validates data readiness only. It does not update the Atlantic Forest map and does not compute EKDI scores.</div><section class="diag"><h3>Validation Results</h3><div id="biome-validation-results" class="validation-results"><div class="dynamic-note">No occurrence CSV/TSV selected yet. This report validates input readiness. It is not an EKDI result.</div></div><button class="action secondary" id="download-biome-readiness" disabled>Download Data Readiness Report</button></section><details class="advanced-box"><summary>Guidance</summary><div class="dynamic-note">This check helps identify whether a GBIF/Darwin Core table has the fields needed for old-record screening.</div><div class="dynamic-note">Darwin Core applies to occurrence records, not EKDI grid-cell priority outputs.</div><div class="dynamic-note">For full EKDI recalculation, use the reproducible pipeline with a target grid and habitat-change layers.</div></details><section class="diag"><h3>Required to Build a New EKDI Atlas</h3><div class="why-list"><div class="why-item"><b>Occurrence records</b> — scientific name, coordinates and year/eventDate.</div><div class="why-item"><b>Biome boundary</b> — GeoJSON, GPKG or shapefile converted to GeoJSON.</div><div class="why-item"><b>Grid resolution</b> — example: 5 km × 5 km.</div><div class="why-item"><b>Land-cover / forest-change data</b> — forest remaining and post-record habitat change.</div><div class="why-item"><b>Reference year</b> — used to calculate years since last record.</div></div></section>`;
   bindBiomePreparationWorkflow();
 };
 const p46AboutModal=()=>{
@@ -3719,10 +3766,15 @@ const p628kCellThreatSignalFromProps=props=>{
 const p628CellFirstRecord=props=>p3Get(props,'first_record','primeiro_registro','min_year','first_year');
 const p628CellLatitude=(feature,props)=>p3Num(p3Get(props,'latitude','centroid_lat','lat'))??centerOfFeature(feature)[1];
 const p628CellLongitude=(feature,props)=>p3Num(p3Get(props,'longitude','centroid_lon','lon','lng'))??centerOfFeature(feature)[0];
-const p628Top100Fields=['rank','cell_id','state','state_name','priority_class','ekdi_score','evidence_readiness','first_record','last_record','years_since_last_record','gbif_records','forest_remaining_pct','post_record_forest_loss_ha','richness_deficit','plant_candidate_species','plant_candidate_count','plant_record_count','plant_last_evidence','official_red_list_status','red_list_source','red_list_match_status','cell_level_threat_signal','endemic_signal','candidate_type','evidence_source','linkage_method','centroid_lat','centroid_lon','recommended_action','caveat'];
-const buildTop100CriticalGapsRows=()=>{
+const p628LinkedRecordCount=plants=>{
+  const counts=(plants||[]).map(plant=>getRecordChronology(plant).recordCount).filter(value=>value!==null);
+  return counts.length?counts.reduce((sum,value)=>sum+value,0):null;
+};
+const p628Top100Fields=['rank','cell_id','state_abbrev','state_name','priority_class','centroid_latitude','centroid_longitude','last_record_year','years_silent','forest_remaining_pct','post_record_loss_ha','richness_deficit','linked_species_count','linked_record_count','endemic_linked_count','knowledge_ghost_count','recommended_action','ekdi_source_gbif_doi','generated_at','output_caveat'];
+const p628Top100CriticalGapEntries=()=>{
+  const generatedAt=new Date().toISOString();
   const features=(window.EKDI_DATA.priorityCellsDetail?.features||window.EKDI_DATA.priorityCells?.features||[]).filter(feature=>p3ClassOf(feature.properties||{})==='critical');
-  const rows=features.sort((a,b)=>{
+  return features.sort((a,b)=>{
     const aScore=getEkdi(a.properties||{})??-Infinity;
     const bScore=getEkdi(b.properties||{})??-Infinity;
     if(bScore!==aScore)return bScore-aScore;
@@ -3730,52 +3782,53 @@ const buildTop100CriticalGapsRows=()=>{
   }).slice(0,100).map((feature,index)=>{
     const props=feature.properties||{};
     const plants=p42PlantRowsForCell(props);
-    const species=plants.map(plant=>p3Get(plant,'species','scientificName','taxon')).filter(Boolean);
-    const firstPlant=plants[0]||{};
-    const chronology=getRecordChronology(firstPlant);
-    const official=plants.length?p628dOfficialRedListDisplay(firstPlant):null;
-    const endemicSignal=p42EndemicBadgeLabel(firstPlant)||'';
-    const cellThreat=p628kCellThreatSignalFromProps(props);
+    const linkedSpecies=[...new Set(plants.map(plant=>p3Get(plant,'species','scientificName','taxon')).filter(Boolean))];
+    const endemicLinkedCount=plants.filter(plant=>plantHasEndemicSignal(plant)).length;
+    const linkedRecordCount=getGbifCount(props)??p628LinkedRecordCount(plants);
+    const ghosts=p3RelatedGhostRecords(props);
     const row={
       rank:index+1,
       cell_id:p3CellId(props),
-      state:p3State(props)||'',
-      state_name:p3StateName(props)||'',
+      state_abbrev:p628StateCode(p3State(props)||p3StateName(props)||''),
+      state_name:p628DisplayStateName(p3StateName(props)||p3State(props)||''),
       priority_class:p3ClassLabel[p3ClassOf(props)]||p3ClassOf(props),
-      ekdi_score:getEkdi(props)===null?'':formatScore(getEkdi(props),4),
-      evidence_readiness:p3EvidenceCompletenessLabel(props)||'',
-      first_record:p628CellFirstRecord(props)===null?'':formatYear(p628CellFirstRecord(props)),
-      last_record:getLastRecord(props)===null?'':formatYear(getLastRecord(props)),
-      years_since_last_record:p3Years(props)===null?'':formatCount(p3Years(props)),
-      gbif_records:getGbifCount(props)===null?'':formatCount(getGbifCount(props)),
+      centroid_latitude:p628CellLatitude(feature,props),
+      centroid_longitude:p628CellLongitude(feature,props),
+      last_record_year:getLastRecord(props)===null?'':formatYear(getLastRecord(props)),
+      years_silent:p3Years(props)===null?'':formatCount(p3Years(props)),
       forest_remaining_pct:getForestCover(props)===null?'':formatPercent(getForestCover(props)),
-      post_record_forest_loss_ha:getForestLoss(props)===null?'':formatHectares(getForestLoss(props)),
+      post_record_loss_ha:getForestLoss(props)===null?'':formatHectares(getForestLoss(props)),
       richness_deficit:getRichnessDeficit(props)===null?'':formatScore(getRichnessDeficit(props),4),
-      plant_candidate_species:species[0]||'',
-      plant_candidate_count:plants.length,
-      plant_record_count:chronology.recordCount!==null?formatCount(chronology.recordCount):'',
-      plant_last_evidence:chronology.lastRecord!==null?formatYear(chronology.lastRecord):'',
-      official_red_list_status:official?official.status:'',
-      red_list_source:official&&official.matchStatus==='linked'?official.source:'',
-      red_list_match_status:plants.length?(official.matchStatus||'source_field_missing'):'no_plant_candidate',
-      cell_level_threat_signal:cellThreat,
-      endemic_signal:endemicSignal,
-      candidate_type:p3Get(firstPlant,'candidate_type')||'',
-      evidence_source:plants.length?p628dEvidenceTableLabel(firstPlant):'',
-      linkage_method:p3Get(firstPlant,'linkage_method','join_method','linkage')||'',
-      centroid_lat:p628CellLatitude(feature,props),
-      centroid_lon:p628CellLongitude(feature,props),
+      linked_species_count:formatCount(linkedSpecies.length),
+      linked_record_count:linkedRecordCount===null?'':formatCount(linkedRecordCount),
+      endemic_linked_count:formatCount(endemicLinkedCount),
+      knowledge_ghost_count:formatCount(ghosts.length),
       recommended_action:p3Recommendation(props)||recommendationFor('critical'),
-      caveat:P628_OUTPUT_CAVEAT
+      ekdi_source_gbif_doi:P628_GBIF_DOWNLOAD_DOI,
+      generated_at:generatedAt,
+      output_caveat:P628_OUTPUT_CAVEAT
     };
     const ordered={};
     p628Top100Fields.forEach(field=>ordered[field]=row[field]??'');
-    return ordered;
+    return{feature,row:ordered};
   });
-  return p628RowsWithProvenance(rows,'Top 100 Critical Gaps');
 };
+const buildTop100CriticalGapsRows=()=>p628Top100CriticalGapEntries().map(entry=>entry.row);
 const buildTop100CriticalGapsCsv=({excelCompatible=true}={})=>p627RowsToDelimited(buildTop100CriticalGapsRows(),excelCompatible?{delimiter:';',bom:true}:{delimiter:',',bom:false});
 const buildTop100CriticalGapsTsv=()=>p627RowsToDelimited(buildTop100CriticalGapsRows(),{delimiter:'\t',bom:true});
+const buildTop100CriticalGapsGeojson=()=>({type:'FeatureCollection',metadata:{provenance:p628ExportProvenance('Top 100 Critical Gaps GeoJSON',{includeCitation:true})},features:p628Top100CriticalGapEntries().map(entry=>({type:'Feature',geometry:entry.feature.geometry,properties:{...entry.row}}))});
+const buildTop100CriticalGapsMarkdown=()=>{
+  const rows=buildTop100CriticalGapsRows();
+  const lines=rows.map(row=>`- #${row.rank} ${row.state_name||'State not assigned'} · ${row.cell_id} · last record ${row.last_record_year||'Not available'} · ${row.years_silent||'Not available'} years silent · forest remaining ${row.forest_remaining_pct||'Not available'} · post-record loss ${row.post_record_loss_ha||'Not available'}`);
+  return`# Top 100 Critical Gaps\n\nGenerated: ${new Date().toISOString()}\n\nSource GBIF DOI: ${P628_GBIF_DOWNLOAD_DOI}\n\n${lines.join('\n')}\n\nCaveat: ${P628_OUTPUT_CAVEAT}\n`;
+};
+const p4PlannerMarkdown=()=>{
+  const targets=p4AllTargets();
+  if(!targets.length)return'';
+  const cells=EKDI_EXPEDITION.cells.map(cell=>`- ${cell.friendly_title} (${cell.cell_id}) — ${cell.stateName||cell.state} — ${cell.recommended_action}`).join('\n')||'- No selected cells.';
+  const species=EKDI_EXPEDITION.species.map(species=>`- ${species.species} — last evidence ${species.last_record||species.last_record_year} — ${species.recommended_action}`).join('\n')||'- No selected species.';
+  return`# Field Verification Planner\n\nGenerated: ${new Date().toISOString()}\n\n## Selected Cells\n${cells}\n\n## Selected Species\n${species}\n\nCaveat: ${P628_OUTPUT_CAVEAT}\n`;
+};
 const buildPlantCandidatesExport=()=> (window.EKDI_DATA.cellPlantCandidates||[]).map(row=>({
   cell_id:row.cell_id||'',
   state:row.state||'',
@@ -3836,6 +3889,56 @@ const buildPlantCandidateFlatRows=()=> (window.EKDI_DATA.cellPlantCandidates||[]
   };
 }));
 const buildPlantCandidatesCsv=()=>p627RowsToDelimited(p628RowsWithProvenance(buildPlantCandidateFlatRows(),'Plant Candidates CSV'),{delimiter:';',bom:true});
+const p628ReadinessSummaryRow=report=>report?{
+  file_name:report.file_name,
+  total_rows:report.total_rows??report.record_count,
+  rows_with_coordinates:report.rows_with_coordinates??report.records_with_coordinates,
+  rows_with_year_or_date:report.rows_with_year_or_date??report.records_with_dates,
+  oldest_year:report.oldest_year??report.oldest_record_year??'',
+  newest_year:report.newest_year??report.newest_record_year??'',
+  records_older_than_20_years:report.records_older_than_20_years,
+  records_older_than_30_years:report.records_older_than_30_years,
+  unique_species:report.unique_species??report.unique_scientific_names,
+  missing_fields:(report.missing_required_fields||[]).join('; '),
+  readiness_status:report.readiness_status||report.ready_for_old_record_screening,
+  ekdi_source_gbif_doi:report.ekdi_source_gbif_doi||P628_GBIF_DOWNLOAD_DOI,
+  user_uploaded_gbif_doi:report.user_uploaded_gbif_doi||'not provided by user',
+  generated_at:report.generated_at||new Date().toISOString(),
+  caveat:report.caveat||'This browser check validates data readiness only. It does not update the Atlantic Forest map and does not compute EKDI scores.'
+}:null;
+const buildDataReadinessCsv=()=>{
+  const row=p628ReadinessSummaryRow(EKDI_BIOME_READINESS_REPORT);
+  return row?p627RowsToDelimited([row],{delimiter:';',bom:true}):'';
+};
+const buildDarwinCoreFieldCheckRows=()=>{
+  const report=EKDI_BIOME_READINESS_REPORT;
+  if(!report)return[];
+  const columns=new Set((report.detected_columns||[]).map(column=>String(column).trim().toLowerCase()));
+  const fields=[
+    ['scientificName','Required for uploaded occurrence validation'],
+    ['decimalLatitude','Required for uploaded occurrence validation'],
+    ['decimalLongitude','Required for uploaded occurrence validation'],
+    ['year','Accepted for uploaded occurrence validation'],
+    ['eventDate','Accepted for uploaded occurrence validation'],
+    ['basisOfRecord','Recommended Darwin Core field'],
+    ['occurrenceID','Recommended Darwin Core field'],
+    ['gbifID','Recommended Darwin Core field'],
+    ['institutionCode','Recommended Darwin Core field'],
+    ['catalogNumber','Recommended Darwin Core field'],
+    ['country','Recommended Darwin Core field'],
+    ['stateProvince','Recommended Darwin Core field'],
+    ['taxonKey','Recommended Darwin Core field'],
+    ['speciesKey','Recommended Darwin Core field']
+  ];
+  return fields.map(([field,note])=>({
+    field,
+    present:columns.has(field.toLowerCase())?'yes':'no',
+    note,
+    user_uploaded_gbif_doi:report.user_uploaded_gbif_doi||'not provided by user',
+    caveat:'Darwin Core applies to occurrence records, not EKDI grid-cell priority outputs.'
+  }));
+};
+const buildDarwinCoreFieldCheckCsv=()=>p627RowsToDelimited(buildDarwinCoreFieldCheckRows(),{delimiter:';',bom:true});
 const p627DownloadIf=(buttonId,handler)=>{
   const button=document.getElementById(buttonId);
   if(button)button.onclick=()=>{
@@ -3868,6 +3971,12 @@ const p4DownloadJson=()=>{
   downloadJson('ekdi_evidence_summary.json',p4EvidenceSummary(),'Field Verification Planner JSON');
   showToast('Evidence Summary JSON prepared.');
 };
+const p4DownloadMarkdown=()=>{
+  const markdown=p4PlannerMarkdown();
+  if(!markdown){showToast('No expedition targets selected.');return;}
+  p4DownloadText('ekdi_field_verification_planner.md','text/markdown;charset=utf-8',markdown);
+  showToast('Field Verification Planner Markdown prepared.');
+};
 const p627ExportButton=(id,label,available,description)=>`<div class="export-card"><b>${p3Escape(label)}</b><span>${p3Escape(available?description:'Not available in current build')}</span><button class="secondary" id="${p3Escape(id)}" ${available?'':'disabled'}>${available?'Download':'Not Available'}</button></div>`;
 const p627RenderExportModal=()=>{
   const modal=document.getElementById('export-modal');
@@ -3883,19 +3992,25 @@ const p627RenderExportModal=()=>{
   const hasReport=realExports&&!!window.EKDI_DATA.scientificReport;
   const hasIntegrity=!!(window.EKDI_DATA.dataIntegrity||window.EKDI_DATA.runtimeAudit);
   const hasSources=realExports&&!!window.EKDI_DATA.sources;
-  body.innerHTML=`<section class="diag"><h3>Available Downloads</h3>${!realExports?'<div class="dynamic-note">Data files missing or incomplete - field exports are disabled until real EKDI data are loaded.</div>':''}<div class="dynamic-note">Unavailable downloads are disabled instead of shown as broken actions.</div></section><section class="diag"><h3>For field teams</h3><div class="export-grid">${p627ExportButton('export-top100','Top 100 Critical Gaps CSV — Excel compatible',hasTop100,'Excel-compatible checklist for field-verification planning, not a complete taxonomic inventory.')}</div></section><section class="diag"><h3>For analysis</h3><div class="export-grid">${p627ExportButton('export-top100-standard','Top 100 Critical Gaps CSV',hasTop100,'Comma-delimited checklist for standard data tools.')}${p627ExportButton('export-state-summary','State Summary JSON',hasState,'State-level EKDI summaries.')}${p627ExportButton('export-plant-candidates-csv','Plant Candidates CSV',hasPlants,'Cell-linked plant candidate records for botanical review.')}${p627ExportButton('export-scientific-md','Scientific Report Markdown',hasReport,'Citation-ready report text.')}</div></section><section class="diag"><h3>For developers</h3><div class="export-grid">${p627ExportButton('export-top100-tsv','Top 100 Critical Gaps TSV',hasTop100,'Tab-delimited field checklist for spreadsheet import.')}${p627ExportButton('export-planner-json','Planner JSON',hasPlanner,'Selected targets with evidence notes.')}${p627ExportButton('export-plant-candidates','Plant Candidates JSON',hasPlants,'Cell-linked botanical candidate records.')}${p627ExportButton('export-scientific-json','Scientific Report JSON',hasReport,'Calculated model, spatial and limitation summaries.')}${p627ExportButton('export-data-integrity','Data Integrity JSON',hasIntegrity,'Dashboard data integrity metadata and runtime real-data audit.')}${p627ExportButton('export-sources','Sources Metadata JSON',hasSources,'Available source metadata and citation fields.')}</div></section><section class="diag"><h3>Planner CSV</h3><div class="export-grid">${p627ExportButton('export-planner-csv','Selected Field Verification Planner CSV',hasPlanner,'Selected cells and species as a field checklist.')}</div><div class="dynamic-note">Designed to help field teams prioritize verification of old or incomplete botanical records. Not a complete taxonomic inventory.</div></section>`;
+  const hasReadiness=!!EKDI_BIOME_READINESS_REPORT;
+  body.innerHTML=`<section class="diag"><h3>Available Downloads</h3>${!realExports?'<div class="dynamic-note">Data files missing or incomplete - field exports are disabled until real EKDI data are loaded.</div>':''}<div class="dynamic-note">Critical Gaps are grid-cell priority outputs, not biological occurrence records. Darwin Core applies only to uploaded occurrence-record field checks.</div></section><section class="diag"><h3>For field teams</h3><div class="export-grid">${p627ExportButton('export-planner-csv','Field Planner CSV',hasPlanner,'Selected cells and species as a field checklist.')}${p627ExportButton('export-planner-json','Field Planner JSON',hasPlanner,'Selected targets with provenance for field coordination.')}${p627ExportButton('export-planner-md','Field Planner Markdown',hasPlanner,'Readable checklist summary for field teams.')}${p627ExportButton('export-top100','Top 100 Critical Gaps CSV — Excel compatible',hasTop100,'Excel-ready list of current 5 km priority cells for field review.')}</div></section><section class="diag"><h3>For GIS / analysis</h3><div class="export-grid">${p627ExportButton('export-top100-geojson','Top 100 Critical Gaps GeoJSON',hasTop100,'GIS-ready priority-cell geometry with current summary fields.')}${p627ExportButton('export-top100-json','Top 100 Critical Gaps JSON',hasTop100,'Structured priority-cell export with provenance metadata.')}${p627ExportButton('export-plant-candidates-csv','Plant Evidence CSV',hasPlants,'Cell-linked plant evidence records for botanical review.')}${p627ExportButton('export-plant-candidates','Plant Evidence JSON',hasPlants,'Structured plant evidence export with provenance.')}${p627ExportButton('export-state-summary','State Summary JSON',hasState,'State-level EKDI summaries from the loaded atlas build.')}</div></section><section class="diag"><h3>For documentation</h3><div class="export-grid">${p627ExportButton('export-top100-md','Top 100 Critical Gaps Markdown',hasTop100,'Readable summary of the current Top 100 priority cells.')}${p627ExportButton('export-scientific-md','Scientific Report Markdown',hasReport,'Citation-ready methods and limitations summary.')}${p627ExportButton('export-scientific-json','Scientific Report JSON',hasReport,'Structured scientific-report export.')}${p627ExportButton('export-data-integrity','Data Integrity JSON',hasIntegrity,'Dashboard data integrity metadata and runtime audit.')}${p627ExportButton('export-sources','Sources Metadata JSON',hasSources,'Available source metadata and citation fields.')}</div></section><section class="diag"><h3>For uploaded occurrence data</h3><div class="export-grid">${p627ExportButton('export-readiness-json','Data Readiness JSON',hasReadiness,'Summary of uploaded occurrence-table readiness only; no map update or EKDI recalculation.')}${p627ExportButton('export-readiness-csv','Data Readiness CSV',hasReadiness,'Spreadsheet summary of uploaded occurrence-table readiness.')}${p627ExportButton('export-dwc-field-check','Darwin Core field check CSV',hasReadiness,'Field presence check for uploaded occurrence records only.')}</div></section>`;
   p627DownloadIf('export-top100',()=>{const csv=buildTop100CriticalGapsCsv({excelCompatible:true});if(!csv){showToast('Export failed: missing source data.');return;}downloadCsv('ekdi_top100_critical_gaps_excel.csv',csv);showToast('Top 100 Critical Gaps Excel-compatible CSV download ready.');});
-  p627DownloadIf('export-top100-standard',()=>{const csv=buildTop100CriticalGapsCsv({excelCompatible:false});if(!csv){showToast('Export failed: missing source data.');return;}downloadCsv('ekdi_top100_critical_gaps_standard.csv',csv);showToast('Standard Top 100 Critical Gaps CSV download ready.');});
-  p627DownloadIf('export-top100-tsv',()=>{const tsv=buildTop100CriticalGapsTsv();if(!tsv){showToast('Export failed: missing source data.');return;}p4DownloadText('ekdi_top100_critical_gaps.tsv','text/tab-separated-values;charset=utf-8',tsv);showToast('Top 100 Critical Gaps TSV download ready.');});
+  p627DownloadIf('export-top100-json',()=>{const rows=buildTop100CriticalGapsRows();if(!rows.length){showToast('Export failed: missing source data.');return;}downloadJson('ekdi_top100_critical_gaps.json',{rows},'Top 100 Critical Gaps JSON');showToast('Top 100 Critical Gaps JSON download ready.');});
+  p627DownloadIf('export-top100-geojson',()=>{const geojson=buildTop100CriticalGapsGeojson();if(!geojson.features.length){showToast('Export failed: missing source data.');return;}p4DownloadText('ekdi_top100_critical_gaps.geojson','application/geo+json;charset=utf-8',JSON.stringify(geojson,null,2));showToast('Top 100 Critical Gaps GeoJSON download ready.');});
+  p627DownloadIf('export-top100-md',()=>{const markdown=buildTop100CriticalGapsMarkdown();if(!markdown.trim()){showToast('Export failed: missing source data.');return;}p4DownloadText('ekdi_top100_critical_gaps.md','text/markdown;charset=utf-8',markdown);showToast('Top 100 Critical Gaps Markdown download ready.');});
   p627DownloadIf('export-state-summary',()=>{downloadJson('ekdi_state_summary.json',window.EKDI_DATA.stateSummary);showToast('State Summary JSON prepared.');});
   p627DownloadIf('export-planner-csv',p4DownloadCsv);
   p627DownloadIf('export-planner-json',p4DownloadJson);
+  p627DownloadIf('export-planner-md',p4DownloadMarkdown);
   p627DownloadIf('export-plant-candidates-csv',()=>{const csv=buildPlantCandidatesCsv();if(!csv){showToast('Plant Candidate CSV unavailable.');return;}downloadCsv('ekdi_plant_candidates_excel.csv',csv);showToast('Plant Candidates CSV prepared.');});
   p627DownloadIf('export-plant-candidates',()=>{downloadJson('ekdi_cell_plant_candidates.json',buildPlantCandidatesExport());showToast('Plant Candidates JSON prepared.');});
   p627DownloadIf('export-scientific-json',p69DownloadJson);
   p627DownloadIf('export-scientific-md',p69DownloadMarkdown);
   p627DownloadIf('export-data-integrity',()=>{downloadJson('ekdi_data_integrity.json',{metadata:window.EKDI_DATA.dataIntegrity||null,runtime_audit:auditLoadedEkdiData({silent:true})});showToast('Data Integrity JSON prepared.');});
   p627DownloadIf('export-sources',()=>{downloadJson('ekdi_sources_metadata.json',window.EKDI_DATA.sources);showToast('Sources Metadata JSON prepared.');});
+  p627DownloadIf('export-readiness-json',()=>{if(!EKDI_BIOME_READINESS_REPORT){showToast('Data readiness report not available in current build.');return;}downloadJson('ekdi_data_readiness_report.json',EKDI_BIOME_READINESS_REPORT,'Data Readiness JSON');showToast('Data Readiness JSON prepared.');});
+  p627DownloadIf('export-readiness-csv',()=>{const csv=buildDataReadinessCsv();if(!csv){showToast('Data readiness report not available in current build.');return;}downloadCsv('ekdi_data_readiness_summary.csv',csv);showToast('Data Readiness CSV prepared.');});
+  p627DownloadIf('export-dwc-field-check',()=>{const csv=buildDarwinCoreFieldCheckCsv();if(!csv){showToast('Darwin Core field check not available in current build.');return;}downloadCsv('ekdi_uploaded_occurrence_darwin_core_field_check.csv',csv);showToast('Darwin Core field check CSV prepared.');});
   modal.classList.add('visible');
 };
 const p4CopyMapLinks=async()=>{
@@ -3990,14 +4105,13 @@ const p628SelectTutorialExampleCell=({zoom=false,force=false}={})=>{
   return example.exampleCell||null;
 };
 const p614TutorialSteps=[
-  {id:'layers',title:'Layers',target:'map-layers',text:'Start with Layers. They control which evidence signals appear on the map.'},
-  {id:'map',title:'Map',target:'map',text:'The map shows Atlantic Forest priority cells and context layers.'},
-  {id:'ghosts-intro-panel',title:'Knowledge Ghosts intro panel',target:()=>selectedFeature?null:getTutorialTarget('selected-cell-panel'),text:'Before selecting a cell, this panel explains Featured Knowledge Ghosts: species-level fragile evidence.',optionalTarget:true},
-  {id:'critical-gaps',title:'Critical Gaps layer',target:'critical-gaps-layer',text:'Critical Gaps are 5 km priority cells where field review should start.',run:()=>p3SetLayerVisibility('critical',true)},
-  {id:'click-critical-gap',title:'Click a Critical Gap',target:'map',text:'Click a visible Critical Gap cell to open its evidence panel.'},
-  {id:'priority-cell-review',title:'Priority Cell Review',target:()=>selectedFeature?getTutorialTarget('selected-cell-panel'):null,text:'Here you see why the cell was flagged and which plant records are linked.',optionalTarget:true},
-  {id:'knowledge-ghosts-layer',title:'Knowledge Ghosts layer',target:'knowledge-ghosts-layer',text:'Turn on Knowledge Ghosts to view species-level fragile-memory signals.',run:()=>document.querySelector('[data-tour="context-layers"]')?.setAttribute('open','')},
-  {id:'tools',title:'Tools',target:'tools-menu',text:'Use Tools to audit methods, check data readiness and export field outputs.',run:()=>document.querySelector('.tools-menu')?.setAttribute('open','')}
+  {id:'layers',title:'Layers',target:'map-layers',text:'Use Layers to switch between Critical Gaps and Knowledge Ghosts.'},
+  {id:'map',title:'Map',target:'map',text:'The map shows where EKDI priorities occur in the Atlantic Forest.'},
+  {id:'featured-ghosts',title:'Featured Knowledge Ghosts',target:()=>selectedFeature?null:getTutorialTarget('selected-cell-panel'),text:'Featured Ghosts are species-level fragile evidence, not cell classes.',optionalTarget:true},
+  {id:'critical-gaps',title:'Critical Gaps',target:'critical-gaps-layer',text:'Critical Gaps are 5 km cells where field review should start.',run:()=>p3SetLayerVisibility('critical',true)},
+  {id:'click-critical-gap',title:'Click a Critical Gap',target:'map',text:'Click a Critical Gap cell to open Priority Cell Review.'},
+  {id:'priority-cell-review',title:'Priority Cell Review',target:'selected-cell-panel',text:'Read the evidence summary and species table for the selected cell.',optionalTarget:true,run:()=>{if(!selectedFeature)p628SelectTutorialExampleCell({zoom:false});}},
+  {id:'tools',title:'Tools',target:'tools-menu',text:'Scientific Report audits methods. Data Integrity audits sources and limitations. Data Readiness checks user GBIF files. Field Verification Outputs exports checklists and reports.',run:()=>document.querySelector('.tools-menu')?.setAttribute('open','')}
 ];
 let P627_TOUR_TARGET_CACHE=null,P627_TOUR_POSITION_FRAME=0;
 function getTutorialTarget(selectorOrTourId){
@@ -4161,14 +4275,13 @@ const p614SkipOrRestart=()=>{
   p614CloseTutorial({skip:true});
 };
 const P628_FULL_TOUR_STEPS=[
-  ['Layers','Start with Layers. They control which evidence signals appear on the map.'],
-  ['Map','The map shows Atlantic Forest priority cells and context layers.'],
-  ['Knowledge Ghosts intro panel','Before selecting a cell, this panel explains Featured Knowledge Ghosts: species-level fragile evidence.'],
-  ['Critical Gaps layer','Critical Gaps are 5 km priority cells where field review should start.'],
-  ['Click a Critical Gap','Click a visible Critical Gap cell to open its evidence panel.'],
-  ['Priority Cell Review','Here you see why the cell was flagged and which plant records are linked.'],
-  ['Knowledge Ghosts layer','Turn on Knowledge Ghosts to view species-level fragile-memory signals.'],
-  ['Tools','Use Tools to audit methods, check data readiness and export field outputs.']
+  ['Layers','Use Layers to switch between Critical Gaps and Knowledge Ghosts.'],
+  ['Map','The map shows where EKDI priorities occur in the Atlantic Forest.'],
+  ['Featured Knowledge Ghosts','Featured Ghosts are species-level fragile evidence, not cell classes.'],
+  ['Critical Gaps','Critical Gaps are 5 km cells where field review should start.'],
+  ['Click a Critical Gap','Click a Critical Gap cell to open Priority Cell Review.'],
+  ['Priority Cell Review','Read the evidence summary and species table for the selected cell.'],
+  ['Tools','Scientific Report audits methods. Data Integrity audits sources and limitations. Data Readiness checks user GBIF files. Field Verification Outputs exports checklists and reports.']
 ];
 const p628FullRenderTourStep=()=>{
   const step=P628_FULL_TOUR_STEPS[P628_FULL_TOUR_INDEX]||P628_FULL_TOUR_STEPS[0];
@@ -4356,6 +4469,19 @@ const p628kRedListCoverageBlock=()=>{
   const categoryText=Object.entries(summary.categories).map(([key,value])=>`${key}: ${formatCount(value)}`).join('; ')||'None';
   const lowLinkage=summary.tableLoaded&&summary.uniquePlantSpecies&&summary.matchedSpecies/summary.uniquePlantSpecies<.5;
   return`<div class="diag" style="margin-top:16px"><h3>Red List Coverage</h3><div class="row"><span>Red-list table loaded</span><b>${summary.tableLoaded?'Yes':'No'}</b></div><div class="row"><span>Red-list records</span><b>${formatCount(summary.redListRecords)}</b></div><div class="row"><span>Plant candidates matched</span><b>${formatCount(summary.matchedRows)} / ${formatCount(summary.plantCandidateRecords)}</b></div><div class="row"><span>Unique species matched</span><b>${formatCount(summary.matchedSpecies)} / ${formatCount(summary.uniquePlantSpecies)}</b></div><div class="row"><span>Categories found</span><b>${p3Escape(categoryText)}</b></div><div class="row"><span>Unmatched species</span><b>${formatCount(summary.unmatchedSpecies)}</b></div><div class="dynamic-note">Official categories are species-level only. Cell-level EN/CR/VU context is not used as the selected plant status.</div>${lowLinkage?'<div class="dynamic-note">Low species-level red-list linkage. Review name matching and source coverage.</div>':''}</div>`;
+};
+const p628AtlasSearchAvailable=()=>{
+  const featureCount=p628AtlasFeatures().length;
+  const top10Cells=window.EKDI_DATA?.cellSpeciesTopByCell?.cells;
+  const top10Count=top10Cells&&typeof top10Cells==='object'?Object.keys(top10Cells).length:0;
+  const plantCount=(window.EKDI_DATA?.cellPriorityPlants||[]).length+(window.EKDI_DATA?.cellPlantCandidates||[]).length;
+  const ghostCount=(window.EKDI_DATA?.knowledgeGhosts||[]).length;
+  return featureCount>0||top10Count>0||plantCount>0||ghostCount>0;
+};
+const p628RefreshAtlasSearchVisibility=()=>{
+  const field=document.querySelector('[data-tour="search"]');
+  if(!field)return;
+  field.style.display=p628AtlasSearchAvailable()?'':'none';
 };
 const p628qDatasetStatus=(available,count)=>available?(count===null?'Loaded':formatCount(count)):'Not available in current build';
 const p628qFlattenPlantRows=rows=>(Array.isArray(rows)?rows:[]).flatMap(row=>(Array.isArray(row.plants)?row.plants:[row]).map(plant=>({...plant,cell_id:plant.cell_id||row.cell_id||row.id,state:plant.state||row.state,stateName:plant.stateName||row.stateName})));
@@ -4654,16 +4780,149 @@ document.getElementById('basemap-select').onchange=e=>{
   map.once('idle',()=>runRestorePass(false));
   map.setStyle(basemapStyles[e.target.value]);
 };
+let P628_ATLAS_SEARCH_RESULTS=[];
+const p628AtlasFeatures=()=>window.EKDI_DATA?.priorityCellsDetail?.features||window.EKDI_DATA?.priorityCells?.features||[];
+const p628AtlasSearchContainer=()=>document.getElementById('atlas-search-results');
+const p628AtlasSearchButton=()=>document.getElementById('atlas-search-button');
+const p628AtlasSearchCellId=value=>String(value||'').trim().toLowerCase();
+const p628AtlasFeatureForCellId=query=>p628AtlasFeatures().find(feature=>p628AtlasSearchCellId(p3CellId(feature.properties||{}))===p628AtlasSearchCellId(query))||null;
+const p628AtlasFeatureMatchesState=(feature,stateEntry)=>{
+  const props=feature.properties||{};
+  return p628StateCode(p3State(props)||p3StateName(props)||'')===stateEntry.code||p628NormalizeAtlasText(p3StateName(props)||p3State(props)||'')===stateEntry.normalizedName;
+};
+const p628AtlasBoundsForFeatures=features=>{
+  let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity,count=0;
+  (features||[]).forEach(feature=>p3CollectCoords(feature?.geometry?.coordinates).forEach(coord=>{
+    const[x,y]=coord;
+    if(!Number.isFinite(x)||!Number.isFinite(y))return;
+    minX=Math.min(minX,x);minY=Math.min(minY,y);maxX=Math.max(maxX,x);maxY=Math.max(maxY,y);count++;
+  }));
+  return count?new maplibregl.LngLatBounds([minX,minY],[maxX,maxY]):null;
+};
+const p628FocusAtlasFeature=feature=>{
+  if(!feature)return;
+  selectFeature(feature);
+  if(map)map.flyTo({center:centerOfFeature(feature),zoom:8.7,pitch:48,bearing:-18,duration:1200});
+};
+const p628RenderAtlasSearchResults=(results=[],emptyMessage='')=>{
+  const container=p628AtlasSearchContainer();
+  if(!container)return;
+  P628_ATLAS_SEARCH_RESULTS=results;
+  if(!results.length){
+    container.innerHTML=emptyMessage?`<div class="compact-note">${p3Escape(emptyMessage)}</div>`:'';
+    return;
+  }
+  container.innerHTML=results.map((result,index)=>`<button class="secondary atlas-search-result" data-atlas-search-index="${index}" style="width:100%;margin-top:6px;text-align:left"><b>${p3Escape(result.label)}</b><span style="display:block;margin-top:4px">${p3Escape(result.detail)}</span></button>`).join('');
+  container.querySelectorAll('[data-atlas-search-index]').forEach(button=>button.onclick=()=>{
+    const result=P628_ATLAS_SEARCH_RESULTS[Number(button.dataset.atlasSearchIndex)];
+    result?.action?.();
+  });
+};
+const p628AtlasStateResults=stateEntry=>{
+  const features=p628AtlasFeatures().filter(feature=>p628AtlasFeatureMatchesState(feature,stateEntry));
+  if(!features.length)return[];
+  return features.slice(0,10).map(feature=>({label:p3CellId(feature.properties||{}),detail:`${stateEntry.name} · ${p3ClassLabel[p3ClassOf(feature.properties||{})]||'Priority cell'}`,action:()=>p628FocusAtlasFeature(feature)}));
+};
+const p628AtlasTableSpeciesResults=query=>{
+  const normalized=p628NormalizeAtlasText(query);
+  if(!normalized)return[];
+  const cells=window.EKDI_DATA?.cellSpeciesTopByCell?.cells;
+  if(!cells||typeof cells!=='object')return[];
+  const featureByCell=new Map(p628AtlasFeatures().map(feature=>[p42NormalizePlantCellId(p3CellId(feature.properties||{})),feature]));
+  const results=[];
+  Object.entries(cells).forEach(([cellKey,entry])=>{
+    const speciesRows=entry&&(Array.isArray(entry.species)?entry.species:Array.isArray(entry.top_species)?entry.top_species:[]);
+    const cellId=entry?.cell_id||cellKey;
+    const feature=featureByCell.get(p42NormalizePlantCellId(cellId));
+    const state=feature?p628DisplayStateName(p3StateName(feature.properties||{})||p3State(feature.properties||{})):p628DisplayStateName(entry?.stateName||entry?.state||'');
+    speciesRows.forEach(row=>{
+      const species=p3Get(row,'species','scientificName','taxon');
+      if(!p612HasMeaningfulValue(species)||!p628NormalizeAtlasText(species).includes(normalized))return;
+      results.push({
+        type:'Visible species table',
+        species,
+        cellId,
+        feature,
+        state
+      });
+    });
+  });
+  return results;
+};
+const p628AtlasSpeciesResults=query=>{
+  const normalized=p628NormalizeAtlasText(query);
+  if(!normalized)return[];
+  const featuresByCell=new Map(p628AtlasFeatures().map(feature=>[p42NormalizePlantCellId(p3CellId(feature.properties||{})),feature]));
+  const seen=new Set();
+  const tableResults=p628AtlasTableSpeciesResults(query);
+  const plantResults=p628qPlantRows().map(plant=>{
+    const species=p3Get(plant,'species','scientificName','taxon');
+    const cellId=p3Get(plant,'cell_id','id');
+    const feature=featuresByCell.get(p42NormalizePlantCellId(cellId));
+    return{type:'Plant evidence',species,cellId,feature,state:p628DisplayStateName(p3Get(plant,'stateName','state'))};
+  }).filter(item=>p612HasMeaningfulValue(item.species)&&p628NormalizeAtlasText(item.species).includes(normalized));
+  const ghostResults=(window.EKDI_DATA?.knowledgeGhosts||[]).map(ghost=>{
+    const species=p3Get(ghost,'species','scientificName','taxon');
+    const cellId=p3Get(ghost,'cell_id','id');
+    const feature=featuresByCell.get(p42NormalizePlantCellId(cellId));
+    return{type:'Knowledge Ghost',species,cellId,feature,state:p628DisplayStateName(p3Get(ghost,'stateName','state','stateProvince'))};
+  }).filter(item=>p612HasMeaningfulValue(item.species)&&p628NormalizeAtlasText(item.species).includes(normalized));
+  return[...tableResults,...plantResults,...ghostResults].filter(item=>{
+    const key=[item.type,p628NormalizeAtlasText(item.species),item.cellId||item.state].join('::');
+    if(seen.has(key))return false;
+    seen.add(key);
+    return true;
+  }).slice(0,10).map(item=>({
+    label:item.species,
+    detail:`${item.type}${item.state&&item.state!=='State Not Assigned'?` · ${item.state}`:''}${item.cellId?` · ${item.cellId}`:''}${item.feature?'':' · no linked cell in lightweight atlas'}`,
+    hasLinkedCell:!!item.feature,
+    action:()=>item.feature?p628FocusAtlasFeature(item.feature):showToast('Species found, but no linked cell is available in the lightweight atlas.')
+  }));
+};
+const p628RunAtlasSearch=rawQuery=>{
+  if(!window.EKDI_DATA?.coreDataLoaded){showToast('Search is available after atlas data load.');return;}
+  const query=String(rawQuery||'').trim();
+  if(!query){p628RenderAtlasSearchResults();return;}
+  const cellMatch=p628AtlasFeatureForCellId(query);
+  if(cellMatch){
+    p628RenderAtlasSearchResults([{label:p3CellId(cellMatch.properties||{}),detail:`${p628DisplayStateName(p3StateName(cellMatch.properties||{})||p3State(cellMatch.properties||''))} · exact cell match`,action:()=>p628FocusAtlasFeature(cellMatch)}]);
+    p628FocusAtlasFeature(cellMatch);
+    showToast(`Selected cell ${p3CellId(cellMatch.properties||{})}.`);
+    return;
+  }
+  const stateMatch=p628FindStateSearchMatch(query);
+  if(stateMatch){
+    const results=p628AtlasStateResults(stateMatch);
+    if(results.length){
+      const select=document.getElementById('state-filter');
+      if(select)select.value=stateMatch.code;
+      p3ApplyStateFilter();
+      const features=p628AtlasFeatures().filter(feature=>p628AtlasFeatureMatchesState(feature,stateMatch));
+      const bounds=p628AtlasBoundsForFeatures(features);
+      if(map&&bounds)map.fitBounds(bounds,{padding:{top:110,bottom:120,left:320,right:420},duration:900,maxZoom:7.2});
+      p628RenderAtlasSearchResults(results);
+      showToast(`Showing atlas cells in ${stateMatch.name}.`);
+      return;
+    }
+  }
+  const speciesResults=p628AtlasSpeciesResults(query);
+  if(speciesResults.length){
+    p628RenderAtlasSearchResults(speciesResults);
+    showToast(speciesResults.some(result=>result.hasLinkedCell)?`${formatCount(speciesResults.length)} atlas matches loaded.`:'Species found, but no linked cell is available in the lightweight atlas.');
+    return;
+  }
+  p628RenderAtlasSearchResults([],`No match in loaded atlas data.`);
+  showToast('No match in loaded atlas data.');
+};
 document.getElementById('state-filter').onchange=p3ApplyStateFilter;
 document.querySelectorAll('.layer-toggle').forEach(input=>{const key=p3LayerGroupKey(input.dataset.layer); if(P3_LAYER_VISIBILITY[key]===undefined)P3_LAYER_VISIBILITY[key]=input.checked; input.checked=!!P3_LAYER_VISIBILITY[key]; input.onchange=()=>setLayerGroupVisibility(key,input.checked);});
 document.getElementById('search-input').onkeydown=e=>{
-  if(e.key!=='Enter'||!map)return;
-  const q=e.target.value.trim().toUpperCase();
-  if(!q)return;
-  const data=window.EKDI_DATA.priorityCellsDetail||window.EKDI_DATA.priorityCells||p3FeatureCollection([]);
-  const found=(data.features||[]).find(f=>{const p=f.properties||{}; return p3CellId(p).toUpperCase().includes(q)||String(p3State(p)).toUpperCase().includes(q)||String(p3StateName(p)).toUpperCase().includes(q);});
-  if(found){selectFeature(found);map.flyTo({center:centerOfFeature(found),zoom:8.7,pitch:48,bearing:-18,duration:1200});showToast(`Found ${p3CellId(found.properties||{})}.`);}else showToast('No matching cell found in loaded EKDI data.');
+  if(e.key!=='Enter')return;
+  e.preventDefault();
+  p628RunAtlasSearch(e.target.value);
 };
+p628AtlasSearchButton()?.addEventListener('click',()=>p628RunAtlasSearch(document.getElementById('search-input')?.value||''));
+p628RefreshAtlasSearchVisibility();
 p617BindClick('open-upload-top',()=>{p3RenderUploadModal();document.getElementById('upload-modal').classList.add('visible');});
 p617BindClick('start-quick-tour',p614OpenTutorialFromTools);
 p617BindClick('about-ekdi',()=>{p628qa9AboutModal();document.getElementById('about-modal').classList.add('visible');});
