@@ -1,0 +1,3800 @@
+{
+  "created": "2026-06-05T00:30:46.350757+00:00",
+  "source_file_used": "app/data/tables/cell_species_records.json; derived from data/gbif_grid_joined.parquet because no local parquet reader was available in this runtime",
+  "parquet_available": true,
+  "parquet_reader_available": false,
+  "audited_cells": 35,
+  "repeated_year_cells": [
+    {
+      "cell_id": "4868790_7345887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Aegiphila paraguariensis",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1991,
+          "years_silent": 35,
+          "full_table_first_year": 1991,
+          "full_table_last_year": 1991,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Aiouea montana",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1991,
+          "years_silent": 35,
+          "full_table_first_year": 1991,
+          "full_table_last_year": 1991,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Allophylus guaraniticus",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1991,
+          "years_silent": 35,
+          "full_table_first_year": 1991,
+          "full_table_last_year": 1991,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Andropogon selloanus",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1991,
+          "years_silent": 35,
+          "full_table_first_year": 1991,
+          "full_table_last_year": 1991,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Bauhinia forficata",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1991,
+          "years_silent": 35,
+          "full_table_first_year": 1991,
+          "full_table_last_year": 1991,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        1991,
+        1991,
+        1991,
+        1991,
+        1991
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4873790_6900887",
+      "priority_class": "deficient",
+      "state": "RS",
+      "stateName": "Rio Grande do Sul",
+      "species": [
+        {
+          "species": "Ipomoea padillae",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Amphilophium paniculatum",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Fridericia chica",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2011,
+        2011,
+        2011
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4878790_6885887",
+      "priority_class": "deficient",
+      "state": "RS",
+      "stateName": "Rio Grande do Sul",
+      "species": [
+        {
+          "species": "Araujia sericifera",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Fridericia chica",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Oxypetalum pannosum",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2011,
+        2011,
+        2011
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4878790_6905887",
+      "priority_class": "deficient",
+      "state": "RS",
+      "stateName": "Rio Grande do Sul",
+      "species": [
+        {
+          "species": "Evolvulus sericeus",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Ipomoea padillae",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Macroptilium lathyroides",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2011,
+        2011,
+        2011
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4883790_7395887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Alicia anisopetala",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Cupania vernalis",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Mansoa difficilis",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Passiflora tricuspis",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Trigonia nivea",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2008,
+        2008,
+        2008,
+        2008,
+        2008
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4883790_7450887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Byrsonima intermedia",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Chrysophyllum marginatum",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Epidendrum secundum",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Eugenia hiemalis",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Myrciaria delicatula",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2008,
+        2008,
+        2008,
+        2008,
+        2008
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4888790_7465887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Cantinoa impar",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Celtis pallida",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Colubrina asiatica",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Ipomoea grandifolia",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Luehea divaricata",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2008,
+        2008,
+        2008,
+        2008,
+        2008
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4893790_7365887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Eleusine tristachya",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2010,
+          "years_silent": 16,
+          "full_table_first_year": 2010,
+          "full_table_last_year": 2010,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Eragrostis tenuifolia",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2010,
+          "years_silent": 16,
+          "full_table_first_year": 2010,
+          "full_table_last_year": 2010,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2010,
+        2010
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4893790_7370887",
+      "priority_class": "critical",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Caryocar brasiliense",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1983,
+          "years_silent": 43,
+          "full_table_first_year": 1983,
+          "full_table_last_year": 1983,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Blepharodon lineare",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1983,
+          "years_silent": 43,
+          "full_table_first_year": 1983,
+          "full_table_last_year": 1983,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Indigofera bongardiana",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1983,
+          "years_silent": 43,
+          "full_table_first_year": 1983,
+          "full_table_last_year": 1983,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Parinari obtusifolium",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1983,
+          "years_silent": 43,
+          "full_table_first_year": 1983,
+          "full_table_last_year": 1983,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Stylosanthes bracteata",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1983,
+          "years_silent": 43,
+          "full_table_first_year": 1983,
+          "full_table_last_year": 1983,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        1983,
+        1983,
+        1983,
+        1983,
+        1983
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4898790_6875887",
+      "priority_class": "deficient",
+      "state": "RS",
+      "stateName": "Rio Grande do Sul",
+      "species": [
+        {
+          "species": "Acmella psilocarpa",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Campovassouria cruciata",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2008,
+        2008
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4898790_7355887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Annona emarginata",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2007,
+          "years_silent": 19,
+          "full_table_first_year": 2007,
+          "full_table_last_year": 2007,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Zanthoxylum petiolare",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2007,
+          "years_silent": 19,
+          "full_table_first_year": 2007,
+          "full_table_last_year": 2007,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2007,
+        2007
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4903790_7375887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Dalbergia frutescens",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2007,
+          "years_silent": 19,
+          "full_table_first_year": 2007,
+          "full_table_last_year": 2007,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Endlicheria paniculata",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2007,
+          "years_silent": 19,
+          "full_table_first_year": 2007,
+          "full_table_last_year": 2007,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Rhynchosia melanocarpa",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2007,
+          "years_silent": 19,
+          "full_table_first_year": 2007,
+          "full_table_last_year": 2007,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2007,
+        2007,
+        2007
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4903790_7575887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Canavalia mattogrossensis",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2002,
+          "years_silent": 24,
+          "full_table_first_year": 2002,
+          "full_table_last_year": 2002,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Jacquemontia martii",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2002,
+          "years_silent": 24,
+          "full_table_first_year": 2002,
+          "full_table_last_year": 2002,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Senna obtusifolia",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2002,
+          "years_silent": 24,
+          "full_table_first_year": 2002,
+          "full_table_last_year": 2002,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2002,
+        2002,
+        2002
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4908790_6915887",
+      "priority_class": "deficient",
+      "state": "RS",
+      "stateName": "Rio Grande do Sul",
+      "species": [
+        {
+          "species": "Cyperus aggregatus",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2005,
+          "years_silent": 21,
+          "full_table_first_year": 2005,
+          "full_table_last_year": 2005,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Cyperus hermaphroditus",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2005,
+          "years_silent": 21,
+          "full_table_first_year": 2005,
+          "full_table_last_year": 2005,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Cyperus lanceolatus",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2005,
+          "years_silent": 21,
+          "full_table_first_year": 2005,
+          "full_table_last_year": 2005,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Cyperus odoratus",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2005,
+          "years_silent": 21,
+          "full_table_first_year": 2005,
+          "full_table_last_year": 2005,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2005,
+        2005,
+        2005,
+        2005
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4908790_7360887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Palicourea marcgravii",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2007,
+          "years_silent": 19,
+          "full_table_first_year": 2007,
+          "full_table_last_year": 2007,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Senna silvestris",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2007,
+          "years_silent": 19,
+          "full_table_first_year": 2007,
+          "full_table_last_year": 2007,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Serjania erecta",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2007,
+          "years_silent": 19,
+          "full_table_first_year": 2007,
+          "full_table_last_year": 2007,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2007,
+        2007,
+        2007
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4908790_7380887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Eragrostis tenuifolia",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2009,
+          "years_silent": 17,
+          "full_table_first_year": 2009,
+          "full_table_last_year": 2009,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Hyparrhenia rufa",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2009,
+          "years_silent": 17,
+          "full_table_first_year": 2009,
+          "full_table_last_year": 2009,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2009,
+        2009
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4908790_7490887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Aristida condylifolia",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2010,
+          "years_silent": 16,
+          "full_table_first_year": 2010,
+          "full_table_last_year": 2010,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Saccharum angustifolium",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2010,
+          "years_silent": 16,
+          "full_table_first_year": 2010,
+          "full_table_last_year": 2010,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Arachis douradiana",
+          "record_count": 3,
+          "first_year": null,
+          "last_year": 2010,
+          "years_silent": 16,
+          "full_table_first_year": 2010,
+          "full_table_last_year": 2010,
+          "full_table_record_count": 3,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2010,
+        2010,
+        2010
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4908790_7575887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Inga affinis",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2001,
+          "years_silent": 25,
+          "full_table_first_year": 2001,
+          "full_table_last_year": 2001,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Senegalia paniculata",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2001,
+          "years_silent": 25,
+          "full_table_first_year": 2001,
+          "full_table_last_year": 2001,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2001,
+        2001
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4913790_6930887",
+      "priority_class": "deficient",
+      "state": "RS",
+      "stateName": "Rio Grande do Sul",
+      "species": [
+        {
+          "species": "Dolichandra cynanchoides",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Ipomoea bonariensis",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2011,
+        2011
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4913790_7360887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Cordyline congesta",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2007,
+          "years_silent": 19,
+          "full_table_first_year": 2007,
+          "full_table_last_year": 2007,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Nectandra lanceolata",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2007,
+          "years_silent": 19,
+          "full_table_first_year": 2007,
+          "full_table_last_year": 2007,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Schinus terebinthifolia",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2007,
+          "years_silent": 19,
+          "full_table_first_year": 2007,
+          "full_table_last_year": 2007,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2007,
+        2007,
+        2007
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    }
+  ],
+  "mixed_year_cells": [
+    {
+      "cell_id": "4868790_7365887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Tassadia geniculata",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1999,
+          "years_silent": 27,
+          "full_table_first_year": 1999,
+          "full_table_last_year": 1999,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Didymopanax morototoni",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2000,
+          "years_silent": 26,
+          "full_table_first_year": 2000,
+          "full_table_last_year": 2000,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        1999,
+        2000
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4878790_6890887",
+      "priority_class": "deficient",
+      "state": "RS",
+      "stateName": "Rio Grande do Sul",
+      "species": [
+        {
+          "species": "Adenocalymma marginatum",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Urvillea uniloba",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2012,
+          "years_silent": 14,
+          "full_table_first_year": 2012,
+          "full_table_last_year": 2012,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2011,
+        2012
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4878790_6895887",
+      "priority_class": "deficient",
+      "state": "RS",
+      "stateName": "Rio Grande do Sul",
+      "species": [
+        {
+          "species": "Pteris denticulata",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1988,
+          "years_silent": 38,
+          "full_table_first_year": 1988,
+          "full_table_last_year": 1988,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Achyrocline flaccida",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1989,
+          "years_silent": 37,
+          "full_table_first_year": 1989,
+          "full_table_last_year": 1989,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Adiantopsis chlorophylla",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1989,
+          "years_silent": 37,
+          "full_table_first_year": 1989,
+          "full_table_last_year": 1989,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Adiantopsis perfasciculata",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1989,
+          "years_silent": 37,
+          "full_table_first_year": 1989,
+          "full_table_last_year": 1989,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Adiantum raddianum",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1989,
+          "years_silent": 37,
+          "full_table_first_year": 1989,
+          "full_table_last_year": 1989,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        1988,
+        1989,
+        1989,
+        1989,
+        1989
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4893790_6735887",
+      "priority_class": "deficient",
+      "state": "RS",
+      "stateName": "Rio Grande do Sul",
+      "species": [
+        {
+          "species": "Trithrinax brasiliensis",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2013,
+          "years_silent": 13,
+          "full_table_first_year": 2013,
+          "full_table_last_year": 2013,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Desmodium leiocarpum",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2014,
+          "years_silent": 12,
+          "full_table_first_year": 2014,
+          "full_table_last_year": 2014,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2013,
+        2014
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4893790_6910887",
+      "priority_class": "deficient",
+      "state": "RS",
+      "stateName": "Rio Grande do Sul",
+      "species": [
+        {
+          "species": "Petunia inflata",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2007,
+          "years_silent": 19,
+          "full_table_first_year": 2007,
+          "full_table_last_year": 2007,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Distimake dissectus",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Dolichandra unguis-cati",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Mansoa difficilis",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Tanaecium selloi",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2007,
+        2011,
+        2011,
+        2011,
+        2011
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4893790_7385887",
+      "priority_class": "critical",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Psidium grandifolium",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1983,
+          "years_silent": 43,
+          "full_table_first_year": 1983,
+          "full_table_last_year": 1983,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Chamaecrista campestris",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1993,
+          "years_silent": 33,
+          "full_table_first_year": 1993,
+          "full_table_last_year": 1993,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Mimosa xanthocentra",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1993,
+          "years_silent": 33,
+          "full_table_first_year": 1993,
+          "full_table_last_year": 1993,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        1983,
+        1993,
+        1993
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4903790_7580887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Anadenanthera colubrina",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2001,
+          "years_silent": 25,
+          "full_table_first_year": 2001,
+          "full_table_last_year": 2001,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Pavonia communis",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2001,
+          "years_silent": 25,
+          "full_table_first_year": 2001,
+          "full_table_last_year": 2001,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Guettarda viburnoides",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2001,
+        2001,
+        2008
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4928790_6940887",
+      "priority_class": "deficient",
+      "state": "RS",
+      "stateName": "Rio Grande do Sul",
+      "species": [
+        {
+          "species": "Paspalum notatum",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2005,
+          "years_silent": 21,
+          "full_table_first_year": 2005,
+          "full_table_last_year": 2005,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Cyperus aggregatus",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2005,
+          "years_silent": 21,
+          "full_table_first_year": 2005,
+          "full_table_last_year": 2005,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Cyperus rotundus",
+          "record_count": 4,
+          "first_year": null,
+          "last_year": 2005,
+          "years_silent": 21,
+          "full_table_first_year": 2005,
+          "full_table_last_year": 2005,
+          "full_table_record_count": 4,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Araujia sericifera",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2012,
+          "years_silent": 14,
+          "full_table_first_year": 2012,
+          "full_table_last_year": 2012,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2005,
+        2005,
+        2005,
+        2012
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4928790_6945887",
+      "priority_class": "deficient",
+      "state": "RS",
+      "stateName": "Rio Grande do Sul",
+      "species": [
+        {
+          "species": "Solanum malmeanum",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1987,
+          "years_silent": 39,
+          "full_table_first_year": 1987,
+          "full_table_last_year": 1987,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Fridericia mutabilis",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 2011,
+          "years_silent": 15,
+          "full_table_first_year": 2011,
+          "full_table_last_year": 2011,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        1987,
+        2011
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "4928790_7380887",
+      "priority_class": "deficient",
+      "state": "MS",
+      "stateName": "Mato Grosso do Sul",
+      "species": [
+        {
+          "species": "Erythrina crista-galli",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2008,
+          "years_silent": 18,
+          "full_table_first_year": 2008,
+          "full_table_last_year": 2008,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Hyparrhenia rufa",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 2009,
+          "years_silent": 17,
+          "full_table_first_year": 2009,
+          "full_table_last_year": 2009,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        2008,
+        2009
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    }
+  ],
+  "sao_paulo_critical_cells": [
+    {
+      "cell_id": "5148790_7505887",
+      "priority_class": "critical",
+      "state": "SP",
+      "stateName": "Sao Paulo",
+      "species": [
+        {
+          "species": "Cyperus entrerianus",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1981,
+          "years_silent": 45,
+          "full_table_first_year": 1981,
+          "full_table_last_year": 1981,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        1981
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "5148790_7510887",
+      "priority_class": "critical",
+      "state": "SP",
+      "stateName": "Sao Paulo",
+      "species": [
+        {
+          "species": "Machaerium hirtum",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 1986,
+          "years_silent": 40,
+          "full_table_first_year": 1986,
+          "full_table_last_year": 1986,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Machaerium aculeatum",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1986,
+          "years_silent": 40,
+          "full_table_first_year": 1986,
+          "full_table_last_year": 1986,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        1986,
+        1986
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "5148790_7530887",
+      "priority_class": "critical",
+      "state": "SP",
+      "stateName": "Sao Paulo",
+      "species": [
+        {
+          "species": "Cestrum laevigatum",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1998,
+          "years_silent": 28,
+          "full_table_first_year": 1998,
+          "full_table_last_year": 1998,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        1998
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "5153790_7505887",
+      "priority_class": "critical",
+      "state": "SP",
+      "stateName": "Sao Paulo",
+      "species": [
+        {
+          "species": "Palicourea croceoides",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1981,
+          "years_silent": 45,
+          "full_table_first_year": 1981,
+          "full_table_last_year": 1981,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        1981
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    },
+    {
+      "cell_id": "5168790_7500887",
+      "priority_class": "critical",
+      "state": "SP",
+      "stateName": "Sao Paulo",
+      "species": [
+        {
+          "species": "Agonandra brasiliensis",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 1986,
+          "years_silent": 40,
+          "full_table_first_year": 1986,
+          "full_table_last_year": 1986,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Agonandra excelsa",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1986,
+          "years_silent": 40,
+          "full_table_first_year": 1986,
+          "full_table_last_year": 1986,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Vernonanthura petiolaris",
+          "record_count": 1,
+          "first_year": null,
+          "last_year": 1986,
+          "years_silent": 40,
+          "full_table_first_year": 1986,
+          "full_table_last_year": 1986,
+          "full_table_record_count": 1,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        },
+        {
+          "species": "Vernonanthura divaricata",
+          "record_count": 2,
+          "first_year": null,
+          "last_year": 1986,
+          "years_silent": 40,
+          "full_table_first_year": 1986,
+          "full_table_last_year": 1986,
+          "full_table_record_count": 2,
+          "matches_full_species_summary": true,
+          "computed_scope": "cell_id + species",
+          "inherited_from_cell_level": false
+        }
+      ],
+      "last_year_values": [
+        1986,
+        1986,
+        1986,
+        1986
+      ],
+      "last_year_was_computed_per_cell_id_species": true,
+      "last_year_was_inherited_from_cell_level": false
+    }
+  ],
+  "repeated_year_explanation": "Several species can share the same last record year when they come from the same collecting event, survey period or GBIF batch. Years shown here are species-level summaries.",
+  "species_level_years_confirmed": true,
+  "species_level_year_logic": "build_cell_species_records.py groups records by (cell_id, species_key), appends parsed years for each group, then writes first_year=min(years), last_year=max(years), years_silent=2026-last_year.",
+  "build_script_groupby_equivalent": "grouped by (cell_id, species); last_year = max(years)",
+  "inherited_from_cell_level_detected": false,
+  "sampled_full_table_matches": 104,
+  "sampled_full_table_expected_matches": 104,
+  "source_metadata": {
+    "reader": "pandas+pyarrow",
+    "raw_gbif_records": 1108692,
+    "grouped_rows": 735340,
+    "kingdom_filter_applied": false,
+    "skipped_non_plants": 0,
+    "limitation": "If no kingdom field was available, records were not filtered by kingdom in this script. No species, red-list category, endemism value or GBIF DOI was invented."
+  },
+  "taxon_scope": {
+    "expected_scope": "Tracheophyta / vascular plants from source GBIF DOI filter",
+    "browser_table_treated_as": "vascular-plant occurrence evidence",
+    "kingdom_or_phylum_fields_found": {
+      "scientificName": true
+    },
+    "kingdom_filter_note": "No additional kingdom filter was applied by the lightweight-table script when kingdom was absent.",
+    "fungi_rows_found": "not_detected_no_kingdom_field",
+    "fungi_rows_removed": 0,
+    "scope_note": "The source GBIF download was filtered to Tracheophyta. The lightweight browser table is treated as vascular-plant occurrence evidence. No additional kingdom filter was applied by the lightweight-table script when kingdom was absent."
+  },
+  "repeated_year_cells_count": 20,
+  "audited_examples": {
+    "repeated_year_cells": [
+      {
+        "cell_id": "4868790_7345887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Aegiphila paraguariensis",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1991,
+            "years_silent": 35,
+            "full_table_first_year": 1991,
+            "full_table_last_year": 1991,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Aiouea montana",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1991,
+            "years_silent": 35,
+            "full_table_first_year": 1991,
+            "full_table_last_year": 1991,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Allophylus guaraniticus",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1991,
+            "years_silent": 35,
+            "full_table_first_year": 1991,
+            "full_table_last_year": 1991,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Andropogon selloanus",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1991,
+            "years_silent": 35,
+            "full_table_first_year": 1991,
+            "full_table_last_year": 1991,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Bauhinia forficata",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1991,
+            "years_silent": 35,
+            "full_table_first_year": 1991,
+            "full_table_last_year": 1991,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          1991,
+          1991,
+          1991,
+          1991,
+          1991
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4873790_6900887",
+        "priority_class": "deficient",
+        "state": "RS",
+        "stateName": "Rio Grande do Sul",
+        "species": [
+          {
+            "species": "Ipomoea padillae",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Amphilophium paniculatum",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Fridericia chica",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2011,
+          2011,
+          2011
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4878790_6885887",
+        "priority_class": "deficient",
+        "state": "RS",
+        "stateName": "Rio Grande do Sul",
+        "species": [
+          {
+            "species": "Araujia sericifera",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Fridericia chica",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Oxypetalum pannosum",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2011,
+          2011,
+          2011
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4878790_6905887",
+        "priority_class": "deficient",
+        "state": "RS",
+        "stateName": "Rio Grande do Sul",
+        "species": [
+          {
+            "species": "Evolvulus sericeus",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Ipomoea padillae",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Macroptilium lathyroides",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2011,
+          2011,
+          2011
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4883790_7395887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Alicia anisopetala",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Cupania vernalis",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Mansoa difficilis",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Passiflora tricuspis",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Trigonia nivea",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2008,
+          2008,
+          2008,
+          2008,
+          2008
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4883790_7450887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Byrsonima intermedia",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Chrysophyllum marginatum",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Epidendrum secundum",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Eugenia hiemalis",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Myrciaria delicatula",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2008,
+          2008,
+          2008,
+          2008,
+          2008
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4888790_7465887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Cantinoa impar",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Celtis pallida",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Colubrina asiatica",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Ipomoea grandifolia",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Luehea divaricata",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2008,
+          2008,
+          2008,
+          2008,
+          2008
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4893790_7365887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Eleusine tristachya",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2010,
+            "years_silent": 16,
+            "full_table_first_year": 2010,
+            "full_table_last_year": 2010,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Eragrostis tenuifolia",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2010,
+            "years_silent": 16,
+            "full_table_first_year": 2010,
+            "full_table_last_year": 2010,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2010,
+          2010
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4893790_7370887",
+        "priority_class": "critical",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Caryocar brasiliense",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1983,
+            "years_silent": 43,
+            "full_table_first_year": 1983,
+            "full_table_last_year": 1983,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Blepharodon lineare",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1983,
+            "years_silent": 43,
+            "full_table_first_year": 1983,
+            "full_table_last_year": 1983,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Indigofera bongardiana",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1983,
+            "years_silent": 43,
+            "full_table_first_year": 1983,
+            "full_table_last_year": 1983,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Parinari obtusifolium",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1983,
+            "years_silent": 43,
+            "full_table_first_year": 1983,
+            "full_table_last_year": 1983,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Stylosanthes bracteata",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1983,
+            "years_silent": 43,
+            "full_table_first_year": 1983,
+            "full_table_last_year": 1983,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          1983,
+          1983,
+          1983,
+          1983,
+          1983
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4898790_6875887",
+        "priority_class": "deficient",
+        "state": "RS",
+        "stateName": "Rio Grande do Sul",
+        "species": [
+          {
+            "species": "Acmella psilocarpa",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Campovassouria cruciata",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2008,
+          2008
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4898790_7355887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Annona emarginata",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2007,
+            "years_silent": 19,
+            "full_table_first_year": 2007,
+            "full_table_last_year": 2007,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Zanthoxylum petiolare",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2007,
+            "years_silent": 19,
+            "full_table_first_year": 2007,
+            "full_table_last_year": 2007,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2007,
+          2007
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4903790_7375887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Dalbergia frutescens",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2007,
+            "years_silent": 19,
+            "full_table_first_year": 2007,
+            "full_table_last_year": 2007,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Endlicheria paniculata",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2007,
+            "years_silent": 19,
+            "full_table_first_year": 2007,
+            "full_table_last_year": 2007,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Rhynchosia melanocarpa",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2007,
+            "years_silent": 19,
+            "full_table_first_year": 2007,
+            "full_table_last_year": 2007,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2007,
+          2007,
+          2007
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4903790_7575887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Canavalia mattogrossensis",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2002,
+            "years_silent": 24,
+            "full_table_first_year": 2002,
+            "full_table_last_year": 2002,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Jacquemontia martii",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2002,
+            "years_silent": 24,
+            "full_table_first_year": 2002,
+            "full_table_last_year": 2002,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Senna obtusifolia",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2002,
+            "years_silent": 24,
+            "full_table_first_year": 2002,
+            "full_table_last_year": 2002,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2002,
+          2002,
+          2002
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4908790_6915887",
+        "priority_class": "deficient",
+        "state": "RS",
+        "stateName": "Rio Grande do Sul",
+        "species": [
+          {
+            "species": "Cyperus aggregatus",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2005,
+            "years_silent": 21,
+            "full_table_first_year": 2005,
+            "full_table_last_year": 2005,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Cyperus hermaphroditus",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2005,
+            "years_silent": 21,
+            "full_table_first_year": 2005,
+            "full_table_last_year": 2005,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Cyperus lanceolatus",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2005,
+            "years_silent": 21,
+            "full_table_first_year": 2005,
+            "full_table_last_year": 2005,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Cyperus odoratus",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2005,
+            "years_silent": 21,
+            "full_table_first_year": 2005,
+            "full_table_last_year": 2005,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2005,
+          2005,
+          2005,
+          2005
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4908790_7360887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Palicourea marcgravii",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2007,
+            "years_silent": 19,
+            "full_table_first_year": 2007,
+            "full_table_last_year": 2007,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Senna silvestris",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2007,
+            "years_silent": 19,
+            "full_table_first_year": 2007,
+            "full_table_last_year": 2007,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Serjania erecta",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2007,
+            "years_silent": 19,
+            "full_table_first_year": 2007,
+            "full_table_last_year": 2007,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2007,
+          2007,
+          2007
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4908790_7380887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Eragrostis tenuifolia",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2009,
+            "years_silent": 17,
+            "full_table_first_year": 2009,
+            "full_table_last_year": 2009,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Hyparrhenia rufa",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2009,
+            "years_silent": 17,
+            "full_table_first_year": 2009,
+            "full_table_last_year": 2009,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2009,
+          2009
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4908790_7490887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Aristida condylifolia",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2010,
+            "years_silent": 16,
+            "full_table_first_year": 2010,
+            "full_table_last_year": 2010,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Saccharum angustifolium",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2010,
+            "years_silent": 16,
+            "full_table_first_year": 2010,
+            "full_table_last_year": 2010,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Arachis douradiana",
+            "record_count": 3,
+            "first_year": null,
+            "last_year": 2010,
+            "years_silent": 16,
+            "full_table_first_year": 2010,
+            "full_table_last_year": 2010,
+            "full_table_record_count": 3,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2010,
+          2010,
+          2010
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4908790_7575887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Inga affinis",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2001,
+            "years_silent": 25,
+            "full_table_first_year": 2001,
+            "full_table_last_year": 2001,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Senegalia paniculata",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2001,
+            "years_silent": 25,
+            "full_table_first_year": 2001,
+            "full_table_last_year": 2001,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2001,
+          2001
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4913790_6930887",
+        "priority_class": "deficient",
+        "state": "RS",
+        "stateName": "Rio Grande do Sul",
+        "species": [
+          {
+            "species": "Dolichandra cynanchoides",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Ipomoea bonariensis",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2011,
+          2011
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4913790_7360887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Cordyline congesta",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2007,
+            "years_silent": 19,
+            "full_table_first_year": 2007,
+            "full_table_last_year": 2007,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Nectandra lanceolata",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2007,
+            "years_silent": 19,
+            "full_table_first_year": 2007,
+            "full_table_last_year": 2007,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Schinus terebinthifolia",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2007,
+            "years_silent": 19,
+            "full_table_first_year": 2007,
+            "full_table_last_year": 2007,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2007,
+          2007,
+          2007
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      }
+    ],
+    "mixed_year_cells": [
+      {
+        "cell_id": "4868790_7365887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Tassadia geniculata",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1999,
+            "years_silent": 27,
+            "full_table_first_year": 1999,
+            "full_table_last_year": 1999,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Didymopanax morototoni",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2000,
+            "years_silent": 26,
+            "full_table_first_year": 2000,
+            "full_table_last_year": 2000,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          1999,
+          2000
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4878790_6890887",
+        "priority_class": "deficient",
+        "state": "RS",
+        "stateName": "Rio Grande do Sul",
+        "species": [
+          {
+            "species": "Adenocalymma marginatum",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Urvillea uniloba",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2012,
+            "years_silent": 14,
+            "full_table_first_year": 2012,
+            "full_table_last_year": 2012,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2011,
+          2012
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4878790_6895887",
+        "priority_class": "deficient",
+        "state": "RS",
+        "stateName": "Rio Grande do Sul",
+        "species": [
+          {
+            "species": "Pteris denticulata",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1988,
+            "years_silent": 38,
+            "full_table_first_year": 1988,
+            "full_table_last_year": 1988,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Achyrocline flaccida",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1989,
+            "years_silent": 37,
+            "full_table_first_year": 1989,
+            "full_table_last_year": 1989,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Adiantopsis chlorophylla",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1989,
+            "years_silent": 37,
+            "full_table_first_year": 1989,
+            "full_table_last_year": 1989,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Adiantopsis perfasciculata",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1989,
+            "years_silent": 37,
+            "full_table_first_year": 1989,
+            "full_table_last_year": 1989,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Adiantum raddianum",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1989,
+            "years_silent": 37,
+            "full_table_first_year": 1989,
+            "full_table_last_year": 1989,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          1988,
+          1989,
+          1989,
+          1989,
+          1989
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4893790_6735887",
+        "priority_class": "deficient",
+        "state": "RS",
+        "stateName": "Rio Grande do Sul",
+        "species": [
+          {
+            "species": "Trithrinax brasiliensis",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2013,
+            "years_silent": 13,
+            "full_table_first_year": 2013,
+            "full_table_last_year": 2013,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Desmodium leiocarpum",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2014,
+            "years_silent": 12,
+            "full_table_first_year": 2014,
+            "full_table_last_year": 2014,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2013,
+          2014
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4893790_6910887",
+        "priority_class": "deficient",
+        "state": "RS",
+        "stateName": "Rio Grande do Sul",
+        "species": [
+          {
+            "species": "Petunia inflata",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2007,
+            "years_silent": 19,
+            "full_table_first_year": 2007,
+            "full_table_last_year": 2007,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Distimake dissectus",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Dolichandra unguis-cati",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Mansoa difficilis",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Tanaecium selloi",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2007,
+          2011,
+          2011,
+          2011,
+          2011
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4893790_7385887",
+        "priority_class": "critical",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Psidium grandifolium",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1983,
+            "years_silent": 43,
+            "full_table_first_year": 1983,
+            "full_table_last_year": 1983,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Chamaecrista campestris",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1993,
+            "years_silent": 33,
+            "full_table_first_year": 1993,
+            "full_table_last_year": 1993,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Mimosa xanthocentra",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1993,
+            "years_silent": 33,
+            "full_table_first_year": 1993,
+            "full_table_last_year": 1993,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          1983,
+          1993,
+          1993
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4903790_7580887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Anadenanthera colubrina",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2001,
+            "years_silent": 25,
+            "full_table_first_year": 2001,
+            "full_table_last_year": 2001,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Pavonia communis",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2001,
+            "years_silent": 25,
+            "full_table_first_year": 2001,
+            "full_table_last_year": 2001,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Guettarda viburnoides",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2001,
+          2001,
+          2008
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4928790_6940887",
+        "priority_class": "deficient",
+        "state": "RS",
+        "stateName": "Rio Grande do Sul",
+        "species": [
+          {
+            "species": "Paspalum notatum",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2005,
+            "years_silent": 21,
+            "full_table_first_year": 2005,
+            "full_table_last_year": 2005,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Cyperus aggregatus",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2005,
+            "years_silent": 21,
+            "full_table_first_year": 2005,
+            "full_table_last_year": 2005,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Cyperus rotundus",
+            "record_count": 4,
+            "first_year": null,
+            "last_year": 2005,
+            "years_silent": 21,
+            "full_table_first_year": 2005,
+            "full_table_last_year": 2005,
+            "full_table_record_count": 4,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Araujia sericifera",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2012,
+            "years_silent": 14,
+            "full_table_first_year": 2012,
+            "full_table_last_year": 2012,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2005,
+          2005,
+          2005,
+          2012
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4928790_6945887",
+        "priority_class": "deficient",
+        "state": "RS",
+        "stateName": "Rio Grande do Sul",
+        "species": [
+          {
+            "species": "Solanum malmeanum",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1987,
+            "years_silent": 39,
+            "full_table_first_year": 1987,
+            "full_table_last_year": 1987,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Fridericia mutabilis",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 2011,
+            "years_silent": 15,
+            "full_table_first_year": 2011,
+            "full_table_last_year": 2011,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          1987,
+          2011
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "4928790_7380887",
+        "priority_class": "deficient",
+        "state": "MS",
+        "stateName": "Mato Grosso do Sul",
+        "species": [
+          {
+            "species": "Erythrina crista-galli",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2008,
+            "years_silent": 18,
+            "full_table_first_year": 2008,
+            "full_table_last_year": 2008,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Hyparrhenia rufa",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 2009,
+            "years_silent": 17,
+            "full_table_first_year": 2009,
+            "full_table_last_year": 2009,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          2008,
+          2009
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      }
+    ],
+    "sao_paulo_critical_cells": [
+      {
+        "cell_id": "5148790_7505887",
+        "priority_class": "critical",
+        "state": "SP",
+        "stateName": "Sao Paulo",
+        "species": [
+          {
+            "species": "Cyperus entrerianus",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1981,
+            "years_silent": 45,
+            "full_table_first_year": 1981,
+            "full_table_last_year": 1981,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          1981
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "5148790_7510887",
+        "priority_class": "critical",
+        "state": "SP",
+        "stateName": "Sao Paulo",
+        "species": [
+          {
+            "species": "Machaerium hirtum",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 1986,
+            "years_silent": 40,
+            "full_table_first_year": 1986,
+            "full_table_last_year": 1986,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Machaerium aculeatum",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1986,
+            "years_silent": 40,
+            "full_table_first_year": 1986,
+            "full_table_last_year": 1986,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          1986,
+          1986
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "5148790_7530887",
+        "priority_class": "critical",
+        "state": "SP",
+        "stateName": "Sao Paulo",
+        "species": [
+          {
+            "species": "Cestrum laevigatum",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1998,
+            "years_silent": 28,
+            "full_table_first_year": 1998,
+            "full_table_last_year": 1998,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          1998
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "5153790_7505887",
+        "priority_class": "critical",
+        "state": "SP",
+        "stateName": "Sao Paulo",
+        "species": [
+          {
+            "species": "Palicourea croceoides",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1981,
+            "years_silent": 45,
+            "full_table_first_year": 1981,
+            "full_table_last_year": 1981,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          1981
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      },
+      {
+        "cell_id": "5168790_7500887",
+        "priority_class": "critical",
+        "state": "SP",
+        "stateName": "Sao Paulo",
+        "species": [
+          {
+            "species": "Agonandra brasiliensis",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 1986,
+            "years_silent": 40,
+            "full_table_first_year": 1986,
+            "full_table_last_year": 1986,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Agonandra excelsa",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1986,
+            "years_silent": 40,
+            "full_table_first_year": 1986,
+            "full_table_last_year": 1986,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Vernonanthura petiolaris",
+            "record_count": 1,
+            "first_year": null,
+            "last_year": 1986,
+            "years_silent": 40,
+            "full_table_first_year": 1986,
+            "full_table_last_year": 1986,
+            "full_table_record_count": 1,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          },
+          {
+            "species": "Vernonanthura divaricata",
+            "record_count": 2,
+            "first_year": null,
+            "last_year": 1986,
+            "years_silent": 40,
+            "full_table_first_year": 1986,
+            "full_table_last_year": 1986,
+            "full_table_record_count": 2,
+            "matches_full_species_summary": true,
+            "computed_scope": "cell_id + species",
+            "inherited_from_cell_level": false
+          }
+        ],
+        "last_year_values": [
+          1986,
+          1986,
+          1986,
+          1986
+        ],
+        "last_year_was_computed_per_cell_id_species": true,
+        "last_year_was_inherited_from_cell_level": false
+      }
+    ]
+  }
+}

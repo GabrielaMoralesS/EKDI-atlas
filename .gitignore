@@ -18,3 +18,10 @@ app/data/tables/cell_species_top10_by_cell.json
 
 # Internal phase reports
 PHASE_6_28*.md
+
+# Internal phase reports
+PHASE_6_28*.md
+
+# Huge derived files
+app/data/tables/cell_species_records.json
+app/data/tables/cell_species_top10_by_cell.json
