@@ -157,18 +157,18 @@ button,input,select{font-family:inherit} button{cursor:pointer}
   <header class="topbar">
     <div class="brand"><div class="mark">E</div><div><strong>EKDI Atlas</strong><span>Ecological Knowledge Decay Index · Atlantic Forest</span></div></div>
     <div class="top-center"><div class="status-pill" id="data-status-pill"><b>Loading</b> EKDI Data</div></div>
-    <div class="top-actions"><details class="tools-menu"><summary class="ghost-btn" data-tour="tools-menu">Tools</summary><div class="tools-menu-panel"><button id="open-scientific-report" data-tour="scientific-report">Scientific Report</button><button id="open-integrity-top" data-tour="data-integrity">Data Integrity</button><button id="open-upload-top" data-tour="generate-ekdi-atlas">Data Readiness Check</button><button id="open-export" data-tour="evidence-export">Field Verification Outputs</button><button id="about-ekdi">About EKDI</button></div></details><button class="ghost-btn planner-btn" id="open-planner" data-tour="expedition-planner" title="Save selected cells or species and export a field-verification checklist.">Field Verification Planner - 0 Targets</button></div>
+    <div class="top-actions"><details class="tools-menu"><summary class="ghost-btn" data-tour="tools-menu">Tools</summary><div class="tools-menu-panel"><button id="start-quick-tour">Quick Atlas Tour</button><button id="open-scientific-report" data-tour="scientific-report">Scientific Report</button><button id="open-integrity-top" data-tour="data-integrity">Data Integrity</button><button id="open-upload-top" data-tour="generate-ekdi-atlas">Data Readiness Check</button><button id="open-export" data-tour="evidence-export">Field Verification Outputs</button><button id="about-ekdi">About EKDI</button></div></details><button class="ghost-btn planner-btn" id="open-planner" data-tour="expedition-planner" title="Save selected cells or species and export a field-verification checklist.">Field Verification Planner - 0 Targets</button></div>
   </header>
   <main class="main">
     <aside class="left">
       <section class="section" data-tour="map-layers"><div class="section-head"><div class="section-title">Layers</div></div><div class="layer-list">
-        <label class="layer" data-tour="critical-gaps-layer" title="Priority cells for field verification."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="critical" checked><i class="dot critical"></i><div><b>Critical Gaps</b><span>Priority cells for field verification.</span></div></div><div class="count">Loading...</div></label>
+        <label class="layer" data-tour="critical-gaps-layer" title="5 km priority cells for field review."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="critical" checked><i class="dot critical"></i><div><b>Critical Gaps</b><span>5 km priority cells for field review.</span></div></div><div class="count">Loading...</div></label>
         <label class="layer" title="Forest cells with no linked open occurrence evidence."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="unsurveyed"><i class="dot unsurveyed"></i><div><b>Unsurveyed Forest</b><span>Forest cells with no linked open occurrence evidence.</span></div></div><div class="count">Loading...</div></label>
         <label class="layer" title="Cells with sparse or incomplete biodiversity evidence."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="deficient"><i class="dot deficient"></i><div><b>Deficient Coverage</b><span>Cells with sparse or incomplete biodiversity evidence.</span></div></div><div class="count">Loading...</div></label>
-      </div><details class="advanced-box sidebar-details"><summary>Context layers</summary><div class="layer-list" style="margin-top:8px">
+      </div><details class="advanced-box sidebar-details" data-tour="context-layers"><summary>Context layers</summary><div class="layer-list" style="margin-top:8px">
         <label class="layer" title="Map points are visual context. EKDI priorities are computed from the processed GBIF source download documented in Sources/Citation."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="gbif"><i class="dot hotspot"></i><div><b>GBIF Occurrence Memory</b><span>Occurrence evidence context.</span></div></div><div class="count">Context</div></label>
         <label class="layer" title="Remaining forest context used to interpret field-verification priority."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="forest"><i class="dot unsurveyed"></i><div><b>Forest Context</b><span>Habitat context layer.</span></div></div><div class="count">Loaded</div></label>
-        <label class="layer" title="Species-level Knowledge Ghost signals requiring expert verification; not confirmed rediscoveries."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="ghosts"><i class="dot hotspot"></i><div><b>Knowledge Ghosts</b><span>Optional expert-review signals.</span></div></div><div class="count">4</div></label>
+        <label class="layer" data-tour="knowledge-ghosts-layer" title="Species-level fragile-memory signals requiring expert verification."><div class="layer-left"><input type="checkbox" class="layer-toggle" data-layer="ghosts"><i class="dot hotspot"></i><div><b>Knowledge Ghosts</b><span>Species-level fragile-memory signals.</span></div></div><div class="count">4</div></label>
       </div></details></section>
       <section class="section" data-tour="filters"><div class="section-title">Filter / Search</div><div class="filter-grid"><div class="field"><label>Filter By State</label><select id="state-filter"><option value="all">All States</option><option>MG</option><option>BA</option><option>SP</option><option>PR</option><option>SC</option></select></div></div><div class="field" data-tour="search" style="margin-top:8px"><label>Cell, State Or Species</label><input id="search-input" type="text" placeholder="e.g. MG, BA, Varronia"></div></section>
     </aside>
@@ -1230,7 +1230,8 @@ const p628tFullFeaturedGhostRows=()=>{
 };
 const p628tFullFeaturedGhostsPanel=()=>{
   const ghosts=p628tFullFeaturedGhostRows();
-  if(!ghosts.length)return`<section class="diag"><h3>Featured Knowledge Ghosts</h3><div class="dynamic-note">No featured Knowledge Ghost signals loaded.</div></section>`;
+  const signalGuide=`<section class="diag"><h3>How to read EKDI signals</h3><div class="why-list"><div class="why-item"><b>Critical Gap = priority place.</b> A 5 km cell where old occurrence evidence and habitat-change context suggest field review should happen first.</div><div class="why-item"><b>Knowledge Ghost = fragile species evidence.</b> A species-level signal for plants with very limited or old evidence, such as single-location or old records that need expert review.</div><div class="why-item">Not every species in a Critical Gap is a Knowledge Ghost.</div></div></section>`;
+  if(!ghosts.length)return`${signalGuide}<section class="diag"><h3>Featured Knowledge Ghosts</h3><div class="subline">Species-level candidates with fragile botanical memory.</div><div class="dynamic-note">No featured Knowledge Ghost signals loaded.</div></section>`;
   const cards=ghosts.map(ghost=>{
     const name=p3Get(ghost,'species','scientificName')||'Knowledge Ghost signal';
     const state=p3Get(ghost,'state','stateName','stateProvince');
@@ -1239,7 +1240,7 @@ const p628tFullFeaturedGhostsPanel=()=>{
     const bits=[state,last!==null&&last!==undefined?`last record ${formatYear(last)}`:null,loss!==null&&loss!==undefined?`post-record loss: ${formatHectares(loss)}`:null].filter(Boolean).join(' · ');
     return`<a class="featured-ghost-card" href="${p3Escape(p628tFullGhostGbifLink(ghost))}" target="_blank" rel="noopener"><b>${p3Escape(name)}</b><span>${p3Escape(bits||'expert-review signal')}</span></a>`;
   }).join('');
-  return`<section class="diag"><h3>Featured Knowledge Ghosts</h3><div class="compact-note" style="margin-bottom:8px">${formatCount(ghosts.length)} expert-review signals · not extinction claims</div><div class="plant-mini-list">${cards}</div><div class="compact-note">Candidate evidence only — needs field verification.</div></section>`;
+  return`${signalGuide}<section class="diag"><h3>Featured Knowledge Ghosts</h3><div class="subline">Species-level candidates with fragile botanical memory.</div><div class="compact-note" style="margin-bottom:8px">${formatCount(ghosts.length)} expert-review signals</div><div class="plant-mini-list">${cards}</div><div class="compact-note">These are not official threat categories and not confirmed rediscoveries.</div></section>`;
 };
 const p628nFieldActionBlock=(p)=>{
   const coords=p67SelectedCellCoordinates();
@@ -2508,7 +2509,7 @@ const p628qa9AboutModal=()=>{
   const counts=window.EKDI_DATA.layerCounts||p3BuildLayerCountCache();
   const overall=window.EKDI_DATA.stateSummary&&window.EKDI_DATA.stateSummary.overall||{};
   const gbifDoi=p613FindSourceMetadata(['gbif'],['gbif_download_doi','doi','download_doi','gbif_doi','citation_doi'])||P628_GBIF_DOWNLOAD_DOI;
-  body.innerHTML=`<section class="diag"><h3>What EKDI Adds To GBIF</h3><div class="dynamic-note">EKDI does not replace GBIF occurrence maps. It adds a temporal and habitat-change layer to identify where old occurrence evidence should be reviewed first.</div><div class="dynamic-note">Old GBIF-mediated records → 5 km field-verification priorities.</div></section><section class="diag"><h3>Impact in 60 Seconds</h3><div class="quick-result"><div class="quick-card"><b>${formatCount(overall.total_cells)}</b><span>Cells</span></div><div class="quick-card"><b>${formatCount(counts.critical)}</b><span>Critical Gaps</span></div><div class="quick-card"><b>${formatCount(counts.unsurveyed)}</b><span>Unsurveyed Forest Cells</span></div><div class="quick-card"><b>${p3FmtHa(overall.post_record_loss_ha_sum)}</b><span>Post-Record Loss</span></div></div></section><section class="diag"><h3>GBIF Memory</h3><div class="dynamic-note">Map points are visual context. EKDI priorities are computed from the processed GBIF source download documented in Sources/Citation.</div></section><section class="diag"><h3>What EKDI Does NOT Do</h3><div class="why-list"><div class="why-item">Does not confirm current species presence, absence, rediscovery or extinction.</div><div class="why-item">Does not replace taxonomic, voucher or field verification.</div><div class="why-item">Does not judge GBIF records as wrong.</div><div class="why-item">EKDI does not auto-update when new GBIF occurrence releases are published. Updating the atlas requires rerunning the reproducible pipeline.</div></div></section><section class="diag"><h3>Transferability</h3><div class="dynamic-note">The Atlantic Forest dashboard is a pilot parametrization. Weights, thresholds, habitat-change layers and validation assumptions must be recalibrated for each biome.</div></section><section class="diag"><h3>Sources / Citation</h3><div class="dynamic-note">GBIF Download DOI: ${p3Escape(gbifDoi)}</div><div class="dynamic-note">Repository: https://github.com/GabrielaMoralesS/EKDI-atlas</div><div class="dynamic-note">Suggested citation: ${p3Escape(P69_CITATION)}</div></section><section class="diag"><h3>How to read the atlas</h3><div class="why-list"><div class="why-item">Start with Critical Gaps.</div><div class="why-item">Read Why flagged as grid-cell evidence only.</div><div class="why-item">Use the species evidence table for plant-level signals linked to the selected cell.</div><div class="why-item">Use Data Integrity and Scientific Report to audit sources and limitations.</div></div></section>`;
+  body.innerHTML=`<section class="diag"><h3>What EKDI Adds To GBIF</h3><div class="dynamic-note">EKDI does not replace GBIF occurrence maps. It adds a temporal and habitat-change layer to identify where old occurrence evidence should be reviewed first.</div><div class="dynamic-note">Old GBIF-mediated records → 5 km field-verification priorities.</div></section><section class="diag"><h3>Impact in 60 Seconds</h3><div class="quick-result"><div class="quick-card"><b>${formatCount(overall.total_cells)}</b><span>Cells</span></div><div class="quick-card"><b>${formatCount(counts.critical)}</b><span>Critical Gaps</span></div><div class="quick-card"><b>${formatCount(counts.unsurveyed)}</b><span>Unsurveyed Forest Cells</span></div><div class="quick-card"><b>${p3FmtHa(overall.post_record_loss_ha_sum)}</b><span>Post-Record Loss</span></div></div></section><section class="diag"><h3>Critical Gaps vs Knowledge Ghosts</h3><div class="dynamic-note">Critical Gaps identify where to review: they are 5 km priority cells based on old occurrence evidence, knowledge deficit and habitat-change context.</div><div class="dynamic-note">Knowledge Ghosts identify what to review: they are species-level candidate signals for plants with fragile evidence, such as old, rare or single-location records that need expert review.</div><div class="dynamic-note">A Critical Gap may contain many plant records. Only species that match the Knowledge Ghost evidence are marked as Knowledge Ghosts.</div></section><section class="diag"><h3>GBIF Memory</h3><div class="dynamic-note">Map points are visual context. EKDI priorities are computed from the processed GBIF source download documented in Sources/Citation.</div></section><section class="diag"><h3>What EKDI Does NOT Do</h3><div class="why-list"><div class="why-item">Does not confirm current species presence, absence, rediscovery or extinction.</div><div class="why-item">Does not replace taxonomic, voucher or field verification.</div><div class="why-item">Does not judge GBIF records as wrong.</div><div class="why-item">EKDI does not auto-update when new GBIF occurrence releases are published. Updating the atlas requires rerunning the reproducible pipeline.</div></div></section><section class="diag"><h3>Transferability</h3><div class="dynamic-note">The Atlantic Forest dashboard is a pilot parametrization. Weights, thresholds, habitat-change layers and validation assumptions must be recalibrated for each biome.</div></section><section class="diag"><h3>Sources / Citation</h3><div class="dynamic-note">GBIF Download DOI: ${p3Escape(gbifDoi)}</div><div class="dynamic-note">Repository: https://github.com/GabrielaMoralesS/EKDI-atlas</div><div class="dynamic-note">Suggested citation: ${p3Escape(P69_CITATION)}</div></section><section class="diag"><h3>How to read the atlas</h3><div class="why-list"><div class="why-item">Start with Critical Gaps.</div><div class="why-item">Read Why flagged as grid-cell evidence only.</div><div class="why-item">Use the species evidence table for plant-level signals linked to the selected cell.</div><div class="why-item">Use Data Integrity and Scientific Report to audit sources and limitations.</div></div></section>`;
 };
 const P628_GBIF_DOWNLOAD_DOI='https://doi.org/10.15468/dl.evgrnx';
 const P628_GBIF_SOURCE_CREATED='2026-05-07 00:18:22';
@@ -3989,14 +3990,14 @@ const p628SelectTutorialExampleCell=({zoom=false,force=false}={})=>{
   return example.exampleCell||null;
 };
 const p614TutorialSteps=[
-  {id:'critical-gaps',title:'Start with Critical Gaps.',target:'critical-gaps-layer',text:'Turn on Critical Gaps first. These 5 km cells are the fastest entry point for field-verification review.',run:()=>p3SetLayerVisibility('critical',true)},
-  {id:'select-cell',title:'Click a 5 km cell.',target:'#map-title',text:'Select a visible priority cell to open the evidence panel. EKDI will show why that cell was prioritized.',run:()=>{p3SetLayerVisibility('critical',true);p628SelectTutorialExampleCell({zoom:true,force:true});}},
-  {id:'why-flagged',title:'Read why this cell was prioritized.',target:'gap-drivers',text:'Start with the cell-level explanation: old records, sampling deficit, habitat-change context or a combination of priority signals.',optionalTarget:true,run:()=>{P44_PANEL_MODE='expert';setRightPanel('atlas');}},
-  {id:'key-evidence',title:'Review cell-level signals.',target:'key-evidence',text:'Check last record, years silent, forest remaining, post-record loss and richness deficit. These values describe the selected cell, not the selected plant.',optionalTarget:true},
-  {id:'species-table',title:'Review GBIF plant records.',target:'plant-candidate',text:'The plant table lists real GBIF plant evidence linked to this priority cell. Endemic-linked means a real endemic flag was available in the current export.',optionalTarget:true,run:()=>{p628SelectTutorialExampleCell();setRightPanel('atlas');}},
-  {id:'community-verification',title:'Use iNaturalist for community observation.',target:'community-verification',text:'Use iNaturalist to explore nearby observations and prompts. Community observations do not replace vouchers, permits or expert validation.',optionalTarget:true,run:()=>{p628SelectTutorialExampleCell();setRightPanel('atlas');}},
-  {id:'planner-export',title:'Add targets to Field Planner.',target:'expedition-planner',text:'Save the selected cell as a field-verification target. After selecting a plant row, you can add that species target for the same cell.',optionalTarget:true},
-  {id:'audit-sources',title:'Audit methods and sources.',target:()=>getTutorialTarget('scientific-report')||getTutorialTarget('data-integrity')||getTutorialTarget('tools-menu'),text:'Use Scientific Report and Data Integrity to check methods, limitations, GBIF DOI status and real-data loading.',run:()=>document.querySelector('.tools-menu')?.setAttribute('open','')}
+  {id:'layers',title:'Layers',target:'map-layers',text:'Start with Layers. They control which evidence signals appear on the map.'},
+  {id:'map',title:'Map',target:'map',text:'The map shows Atlantic Forest priority cells and context layers.'},
+  {id:'ghosts-intro-panel',title:'Knowledge Ghosts intro panel',target:()=>selectedFeature?null:getTutorialTarget('selected-cell-panel'),text:'Before selecting a cell, this panel explains Featured Knowledge Ghosts: species-level fragile evidence.',optionalTarget:true},
+  {id:'critical-gaps',title:'Critical Gaps layer',target:'critical-gaps-layer',text:'Critical Gaps are 5 km priority cells where field review should start.',run:()=>p3SetLayerVisibility('critical',true)},
+  {id:'click-critical-gap',title:'Click a Critical Gap',target:'map',text:'Click a visible Critical Gap cell to open its evidence panel.'},
+  {id:'priority-cell-review',title:'Priority Cell Review',target:()=>selectedFeature?getTutorialTarget('selected-cell-panel'):null,text:'Here you see why the cell was flagged and which plant records are linked.',optionalTarget:true},
+  {id:'knowledge-ghosts-layer',title:'Knowledge Ghosts layer',target:'knowledge-ghosts-layer',text:'Turn on Knowledge Ghosts to view species-level fragile-memory signals.',run:()=>document.querySelector('[data-tour="context-layers"]')?.setAttribute('open','')},
+  {id:'tools',title:'Tools',target:'tools-menu',text:'Use Tools to audit methods, check data readiness and export field outputs.',run:()=>document.querySelector('.tools-menu')?.setAttribute('open','')}
 ];
 let P627_TOUR_TARGET_CACHE=null,P627_TOUR_POSITION_FRAME=0;
 function getTutorialTarget(selectorOrTourId){
@@ -4096,15 +4097,9 @@ const p614ShowTutorialStep=()=>{
   if(next)next.style.display='';
   if(skip)skip.style.display='';
   if(back)back.disabled=P614_TUTORIAL_INDEX===0;
-  if(step.id==='basic-complete'){
-    if(back){back.disabled=false;back.textContent='Start Exploring';}
-    if(next)next.textContent='Continue to Advanced Mode';
-    if(skip)skip.textContent='Skip Advanced Mode';
-  }else{
-    if(back)back.textContent='Back';
-    if(next)next.textContent=P614_TUTORIAL_INDEX===p614TutorialSteps.length-1?'Start Exploring':'Next';
-    if(skip)skip.textContent=P614_TUTORIAL_INDEX===p614TutorialSteps.length-1?'Restart EKDI Guide':'Skip EKDI Guide';
-  }
+  if(back)back.textContent='Back';
+  if(next)next.textContent=P614_TUTORIAL_INDEX===p614TutorialSteps.length-1?'Finish':'Next';
+  if(skip)skip.textContent='Close';
   p614PlaceTutorial(target);
 };
 const p614RestoreLayers=()=>{
@@ -4127,9 +4122,14 @@ const p614CloseTutorial=({skip=false,restore=true}={})=>{
 const p614StartTutorial=()=>{
   sessionStorage.removeItem('ekdi_tutorial_skipped');
   sessionStorage.removeItem('ekdi_tutorial_dismissed');
-  localStorage.removeItem('ekdi_tutorial_completed');
   document.getElementById('tutorial-welcome-modal')?.classList.remove('visible');
-  p628t4ShowGuidedTourPlaceholder();
+  document.querySelectorAll('.modal-backdrop.visible').forEach(modal=>modal.classList.remove('visible'));
+  document.querySelector('.tools-menu')?.removeAttribute('open');
+  P628_FULL_TOUR_ACTIVE=false;
+  P614_TUTORIAL_ACTIVE=true;
+  P614_TUTORIAL_INDEX=0;
+  P627_TOUR_TARGET_CACHE=null;
+  p614ShowTutorialStep();
 };
 const p614NextTutorial=()=>{
   if(P628_FULL_TOUR_ACTIVE){
@@ -4158,18 +4158,17 @@ const p614BackTutorial=()=>{
 const p614SkipOrRestart=()=>{
   if(P628_FULL_TOUR_ACTIVE){p614CloseTutorial({skip:true,restore:false});return;}
   if(P614_TUTORIAL_ACTIVE&&p614TutorialSteps[P614_TUTORIAL_INDEX]?.id==='basic-complete'){p614CloseTutorial({skip:true,restore:false});return;}
-  if(P614_TUTORIAL_ACTIVE&&P614_TUTORIAL_INDEX===p614TutorialSteps.length-1){p614StartTutorial();return;}
   p614CloseTutorial({skip:true});
 };
 const P628_FULL_TOUR_STEPS=[
-  ['Start with Critical Gaps.','Turn on Critical Gaps first. These 5 km cells are the fastest entry point for field-verification review.'],
-  ['Click a 5 km cell.','Select a visible priority cell to open the evidence panel. EKDI will show why that cell was prioritized.'],
-  ['Read why this cell was prioritized.','Start with the cell-level explanation: old records, sampling deficit, habitat-change context or a combination of priority signals.'],
-  ['Review cell-level signals.','Check last record, years silent, forest remaining, post-record loss and richness deficit. These values describe the selected cell, not the selected plant.'],
-  ['Review GBIF plant records.','The plant table lists real GBIF plant evidence linked to this priority cell. Endemic-linked means a real endemic flag was available in the current export.'],
-  ['Use iNaturalist for community observation.','Use iNaturalist to explore nearby observations and prompts. Community observations do not replace vouchers, permits or expert validation.'],
-  ['Add targets to Field Planner.','Save the selected cell as a field-verification target. After selecting a plant row, you can add that species target for the same cell.'],
-  ['Audit methods and sources.','Use Scientific Report and Data Integrity to check methods, limitations, GBIF DOI status and real-data loading.']
+  ['Layers','Start with Layers. They control which evidence signals appear on the map.'],
+  ['Map','The map shows Atlantic Forest priority cells and context layers.'],
+  ['Knowledge Ghosts intro panel','Before selecting a cell, this panel explains Featured Knowledge Ghosts: species-level fragile evidence.'],
+  ['Critical Gaps layer','Critical Gaps are 5 km priority cells where field review should start.'],
+  ['Click a Critical Gap','Click a visible Critical Gap cell to open its evidence panel.'],
+  ['Priority Cell Review','Here you see why the cell was flagged and which plant records are linked.'],
+  ['Knowledge Ghosts layer','Turn on Knowledge Ghosts to view species-level fragile-memory signals.'],
+  ['Tools','Use Tools to audit methods, check data readiness and export field outputs.']
 ];
 const p628FullRenderTourStep=()=>{
   const step=P628_FULL_TOUR_STEPS[P628_FULL_TOUR_INDEX]||P628_FULL_TOUR_STEPS[0];
@@ -4195,12 +4194,7 @@ const p628FullRenderTourStep=()=>{
   box.style.transform='translate(-50%,-50%)';
 };
 const p628t4ShowGuidedTourPlaceholder=()=>{
-  p614CloseTutorial({restore:false});
-  document.querySelectorAll('.modal-backdrop.visible').forEach(modal=>modal.classList.remove('visible'));
-  P614_TUTORIAL_ACTIVE=false;
-  P628_FULL_TOUR_ACTIVE=true;
-  P628_FULL_TOUR_INDEX=0;
-  p628FullRenderTourStep();
+  p614StartTutorial();
 };
 function p628wJumpToCriticalGaps(){
   document.getElementById('tutorial-welcome-modal')?.classList.remove('visible');
@@ -4223,7 +4217,7 @@ const maybeShowTutorialWelcome=({force=false}={})=>{
   modal.classList.add('visible');
 };
 const p614MaybeShowWelcome=()=>{};
-const p614OpenTutorialFromTools=()=>maybeShowTutorialWelcome({force:true});
+const p614OpenTutorialFromTools=()=>p614StartTutorial();
 const p46StartTutorial=p614OpenTutorialFromTools;
 const p46StopDemo=()=>p614CloseTutorial({skip:true});
 const p46NextDemo=p614NextTutorial;
@@ -4671,6 +4665,7 @@ document.getElementById('search-input').onkeydown=e=>{
   if(found){selectFeature(found);map.flyTo({center:centerOfFeature(found),zoom:8.7,pitch:48,bearing:-18,duration:1200});showToast(`Found ${p3CellId(found.properties||{})}.`);}else showToast('No matching cell found in loaded EKDI data.');
 };
 p617BindClick('open-upload-top',()=>{p3RenderUploadModal();document.getElementById('upload-modal').classList.add('visible');});
+p617BindClick('start-quick-tour',p614OpenTutorialFromTools);
 p617BindClick('about-ekdi',()=>{p628qa9AboutModal();document.getElementById('about-modal').classList.add('visible');});
 p617BindClick('restore-map-layers',p624ManualRestoreMapLayers);
 setInterval(()=>{if(window.EKDI_DATA?.coreDataLoaded&&map&&!p624ExpectedPriorityLayerReady())p624SetMapLoading('Rendering EKDI layers...','Priority data are loaded but map layers need restoration.',{canRestore:true});},5000);
