@@ -1,17 +1,18 @@
 cff-version: 1.2.0
-message: "If you use EKDI, please cite this prototype and the original data sources."
-title: "EKDI — Ecological Knowledge Discovery Interface"
+message: "If you use EKDI Atlas, please cite this project and the original data sources."
+title: "EKDI Atlas — Ecological Knowledge Decay Index: Turning old GBIF occurrence records into field-verification priorities under landscape change"
 authors:
-  - name: "[Your Name]"
-version: "0.1.0"
+  - family-names: "Morales Soto"
+    given-names: "Gabriela"
+    affiliation: "Instituto de Computacao, UNICAMP"
 date-released: "2026-05-20"
 license: "MIT"
-repository-code: "https://github.com/your-username/ekdi"
-abstract: "A field-verification atlas for ecological memory under landscape change."
+repository-code: "https://github.com/GabrielaMoralesS/EKDI-atlas"
+abstract: "A field-verification atlas that combines time since last evidence, post-record habitat change, richness deficit and species-level fragile memory."
 keywords:
   - biodiversity
   - GBIF
-  - ecological memory
+  - Atlantic Forest
   - field verification
   - botanical atlas
-  - Atlantic Forest
+  - ecological knowledge decay

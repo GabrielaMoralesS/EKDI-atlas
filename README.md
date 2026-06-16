@@ -1,150 +1,175 @@
-# EKDI Atlas - Ecological Knowledge Decay Index
+# EKDI Atlas — Turning old GBIF occurrence records into field-verification priorities under landscape change
 
-**Old GBIF-mediated records -> 5 km field-verification priorities.**
+EKDI helps identify where old GBIF-mediated plant occurrence records should be reviewed first by combining time since last evidence, post-record habitat change, richness deficit and species-level fragile memory.
 
-GBIF-mediated occurrence records preserve where biodiversity was documented, but many old records are reused without checking whether the landscape has changed since collection. EKDI turns old occurrence evidence into 5 km field-verification priorities for threatened biomes.
+## Live Demo
 
-EKDI does not confirm current presence, absence, rediscovery or extinction. It identifies candidate evidence for expert review.
+- Live Atlas: [https://GabrielaMoralesS.github.io/EKDI-atlas/app/](https://GabrielaMoralesS.github.io/EKDI-atlas/app/)
+- Competition version: [app/index.html](app/index.html)
+- Editable V2 copy: [app/index_v2.html](app/index_v2.html)
+- Previous/future-work prototype: [app/index_future_work.html](app/index_future_work.html)
 
-Repository: https://github.com/GabrielaMoralesS/EKDI-atlas
+## What problem does EKDI solve?
 
-## What EKDI Adds To GBIF
+GBIF provides access to occurrence records and maps where biodiversity has been recorded. However, old records can lose ecological currency when the landscape changes after the last evidence. EKDI asks which old occurrence evidence should be prioritized for field verification.
 
-GBIF tells us where biodiversity was recorded. EKDI asks where that knowledge may no longer be ecologically current after time, sampling gaps and habitat change.
+## What EKDI adds to GBIF
 
-This repository contains the Atlantic Forest case study dashboard, real-data metadata, export helpers and scripts used to prepare dashboard-ready outputs.
+- temporal knowledge decay;
+- post-record habitat-change context;
+- Critical Gaps as 5 km field-review priority cells;
+- Knowledge Ghosts as species-level fragile-memory signals;
+- Field Verification Planner and exports;
+- Data Readiness Check with optional user GBIF download DOI.
 
-## Impact In 60 Seconds
+## Critical Gaps vs Knowledge Ghosts
 
-- Critical Gaps: 5 km cells where old records, knowledge deficit and habitat-change context suggest field verification may be needed.
-- Unsurveyed Forest: forested cells with no open GBIF-mediated records in this grid.
-- Deficient Coverage: cells with limited or outdated evidence.
-- Knowledge Ghosts: expert-review species signals, not extinction claims.
-- Prepare GBIF Records: a browser-local readiness check for GBIF or Darwin Core-like occurrence tables.
+| Signal | Level | Question | Meaning |
+| --- | --- | --- | --- |
+| Critical Gap | 5 km grid cell | Where should field review start? | Place-level priority |
+| Knowledge Ghost | Species evidence | Which species requires expert review? | Fragile species-level evidence |
 
-## Core Workflow
+Not every species in a Critical Gap is a Knowledge Ghost. Knowledge Ghost is not an official threat category and does not confirm presence, absence, rediscovery or extinction.
 
-1. Load GBIF-mediated occurrence records.
-2. Overlay a spatial grid and biome boundary.
-3. Add land-cover or habitat-change context.
-4. Calculate sampling antiquity, post-record forest loss and richness deficit.
-5. Generate EKDI priority classes.
-6. Export dashboard-ready layers and field-planning outputs.
+## Relationship to previous GBIF data-gap tools
 
-## EKDI Formula
+Previous GBIF Challenge work has shown the value of mapping biodiversity data gaps and ignorance in space and time. EKDI builds on this tradition but shifts the question from "where are data missing?" to "where has old occurrence evidence become a priority for field verification under landscape change?"
 
-For this Atlantic Forest pilot parametrization:
+What changes here is the combination of old occurrence evidence, post-record habitat change, field-verification outputs and species-level fragile memory.
+
+## How it works
 
 ```text
-EKDI = 0.45 x Sampling Antiquity
-     + 0.35 x Post-Record Forest Loss
-     + 0.20 x Richness Deficit
+GBIF-mediated plant occurrences
+-> 5 km Atlantic Forest grid
+-> sampling antiquity
+-> post-record forest loss
+-> richness deficit
+-> EKDI priority classes
+-> Critical Gaps
+-> Knowledge Ghosts
+-> Field Verification Outputs
 ```
 
-These weights are not universal. EKDI is a transferable prioritization framework, but weights, thresholds, habitat-change layers and validation assumptions must be recalibrated for each biome.
+## Main app workflow for judges
 
-## What EKDI Does Not Claim
+1. Open the live atlas.
+2. Start with Critical Gaps.
+3. Click a priority cell.
+4. Review the species evidence table and Knowledge Ghost signals.
+5. Export Field Verification Outputs or check a GBIF download in Data Readiness.
 
-EKDI does not:
+## Outputs
 
-- declare species extinct;
-- confirm species presence or absence;
-- confirm rediscovery;
-- replace expert taxonomic review;
-- judge GBIF data as wrong;
-- replace field verification, permits or vouchers.
+### Critical Gaps
 
-Outputs are planning aids and candidate evidence for review.
+- CSV
+- JSON
+- GeoJSON
+- Markdown summary
 
-## Data Sources
+### Field Planner
 
-Core inputs:
+- CSV checklist
+- JSON with provenance
+- Markdown checklist
 
-- GBIF-mediated occurrence records.
-- Biome boundary.
-- Land-cover or habitat-change layer.
-- Spatial grid resolution.
+### Data Readiness
 
-Optional enrichment:
+- CSV readiness summary
+- JSON readiness report
+- Darwin Core field check for uploaded occurrence records only
 
-- Local herbarium networks or speciesLink.
-- National flora checklist such as Flora e Funga.
-- IUCN or national red lists.
-- GBIF issue flags.
-- Protected areas and accessibility layers.
+Darwin Core applies to occurrence records, not EKDI grid-cell priority outputs.
 
-GBIF Download DOI: https://doi.org/10.15468/dl.evgrnx
+## Reproducibility and provenance
 
-This DOI refers to the source GBIF download. EKDI filters and joins these records to the Atlantic Forest 5 km grid for dashboard outputs; the full source download is not displayed directly as dashboard cells.
+- GBIF source DOI is documented in app metadata and Sources.
+- User-uploaded GBIF DOI can be added in Data Readiness Check.
+- Exports preserve provenance fields.
+- Scientific Report and Data Integrity are available inside the app.
 
-GBIF source download metadata:
+Core GBIF source metadata already documented in this repository:
 
-- Creation date: 2026-05-07 00:18:22.
-- Records included: 4,455,560 records from 872 published datasets.
-- Compressed data size: 637.3 MB.
-- Download format: simple tab-separated values TSV.
-- Filters: Country = Brazil; HasCoordinate = true; HasGeospatialIssue = false; TaxonKey = Tracheophyta; Year = 1970-2026.
+- GBIF source DOI: [https://doi.org/10.15468/dl.evgrnx](https://doi.org/10.15468/dl.evgrnx)
+- Source download creation date: 2026-05-07 00:18:22
+- Records included: 4,455,560
+- Published datasets: 872
 
-Additional source metadata are documented in the repository when available.
+Supporting documentation:
 
-## How To Run Locally
+- [docs/methodology.md](docs/methodology.md)
+- [docs/provenance_and_audit.md](docs/provenance_and_audit.md)
+- [docs/replication.md](docs/replication.md)
+- [docs/gbif_submission_notes.md](docs/gbif_submission_notes.md)
+
+## Why this can matter to GBIF nodes and data publishers
+
+EKDI can help GBIF nodes, herbaria and biodiversity data users identify:
+
+- areas where historical occurrence evidence may need review;
+- candidate species requiring expert verification;
+- field-checklist outputs for planning;
+- readiness of user-provided GBIF downloads for EKDI-style analysis.
+
+## How to run locally
 
 From the repository root:
 
 ```bash
-cd app
 python -m http.server 8000
 ```
 
 Then open:
 
 ```text
-http://localhost:8000/
+http://localhost:8000/app/
 ```
 
-The current contest review work is staged in `app/index_v2.html`. It has not been promoted to `app/index.html`.
-
-## Prepare GBIF Records
-
-The browser workflow can validate a GBIF occurrence download or Darwin Core-like table for:
-
-- total rows;
-- records with coordinates;
-- records with dates;
-- oldest and newest year;
-- records older than 20 and 30 years;
-- unique species;
-- oldest-evidence species;
-- missing fields;
-- readiness: ready / partial / not ready.
-
-The browser readiness check does not draw uploaded records as Critical Gaps, calculate EKDI scores or update the Atlantic Forest dashboard. Full EKDI recalculation for another biome requires the reproducible pipeline, a target grid, habitat-change layers and recalibrated weights/thresholds.
-
-## Other Biomes
-
-Candidate next pilots include the Cerrado and Sundaland, pending comparable occurrence density, land-cover layers and validation partners.
-
-EKDI is a transferable prioritization framework through the reproducible pipeline. A compact example workflow is planned for the repository.
-
-## Repository Structure
+## Repository structure
 
 ```text
-repo/
-  app/
-    index.html
-    index_v2.html
-    data/
-  docs/
-  scripts/
-  README.md
-  LICENSE
-  CITATION.cff
-  CHANGELOG.md
+app/
+  index.html
+  index_v2.html
+  index_future_work.html
+  data/
+docs/
+scripts/
+README.md
+CITATION.cff
 ```
+
+## Submission visuals
+
+Existing repository screenshots:
+
+1. [Landing page](docs/lab_guide_images/01_intro.png)
+2. [Critical Gaps atlas view](docs/lab_guide_images/02_atlas.png)
+3. [Layers panel](docs/lab_guide_images/03_layers.png)
+4. [Priority Cell Review](docs/lab_guide_images/04_selected_cell.png)
+5. [Plant candidate view](docs/lab_guide_images/05_plant_candidates.png)
+6. [Field Expedition Planner](docs/lab_guide_images/07_expedition_planner.png)
+7. [Data Integrity view](docs/lab_guide_images/08_data_integrity.png)
+
+Additional recommended screenshots for submission capture:
+
+1. Data Readiness Check with GBIF DOI field
+2. Field Verification Outputs panel
+3. Featured Knowledge Ghosts panel
+
+## Limitations
+
+- EKDI does not confirm extinction, rediscovery, presence or absence.
+- Knowledge Ghost is not an official threat category.
+- Updating to another biome requires rerunning the pipeline with a target grid, GBIF download, habitat-change layers and recalibrated parameters.
+- Browser Data Readiness Check does not compute full EKDI scores.
 
 ## Citation
 
-See `CITATION.cff`.
+Morales Soto, G. (2026). EKDI Atlas — Ecological Knowledge Decay Index: Turning old GBIF occurrence records into field-verification priorities under landscape change. GBIF Ebbe Nielsen Challenge 2026. Instituto de Computacao, UNICAMP.
+
+See [CITATION.cff](CITATION.cff) for repository citation metadata.
 
 ## License
 
