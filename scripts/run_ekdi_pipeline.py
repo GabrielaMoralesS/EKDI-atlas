@@ -28,7 +28,7 @@ from typing import Any
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-DOCS_INPUT_MANIFEST = "docs/input_manifest.md"
+DOCS_INPUT_MANIFEST = "docs/data_sources.md"
 DEFAULT_OUTPUT_ROOT = REPO_ROOT / "outputs" / "ekdi_runs"
 CURRENT_TIMESTAMP_FORMAT = "%Y%m%dT%H%M%SZ"
 

@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ![Case Study](https://img.shields.io/badge/Case%20Study-Atlantic%20Forest-2f855a)
 
-> [ADD IMAGE: Atlas overview with Critical Gaps]
+![Atlas overview](docs/images/02_atlas.png)
 
 EKDI turns old GBIF-mediated plant occurrence records into field-verification priorities under landscape change.
 
@@ -32,21 +32,17 @@ The Atlantic Forest is one of the world's most threatened biomes, yet many botan
 ## Workflow
 
 ```text
-GBIF records -> 5 km grid -> sampling antiquity -> habitat-change context
--> richness deficit -> Critical Gaps -> Knowledge Ghosts -> Field Outputs
+GBIF records → 5 km grid → sampling antiquity → habitat-change context
+→ richness deficit → Critical Gaps → Knowledge Ghosts → Field Outputs
 ```
 
 ## Atlas Views
 
-> [ADD IMAGE: Critical Gaps map]
+![Critical Gaps map](docs/images/03_layers.png)
 
-> [ADD IMAGE: Featured Knowledge Ghosts]
+![Priority Cell Review](docs/images/04_selected_cell.png)
 
-> [ADD IMAGE: Priority Cell Review]
-
-> [ADD IMAGE: Data Readiness DOI]
-
-> [ADD IMAGE: Field Outputs]
+![Field Outputs](docs/images/07_expedition_planner.png)
 
 ## Live Atlas
 

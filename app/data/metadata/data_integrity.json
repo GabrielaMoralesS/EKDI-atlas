@@ -17,9 +17,9 @@
     "note": "This DOI refers to the source GBIF download. EKDI filters and joins these records to the Atlantic Forest 5 km grid for dashboard outputs."
   },
   "source_metadata_gaps": {
-    "mapbiomas_version": "Pending exact source metadata.",
-    "florabr_reference_date": "Pending exact source metadata.",
-    "caveat": "MapBiomas version and FloraBR reference date should be completed before final archival release if exact source metadata are available."
+    "mapbiomas_version": "Exact source version/date not bundled in this public demo; see repository data_sources.md for citation and provenance notes.",
+    "florabr_reference_date": "Exact source version/date not bundled in this public demo; see repository data_sources.md for citation and provenance notes.",
+    "caveat": "Exact MapBiomas collection version and FloraBR reference date are not bundled in this public demo; see repository data_sources.md for citation and provenance notes."
   },
   "status": "Phase 2.5 clean dashboard data generated with full and web priority layers",
   "crs_checks": {

@@ -1,20 +1,24 @@
 # Changelog
 
-## 0.1.0 — 2026-05-20
+## Unreleased
 
-Initial public prototype package.
+Repository simplified for GBIF Challenge review.
 
-Added:
+Added or clarified:
 
-- Static EKDI dashboard in `app/`.
-- Cleaned dashboard data structure.
-- Methodology, validation, replication and limitations documentation.
-- GBIF submission notes.
-- 90-second video script.
-- Presentation outline.
-- Public README, license, citation file and final QA checklist.
+- Official competition app in `app/index.html`
+- Processed app outputs in `app/data/`
+- Public documentation set:
+  - `docs/methodology.md`
+  - `docs/reproducibility.md`
+  - `docs/data_sources.md`
+  - `docs/limitations.md`
+- `scripts/run_ekdi_pipeline.py` configurable pipeline entry point
+- Public scripts overview in `scripts/README.md`
+- Root `requirements.txt` for reproducibility setup
 
 Notes:
 
-- This is an advanced prototype, not a final scientific publication.
+- Root `index.html` remains a redirect to `./app/`.
+- The browser app visualizes processed outputs and does not recompute EKDI client-side.
 - Data files retain the licenses of their original sources.

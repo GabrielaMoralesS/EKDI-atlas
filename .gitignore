@@ -41,3 +41,7 @@ PRESENTATION_OUTLINE*.md
 
 # Local pipeline outputs
 outputs/
+
+# Root-level local raw or intermediate inputs are not bundled publicly.
+data/*
+!data/README.md

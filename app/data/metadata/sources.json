@@ -18,9 +18,9 @@
       "Year": "1970-2026"
     }
   },
-  "mapbiomas_version_status": "Pending exact source metadata.",
-  "florabr_reference_date_status": "Pending exact source metadata.",
-  "source_metadata_caveat": "MapBiomas version and FloraBR reference date should be completed before final archival release if exact source metadata are available.",
+  "mapbiomas_version_status": "Exact source version/date not bundled in this public demo; see repository data_sources.md for citation and provenance notes.",
+  "florabr_reference_date_status": "Exact source version/date not bundled in this public demo; see repository data_sources.md for citation and provenance notes.",
+  "source_metadata_caveat": "Exact MapBiomas collection version and FloraBR reference date are not bundled in this public demo; see repository data_sources.md for citation and provenance notes.",
   "inputs": {
     "grid_final": {
       "path": "data/grid_final.gpkg",
@@ -43,15 +43,15 @@
       "role": "Top 100 critical gap candidates."
     },
     "current_priority_cells": {
-      "path": "data/geo/priority_cells.geojson",
+      "path": "app/data/geo/priority_cells.geojson",
       "role": "Existing MapLibre priority layer used for state/threat/endemic aliases."
     },
     "current_gbif_memory": {
-      "path": "data/points/gbif_memory.geojson",
+      "path": "app/data/points/gbif_memory.geojson",
       "role": "Existing sampled GBIF memory point layer."
     },
     "current_forest_mask": {
-      "path": "data/geo/forest_mask.geojson",
+      "path": "app/data/geo/forest_mask.geojson",
       "role": "Existing dissolved forest mask layer."
     }
   },
