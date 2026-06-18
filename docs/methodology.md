@@ -1,79 +1,39 @@
 # Methodology
 
-## Ecological Memory
+## EKDI question
 
-Ecological memory refers to information preserved in biodiversity records, specimens, checklists and field observations. A record documents evidence from a place and time, but the surrounding landscape may change after the record is collected.
+EKDI asks where botanical occurrence evidence may have become ecologically outdated after landscape change. It does not treat older records as wrong. It highlights where renewed interpretation and field verification may matter most.
 
-EKDI uses this idea to ask where older biodiversity knowledge may need renewed interpretation.
+## Atlantic Forest case-study preset
 
-## Why Records Can Become Ecologically Outdated
-
-Occurrence records remain valuable, but habitat loss, fragmentation and uneven sampling can change how those records should be interpreted for field planning.
-
-EKDI does not treat older records as wrong. It identifies where the ecological context around records may have changed enough to justify review.
-
-## EKDI Components
-
-### Sampling Antiquity
-
-Sampling Antiquity represents how old the available occurrence evidence is for a cell.
-
-### Post-Record Forest Loss
-
-Post-Record Forest Loss estimates habitat change after the last known record in a cell.
-
-### Richness Deficit
-
-Richness Deficit represents expected biodiversity knowledge that is not reflected in observed open records.
-
-## Formula
-
-For the Mata Atlântica case-study preset:
+For the Atlantic Forest dashboard build:
 
 ```text
-EKDI = 0.45 × Sampling Antiquity
-     + 0.35 × Post-Record Forest Loss
-     + 0.20 × Richness Deficit
+EKDI = 0.45 x Sampling Antiquity
+     + 0.35 x Post-Record Forest Loss
+     + 0.20 x Richness Deficit
 ```
 
-The weights are a case-study preset. They are not universal and should be recalibrated for other biomes.
+These weights are a case-study preset, not a universal model.
 
-## Evidence Completeness
+## Core components
 
-Evidence Completeness describes how much information is available to interpret a cell. It is not biological certainty and does not confirm presence or absence.
+- **Sampling Antiquity:** how old the available occurrence evidence is for a cell.
+- **Post-Record Forest Loss:** habitat change after the last linked evidence.
+- **Richness Deficit:** expected biodiversity knowledge not reflected in observed open records.
 
-In the dashboard, the main panel shows Evidence Support as a class label only: Limited Evidence, Partial Evidence, Moderate Evidence or Strong Evidence. Numeric completeness values, when present in the data, are treated as technical metadata rather than biological confidence.
+## Main outputs
 
-The Evidence Readiness summary uses transparent availability classes for GBIF records, plant candidate linkage, land-cover data and species-level threat-status linkage. It is a data-readiness cue for interpretation, not a claim about species presence, absence or extinction.
+- **Critical Gaps:** 5 km field-review priority cells.
+- **Knowledge Ghosts:** species-level fragile-evidence signals for expert review.
+- **Field Outputs:** exports for verification planning and documentation.
 
-## Experimental Knowledge Verification Window
+## Interpretation boundary
 
-The Knowledge Verification Window is an experimental decision-support estimate. It would project recent habitat-loss trends to a selected low-forest threshold when annual forest-cover history or a reliable recent loss rate exists.
+EKDI is a decision-support atlas. It does not confirm species presence, absence, extinction, or rediscovery. Plant candidates and ghost signals remain evidence signals requiring voucher review, coordinate checks, taxonomic review, and field interpretation.
 
-The current dashboard export does not include annual forest-cover history per cell, so this window is not calculated in the public app. If added in a future data release, the threshold should be treated as a configurable planning parameter, not a universal ecological threshold.
+## Reproducibility links
 
-It does not predict extinction, species absence, species presence, rediscovery failure or field success.
+For public repeatability levels and rerun scope, see [reproducibility.md](reproducibility.md).
 
-## Knowledge Ghosts
-
-Knowledge Ghosts are species-level evidence signals where historical records and current landscape context suggest that botanical review may be useful.
-
-They are candidates for review, not claims of extinction, absence or rediscovery.
-
-## Rediscovery Candidates
-
-Rediscovery Candidates are hypotheses based on available evidence. They require voucher review, coordinate checks, field validation and expert taxonomic interpretation.
-
-## Plant Candidates
-
-Plant Candidates are species signals linked to priority cells when available data support the link. They are not confirmed current occurrences.
-
-## Expedition Planner
-
-The Expedition Planner converts selected cells and species signals into a field-verification checklist. It supports CSV and JSON export for planning, but does not replace permits, land access planning or expert review.
-
-## Scientific Report
-
-The Scientific Report is generated from the cleaned dashboard files by `scripts/build_scientific_report.py`.
-
-It summarizes the EKDI model, available component statistics, spatial distribution, plant candidate signals, deforestation context, reproducibility metadata and limitations. Missing DOI, version, access-date or timeline values are reported as unavailable rather than inferred.
+For bundled outputs, GBIF DOI provenance, and missing recomputation inputs, see [data_sources.md](data_sources.md).

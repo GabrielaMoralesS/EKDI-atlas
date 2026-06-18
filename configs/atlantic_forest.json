@@ -1,0 +1,32 @@
+{
+  "project_name": "EKDI Atlas - Atlantic Forest",
+  "biome_name": "Atlantic Forest",
+  "grid_resolution_km": 5,
+  "current_year": 2026,
+  "overwrite_existing_outputs": false,
+  "weights": {
+    "sampling_antiquity": 0.45,
+    "post_record_forest_loss": 0.35,
+    "richness_deficit": 0.2
+  },
+  "thresholds": {
+    "critical_percentile": 0.9
+  },
+  "inputs": {
+    "grid": "data/grid_final.gpkg",
+    "gbif_joined": "data/gbif_grid_joined.parquet",
+    "endemism_grid": "data/grid_endemicas.gpkg",
+    "ghost_species": "data/ghost_species.csv",
+    "extinction_risk_analysis": "data/extinction_risk_analysis.csv",
+    "forest_loss_grid": "data/perdida_forestal_por_celda.gpkg",
+    "richness_deficit_grid": "data/deficit_riqueza_por_celda.gpkg"
+  },
+  "outputs": {
+    "priority_cells": "app/data/geo/priority_cells.geojson",
+    "state_summary": "app/data/tables/state_summary.json",
+    "scientific_report": "app/data/metadata/scientific_report.json"
+  },
+  "provenance": {
+    "gbif_download_doi": "https://doi.org/10.15468/dl.evgrnx"
+  }
+}

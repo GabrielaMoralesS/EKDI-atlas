@@ -12,16 +12,32 @@ codex_reports/
 dist/
 build/
 
-# Large local reproducibility artifacts; the contest UI loads the lightweight table.
+# Large local reproducibility artifacts; the official app uses shipped lightweight outputs.
 app/data/tables/cell_species_records.json
 app/data/tables/cell_species_top10_by_cell.json
 
-# Internal phase reports
-PHASE_6_28*.md
+# Local-only app variants and prototypes
+app/index_v1.html
+app/index_v2.html
+app/index_future_work.html
 
-# Internal phase reports
+# Internal phase and assistant reports
 PHASE_6_28*.md
+GH*_REPORT*.md
+RP*_REPORT*.md
+GH1_*.md
+GH2_*.md
+GH3*.md
 
-# Huge derived files
-app/data/tables/cell_species_records.json
-app/data/tables/cell_species_top10_by_cell.json
+# Local submission drafts and planning notes
+docs/submission/
+docs/screenshots_to_capture.md
+docs/input_manifest.md
+docs/proof_of_generalization.md
+FINAL_QA_CHECKLIST.md
+VIDEO_SCRIPT*.md
+docs/VIDEO_SCRIPT*.md
+PRESENTATION_OUTLINE*.md
+
+# Local pipeline outputs
+outputs/
