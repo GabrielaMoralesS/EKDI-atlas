@@ -35,3 +35,9 @@ Known GBIF source DOI documented in shipped metadata:
 - `scripts/run_ekdi_pipeline.py` can validate a configuration even when some configured files are missing locally.
 - Full recomputation requires the external or local intermediate inputs listed above.
 - The browser app visualizes processed EKDI outputs and does not recompute the full EKDI index client-side.
+
+## Local raw/intermediate inputs
+
+Root-level raw and intermediate analytical inputs such as `data/grid_final.gpkg`, `data/gbif_grid_joined.parquet`, `data/grid_endemicas.gpkg`, `data/ghost_species.csv`, and related support files are intentionally not bundled in the public repository clone.
+
+They remain local inputs for reproducibility work and should be supplied only when running deeper EKDI recomputation workflows outside the browser app.

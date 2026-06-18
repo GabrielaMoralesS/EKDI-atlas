@@ -15,6 +15,7 @@ overwrite shipped app outputs unless the configuration explicitly allows it.
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import math
 import re
@@ -31,6 +32,10 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DOCS_INPUT_MANIFEST = "docs/data_sources.md"
 DEFAULT_OUTPUT_ROOT = REPO_ROOT / "outputs" / "ekdi_runs"
 CURRENT_TIMESTAMP_FORMAT = "%Y%m%dT%H%M%SZ"
+SAMPLE_DEMO_FILES = (
+    REPO_ROOT / "app" / "test_data" / "sample_gbif_occurrences.csv",
+    REPO_ROOT / "app" / "test_data" / "sample_gbif_occurrences.tsv",
+)
 
 WEIGHT_KEYS = (
     "sampling_antiquity",
@@ -133,13 +138,23 @@ class ComponentResult:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Configurable EKDI pipeline")
-    parser.add_argument("--config", required=True, help="Path to a JSON config file.")
+    parser.add_argument("--config", help="Path to a JSON config file.")
     parser.add_argument(
         "--check-inputs",
         action="store_true",
         help="Validate config and inputs without computing outputs.",
     )
-    return parser.parse_args()
+    parser.add_argument(
+        "--sample-demo",
+        action="store_true",
+        help="Run the bundled GBIF/Darwin Core-like input-readiness demo.",
+    )
+    args = parser.parse_args()
+    if args.sample_demo and args.config:
+        parser.error("--sample-demo cannot be combined with --config.")
+    if not args.sample_demo and not args.config:
+        parser.error("--config is required unless --sample-demo is used.")
+    return args
 
 
 def utc_now() -> datetime:
@@ -642,6 +657,160 @@ def write_markdown(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8")
 
 
+def normalize_occurrence_header(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", value.lower())
+
+
+def parse_occurrence_year(value: Any) -> int | None:
+    if value is None:
+        return None
+    match = re.search(r"(1[6-9]\d{2}|20\d{2}|21\d{2})", str(value))
+    if not match:
+        return None
+    year = int(match.group(1))
+    return year if 1500 < year <= 2100 else None
+
+
+def resolve_sample_demo_file() -> Path:
+    for path in SAMPLE_DEMO_FILES:
+        if path.exists():
+            return path
+    raise PipelineBlockedError(
+        "Sample demo file not found under app/test_data/. The bundled occurrence-readiness demo cannot run."
+    )
+
+
+def read_occurrence_table(path: Path) -> tuple[list[dict[str, Any]], list[str]]:
+    text = path.read_text(encoding="utf-8-sig")
+    if not text.strip():
+        return [], []
+    delimiter = "\t" if path.suffix.lower() == ".tsv" else ","
+    sample = text[:4096]
+    if path.suffix.lower() == ".csv":
+        try:
+            dialect = csv.Sniffer().sniff(sample, delimiters=",;\t")
+            delimiter = dialect.delimiter
+        except csv.Error:
+            delimiter = ","
+    reader = csv.DictReader(text.splitlines(), delimiter=delimiter)
+    return list(reader), list(reader.fieldnames or [])
+
+
+def sample_demo_report_payload(sample_path: Path) -> dict[str, Any]:
+    rows, columns = read_occurrence_table(sample_path)
+    normalized_columns = {normalize_occurrence_header(column): column for column in columns}
+    required = {
+        "scientificName": "scientificName",
+        "decimalLatitude": "decimalLatitude",
+        "decimalLongitude": "decimalLongitude",
+        "year_or_eventDate": "year or eventDate",
+    }
+    recommended_aliases = {
+        "basisOfRecord": ("basisofrecord",),
+        "occurrenceID_or_gbifID": ("occurrenceid", "gbifid"),
+        "countryCode": ("countrycode",),
+        "taxonKey": ("taxonkey", "specieskey"),
+    }
+    has_scientific = "scientificname" in normalized_columns
+    has_lat = "decimallatitude" in normalized_columns
+    has_lon = "decimallongitude" in normalized_columns
+    has_year = "year" in normalized_columns
+    has_event_date = "eventdate" in normalized_columns
+    species_values: set[str] = set()
+    rows_with_coordinates = 0
+    rows_with_dates = 0
+    older_than_20 = 0
+    older_than_30 = 0
+    years: list[int] = []
+    current_year = datetime.now(timezone.utc).year
+    for row in rows:
+        scientific_name = (row.get(normalized_columns.get("scientificname", ""), "") or "").strip()
+        if scientific_name:
+            species_values.add(scientific_name)
+        lat_value = (row.get(normalized_columns.get("decimallatitude", ""), "") or "").strip()
+        lon_value = (row.get(normalized_columns.get("decimallongitude", ""), "") or "").strip()
+        if lat_value and lon_value:
+            rows_with_coordinates += 1
+        year_value = None
+        if has_year:
+            year_value = parse_occurrence_year(row.get(normalized_columns["year"]))
+        if year_value is None and has_event_date:
+            year_value = parse_occurrence_year(row.get(normalized_columns["eventdate"]))
+        if year_value is not None:
+            rows_with_dates += 1
+            years.append(year_value)
+            age = current_year - year_value
+            if age > 20:
+                older_than_20 += 1
+            if age > 30:
+                older_than_30 += 1
+    required_status = {
+        required["scientificName"]: has_scientific,
+        required["decimalLatitude"]: has_lat,
+        required["decimalLongitude"]: has_lon,
+        required["year_or_eventDate"]: has_year or has_event_date,
+    }
+    recommended_status = {
+        label: any(alias in normalized_columns for alias in aliases)
+        for label, aliases in recommended_aliases.items()
+    }
+    missing_required = [label for label, present in required_status.items() if not present]
+    readiness_status = "Ready for occurrence-readiness review" if not missing_required else "Missing required occurrence fields"
+    return {
+        "generated_at": utc_now().isoformat(),
+        "demo_mode": "sample_gbif_readiness",
+        "sample_file": make_relative_display(sample_path),
+        "record_count": len(rows),
+        "rows_with_coordinates": rows_with_coordinates,
+        "rows_with_year_or_event_date": rows_with_dates,
+        "oldest_year": min(years) if years else None,
+        "newest_year": max(years) if years else None,
+        "records_older_than_20_years": older_than_20,
+        "records_older_than_30_years": older_than_30,
+        "unique_scientific_names": len(species_values),
+        "detected_columns": columns,
+        "required_field_status": required_status,
+        "recommended_field_status": recommended_status,
+        "missing_required_fields": missing_required,
+        "readiness_status": readiness_status,
+        "full_recomputation_ran": False,
+        "caveats": [
+            "This is an input-readiness demo only; it does not update the Atlantic Forest map.",
+            "This demo does not compute EKDI scores or recompute the full EKDI atlas.",
+            "Full EKDI recalculation still requires a target grid, habitat-change layers, and calibrated weights.",
+        ],
+    }
+
+
+def write_sample_demo_report(run_dir: Path, report: dict[str, Any]) -> None:
+    write_json(run_dir / "run_report.json", report)
+    lines = [
+        "# EKDI Sample GBIF Readiness Demo",
+        "",
+        f"- Generated at: `{report['generated_at']}`",
+        f"- Sample file: `{report['sample_file']}`",
+        f"- Records detected: `{report['record_count']}`",
+        f"- Unique scientific names: `{report['unique_scientific_names']}`",
+        f"- Rows with coordinates: `{report['rows_with_coordinates']}`",
+        f"- Rows with year/eventDate: `{report['rows_with_year_or_event_date']}`",
+        f"- Oldest year: `{report['oldest_year']}`",
+        f"- Newest year: `{report['newest_year']}`",
+        f"- Readiness status: `{report['readiness_status']}`",
+        "",
+        "## Required field status",
+        "",
+    ]
+    for key, value in report["required_field_status"].items():
+        lines.append(f"- `{key}`: `{'found' if value else 'missing'}`")
+    lines.extend(["", "## Recommended field status", ""])
+    for key, value in report["recommended_field_status"].items():
+        lines.append(f"- `{key}`: `{'found' if value else 'not found'}`")
+    lines.extend(["", "## Caveats", ""])
+    for item in report["caveats"]:
+        lines.append(f"- {item}")
+    write_markdown(run_dir / "run_report.md", "\n".join(lines) + "\n")
+
+
 def determine_run_directory(config: dict[str, Any], run_id: str) -> Path:
     if bool(config["overwrite_existing_outputs"]):
         return repo_path("outputs") / "latest_overwrite_run"
@@ -820,6 +989,30 @@ def write_failure_console(check_result: dict[str, Any]) -> None:
 
 def main() -> int:
     args = parse_args()
+    if args.sample_demo:
+        run_id = f"sample_gbif_demo_{timestamp_slug()}"
+        run_dir = determine_run_directory(
+            {
+                "overwrite_existing_outputs": False,
+            },
+            run_id,
+        )
+        run_dir.mkdir(parents=True, exist_ok=True)
+        try:
+            sample_path = resolve_sample_demo_file()
+            report = sample_demo_report_payload(sample_path)
+            write_sample_demo_report(run_dir, report)
+            print(f"Sample demo file: {report['sample_file']}")
+            print("Input-readiness demo only. No EKDI recomputation executed.")
+            print("Required occurrence fields:")
+            for key, value in report["required_field_status"].items():
+                print(f"- {key}: {'found' if value else 'missing'}")
+            print(f"Readiness status: {report['readiness_status']}")
+            print(f"Run report written to {make_relative_display(run_dir / 'run_report.json')}")
+            return 0
+        except PipelineBlockedError as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
     try:
         config = load_config(args.config)
         validate_config(config)

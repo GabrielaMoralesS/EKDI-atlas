@@ -29,6 +29,16 @@ For reproducibility scope, see:
 - Expected inputs: `configs/atlantic_forest.json`, plus local intermediate files such as `data/grid_final.gpkg`, `data/gbif_grid_joined.parquet`, `data/grid_endemicas.gpkg`, `data/ghost_species.csv`, and `data/extinction_risk_analysis.csv`.
 - Expected outputs: run reports and regenerated outputs under `outputs/ekdi_runs/` unless the config points elsewhere.
 
+### Sample demo
+
+Run the bundled readiness-only sample:
+
+```bash
+python scripts/run_ekdi_pipeline.py --sample-demo
+```
+
+This checks the sample GBIF/Darwin Core-like CSV in `app/test_data/` and writes a run report without claiming full EKDI recomputation.
+
 ### build_dashboard_data.py
 
 - Role: build dashboard-ready layers, tables, and metadata from intermediate analytical inputs and existing project outputs.

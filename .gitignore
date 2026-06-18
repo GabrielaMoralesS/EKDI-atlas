@@ -44,4 +44,3 @@ outputs/
 
 # Root-level local raw or intermediate inputs are not bundled publicly.
 data/*
-!data/README.md
