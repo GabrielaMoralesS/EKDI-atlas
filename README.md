@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ![Case Study](https://img.shields.io/badge/Case%20Study-Atlantic%20Forest-2f855a)
 
-![Atlas overview](docs/images/02_atlas.png)
+![Atlas overview](docs/images/01_intro.git)
 
 EKDI is a configurable workflow and interactive atlas for turning GBIF-mediated plant occurrence records into field-verification priorities under landscape change. The Atlantic Forest of Brazil is used as a case study.
 
