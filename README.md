@@ -37,7 +37,7 @@ The current public demo focuses on the Atlantic Forest, but the approach is fram
 GBIF records → 5 km grid → sampling antiquity → habitat-change context
 → richness deficit → Critical Gaps → Knowledge Ghosts → Field Outputs
 ```
-
+![Workflow](docs/images/Workflow.png)
 ## Atlas Views
 
 ![Critical Gaps map](docs/images/03_layers.png)
