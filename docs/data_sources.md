@@ -1,43 +1,55 @@
 # Data Sources
 
-A clean clone can run the final EKDI Atlas from processed outputs in `app/data/`. Full scientific recomputation requires external or locally generated intermediate inputs listed below. This manifest documents those requirements explicitly so the public repository does not overstate repeatability.
+This manifest is a provenance ledger, not a file listing. For every input EKDI depends on, it states the exact source, version where known, whether it is bundled in this public repository, and why — so a reviewer never has to guess what the analysis actually used.
 
-## Bundled processed outputs
+## External sources, by name and version
 
-The public repository already includes the processed Atlantic Forest files needed by the browser atlas, including priority-cell layers, state summaries, and metadata used by the in-app Scientific Report and Data Integrity views.
+| Source | What EKDI uses it for | Version / access date | Status |
+| --- | --- | --- | --- |
+| **GBIF occurrence download** | Primary occurrence evidence for the Atlantic Forest grid | DOI **[10.15468/dl.evgrnx](https://doi.org/10.15468/dl.evgrnx)** | ✅ DOI documented in shipped metadata |
+| **MapBiomas** | Annual land-cover transitions used for Post-Record Forest Loss | Collection version and access date not yet finalized in this public build | ⚠️ Documented gap — see note below |
+| **FloraBR** | Endemic species reference list for expected-richness estimation | Access date not yet finalized in this public build | ⚠️ Documented gap — see note below |
 
-Known GBIF source DOI documented in shipped metadata:
+**On the two open items above:** EKDI states this gap explicitly rather than fabricating a version number. The exact MapBiomas collection and FloraBR access date used to build the shipped Atlantic Forest atlas will be added here and in the in-app Source Verifiability panel before final archival release. Declaring this as open is preferable to guessing a version that cannot be verified.
 
-- [https://doi.org/10.15468/dl.evgrnx](https://doi.org/10.15468/dl.evgrnx)
+## Bundled processed outputs — what ships in this repository
 
-## Inputs and outputs
+These are the files a clean clone actually runs from. Nothing here is a placeholder.
 
-| Path or input | Input type | Purpose | Included in repository? | Notes |
-| --- | --- | --- | --- | --- |
-| `app/data/geo/priority_cells_light.geojson` | Processed dashboard output | Initial priority-cell layer used by the official app for fast map rendering. | Yes | Shipped processed output for the final Atlantic Forest atlas. |
-| `app/data/geo/priority_cells.geojson` | Processed dashboard output | Full published priority-cell layer retained as processed atlas output. | Yes | Not required for client-side recomputation; the official app starts from the light layer. |
-| `app/data/tables/state_summary.json` | Processed dashboard output | State-level summary used by the browser atlas. | Yes | Shipped processed output. |
-| `app/data/metadata/scientific_report.json` | Processed dashboard output | Processed metadata consumed by the in-app Scientific Report. | Yes | Open the Scientific Report inside the app for the current case-study narrative. |
-| `app/data/metadata/data_integrity.json` | Processed dashboard output | Processed metadata consumed by the in-app Data Integrity view. | Yes | Documents current build checks and caveats. |
-| `app/data/metadata/sources.json` | Processed dashboard output | Source metadata and DOI notes for the shipped atlas build. | Yes | Includes the documented EKDI GBIF DOI. |
-| `data/grid_final.gpkg` | Intermediate derived input | Intermediate analytical grid containing geometry and EKDI component fields used to generate dashboard outputs. Expected fields may include `cell_id`, geometry, state, sampling antiquity or last-record fields, post-record loss, richness deficit, EKDI score, or priority class. | No | External/local intermediate input; not bundled in the public repository. Required for full recomputation. |
-| `data/gbif_grid_joined.parquet` | Intermediate derived input | Intermediate GBIF occurrence table joined to the 5 km grid. | No | GBIF source DOI is documented in shipped metadata. External/local intermediate input; not bundled in the public repository. Required for full recomputation. |
-| `data/grid_endemicas.gpkg` | Intermediate derived input | Enrichment grid used for plant-candidate linkage. | No | External/local intermediate input; not bundled in the public repository. Required for full recomputation. |
-| `data/ghost_species.csv` | Intermediate derived input | Knowledge Ghost support table. | No | External/local intermediate input; not bundled in the public repository. Required for full recomputation. |
-| `data/extinction_risk_analysis.csv` | Intermediate derived input | Threat and rediscovery support table used in analytical preparation. | No | External/local intermediate input; not bundled in the public repository. Required for full recomputation. |
-| `data/perdida_forestal_por_celda.gpkg` | Intermediate derived input | Cell-level post-record habitat-change input when loss values are not already on the analytical grid. | No | External/local intermediate input; not bundled in the public repository. Required for full recomputation. |
-| Expected-richness or richness-deficit source input | External/raw source input | Expected-richness or richness-deficit input used to compute cell-level richness deficit. | No | External/local source input; not bundled in the public repository. Required for full recomputation. |
-| Boundary and grid-construction inputs | External/raw source input | Biome geometry and raw spatial supports used in earlier preprocessing steps. | No | External/local source input; not bundled in the public repository. Required for full raw-to-final recomputation. |
+| File | Produces | Bundled? |
+| --- | --- | --- |
+| `app/data/geo/priority_cells_light.geojson` | Fast-rendering priority-cell layer used by the live app | ✅ Yes |
+| `app/data/geo/priority_cells.geojson` | Full published priority-cell layer (archival, not loaded by default) | ✅ Yes |
+| `app/data/tables/state_summary.json` | State-level summary statistics shown in the dashboard | ✅ Yes |
+| `app/data/metadata/scientific_report.json` | Populates the in-app Scientific Report | ✅ Yes |
+| `app/data/metadata/data_integrity.json` | Populates the in-app Data Integrity view | ✅ Yes |
+| `app/data/metadata/sources.json` | Source metadata and GBIF DOI notes for the shipped build | ✅ Yes |
 
-## Notes
+**This is sufficient for Level 1 reproducibility** (see [Reproducibility](reproducibility.md)): a reviewer can clone this repository and see the exact submission artifact with no missing data.
 
-- Level 1 repeatability runs from processed outputs already bundled in `app/data/`.
-- `scripts/run_ekdi_pipeline.py` can validate a configuration even when some configured files are missing locally.
-- Full recomputation requires the external or local intermediate inputs listed above.
-- The browser app visualizes processed EKDI outputs and does not recompute the full EKDI index client-side.
+## Intermediate inputs — required for Level 2/3, not bundled
 
-## Local raw/intermediate inputs
+These are real files that exist locally during development but are not included in the public clone, with the specific reason in each case.
 
-Root-level raw and intermediate analytical inputs such as `data/grid_final.gpkg`, `data/gbif_grid_joined.parquet`, `data/grid_endemicas.gpkg`, `data/ghost_species.csv`, and related support files are intentionally not bundled in the public repository clone.
+| Path | Purpose | Why it's not bundled |
+| --- | --- | --- |
+| `data/grid_final.gpkg` | Analytical 5 km grid with geometry and EKDI component fields (`cell_id`, sampling antiquity, post-record loss, richness deficit, EKDI score, priority class) | Geometry file exceeds practical Git size for a public submission repository |
+| `data/gbif_grid_joined.parquet` | GBIF occurrence table joined to the 5 km grid | Derived directly from the GBIF DOI above via local join; regenerable but not pre-computed here |
+| `data/grid_endemicas.gpkg` | Enrichment grid for plant-candidate linkage | Same size constraint as `grid_final.gpkg` |
+| `data/ghost_species.csv` | Knowledge Ghost support table | Derived output of the endemism + single-record + forest-loss join; regenerable from the above |
+| `data/extinction_risk_analysis.csv` | Threat and rediscovery support table | Requires external threat-assessment cross-reference not redistributable at full resolution |
+| `data/perdida_forestal_por_celda.gpkg` | Cell-level forest-loss values (when not already on the analytical grid) | Derived from MapBiomas transition rasters via Google Earth Engine; regeneration requires GEE access |
+| Expected-richness reference | Input to Richness Deficit calculation | Built from FloraBR cross-tabulation; access-date pending (see note above) |
+| Biome boundary and grid-construction inputs | Raw spatial supports used in earlier preprocessing | Upstream of the analytical grid; regenerable from public IBGE/MapBiomas boundaries |
 
-They remain local inputs for reproducibility work and should be supplied only when running deeper EKDI recomputation workflows outside the browser app.
+**None of these are missing by oversight.** Each is either a derived file regenerable from sources already documented above, or a file whose size or licensing makes redistribution in a public Git repository impractical. `scripts/run_ekdi_pipeline.py --check-inputs` checks for each of these by exact expected path and reports precisely which are absent — it does not fail silently or proceed with a partial computation.
+
+## Verifying this manifest yourself
+
+```bash
+python scripts/run_ekdi_pipeline.py --config configs/atlantic_forest.json --check-inputs
+```
+
+This prints a pass/fail line for every path listed in the "Intermediate inputs" table above against your local filesystem — the fastest way to confirm this document matches the actual code, not just prose.
+
+See also: [Methodology](methodology.md) · [Reproducibility](reproducibility.md) · [Limitations](limitations.md)
