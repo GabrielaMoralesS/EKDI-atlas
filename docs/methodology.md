@@ -8,9 +8,6 @@ EKDI asks:
 
 **Where may the gap between recorded botanical evidence and current habitat condition have grown large enough to justify ecological re verification?**
 
-EKDI does not treat older records as incorrect. A record is evidence about a moment in time. EKDI flags where that moment may no longer represent the present ecological context — and therefore where field or herbarium re-verification is most likely to be informative.
-
-This framing follows the same broad logic as sample-bias and survey-gap approaches in biodiversity informatics, but adds a temporal-decay dimension: not only where sampling is sparse, but where existing evidence may have become stale relative to landscape change.
 
 ## What EKDI Needs
 
