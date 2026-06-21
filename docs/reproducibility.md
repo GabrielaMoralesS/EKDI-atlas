@@ -55,22 +55,40 @@ python scripts/run_ekdi_pipeline.py --config configs/atlantic_forest.json
 
 ## Level 3 — Full recomputation from raw GBIF data
 
-**Claim:** full recomputation requires intermediate inputs not bundled in this public repository, and this document says exactly which ones, instead of implying the repository is self-sufficient.
+**Claim:** Full recomputation requires intermediate inputs not bundled in this public repository, and this document says exactly which ones, instead of implying the repository is self-sufficient.
 
 To rebuild the Atlantic Forest atlas entirely from primary sources, a user needs to independently obtain:
 
 - The GBIF occurrence download referenced by DOI **[10.15468/dl.evgrnx](https://doi.org/10.15468/dl.evgrnx)**, joined to a 5 km analytical grid
 - MapBiomas annual land-cover transition layers for the same grid and time range
-- A FloraBR-derived endemic species reference table for expected-richness estimation
-- Biome-appropriate weight calibration (see [Methodology](methodology.md) — the 0.45/0.35/0.20 preset is Atlantic-Forest-specific, not universal)
+- A FloraBR derived endemic species reference table for expected-richness estimation
+- Biome appropriate weight calibration (see [Methodology](methodology.md) — the 0.45/0.35/0.20 preset is Atlantic-Forest-specific, not universal)
 
-Every one of these is listed with its exact expected path, format, and bundling status in [Data Sources](data_sources.md) — nothing is assumed or left for the user to guess.
+Every one of these is listed with its exact expected path, format, and bundling status in [Data Sources](data_sources.md) nothing is assumed or left for the user to guess.
 
-**Why this isn't bundled:** the intermediate grid-join and land-cover-transition files exceed what is practical to version in a public Git repository and require Google Earth Engine access to regenerate from scratch. This is stated here rather than worked around with a partial or misleading bundle.
+**Why this isn't bundled:** The intermediate grid-join and land cover transition files exceed what is practical to version in a public Git repository and require Google Earth Engine access to regenerate from scratch. This is stated here rather than worked around with a partial or misleading bundle.
+
+### How each unbundled input would actually be built
+
+This is not a second list of requirements  it is the construction method behind each item above, so a reviewer with biology or GIS background, not necessarily a developer, can follow exactly what producing it would involve.
+
+1. **GBIF occurrence download.** Filtered on [gbif.org](https://www.gbif.org) by taxon (Tracheophyta) and the Atlantic Forest biome extent, requested as a Darwin Core Archive. The exact filtered download is the DOI cited above  [10.15468/dl.evgrnx](https://doi.org/10.15468/dl.evgrnx).
+
+2. **5 km analytical grid.** Built in QGIS or with `geopandas`: a regular grid clipped to the Atlantic Forest biome boundary (IBGE/MapBiomas limits), reprojected to a metric CRS for construction and back to EPSG:4326. Each cell receives a unique `cell_id`.
+
+3. **GBIF-to-grid join.** A standard spatial point-in-polygon join (`geopandas.sjoin`) between the occurrence points from step 1 and the grid cells from step 2 reproducible with any GIS tool that supports spatial joins, not a custom or undocumented algorithm.
+
+4. **MapBiomas land-cover transition layers.** Pulled from MapBiomas annual collection rasters via Google Earth Engine: for each cell, forest area present in the year of its earliest linked record that transitioned to non-forest in any subsequent year. This is the step that requires GEE compute access, which is why it is not pre-run here.
+
+5. **FloraBR-derived richness reference.** Expected richness modeled from FloraBR's Atlantic Forest endemic checklist, distributed across cells by habitat-suitability proxies (forest cover, elevation band); observed richness is the species count already present from step 3. FloraBR access terms restrict redistribution of the raw reference table.
+
+6. **Weight calibration.** The 0.45 / 0.35 / 0.20 weights were derived for the Atlantic Forest's specific decay drivers as documented in [Methodology](methodology.md) they are a calibration result, not an assumed default, and would need to be re-derived (not reused) for any other biome's grid.
+
+Steps 4 and 5 are the actual bottleneck , they depend on Google Earth Engine access and FloraBR's redistribution terms, not on anything proprietary to this codebase. Steps 2, 3, and 6 are computationally light and could be bundled as intermediate files in a future release; they were kept external in this submission to keep the public repository's data footprint small, not because they are difficult to reproduce.
 
 ## Adapting EKDI beyond the Atlantic Forest
 
-The Atlantic Forest is the demonstration case study, not the boundary of the method. EKDI is built as a configurable workflow around `scripts/run_ekdi_pipeline.py` and `configs/*.json` — adapting it to another biome means supplying a new config file plus the four input categories listed under Level 3 (GBIF occurrence data, a target grid, habitat-change layers, and a richness-deficit reference), and **re-deriving or re-justifying the component weights against that biome's actual drivers of evidence decay** — not reusing the Atlantic Forest preset by default.
+The Atlantic Forest is the demonstration case study, not the boundary of the method. EKDI is built as a configurable workflow around `scripts/run_ekdi_pipeline.py` and `configs/*.json` — adapting it to another biome means supplying a new config file plus the four input categories listed under Level 3 (GBIF occurrence data, a target grid, habitat-change layers, and a richness-deficit reference), and **re-deriving or re-justifying the component weights against that biome's actual drivers of evidence decay**  not reusing the Atlantic Forest preset by default.
 
 Candidate next pilots: **Cerrado** and **Sundaland**, both of which combine comparable deforestation pressure with adequate existing GBIF occurrence density.
 
@@ -78,11 +96,11 @@ This repository does not claim EKDI is already validated globally. The claim is 
 
 ## Browser-app boundary
 
-The browser app (Level 1) visualizes processed outputs only. It does not recompute the EKDI index client-side, and no button in the interface claims otherwise — including the in-app **Data Readiness Check**, which validates uploaded GBIF/Darwin Core tables for field completeness but does not run Level 2 or Level 3 computation in-browser.
+The browser app (Level 1) visualizes processed outputs only. It does not recompute the EKDI index client-side, and no button in the interface claims otherwise including the in-app **Data Readiness Check**, which validates uploaded GBIF/Darwin Core tables for field completeness but does not run Level 2 or Level 3 computation in-browser.
 
 ## Provenance in every export
 
-Every file generated by **Field Verification Outputs** in the live app — CSV, JSON, or Markdown — embeds its own provenance: the EKDI weight profile used, the source GBIF DOI, generation timestamp, and a suggested citation. A reviewer who downloads any export can trace it back to this repository and this methodology without relying on external memory of where the file came from.
+Every file generated by **Field Verification Outputs** in the live app  CSV, JSON, or Markdown embeds its own provenance: the EKDI weight profile used, the source GBIF DOI, generation timestamp, and a suggested citation. A reviewer who downloads any export can trace it back to this repository and this methodology without relying on external memory of where the file came from.
 
 See also:
 - [Methodology](methodology.md) — the scoring formula and weight justification
