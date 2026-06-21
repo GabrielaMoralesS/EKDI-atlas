@@ -1,6 +1,6 @@
 # EKDI Atlas — Ecological Knowledge Decay Index
 
-*Identifying where GBIF-mediated botanical records have become ecologically outdated — and turning that gap into field-verification priorities.*
+*Identifying where GBIF mediated botanical records may have become ecologically outdated*
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-open-blue)](https://GabrielaMoralesS.github.io/EKDI-atlas/app/)
 ![GBIF Challenge 2026](https://img.shields.io/badge/GBIF%20Challenge-2026-2c7a7b)
@@ -14,14 +14,14 @@
 
 GBIF holds over 2 billion occurrence records. Many were collected decades before the deforestation events that followed. In the Atlantic Forest of Brazil alone, **2.22 million hectares of forest were lost after the botanical records describing those areas were collected** — yet those records are still reused today as if the landscape they describe were unchanged.
 
-**Nobody had measured where that gap is largest. EKDI does.**
+**EKDI makes that gap visible and turns it into a field-verification priority layer.**
 
 ## What EKDI Found
 
 Running the EKDI pipeline against GBIF occurrence data for the Atlantic Forest identified:
 
-- **2,090 Critical Gap cells** (5 km grid) where old botanical evidence overlaps with significant post-record forest loss
-- **4 Knowledge Ghost species** — endemic plants whose only GBIF record sits in a cell that has since lost most of its forest cover, with no occurrence evidence since:
+- **2,090 Critical Gap cells** (5 km grid) Where old botanical evidence overlaps with significant post-record forest loss
+- **4 Knowledge Ghost species** Endemic plants whose only GBIF record sits in a cell plants represented in the current EKDI build by very limited GBIF-mediated evidence:
 
 | Species | Last GBIF record | Forest lost since |
 | --- | --- | --- |
@@ -43,7 +43,7 @@ A Knowledge Ghost is not a claim of extinction or absence — it is a signal tha
 
 ## Try It With Your Own GBIF Data
 
-EKDI isn't only a finished map — it's a tool you can use today. Inside the live app, **Data Readiness Check** lets you upload your own GBIF/Darwin Core occurrence export and get an instant report: which species have the oldest unreviewed evidence, which records lack coordinates, and what's missing before that data could feed an EKDI-style analysis.
+EKDI isn't only a finished map , it's a tool you can use today. Inside the live app, **Data Readiness Check** Lets you upload a GBIF/Darwin Core-like occurrence table and check whether it contains the minimum fields required for EKDI-style analysis: scientific names, coordinates, dates and occurrence evidence.
 
 ## How It Works
 
@@ -62,7 +62,7 @@ EKDI score = weighted combination of **sampling antiquity** (how old is the evid
 *2,090 Critical Gap cells across the Atlantic Forest, ranked by EKDI score.*
 
 ![Priority Cell Review](docs/images/04_selected_cell.png)
-*Per-cell evidence: last GBIF record, years of silence, forest loss, and linked plant candidates — with direct links to community verification.*
+*Per-cell evidence: last GBIF record, years of silence, forest loss, and linked plant candidates — with community observation and expert review*
 
 ![Field Outputs](docs/images/07_expedition_planner.png)
 *Exportable, citation-ready field-verification checklists for botanists and herbaria.*
@@ -93,20 +93,20 @@ This runs a real GBIF/Darwin Core-style occurrence readiness check against a bun
 
 GBIF source data DOI: **[10.15468/dl.evgrnx](https://doi.org/10.15468/dl.evgrnx)**
 
-- [Methodology](docs/methodology.md) — the EKDI formula, weights, and scoring logic
-- [Reproducibility](docs/reproducibility.md) — full breakdown of the three levels above
-- [Data Sources](docs/data_sources.md) — every input file, its provenance, and whether it's bundled
-- [Limitations](docs/limitations.md) — what EKDI does *not* claim
+- [Methodology](docs/methodology.md) — The EKDI formula, weights, and scoring logic
+- [Reproducibility](docs/reproducibility.md) — Full breakdown of the three levels above
+- [Data Sources](docs/data_sources.md) — Every input file, its provenance, and whether it's bundled
+- [Limitations](docs/limitations.md) — What EKDI does *not* claim
 
 ## Beyond the Atlantic Forest
 
-The Atlantic Forest is the demonstration case study, not the ceiling of the approach. EKDI is built as a configurable workflow (`configs/*.json`) intended for adaptation to other threatened biomes — candidate next pilots include the **Cerrado** and **Sundaland**, where comparable deforestation rates and GBIF occurrence density make the same gap likely to exist.
+The Atlantic Forest is the demonstration case study, not the ceiling of the approach. EKDI is built as a configurable workflow (`configs/*.json`) intended for adaptation to other threatened biomes — Candidate next pilots could include other threatened, data-rich biomes such as the Cerrado or Sundaland, provided that occurrence data, grid layers, habitat-change data and expert calibration are available.
 
 ## Limitations
 
 - EKDI is a decision-support atlas, not a claim of species presence, absence, extinction, or rediscovery.
-- The browser app visualizes processed outputs and does not recompute EKDI client-side.
-- EKDI does not auto-update when new GBIF occurrence releases are published — updating requires re-running the pipeline (Level 2/3 above) against a new download.
+- The browser app visualizes processed outputs and does not recompute EKDI client side.
+- EKDI does not auto-update when new GBIF occurrence releases are published , updating requires re-running the pipeline (Level 2/3 above) against a new download.
 - Atlantic Forest weights are a case-study preset and should be recalibrated before use in another biome.
 
 Full list: [Limitations](docs/limitations.md)
