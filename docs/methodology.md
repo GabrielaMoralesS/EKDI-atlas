@@ -14,10 +14,11 @@ EKDI asks:
 EKDI can be adapted to another region when four analytical inputs are available:
 
 |Input |Role in EKDI|
-GBIF/Darwin Core-like occurrence records	Provide species names, coordinates and collection dates
-Analytical grid or planning units	Define where records and habitat change are aggregated
-Habitat-change layer	Measures whether habitat changed after the occurrence record was collected
-Sampling-gap or richness-deficit support	Estimates whether the cell is underdocumented relative to comparable areas
+| --- | --- |
+|GBIF/Darwin Core-like occurrence records |	Provide species names, coordinates and collection dates.|
+|Analytical grid or planning units| Define where records and habitat change are aggregated. |
+|Habitat-change layer |	Measures whether habitat changed after the occurrence record was collected. |
+|Sampling-gap or richness-deficit support |	Estimates whether the cell is underdocumented relative to comparable areas|
 
 At minimum, the occurrence table should include:
 
