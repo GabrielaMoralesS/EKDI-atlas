@@ -2,11 +2,35 @@
 
 ## The EKDI Question
 
-GBIF-mediated occurrence records describe biodiversity at the moment of collection. They do not describe the landscape today. EKDI asks: **where has the gap between recorded evidence and current habitat condition grown large enough that the evidence should be treated as ecologically outdated, not just old?**
+GBIF-mediated occurrence records describe biodiversity evidence at the moment of collection. They do not, by themselves, describe whether the surrounding landscape still provides the same ecological context today.
 
-EKDI does not treat older records as incorrect. A record is data about a moment in time; EKDI flags when that moment may no longer represent the present ecological context — and therefore where field or herbarium re-verification is most likely to be informative.
+EKDI asks:
 
-This framing follows the same logic as sample-bias and survey-gap methods used in prior biodiversity-informatics work (e.g. *sampbias*, Meyer et al. 2015; GBIF coverage-assessment approaches), but adds a temporal-decay dimension that those methods do not address: **not just where sampling is sparse, but where existing sampling has become stale relative to landscape change.**
+**Where may the gap between recorded botanical evidence and current habitat condition have grown large enough to justify ecological re verification?**
+
+EKDI does not treat older records as incorrect. A record is evidence about a moment in time. EKDI flags where that moment may no longer represent the present ecological context — and therefore where field or herbarium re-verification is most likely to be informative.
+
+This framing follows the same broad logic as sample-bias and survey-gap approaches in biodiversity informatics, but adds a temporal-decay dimension: not only where sampling is sparse, but where existing evidence may have become stale relative to landscape change.
+
+## What EKDI Needs
+
+EKDI can be adapted to another region when four analytical inputs are available:
+
+|Input |Role in EKDI|
+GBIF/Darwin Core-like occurrence records	Provide species names, coordinates and collection dates
+Analytical grid or planning units	Define where records and habitat change are aggregated
+Habitat-change layer	Measures whether habitat changed after the occurrence record was collected
+Sampling-gap or richness-deficit support	Estimates whether the cell is underdocumented relative to comparable areas
+
+At minimum, the occurrence table should include:
+
+Field	Why it matters
+scientificName	Links records to plant evidence and species-level review profiles
+decimalLatitude and decimalLongitude	Assigns records to grid cells
+year or eventDate	Calculates sampling antiquity and post-record habitat change
+record identifier or source fields	Supports provenance and traceability
+
+The live app includes a Data Readiness Check for GBIF/Darwin Core-like occurrence tables. This browser-based check helps users verify whether their uploaded occurrence data contain the minimum fields required for EKDI-style analysis. It does not recompute the full EKDI atlas in the browser.
 
 ## EKDI Score
 
