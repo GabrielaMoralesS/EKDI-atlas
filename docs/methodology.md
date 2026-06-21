@@ -22,11 +22,12 @@ EKDI can be adapted to another region when four analytical inputs are available:
 
 At minimum, the occurrence table should include:
 
-Field	Why it matters
-scientificName	Links records to plant evidence and species-level review profiles
-decimalLatitude and decimalLongitude	Assigns records to grid cells
-year or eventDate	Calculates sampling antiquity and post-record habitat change
-record identifier or source fields	Supports provenance and traceability
+|Field	|Why it matters|
+| --- | --- |
+| scientificName|	Links records to plant evidence and species-level review profiles|
+|decimalLatitude and decimalLongitude	|Assigns records to grid cells|
+|year or eventDate|	Calculates sampling antiquity and post-record habitat change|
+|record identifier or source fields|	Supports provenance and traceability|
 
 The live app includes a Data Readiness Check for GBIF/Darwin Core-like occurrence tables. This browser-based check helps users verify whether their uploaded occurrence data contain the minimum fields required for EKDI-style analysis. It does not recompute the full EKDI atlas in the browser.
 
@@ -77,6 +78,22 @@ R(i) = max(0, expected_richness(i) − observed_richness(i)) / expected_richness
 ```
 
 Expected richness is estimated from environmental covariates and regional species pools (FloraBR endemic reference list cross-tabulated against the Atlantic Forest); observed richness is the count of distinct species with GBIF-mediated records in the cell. A positive deficit means the cell has fewer documented species than comparable cells with similar habitat — a signal of undersampling independent of age.
+
+## How to Calculate EKDI for Your Own Region
+
+To calculate an EKDI-style score for a new region:
+
+1. Select a target region and define an analytical grid.
+2. Assign GBIF/Darwin Core-like occurrence records to grid cells.
+3. For each cell, identify the most recent plant occurrence record.
+4. Calculate Sampling Antiquity: years since the last record.
+5. Calculate Post-Record Habitat Loss: habitat lost after the last record year.
+6. Calculate Richness Deficit or an equivalent sampling-gap signal.
+7. Normalize each component to [0, 1] within the target region.
+8. Apply documented weights.
+9. Classify cells into priority classes.
+10. Link priority cells back to plant records and field-verification outputs.
+
 
 ## Priority Classes
 
