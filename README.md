@@ -1,93 +1,124 @@
-# EKDI Atlas
+# EKDI Atlas — Ecological Knowledge Decay Index
 
-*Configurable methodology, interactive atlas, and reproducible workflow for GBIF-mediated botanical field verification under landscape change.*
+*Identifying where GBIF-mediated botanical records have become ecologically outdated — and turning that gap into field-verification priorities.*
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-open-blue)](https://GabrielaMoralesS.github.io/EKDI-atlas/app/)
 ![GBIF Challenge 2026](https://img.shields.io/badge/GBIF%20Challenge-2026-2c7a7b)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ![Case Study](https://img.shields.io/badge/Case%20Study-Atlantic%20Forest-2f855a)
+[![GBIF DOI](https://img.shields.io/badge/GBIF%20DOI-10.15468%2Fdl.evgrnx-orange)](https://doi.org/10.15468/dl.evgrnx)
 
 ![Atlas overview](docs/images/01_intro.gif)
 
-EKDI is a configurable workflow and interactive atlas for turning GBIF-mediated plant occurrence records into field-verification priorities under landscape change. The Atlantic Forest of Brazil is used as a case study.
+## The Problem
 
-## Why It Matters
+GBIF holds over 2 billion occurrence records. Many were collected decades before the deforestation events that followed. In the Atlantic Forest of Brazil alone, **2.22 million hectares of forest were lost after the botanical records describing those areas were collected** — yet those records are still reused today as if the landscape they describe were unchanged.
 
-The Atlantic Forest is one of the world's most threatened biomes, yet many botanical records still circulate without updated landscape interpretation. EKDI helps botanists decide where historical occurrence evidence may deserve renewed review when habitat change, sampling age, and biodiversity knowledge gaps overlap.
+**Nobody had measured where that gap is largest. EKDI does.**
 
-The current public demo focuses on the Atlantic Forest, but the approach is framed as adaptable rather than region-locked. EKDI is presented here as a reusable workflow built around configurable inputs, documented provenance, and explicit biome-specific assumptions.
+## What EKDI Found
+
+Running the EKDI pipeline against GBIF occurrence data for the Atlantic Forest identified:
+
+- **2,090 Critical Gap cells** (5 km grid) where old botanical evidence overlaps with significant post-record forest loss
+- **4 Knowledge Ghost species** — endemic plants whose only GBIF record sits in a cell that has since lost most of its forest cover, with no occurrence evidence since:
+
+| Species | Last GBIF record | Forest lost since |
+| --- | --- | --- |
+| *Varronia neowediana* | — | — |
+| *Adenocalymma fistulosum* | — | — |
+| *Bromus commutatus* | — | — |
+| *Bothriochloa longipaniculata* | — | — |
+
+A Knowledge Ghost is not a claim of extinction or absence — it is a signal that field or herbarium review is overdue.
 
 ## What EKDI Adds to GBIF
 
 | GBIF occurrence maps | EKDI Atlas |
 | --- | --- |
-| Shows where records were documented | Prioritizes where old occurrence evidence may need field review |
-| Focuses on occurrence availability | Adds habitat-change context and knowledge obsolescence |
-| Species points are the main output | Critical Gaps and Knowledge Ghosts support field verification planning |
+| Show **where** records were documented | Prioritize **where old evidence needs review** |
+| Treat all occurrence records as current | Add habitat-change context and knowledge-decay scoring |
+| Species points are the output | Critical Gaps, Knowledge Ghosts, and exportable field checklists are the output |
+| One static download | Live atlas + GBIF download readiness checker for your own data |
 
-## Core Concepts
+## Try It With Your Own GBIF Data
 
-- **Critical Gap:** a 5 km cell where botanical evidence may deserve field verification priority.
-- **Knowledge Ghost:** a species-level fragile-evidence signal for expert review.
-- **Field Verification Output:** exported checklists and summaries for planning follow-up work.
+EKDI isn't only a finished map — it's a tool you can use today. Inside the live app, **Data Readiness Check** lets you upload your own GBIF/Darwin Core occurrence export and get an instant report: which species have the oldest unreviewed evidence, which records lack coordinates, and what's missing before that data could feed an EKDI-style analysis.
 
-## Workflow
+## How It Works
 
 ```text
 GBIF records → 5 km grid → sampling antiquity → habitat-change context
 → richness deficit → Critical Gaps → Knowledge Ghosts → Field Outputs
 ```
+
 ![Workflow](docs/images/Workflow.png)
+
+EKDI score = weighted combination of **sampling antiquity** (how old is the evidence), **post-record forest loss** (how much habitat changed since), and **richness deficit** (how undersampled the area is relative to expectation). Full formula and weights are documented in [Methodology](docs/methodology.md) and visible live in the app's Scientific Report.
+
 ## Atlas Views
 
 ![Critical Gaps map](docs/images/03_layers.png)
+*2,090 Critical Gap cells across the Atlantic Forest, ranked by EKDI score.*
 
 ![Priority Cell Review](docs/images/04_selected_cell.png)
+*Per-cell evidence: last GBIF record, years of silence, forest loss, and linked plant candidates — with direct links to community verification.*
 
 ![Field Outputs](docs/images/07_expedition_planner.png)
+*Exportable, citation-ready field-verification checklists for botanists and herbaria.*
 
 ## Live Demo
 
-[https://GabrielaMoralesS.github.io/EKDI-atlas/app/](https://GabrielaMoralesS.github.io/EKDI-atlas/app/)
+**[Open the EKDI Atlas →](https://GabrielaMoralesS.github.io/EKDI-atlas/app/)**
 
-## Quick Start
+No installation required. Built with MapLibre GL JS, runs entirely client-side from processed open data.
+
+## Reproducibility — Three Honest Levels
+
+This repository documents exactly what can and cannot be reproduced from the public clone alone — no overstated claims:
+
+| Level | What it does | Status |
+| --- | --- | --- |
+| **1 — Run the atlas** | Loads the final Atlantic Forest atlas from processed outputs already bundled in `app/data/` | ✅ Supported from clean clone |
+| **2 — Run the configurable pipeline** | Regenerates EKDI-style outputs from intermediate inputs via `python scripts/run_ekdi_pipeline.py --config configs/atlantic_forest.json` | ✅ Supported when local inputs exist |
+| **3 — Full recomputation from raw GBIF data** | Re-derives the analytical grid and habitat-change layers from scratch | ⚠️ Requires external/local intermediate inputs — see [Data Sources](docs/data_sources.md) |
+
+Want to test the pipeline right now without any setup?
 
 ```bash
-python -m http.server 8000
+python scripts/run_ekdi_pipeline.py --sample-demo
 ```
 
-Open:
+This runs a real GBIF/Darwin Core-style occurrence readiness check against a bundled sample CSV — no external data needed.
 
-```text
-http://localhost:8000/app/
-```
+GBIF source data DOI: **[10.15468/dl.evgrnx](https://doi.org/10.15468/dl.evgrnx)**
 
-## Reproducibility
+- [Methodology](docs/methodology.md) — the EKDI formula, weights, and scoring logic
+- [Reproducibility](docs/reproducibility.md) — full breakdown of the three levels above
+- [Data Sources](docs/data_sources.md) — every input file, its provenance, and whether it's bundled
+- [Limitations](docs/limitations.md) — what EKDI does *not* claim
 
-A clean clone can run the final Atlantic Forest atlas from processed outputs already bundled in `app/data/`. Configurable reruns and deeper recomputation depend on intermediate or external inputs that are documented explicitly instead of assumed.
+## Beyond the Atlantic Forest
 
-EKDI should be read as a configurable methodology, an interactive atlas, and a reusable workflow. The Atlantic Forest case study demonstrates the approach; adapting it to another biome requires GBIF occurrence data, a target grid, land-cover or habitat-change layers, and case-appropriate parameters.
-
-- [Methodology](docs/methodology.md)
-- [Reproducibility](docs/reproducibility.md)
-- [Data Sources](docs/data_sources.md)
-- [Limitations](docs/limitations.md)
-
-Sample reproducibility demo: run the provided GBIF/Darwin Core-like CSV through the input-readiness pipeline.
-
-Open the **Scientific Report** inside the live demo for the current case-study report.
+The Atlantic Forest is the demonstration case study, not the ceiling of the approach. EKDI is built as a configurable workflow (`configs/*.json`) intended for adaptation to other threatened biomes — candidate next pilots include the **Cerrado** and **Sundaland**, where comparable deforestation rates and GBIF occurrence density make the same gap likely to exist.
 
 ## Limitations
 
-- EKDI is a decision-support atlas, not a claim of presence, absence, extinction, or rediscovery.
+- EKDI is a decision-support atlas, not a claim of species presence, absence, extinction, or rediscovery.
 - The browser app visualizes processed outputs and does not recompute EKDI client-side.
-- Full scientific recomputation requires external or locally generated intermediate inputs not bundled in the public repository.
+- EKDI does not auto-update when new GBIF occurrence releases are published — updating requires re-running the pipeline (Level 2/3 above) against a new download.
 - Atlantic Forest weights are a case-study preset and should be recalibrated before use in another biome.
+
+Full list: [Limitations](docs/limitations.md)
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff).
+If you use EKDI or its outputs, please cite:
+
+> Morales Soto, G. (2026). *EKDI Atlas — Ecological Knowledge Decay Index.* GBIF Ebbe Nielsen Challenge 2026. Instituto de Computação, Universidade Estadual de Campinas (UNICAMP). https://doi.org/[pending]
+
+Machine-readable citation: [CITATION.cff](CITATION.cff)
 
 ## License
 
-Code is released under the MIT License. Data files retain the licenses of their original sources.
+Code is released under the MIT License. Data files retain the licenses of their original sources (GBIF, MapBiomas, FloraBR — see [Data Sources](docs/data_sources.md)).
