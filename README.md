@@ -1,6 +1,6 @@
 # EKDI Atlas — Ecological Knowledge Decay Index
 
-*Identifying where GBIF mediated botanical records may have become ecologically outdated*
+*Identifying where GBIF-mediated botanical records may have become ecologically outdated*
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-open-blue)](https://GabrielaMoralesS.github.io/EKDI-atlas/app/)
 ![GBIF Challenge 2026](https://img.shields.io/badge/GBIF%20Challenge-2026-2c7a7b)
@@ -12,7 +12,7 @@
 
 ## The Problem
 
-GBIF holds over 2 billion occurrence records. Many were collected decades before the deforestation events that followed. In the Atlantic Forest of Brazil alone, **2.22 million hectares of forest were lost after the botanical records describing those areas were collected** — yet those records are still reused today as if the landscape they describe were unchanged.
+GBIF holds over 2 billion occurrence records. Many were collected decades before the deforestation events that followed. In the Atlantic Forest of Brazil alone, **2.22 million hectares of forest were lost after the botanical records describing those areas were collected** , yet those records are still reused today as if the landscape they describe were unchanged.
 
 **EKDI makes that gap visible and turns it into a field-verification priority layer.**
 
@@ -25,25 +25,46 @@ Running the EKDI pipeline against GBIF occurrence data for the Atlantic Forest i
 
 | Species | Last GBIF record | Forest lost since |
 | --- | --- | --- |
-| *Varronia neowediana* | — | — |
-| *Adenocalymma fistulosum* | — | — |
-| *Bromus commutatus* | — | — |
-| *Bothriochloa longipaniculata* | — | — |
+| *Varronia neowediana* | 2000 | 1.1 k ha |
+| *Adenocalymma fistulosum* | 2003 | 1.3 k ha |
+| *Bromus commutatus* | 1986 | 1.3 k ha |
+| *Bothriochloa longipaniculata* | 1986 | 800 ha |
 
-A Knowledge Ghost is not a claim of extinction or absence — it is a signal that field or herbarium review is overdue.
+A Knowledge Ghost is not a claim of extinction or absence ; it is a signal that field or herbarium review is overdue.
 
 ## What EKDI Adds to GBIF
 
 | GBIF occurrence maps | EKDI Atlas |
 | --- | --- |
 | Show **where** records were documented | Prioritize **where old evidence needs review** |
-| Treat all occurrence records as current | Add habitat-change context and knowledge-decay scoring |
-| Species points are the output | Critical Gaps, Knowledge Ghosts, and exportable field checklists are the output |
-| One static download | Live atlas + GBIF download readiness checker for your own data |
+| Treat all occurrence records as current | Adds habitat-change context after the record was collected |
+| Species points are the main output | Critical Gaps, Botanical Memory profiles, Knowledge Ghosts and field outputs are the main outputs |
+| A download is usually the starting point | EKDI turns a GBIF download into a field-verification workflow |
+
+## What You Can Do in the App
+EKDI is not only a map. It is an interactive workflow for turning old botanical evidence into reviewable field priorities.
+
+In the live atlas, users can:
+
+- Explore Critical Gap cells across the Atlantic Forest case study;
+- Click any priority cell and see why it was flagged;
+- Inspect cell-level evidence such as last record year, years silent, forest remaining, post-record   forest loss and richness deficit.
+- Review plant records linked to the selected grid cell.
+- Open  Botanical Memory profiles for species-level review.
+- Add cells or species to a field-verification planner.
+- Open nearby iNaturalist observations for community context.
+- Open the selected cell in Google Maps for field orientation.
+- Export field-verification checklists and evidence tables with provenance.
+- Use Data Readiness Check to test whether a GBIF/Darwin Core-like occurrence table contains the minimum fields required for EKDI-style analysis.
+
+iNaturalist links are provided for community observation context only. EKDI does not treat them as formal herbarium verification, voucher evidence or proof of current presence.
+
 
 ## Try It With Your Own GBIF Data
 
-EKDI isn't only a finished map , it's a tool you can use today. Inside the live app, **Data Readiness Check** Lets you upload a GBIF/Darwin Core-like occurrence table and check whether it contains the minimum fields required for EKDI-style analysis: scientific names, coordinates, dates and occurrence evidence.
+EKDI is not only a finished Atlantic Forest map. Inside the live app, **Data Readiness Check** lets users upload a GBIF/Darwin Core like occurrence table and check whether it contains the minimum fields required for EKDI-style analysis: scientific names, coordinates and dates.
+
+This browser-based readiness check does not recompute the full EKDI atlas. It helps users understand whether their occurrence data are ready to be combined with a target grid, habitat-change layers and calibrated parameters in the reproducible EKDI workflow.
 
 ## How It Works
 
@@ -56,13 +77,13 @@ GBIF records → 5 km grid → sampling antiquity → habitat-change context
 
 EKDI score = weighted combination of **sampling antiquity** (how old is the evidence), **post-record forest loss** (how much habitat changed since), and **richness deficit** (how undersampled the area is relative to expectation). Full formula and weights are documented in [Methodology](docs/methodology.md) and visible live in the app's Scientific Report.
 
-## Atlas Views
+## Inside the EKDI Atlas
 
 ![Critical Gaps map](docs/images/03_layers.png)
 *2,090 Critical Gap cells across the Atlantic Forest, ranked by EKDI score.*
 
 ![Priority Cell Review](docs/images/04_selected_cell.png)
-*Per-cell evidence: last GBIF record, years of silence, forest loss, and linked plant candidates — with community observation and expert review*
+*Clicking a cell opens transparent evidence: last GBIF-mediated record, years silent, forest remaining, post-record forest loss, richness deficit and linked plant records.*
 
 ![Field Outputs](docs/images/07_expedition_planner.png)
 *Exportable, citation-ready field-verification checklists for botanists and herbaria.*
