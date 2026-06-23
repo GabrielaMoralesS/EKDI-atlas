@@ -136,10 +136,17 @@ Full list: [Limitations](docs/limitations.md)
 
 If you use EKDI or its outputs, please cite:
 
-> Morales Soto, G. (2026). *EKDI Atlas — Ecological Knowledge Decay Index.* GBIF Ebbe Nielsen Challenge 2026. Instituto de Computação, Universidade Estadual de Campinas (UNICAMP). https://doi.org/[pending]
+> Morales Soto, G. (2026). *EKDI Atlas — Ecological Knowledge Decay Index.* GBIF Ebbe Nielsen Challenge 2026. Instituto de Computação, Universidade Estadual de Campinas (UNICAMP), Av. Albert Einstein, 1251, Cidade Universitária “Zeferino Vaz”, Barão Geraldo, 13083-852, Campinas, São Paulo, Brazil.
 
 Machine-readable citation: [CITATION.cff](CITATION.cff)
+
 
 ## License
 
 Code is released under the MIT License. Data files retain the licenses of their original sources (GBIF, MapBiomas, FloraBR — see [Data Sources](docs/data_sources.md)).
+
+## Acknowledgements
+
+This work was developed at the Instituto de Computação, Universidade Estadual de Campinas (UNICAMP), Brazil, with support from the Hub de Inteligência Artificial e Arquiteturas Cognitivas (H.IAAC), Meta 5, and the Fundação de Desenvolvimento da Unicamp (FUNCAMP).
+
+The author thanks the Visual Informatics Laboratory and the academic supervisors and collaborators who contributed guidance during the development of this project.
