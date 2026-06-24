@@ -91,6 +91,8 @@ EKDI score = weighted combination of **sampling antiquity** (how old is the evid
 ## Live Demo
 
 **[Open the EKDI Atlas →](https://GabrielaMoralesS.github.io/EKDI-atlas/app/)**
+**[Watch the demo video →](https://youtu.be/1Kk7GNhsxZQ?si=6AQT4caHt8cKjaJz)**
+
 
 No installation required. Built with MapLibre GL JS, runs entirely client-side from processed open data.
 
